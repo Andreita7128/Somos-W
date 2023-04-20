@@ -1,30 +1,346 @@
-
 $tittleSize1 : 24px;
 
-
-button {
-    width: 500px;
-    height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    line-height: 120% !important;
 }
 
-#button{
-    &_color{
-    background-color: aqua;
-    &:hover{
-        background-color:rgb(187, 255, 0);
+/*Colors*/
+/*Various*/
+$color_text: #27262C;
+$color_text_disable: #979C9E;
+$color_base_white: #F2F2F2;
+$color_accent_white: #F8F8F8;
+$color_base_gray: #27262C;
+$color_accent_black: #000000;
+$color_gray_btn: #CDCFD0;
+$color_error: #EB3232;
+$color_warning: #FDA624;
+$color_success: #2DC071;
+$fill_success: rgba(45, 192, 113, 0.2);
+$fill_error: rgba(235, 50, 50, 0.2);
+$fill_generic: rgba(0, 177, 187, 0.2);
+$fill_input: #F2F4F5;
+$fill_disabled: #E3E5E5;
+
+
+/*Blue*/
+$color_blue1: #00B1BB;
+$color_blue2: #2FD9DE;
+$color_blue3: #BDF0F2;
+
+/*Dark Violet*/
+$color_dark_violet1: #2D3982;
+$color_dark_violet2: #535C97;
+$color_dark_violet3: #8A90B5;
+$color_dark_violet4: #C3C5D4;
+
+/*Violet*/
+$color_violet1: #6321A6;
+$color_violet2: #8E50B7;
+$color_violet3: #BA93D2;
+$color_violet4: #E4D4ED;
+
+/*Orange*/
+$color_orange1: #F25C05;
+$color_orange2: #FF8826;
+$color_orange3: #FFB67D;
+
+/*Yellow*/
+$color_yellow1: #e3ff0b;
+
+
+/* Typography */
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.body {
+    font-weight: 500;
+
+    &_1 {
+        font-size: 18px;
+    }
+
+    &_2 {
+        font-size: 16px;
+    }
+
+    &_3 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    h5 {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .body {
+        font-weight: 500;
+
+        &_1 {
+            font-size: 16px;
+        }
+
+        &_2 {
+            font-size: 14px;
+        }
+
+        &_3 {
+            font-size: 12px;
         }
     }
-    &_alt{
-        background-color: rgb(255, 81, 0);
-        &:hover{
-            background-color:rgb(187, 255, 0);
+}
+
+.text_button {
+    &_bold {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &_medium {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &_small {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.text_field {
+    &::placeholder {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &_title {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    &_description {
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+//Buttons
+
+.btn {
+
+    height: 42px;
+    border-radius: 48px;
+    box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+
+    &_large {
+        width: 29.4%;
+
+        &:active {
+            border: none;
+            background: $color_blue1;
+            color: $color_base_white;
+        }
+
+        &:hover {
+            border: none;
+            background: $color_blue3;
+            color: $color_blue1;
+        }
+
+        &:disabled {
+            border: none;
+            background: $fill_disabled;
+            color: $color_text_disable;
+        }
+
+        &_outline {
+            filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+            background-color: transparent;
+
+            &:active {
+                border: 1px solid $color_blue1;
+                color: $color_blue1;
+            }
+
+            &:disabled {
+                border: 1px solid $color_gray_btn;
+                color: $color_gray_btn;
             }
         }
+
+        &_transparent {
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+
+            &:active {
+                color: $color_blue1;
+            }
+
+            &:disabled {
+                color: $color_gray_btn;
+            }
+        }
+    }
+
+    &_medium {
+        width: 19.1%;
+
+        &:active {
+            border: none;
+            background: $color_blue1;
+            color: $color_base_white;
+        }
+
+        &:hover {
+            border: none;
+            background: $color_blue3;
+            color: $color_blue1;
+        }
+
+        &:disabled {
+            border: none;
+            background: $fill_disabled;
+            color: $color_text_disable;
+        }
+
+        &_outline {
+            filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+            background-color: transparent;
+
+            &:active {
+                border: 1px solid $color_blue1;
+                color: $color_blue1;
+            }
+
+            &:disabled {
+                border: 1px solid $color_gray_btn;
+                color: $color_gray_btn;
+            }
+        }
+
+        &_transparent {
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+
+            &:active {
+                color: $color_blue1;
+            }
+
+            &:disabled {
+                color: $color_gray_btn;
+            }
+        }
+    }
+
+    &_small {
+        width: 10.7%;
+
+        &:active {
+            border: none;
+            background: $color_blue1;
+            color: $color_base_white;
+        }
+
+        &:hover {
+            border: none;
+            background: $color_blue3;
+            color: $color_blue1;
+        }
+
+        &:disabled {
+            border: none;
+            background: $fill_disabled;
+            color: $color_text_disable;
+        }
+
+        &_outline {
+            filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+            background-color: transparent;
+
+            &:active {
+                border: 1px solid $color_blue1;
+                color: $color_blue1;
+            }
+
+            &:disabled {
+                border: 1px solid $color_gray_btn;
+                color: $color_gray_btn;
+            }
+        }
+
+        &_transparent {
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+
+            &:active {
+                color: $color_blue1;
+            }
+
+            &:disabled {
+                color: $color_gray_btn;
+            }
+        }
+    }
 }
 
-#test {
-    background-color: rebeccapurple;
-    h1{
-        font-size: $tittleSize1;
+@media only screen and (max-width: 768px) {
+
+    .btn_large {
+        width: 22.71%;
     }
+
 }
