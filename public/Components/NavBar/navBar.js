@@ -10,6 +10,8 @@ class NavBar extends HTMLElement {
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="../../../landing.css">
+        
 
         <nav class="navbar navbar-expand-lg navbar-light first-nav">
             <div class="container-fluid">
@@ -81,6 +83,7 @@ class NavBar extends HTMLElement {
                             <a class="dropdown-item" href="#">Opción 1</a>
                             <a class="dropdown-item" href="#">Opción 2</a>
                             <a class="dropdown-item" href="#">Opción 3</a>
+                            
                         </div>
                     </li>
                     <li class="nav-item dropdown border-bottom-gg">
@@ -123,6 +126,8 @@ class NavBar extends HTMLElement {
             </div>
         </div>
     </nav>
+  
+
 
 
         `
