@@ -279,13 +279,13 @@ h5 {
 
 .form-control {
   margin-right: 0 !important;
+  border-radius: 48px 0px 0px 48px;
 }
 
 .placeholder-input-desktop {
   width: 459px;
   height: 44px;
   border: none;
-  border-radius: 48px 0px 0px 48px;
   background-color: #F2F4F5;
   margin-left: 10%;
 }

@@ -80,7 +80,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Opción 1</a>
+                            <a class="dropdown-item" href="#">Microcredito</a>
                             <a class="dropdown-item" href="#">Opción 2</a>
                             <a class="dropdown-item" href="#">Opción 3</a>
                             
@@ -108,7 +108,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
                         aria-expanded="false"> Comunidad W </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Opción 1</a>
+                            <a class="dropdown-item" href="#">W contigo</a>
                             <a class="dropdown-item" href="#">Opción 2</a>
                             <a class="dropdown-item" href="#">Opción 3</a>
                         </div>
