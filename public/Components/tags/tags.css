@@ -29,4 +29,26 @@
 .tag_grow {
   background-color: #FFB67D;
   color: #F25C05;
+}
+
+.check-label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.check-button {
+  background-color: #F8F8F8;
+  width: 25px;
+  height: 25px;
+  margin-right: 13px;
+}
+.check-button:checked {
+  background-color: #00B1BB;
+  border-color: transparent;
+}
+.check-container {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=tags.css.map */

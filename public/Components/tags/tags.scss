@@ -72,3 +72,32 @@ $color_yellow1: #e3ff0b;
         color: $color_orange1;
     }
 }
+
+.check{
+
+    &-label{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &-button{
+        background-color: $color_accent_white;
+        width: 25px;
+        height: 25px;
+        margin-right: 13px;
+
+        &:checked{
+            background-color: $color_blue1;
+            border-color: transparent;
+        }
+
+    }
+
+    &-container{
+        display: flex ;
+        align-items: center;
+    }
+}
