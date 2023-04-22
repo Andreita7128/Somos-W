@@ -260,15 +260,69 @@ h5 {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
   padding: 35px 40px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fondo-card .labels-site {
+  display: flex;
+  gap: 15px;
+}
+.fondo-card .card-interactions {
+  display: flex;
+  justify-content: space-between;
+}
+.fondo-card .card-interactions .left {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.fondo-card .card-interactions .left .likes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fondo-card .card-interactions .left .likes * {
+  color: #EB3232;
+}
+.fondo-card .card-interactions .left .comments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fondo-card .horizontal {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.fondo-card .horizontal .arrow {
+  margin-left: -10px;
+  border: solid #252B42;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(-45deg);
+  border-radius: 2px;
 }
 .fondo-card .logo-inCard {
   margin-bottom: 10px;
 }
+.fondo-card .card-imagen {
+  margin-top: -35px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 .fondo-card .card-imagen .imagen-inCard {
   position: relative;
-  top: -35px;
+  top: 0px;
   left: -40px;
   width: calc(100% + 80px);
+  height: auto;
 }
 .fondo-card .texto-card {
   display: flex;

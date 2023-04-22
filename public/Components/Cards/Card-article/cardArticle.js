@@ -326,3 +326,153 @@ class cardImagen extends HTMLElement {
 }
 
 window.customElements.define("card-imagen", cardImagen)
+
+//-----------------------------------------------------------------------
+
+
+class miniCard extends HTMLElement {
+
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+
+
+    }
+
+    static get observedAttributes() {
+        return [
+            "recurso",
+            "titulo",
+            "contenido"
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "recurso":
+
+                this.recurso = newValue
+
+                break;
+
+            case "titulo":
+
+                this.titulo = newValue
+
+                break;
+
+            case "contenido":
+
+                this.contenido = newValue
+
+                break;
+        }
+
+    }
+
+    connectedCallback() {
+
+        this.innerHTML = `
+        
+        <section class="fondo-card">
+
+        <section class="horizontal">
+
+        <section class="logo-section">
+            <img src= "${this.recurso}" class="logo-inCard" alt="">
+        </section>
+
+        <section class="texto-card">
+
+            <h5 class="titulo">${this.titulo}</h5>
+        </section>
+
+        <div class="arrow"></div>
+
+        </section>
+
+    </section>
+
+        
+        `
+
+    }
+
+
+}
+
+window.customElements.define("mini-card", miniCard)
+
+//-----------------------------------------------------------------------
+
+class cardForBlog extends HTMLElement {
+
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.boton;
+        this.tags;
+        this.likes;
+        this.comments;
+
+
+    }
+
+    static get observedAttributes() {
+        return [
+            "recurso",
+            "titulo",
+            "contenido",
+            "boton",
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "recurso":
+
+                this.recurso = newValue
+
+                break;
+
+            case "titulo":
+
+                this.titulo = newValue
+
+                break;
+
+            case "contenido":
+
+                this.contenido = newValue
+
+                break;
+
+            case "boton":
+
+                this.boton = newValue
+
+                break;
+        }
+
+    }
+
+    connectedCallback() {
+
+        this.innerHTML = `
+       
+        `
+
+    }
+
+
+}
+
+window.customElements.define("card-forblog", cardForBlog)
