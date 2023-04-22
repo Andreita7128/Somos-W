@@ -262,7 +262,65 @@ h5 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+.fondo-card .titulo-naranja {
+  background-color: #FF8826;
+  width: calc(100% + 80px);
+  height: 80px;
+  position: relative;
+  top: -35px;
+  left: -40px;
+  margin-bottom: -9px;
+  display: flex;
+  align-items: center;
   gap: 20px;
+  padding: 22px;
+}
+.fondo-card .titulo-naranja .imagen-inOrange {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+.fondo-card .titulo-naranja .usuario-naranja {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #F8F8F8;
+}
+.fondo-card .nombre-usuario {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.fondo-card .comentario {
+  display: flex;
+  align-content: center;
+  gap: 15px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.fondo-card .comentario .fondo-comentario {
+  width: 90%;
+  padding: 9px 23px;
+  background-color: #F2F4F5;
+  height: auto;
+  border-radius: 48px;
+}
+.fondo-card .comentario .fondo-comentario .parrafo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #979C9E;
+}
+.fondo-card .comentario .perfil-usuario {
+  width: 51px;
+  height: 51px;
+  border-radius: 100%;
 }
 .fondo-card .labels-site {
   display: flex;
@@ -271,6 +329,12 @@ h5 {
 .fondo-card .card-interactions {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -35px;
+}
+.fondo-card .card-interactions .punticos {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .fondo-card .card-interactions .left {
   display: flex;
@@ -294,6 +358,9 @@ h5 {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.fondo-card .card-interactions .left .comments * {
+  color: #707070;
 }
 .fondo-card .horizontal {
   display: flex;
