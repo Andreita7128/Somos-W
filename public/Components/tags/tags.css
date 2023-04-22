@@ -1,0 +1,32 @@
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
+.badge {
+  --bs-badge-font-weight: 400;
+}
+
+.tag_w {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 32px;
+  padding: 8px 16px;
+}
+.tag_family {
+  background-color: #BA93D2;
+  color: #6321A6;
+}
+.tag_business {
+  background-color: #BDF0F2;
+  color: #00B1BB;
+}
+.tag_grow {
+  background-color: #FFB67D;
+  color: #F25C05;
+}/*# sourceMappingURL=tags.css.map */
