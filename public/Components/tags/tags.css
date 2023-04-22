@@ -51,4 +51,35 @@
 .check-container {
   display: flex;
   align-items: center;
+}
+
+.slide-label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.breadcrumb-title {
+  color: #F25C05;
+}
+.breadcrumb-title-section {
+  background-color: #F8F8F8;
+  padding: 14px;
+  border-radius: 0 0 20px 20px;
+}
+.breadcrumb-item a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6321A6;
+  text-decoration: none;
+}
+.breadcrumb .active {
+  font-weight: 600;
+  font-size: 16px;
+  color: #6321A6;
 }/*# sourceMappingURL=tags.css.map */

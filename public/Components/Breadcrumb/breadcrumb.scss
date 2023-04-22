@@ -1,0 +1,31 @@
+.breadcrumb{
+
+    &-title{
+        color: $color_orange1;
+
+        &-section{
+            background-color: $color_accent_white;
+            padding: 14px ;
+            border-radius: 0 0 20px 20px;
+        }
+    }
+    
+    &-item{
+        
+        a{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color_violet1;
+            text-decoration: none;
+        }
+
+    }
+    .active{
+        font-weight: 600;
+        font-size: 16px;
+        color: $color_violet1;
+    }
+}
