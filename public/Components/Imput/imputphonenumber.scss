@@ -1,0 +1,223 @@
+$tittleSize1 : 24px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    line-height: 120% !important;
+}
+
+/*Colors*/
+/*Various*/
+$color_text: #27262C;
+$color_text_disable: #979C9E;
+$color_base_white: #F2F2F2;
+$color_accent_white: #F8F8F8;
+$color_base_gray: #27262C;
+$color_accent_black: #000000;
+$color_gray_btn: #CDCFD0;
+$color_error: #EB3232;
+$color_warning: #FDA624;
+$color_success: #2DC071;
+$fill_success: rgba(45, 192, 113, 0.2);
+$fill_error: rgba(235, 50, 50, 0.2);
+$fill_generic: rgba(0, 177, 187, 0.2);
+$fill_input: #F2F4F5;
+$fill_disabled: #E3E5E5;
+
+
+/*Blue*/
+$color_blue1: #00B1BB;
+$color_blue2: #2FD9DE;
+$color_blue3: #BDF0F2;
+
+/*Dark Violet*/
+$color_dark_violet1: #2D3982;
+$color_dark_violet2: #535C97;
+$color_dark_violet3: #8A90B5;
+$color_dark_violet4: #C3C5D4;
+
+/*Violet*/
+$color_violet1: #6321A6;
+$color_violet2: #8E50B7;
+$color_violet3: #BA93D2;
+$color_violet4: #E4D4ED;
+
+/*Orange*/
+$color_orange1: #F25C05;
+$color_orange2: #FF8826;
+$color_orange3: #FFB67D;
+
+/*Yellow*/
+$color_yellow1: #e3ff0b;
+
+
+/* Typography */
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.body {
+    font-weight: 500;
+
+    &_1 {
+        font-size: 18px;
+    }
+
+    &_2 {
+        font-size: 16px;
+    }
+
+    &_3 {
+        font-size: 14px;
+    }
+}
+
+/* Empieza código del imput */
+
+/* Cajita */
+.form-group {
+    width: 100%;
+    max-width: 310px;
+    height: 42px;
+    border: 2px solid $color_blue1;
+    border-radius: 48px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:not(&_error):not(&_exito) {
+        &:focus-within {
+            background: rgba(0, 177, 187, 0.2);
+            border: 2px solid rgba(0, 177, 187, 1);
+        }
+    }
+
+    &_error {
+        border-color: $color_error;
+        background: $fill_error;
+
+        &:focus-within {
+            background: $fill_error;
+            border: 2px solid $color_error;
+          }
+    }
+
+    &_exito {
+        border-color: $color_success;
+        background: $fill_success;
+
+        &:focus-within {
+            background: $fill_success;
+            border: 2px solid $color_success;
+          }
+    }
+
+}
+
+/* No difiere */
+.select-container {
+    width: 80px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
+
+/* Form de el country a elegir */
+.country-select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    padding-left: 24px;
+    border-radius: 48px;
+}
+
+/* Contenedor de la flag */
+.flag-icon-container {
+    width: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+}
+
+/* Icono de la flag */
+.flag-icon {
+    width: 20px;
+    height: 8px;
+}
+
+/* Escribir dentro del imput */
+.input-number {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    border-radius: 48px;
+    margin-left: 10%;
+}
+
+
+@media (max-width: 768px) {
+
+    .form-group {
+        display: flex;
+        /* Utilizar flexbox para disposición */
+        flex-direction: row;
+        /* Especificar la dirección de fila o columna según las necesidades */
+        display: grid;
+        grid-template-columns: 20% 80%;
+        /* Especificar columnas de ancho flexible */
+    }
+
+    .country-select {
+        font-size: 16px;
+        /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .input-number {
+        margin-left: 16%;
+        font-size: 16px;
+        width: 100%;
+        /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+    }
+}
