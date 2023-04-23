@@ -41,6 +41,11 @@ $color_orange3: #FFB67D;
 /*Yellow*/
 $color_yellow1: #e3ff0b;
 
+// *************** MODIFICACION COLOR DE <P> *******************//
+p{
+    color: $color_text;
+}
+
 .badge{
     --bs-badge-font-weight: 400;
 
@@ -144,8 +149,177 @@ $color_yellow1: #e3ff0b;
     }
 }
 
+.user{
 
+    &-product{
 
+        &-container{
+            background-color: $color_accent_white;
+            max-width: 528px;
+            max-height: 290px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px $color_violet4;
+        }
 
-// *************************** AQUI PONGO EL CSS ANTERIOR  **////////////////////////////////
+        &-head{
+            background-color: $color_violet1;
+            padding: 10px 30px 1px;
 
+            h5{
+                color: $color_base_white;
+            }
+        }
+
+        &-body{
+            padding: 27px 50px 0px;
+
+            h3{
+                color: $color_violet1;
+            }
+        }
+
+        &-data{
+            display: flex;
+            flex-direction: row;
+            padding: 10px 25px ;
+
+            &-item{
+                margin-right: 50px;
+            }
+        }
+    }
+
+    &-info{
+
+    }
+}
+
+.agenda{
+    &-container{
+        max-width: 528px;
+        background-color: $color_blue3;
+        border-radius: 20px;
+        overflow: hidden;
+
+        box-shadow: 0 4px 14px $color_blue3;
+
+    }
+
+    &-head{
+        background-color: $color_blue1;
+        padding: 10px 25px 1px;
+
+        h5{
+            color: $color_base_white;
+        }
+    }
+
+    &-body{
+        padding: 10px 35px 1px;
+        
+    }
+}
+
+.calendar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color_accent_white;
+    border-radius: 20px;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.15);
+    padding: 10px 43px 1px;
+    
+    &-container{
+        background-color: $fill_input;
+        border-radius: 20px;
+    }
+
+    &-item-selected{
+        font-weight: 700;
+
+        p{
+            color: $color_blue1;
+        }
+    }
+
+    &-data{
+        padding: 30px 30px;
+        margin-bottom: 30px;
+    }
+
+    &-event{
+
+        &-head{
+
+            h5{
+                font-family: 700;
+                color: $color_dark_violet2;
+            }
+
+            p{
+                color: $color_base_gray;
+            }
+        }
+
+        &-body{
+            display: flex;
+            flex-direction: row;
+        }
+
+        &-detail{
+            margin-right: 50px;
+
+            :first-child{
+                font-weight: 700;
+                color: $color_dark_violet2;
+            }
+            p{
+                color: $color_base_gray;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .user{
+        &-product{
+            &-head{
+                padding: 15px 20px 1px;
+            }
+            &-body{
+                padding: 27px 20px 0px;
+            }
+            &-data{
+                padding: 10px 20px ;
+            }
+        }
+    }
+
+    .agenda{
+        &-head{
+            padding: 15px 20px 1px;
+        }
+        &-body{
+            padding: 10px 20px 1px;
+            
+        }
+    }
+
+    .calendar{
+        padding: 10px 28px 1px;
+        
+    
+        &-data{
+            padding: 20px 20px;
+            margin-bottom: 20px;
+        }
+    
+        &-event{
+            &-detail{
+                margin-right: 25px;
+            }
+        }
+    }
+}

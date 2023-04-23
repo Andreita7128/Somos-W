@@ -30,7 +30,7 @@
         
     </header>
 
-    <main>
+    <section>
         <div class="tags_section">
             <h5>This are all my tags...</h5>
             <br>
@@ -112,18 +112,24 @@
 
             <div class="lazylogin-section">
                 <h5>Lazy Login - Buttons</h5>
-                
+
+                <a class="btn btn-primary" style="background-color: #1a1a1a;" href="#!" role="button"
+                ><i class="bi bi-apple me-2"></i>Continue with Apple</a>
+
+                <a class="btn btn-primary" style="color: #dd4b39; background-color: #f8f8f8;" href="#!" role="button"
+                ><i class="bi bi-google me-2"></i>Continue with Google</a>
+
+                <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
+                ><i class="bi bi-facebook me-2"></i>Continue with Facebook</a>
+
                 <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
-                ><i class="fab fa-twitter me-2"></i>Twitter</a
->
+                ><i class="bi bi-twitter me-2"></i>Continue with Twitter</a>
+
             </div>
 
-        </div>
-
-    
+        </div>    
         <br><br><hr>
         <br><br>
-    
     </section>
 
     <section class="elementos-dashboard">
@@ -193,33 +199,29 @@
             </ul>
             </div>
         </div>
-
-        <!-- Titulo Pagina Dashboard-->
-        <br><br>
-        <div class="title-container-dashboard">
-            <h4 class="headline4-desktop white-h">Titulo Pagina</h4>
-        </div>
+        <br><br><hr>
 
         <!-- Card user.producto - Dashboard-->
         <br><br>
         <div class="user-product-container">
             <div class="user-product-head">
-                <h5 class=" headline5-desktop white-h no-line-height">Tipo - Nombre Producto</p>
+                <h5>Tipo - Nombre Producto</p>
             </div>
+
             <div class="user-product-body">
-                <p><strong>0000 0000 0000 0000</strong></p>
-                <p>Saldo</p>
-                <h4 class="headline4-desktop purple-h">$000.000.000</h4>
-                <hr>
+                <p class="body_1">0000 0000 0000 0000</p>
+                <p class="body_1">Saldo</p>
+                <h3 class="">$000.000.000</h3>
             </div>
+
             <div class="user-product-data">
-                <div class="">
-                    <p><strong>Próxima Cuota</strong></p>
-                    <h5 class="headline5-desktop">$000.000.000</h5>
+                <div class="user-product-data-item">
+                    <h5>Próxima Cuota</h5>
+                    <p class="body_1">$000.000.000</p>
                 </div>
-                <div class="">
-                    <p><strong>Fecha Límite</strong></p>
-                    <h5 class="headline5-desktop">Dia Mes</h5>
+                <div class="user-product-data-item">
+                    <h5>Fecha Límite</h5>
+                    <p class="">Dia Mes</p>
                 </div>
             </div>
         </div>
@@ -227,130 +229,89 @@
         
         <!-- Agenda Financiera - Dashboard-->
         <br><br>
-        <div class="user-agenda-container">
-            <div class="user-agenda-head">
-                <h5 class=" headline5-desktop white-h no-line-height">Tu Agenda Financiera</p>
-            </div>
-            <div class="user-agenda-body">
 
+        <div class="agenda-container">
+            <div class="agenda-head">
+                <h5>Tu Agenda Financiera</h5>
+            </div>
+
+            <div class="agenda-body">
                 <div class="calendar-title">
-                    <p class="black-base"><strong>Esta semana</strong></p>
+                    <p class="body_1">Esta semana</p>
                 </div>
-                <div class="calendar">
-                    <div class="calendar-item">
-                        <p>D</p>
-                        <p>0</p>
-                    </div>
-                    <div class="calendar-item">
-                        <p>L</p>
-                        <p>0</p>
-                    </div>
-                    <div class="calendar-item">
-                        <p class="headline5-desktop purple-h">M</p>
-                        <p class="headline5-desktop purple-h">0</p>
-                    </div>
-                    <div class="calendar-item">
-                        <p>M</p>
-                        <p>0</p>
-                    </div>
-                    <div class="calendar-item">
-                        <p>J</p>
-                        <p>0</p>
-                    </div>
-                    <div class="calendar-item">
-                        <p>V</p>
-                        <p>0</p>
-                    </div>
-                    <div class="calendar-item">
-                        <p>S</p>
-                        <p>0</p>
-                    </div>
 
-                </div>
-                <hr>
-            </div>
-            <div class="user-agenda-data">
-                <div class="calendar-event">
-                    <div class="calendar-event-head">
-                        <h5 class="headline5-desktop black-base">Pago crédito Yo Construyo</h5>
-                        <p class="black-base">Formas de Pago: Virtual / Presencial</p>
-                    </div>
+                <div class="calendar-container">
+                    <div class="calendar">
+                        <div class="calendar-item calendar-item-selected position-relative">
+                            <p class="body_1">D</p>
+                            <p class="body_1">0</p>
 
-                    <div class="calendar-event-data">
-                        <div class="calendar-event-detail">
-                            <p class="black-base body3-desktop">Próxima Cuota</p>
-                            <h5 class="headline5-desktop black-base">$000.000.000</h5>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
                         </div>
-                        <div class="calendar-event-detail">
-                            <p class="black-base body3-desktop">Fecha Límite</p>
-                            <h5 class="headline5-desktop black-base">Dia Mes</h5>
+    
+                        <div class="calendar-item">
+                            <p class="body_1">L</p>
+                            <p class="body_1">0</p>
+                        </div>
+    
+                        <div class="calendar-item">
+                            <p class="body_1">M</p>
+                            <p class="body_1">0</p>
+                        </div>
+    
+                        <div class="calendar-item">
+                            <p class="body_1">M</p>
+                            <p class="body_1">0</p>
+                        </div>
+    
+                        <div class="calendar-item">
+                            <p class="body_1">J</p>
+                            <p class="body_1">0</p>
+                        </div>
+    
+                        <div class="calendar-item position-relative">
+                            <p class="body_1">V</p>
+                            <p class="body_1">0</p>
+
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </div>
+    
+                        <div class="calendar-item">
+                            <p class="body_1">S</p>
+                            <p class="body_1">0</p>
                         </div>
                     </div>
+                    
+                    <div class="calendar-data">
+                        <div class="calendar-event">
+                            <div class="calendar-event-head">
+                                <h5 class="">Pago crédito Yo Construyo</h5>
+                                <p class="body_3">Formas de Pago: Virtual / Presencial</p>
+                            </div>
+                            
+                            <div class="calendar-event-body">
+                                <div class="calendar-event-detail">
+                                    <p class="body_3">Próxima Cuota</p>
+                                    <p class="body_3">$000.000.000</p>
+                                </div>
+    
+                                <div class="calendar-event-detail">
+                                    <p class="body_3">Fecha Límite</p>
+                                    <p class="body_3">Dia Mes</p>
+                                </div>
+    
+                            </div>
+    
+                        </div>    
+                    </div>
                 </div>
-                <button>Pago PSE - Buscar Elemento en otro css</button>
             </div>
         </div>
-
-        <!-- Profile Elements-->
-        <br><br>
-        <div class="profile-card-user white-acc-bg">
-            <div class="user-img-small"></div>
-            <div class="user-name">
-                <h5 class="headline5-desktop">Sandra Rodríguez</h5>
-                <p class="body2-desktop">Emprendedor</p>
-                <p class="body2-desktop">Cali, Valle del Cauca, Colombia</p>
-            </div>
-            <div class="user-edit-button">
-                <button>editar con logo</button>
-            </div>
-        </div>
-        <br>
-
-        <div class="profile-card-info white-acc-bg">
-            <div class="user-information-title">
-                <h4 class="headline4-desktop black-base">Información Personal</h4>
-            </div>
-            <div class="user-information">
-                <div class="user-information-names user-information-row">
-                    <div class="info-item">
-                        <h5 class="headline5-desktop">Nombres</h5>
-                        <p class="body2-desktop">Sandra</p>
-                    </div>
-                    <div class="info-item">
-                        <h5 class="headline5-desktop">Apellidos</h5>
-                        <p class="body2-desktop">Rodríguez</p>
-                    </div>
-                </div>
-
-                <div class="user-information-contact user-information-row">
-                    <div class="info-item">
-                        <h5 class="headline5-desktop">Email</h5>
-                        <p class="body2-desktop">sandrarodriguez@gmail.com</p>
-                    </div>
-                    <div class="info-item">
-                        <h5 class="headline5-desktop">Celular</h5>
-                        <p class="body2-desktop">(+57)311 429 1293</p>
-                    </div>
-                </div>
-                
-                <div class="user-information-description user-information-row">
-                    <div class="info-item">
-                        <h5 class="headline5-desktop">Biografía</h5>
-                        <p class="body2-desktop">Emprendedora Principiante</p>
-                    </div>
-                </div>
-            </div>
-            <div class="user-edit-button">
-                <button>editar con logo</button>
-            </div>
-        </div>
-        <br>
-
-        <div class="profile-card-address"></div>
     </section>
-
-
-
     <!--Js script-->
     <script src="script.js"></script>
     
@@ -359,6 +320,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
 
-    </main>
 </body>
 </html>
