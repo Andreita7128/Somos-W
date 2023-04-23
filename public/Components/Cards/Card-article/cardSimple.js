@@ -73,6 +73,8 @@ class cardSimple extends HTMLElement {
 
 window.customElements.define("card-simple", cardSimple)
 
+export default cardSimple
+
 
 //-----------------------------------------------------------------------
 
@@ -727,9 +729,6 @@ class cardBlogDetalle extends HTMLElement {
         </section>
 
     </section>
-
-
-       
         `
 
     }

@@ -3,3 +3,4 @@ import "./Footer/footer.js";
 import "./tags/product.js"
 import "./tags/agenda.js"
 import "./tags/sidebar.js"
+import "./Cards/Card-article/cardSimple.js"
