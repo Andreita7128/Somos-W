@@ -11,7 +11,106 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
+
+
+    & .titulo-naranja {
+
+        background-color: $color_orange2;
+        width: calc(100% + 80px);
+        height: 80px;
+        position: relative;
+        top: -35px;
+        left: -40px;
+        margin-bottom: -9px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 22px;
+
+        & .imagen-inOrange {
+
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+        }
+
+        & .usuario-naranja {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            color: $color_accent_white;
+        }
+
+    }
+
+
+    & .nombre-usuario {
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+
+
+
+    & .comentario {
+
+        display: flex;
+        align-content: center;
+        gap: 15px;
+        margin-right: -20px;
+        margin-left: -20px;
+
+        & .fondo-comentario {
+
+
+            width: 90%;
+
+            padding: 9px 23px;
+
+            background-color: $fill_input;
+
+            height: auto;
+            border-radius: 48px;
+
+
+            & .parrafo {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+
+                color: $color_text_disable;
+            }
+
+        }
+
+        .perfil-usuario {
+
+            width: 51px;
+            height: 51px;
+            border-radius: 100%;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     & .labels-site {
         display: flex;
@@ -21,6 +120,14 @@
     & .card-interactions {
         display: flex;
         justify-content: space-between;
+        margin-bottom: -35px;
+
+
+        & .punticos {
+            font-size: xx-large;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
         & .left {
             display: flex;
@@ -33,17 +140,24 @@
             font-size: 16px;
             line-height: 20px;
 
-            & .likes{
+            & .likes {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                *{color: $color_error;}
+
+                * {
+                    color: $color_error;
+                }
             }
 
-            & .comments{
+            & .comments {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+
+                * {
+                    color: #707070;
+                }
             }
 
 
