@@ -116,4 +116,8 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.informationLabel {
+  margin-left: 40px;
 }/*# sourceMappingURL=perfil.css.map */
