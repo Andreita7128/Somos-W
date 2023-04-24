@@ -29,7 +29,7 @@ class NavBar extends HTMLElement {
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link button-medium btn-active text-center text-button-link-normal" href="#"><i
+                        <a class="nav-link btn_medium btn_active text-center text_button_medium" href="#"><i
                         class="bi bi-telephone distance-icon"></i>Canal de atención</a>
                     </li>
                     <li class="nav-item">
