@@ -1,4 +1,4 @@
-class cardSimple extends HTMLElement {
+export class cardSimple extends HTMLElement {
 
     constructor() {
         super();
@@ -79,7 +79,7 @@ export default cardSimple
 //-----------------------------------------------------------------------
 
 
-class cardOrange extends HTMLElement {
+export class cardOrange extends HTMLElement {
 
     constructor() {
         super();
@@ -155,7 +155,7 @@ window.customElements.define("card-orange", cardOrange)
 
 //-----------------------------------------------------------------------
 
-class cardBoton extends HTMLElement {
+export class cardBoton extends HTMLElement {
 
     constructor() {
         super();
@@ -243,7 +243,7 @@ window.customElements.define("card-boton", cardBoton)
 
 //-----------------------------------------------------------------------
 
-class cardImagen extends HTMLElement {
+export class cardImagen extends HTMLElement {
 
     constructor() {
         super();
@@ -332,7 +332,7 @@ window.customElements.define("card-imagen", cardImagen)
 //-----------------------------------------------------------------------
 
 
-class miniCard extends HTMLElement {
+export class miniCard extends HTMLElement {
 
     constructor() {
         super();
@@ -411,7 +411,7 @@ window.customElements.define("mini-card", miniCard)
 
 //-----------------------------------------------------------------------
 
-class cardForBlog extends HTMLElement {
+export class cardForBlog extends HTMLElement {
 
     constructor() {
         super();
@@ -518,7 +518,7 @@ window.customElements.define("card-forblog", cardForBlog)
 
 //-----------------------------------------------------------------------
 
-class cardComentarios extends HTMLElement {
+export class cardComentarios extends HTMLElement {
 
     constructor() {
         super();
@@ -620,7 +620,7 @@ window.customElements.define("card-comentario", cardComentarios)
 
 //-----------------------------------------------------------------------
 
-class cardBlogDetalle extends HTMLElement {
+export class cardBlogDetalle extends HTMLElement {
 
     constructor() {
         super();
