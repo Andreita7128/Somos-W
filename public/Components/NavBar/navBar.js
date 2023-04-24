@@ -9,13 +9,13 @@ class NavBar extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
 
         <nav class="navbar navbar-expand-lg navbar-light first-nav">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">
-                    <img class="logo1" src="logo.png" alt="Logo de mi sitio web">
+                    <img class="logo1" src="/public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
                 </a>
 
             <div class="d-flex justify-content-center align-items-center">
@@ -44,7 +44,7 @@ class NavBar extends HTMLElement {
         <nav class="navbar navbar-expand-lg navbar-dark  second-nav">
             <div class="container-fluid mx-auto ">
                 <a class="navbar-brand d-md-none" href="#">
-                    <img class="logo" src="../images/logo-banco.png" alt="Logo de mi sitio web">
+                    <img class="logo" src="/public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
                 </a>
     
             <button class="navbar-toggler ms-auto button-toggler" type="button" data-bs-toggle="collapse"
