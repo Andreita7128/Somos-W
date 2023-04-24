@@ -1,0 +1,26 @@
+@import '../../../landing.scss';
+.footerW{
+    padding-top: 20px;
+    background-color:$color_dark_violet1!important;
+    border-top: none;
+    text-decoration: none;
+    a{
+        text-decoration: none !important;
+
+    }
+}
+footer{
+    background-color:$color_dark_violet1 !important;
+    border-top: none;
+    text-decoration: none !important;
+}
+.tamaño_icono {
+    width: 30px;
+    height: 30px;
+}
+
+.line-color{
+    border-bottom:$color_orange1 !important;
+    width: 1px;
+    border-style: solid;
+}
