@@ -1,0 +1,108 @@
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
+/* Typography */
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* CONFIGURACION DE LOS INPUTS */
+.form-control {
+  width: 423px;
+  height: 42px;
+  border-radius: 48px;
+  background-color: rgba(45, 192, 113, 0.2);
+  border-color: #2DC071;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #27262C;
+}
+.form-control:focus {
+  background-color: rgba(45, 192, 113, 0.2);
+  border-color: #2DC071;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn {
+  width: 60px;
+  height: 42px;
+  background-color: #00B1BB;
+  border: none;
+  border-radius: 0px 22px 22px 0px;
+}
+.btn:focus {
+  font-weight: 400;
+}
+
+#searchInput {
+  height: 44px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+#basicRed {
+  background-color: rgba(235, 50, 50, 0.2);
+  border-color: #FF5247;
+}
+
+#basicGrey {
+  background-color: #F4F4F4;
+  border-color: #D3D3D3;
+}
+
+.labelGreenInput {
+  font-family: "Montserrat", sans-serif;
+}
+
+.smallGreenLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #2DC071;
+}
+
+.labelRedInput {
+  font-family: "Montserrat", sans-serif;
+}
+
+.smallRedLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #EB3232;
+}
+
+.smallGreyLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: color_text_disable;
+}/*# sourceMappingURL=style.css.map */
