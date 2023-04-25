@@ -1,0 +1,14 @@
+.image-card{
+    width: 10px !important;
+}
+
+section{
+    
+    &.hero{
+        padding: 80px 0;
+    }
+    .text{
+        padding: 14px 100px;
+        padding-right: 0px;
+    }
+}
