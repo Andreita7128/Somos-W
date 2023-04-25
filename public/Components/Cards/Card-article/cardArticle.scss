@@ -14,7 +14,7 @@
     gap: 8px;
 
 
-    &_titulo-naranja {
+    & .titulo-naranja {
 
         background-color: $color_orange2;
         width: calc(100% + 80px);
@@ -28,24 +28,25 @@
         align-items: center;
         gap: 20px;
         padding: 22px;
+
+        & .imagen-inOrange {
+
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+        }
+
+        & .usuario-naranja {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            color: $color_accent_white;
+        }
+
     }
 
-    &_imagen-inOrange {
 
-        height: 50px;
-        width: 50px;
-        border-radius: 100%;
-    }
-
-    &_usuario-naranja {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 120%;
-        color: $color_accent_white;
-    }
-
-
-    &_nombre-usuario {
+    & .nombre-usuario {
 
         font-weight: 500;
         font-size: 14px;
@@ -54,103 +55,122 @@
         margin-left: -20px;
     }
 
-    &_comentario {
+
+
+
+    & .comentario {
 
         display: flex;
         align-content: center;
         gap: 15px;
         margin-right: -20px;
         margin-left: -20px;
+
+        & .fondo-comentario {
+
+
+            width: 90%;
+
+            padding: 9px 23px;
+
+            background-color: $fill_input;
+
+            height: auto;
+            border-radius: 48px;
+
+
+            & .parrafo {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+
+                color: $color_text_disable;
+            }
+
+        }
+
+        .perfil-usuario {
+
+            width: 51px;
+            height: 51px;
+            border-radius: 100%;
+        }
+
     }
 
-    &_fondo-comentario {
 
 
-        width: 90%;
-
-        padding: 9px 23px;
-
-        background-color: $fill_input;
-
-        height: auto;
-        border-radius: 48px;
-    }
 
 
-    &_parrafo {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
 
-        color: $color_text_disable;
-    }
 
-}
 
-.perfil-usuario {
-    width: 51px;
-    height: 51px;
-    border-radius: 100%;
-    margin: 0px 30px;
 
-    &_labels-site {
+
+
+
+
+    & .labels-site {
         display: flex;
         gap: 15px;
     }
 
-    &_card-interactions {
+    & .card-interactions {
         display: flex;
         justify-content: space-between;
         margin-bottom: -35px;
-    }
 
 
-    &_punticos {
-        font-size: xx-large;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+        & .punticos {
+            font-size: xx-large;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    &_left {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
+        & .left {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
 
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-    }
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
 
-    &_likes {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+            & .likes {
+                display: flex;
+                align-items: center;
+                gap: 10px;
 
-        * {
-            color: $color_error;
+                * {
+                    color: $color_error;
+                }
+            }
+
+            & .comments {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                * {
+                    color: #707070;
+                }
+            }
+
+
         }
     }
 
-    &_comments {
-        display: flex;
-        align-items: center;
-        gap: 10px;
 
-        * {
-            color: #707070;
-        }
-    }
-
-    &_horizontal {
+    & .horizontal {
         display: flex;
         align-items: center;
         gap: 25px;
 
-        &_arrow {
+        & .arrow {
 
             margin-left: -10px;
             border: solid #252B42;
@@ -162,18 +182,18 @@
         }
     }
 
-    &_logo-inCard {
+    & .logo-inCard {
 
         margin-bottom: 10px;
 
     }
 
-    &_card-imagen {
+    & .card-imagen {
 
         margin-top: -35px;
         height: fit-content;
 
-        &_imagen-inCard {
+        & .imagen-inCard {
             position: relative;
             top: 0px;
             left: -40px;
@@ -184,7 +204,7 @@
 
 
 
-    &_texto-card {
+    & .texto-card {
 
 
         display: flex;
@@ -192,84 +212,27 @@
         align-items: flex-start;
 
         gap: 18px;
+
+
+        & .titulo {
+            color: #252B42;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        & .orange-type {
+            color: #F25C05;
+        }
+
+        & .parrafo {
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #737373;
+            line-height: 180% !important;
+        }
     }
-
-
-    &_titulo {
-        color: #252B42;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-    }
-
-    &_orange-type {
-        color: #F25C05;
-    }
-
-    &_parrafo {
-
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
-        color: #737373;
-        line-height: 180% !important;
-
-
-    }
-
-}
-
-
-//--------------------------------------Andrea
-.w_card_history {
-    width: 350px;
-    background: #FEFEFE;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-    margin: 30px 0px;
-    border-radius: 20px;
-}
-
-.card_history_title {
-    background-color: $color_orange2;
-    width: 350px;
-    height: 80px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 22px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.image {
-    &_history {
-        width: 100%;
-    }
-}
-
-.w_card_body {
-    padding: 24px 40px;
-    color: $color_text;
-}
-
-#container_reacts{
-    display: flex;
-    margin-top: -20px;
-    padding: 0px 40px 20px;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.icon_card_history {
-    color: $color_base_gray;
-}
-
-.react_number {
-    display: flex;
-    flex-direction: row;
-}
-
-#container_count_reacts{
-    display: flex;
-    flex-direction: row;
 }
