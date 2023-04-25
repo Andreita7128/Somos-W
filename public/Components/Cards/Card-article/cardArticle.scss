@@ -14,7 +14,7 @@
     gap: 8px;
 
 
-    & .titulo-naranja {
+    &_titulo-naranja {
 
         background-color: $color_orange2;
         width: calc(100% + 80px);
@@ -28,25 +28,24 @@
         align-items: center;
         gap: 20px;
         padding: 22px;
+    }
 
-        & .imagen-inOrange {
+    &_imagen-inOrange {
 
-            height: 50px;
-            width: 50px;
-            border-radius: 100%;
-        }
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
 
-        & .usuario-naranja {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 120%;
-            color: $color_accent_white;
-        }
-
+    &_usuario-naranja {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: $color_accent_white;
     }
 
 
-    & .nombre-usuario {
+    &_nombre-usuario {
 
         font-weight: 500;
         font-size: 14px;
@@ -55,122 +54,103 @@
         margin-left: -20px;
     }
 
-
-
-
-    & .comentario {
+    &_comentario {
 
         display: flex;
         align-content: center;
         gap: 15px;
         margin-right: -20px;
         margin-left: -20px;
+    }
 
-        & .fondo-comentario {
-
-
-            width: 90%;
-
-            padding: 9px 23px;
-
-            background-color: $fill_input;
-
-            height: auto;
-            border-radius: 48px;
+    &_fondo-comentario {
 
 
-            & .parrafo {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 15px;
+        width: 90%;
 
-                color: $color_text_disable;
-            }
+        padding: 9px 23px;
 
-        }
+        background-color: $fill_input;
 
-        .perfil-usuario {
-
-            width: 51px;
-            height: 51px;
-            border-radius: 100%;
-        }
-
+        height: auto;
+        border-radius: 48px;
     }
 
 
+    &_parrafo {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
 
+        color: $color_text_disable;
+    }
 
+}
 
+.perfil-usuario {
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    margin: 0px 30px;
 
-
-
-
-
-
-
-
-    & .labels-site {
+    &_labels-site {
         display: flex;
         gap: 15px;
     }
 
-    & .card-interactions {
+    &_card-interactions {
         display: flex;
         justify-content: space-between;
         margin-bottom: -35px;
-
-
-        & .punticos {
-            font-size: xx-large;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        & .left {
-            display: flex;
-            justify-content: space-between;
-            gap: 24px;
-
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-
-            & .likes {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-
-                * {
-                    color: $color_error;
-                }
-            }
-
-            & .comments {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-
-                * {
-                    color: #707070;
-                }
-            }
-
-
-        }
     }
 
 
-    & .horizontal {
+    &_punticos {
+        font-size: xx-large;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &_left {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &_likes {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        * {
+            color: $color_error;
+        }
+    }
+
+    &_comments {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        * {
+            color: #707070;
+        }
+    }
+
+    &_horizontal {
         display: flex;
         align-items: center;
         gap: 25px;
 
-        & .arrow {
+        &_arrow {
 
             margin-left: -10px;
             border: solid #252B42;
@@ -182,18 +162,18 @@
         }
     }
 
-    & .logo-inCard {
+    &_logo-inCard {
 
         margin-bottom: 10px;
 
     }
 
-    & .card-imagen {
+    &_card-imagen {
 
         margin-top: -35px;
         height: fit-content;
 
-        & .imagen-inCard {
+        &_imagen-inCard {
             position: relative;
             top: 0px;
             left: -40px;
@@ -204,7 +184,7 @@
 
 
 
-    & .texto-card {
+    &_texto-card {
 
 
         display: flex;
@@ -212,32 +192,84 @@
         align-items: flex-start;
 
         gap: 18px;
-
-
-        & .titulo {
-            color: #252B42;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-        }
-
-        & .orange-type {
-            color: #F25C05;
-        }
-
-        & .parrafo {
-
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            color: #737373;
-            line-height: 180% !important;
-
-
-        }
-
     }
 
 
+    &_titulo {
+        color: #252B42;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &_orange-type {
+        color: #F25C05;
+    }
+
+    &_parrafo {
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #737373;
+        line-height: 180% !important;
+
+
+    }
+
+}
+
+
+//--------------------------------------Andrea
+.w_card_history {
+    width: 350px;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+
+.card_history_title {
+    background-color: $color_orange2;
+    width: 350px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.image {
+    &_history {
+        width: 100%;
+    }
+}
+
+.w_card_body {
+    padding: 24px 40px;
+    color: $color_text;
+}
+
+#container_reacts{
+    display: flex;
+    margin-top: -20px;
+    padding: 0px 40px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon_card_history {
+    color: $color_base_gray;
+}
+
+.react_number {
+    display: flex;
+    flex-direction: row;
+}
+
+#container_count_reacts{
+    display: flex;
+    flex-direction: row;
 }

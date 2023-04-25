@@ -8,8 +8,5 @@ import "./tags/agenda.js"
 import "./tags/sidebar.js"
 import "./tags/breadcrumb.js"
 import "./tags/breadcomponent.js"
-<<<<<<< HEAD
 import "./Cards/Card-article/cardSimple.js"
 import "./Cards/Card-article/cards-History.js"
-=======
->>>>>>> main
