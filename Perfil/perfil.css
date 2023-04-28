@@ -1,9 +1,123 @@
-.sidebar-container {
-  height: 80vh;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* body {
+  background-color: #35cbd3;
 }
 
-.products-container {
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
+/* Typography */
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/********************************************* Tipografia importada del css de Andrea *****************************************/
+.headline-profilePicture {
+  -moz-column-width: 20%;
+       column-width: 20%;
+}
+
+.textHeaderLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F2F4F5;
+}
+
+.headerLabel {
+  width: 50%;
+  height: 54px;
+  background-color: #FF8826;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.headline3-desktop {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.user-product-container {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.informacionSection {
+  margin-left: 30px;
+}
+
+.user-product-body {
+  padding: 15px 25px 0;
+}
+
+.user-product-data {
+  padding: 20px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.editButton {
+  padding: 10px 20px 10px 20px;
+  background-color: #00B1BB;
+  border-radius: 30px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.labelProfileImg {
+  width: 100px;
+  height: 100px;
+}
+
+.columnButton {
+  align-items: flex-end;
+}
+
+.profilePicture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.informationLabel {
+  margin-left: 40px;
 }/*# sourceMappingURL=perfil.css.map */

@@ -1,0 +1,9 @@
+.sidebar-container {
+  height: 80vh;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=productos.css.map */
