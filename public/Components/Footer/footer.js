@@ -66,12 +66,12 @@ class Footer extends HTMLElement {
             <div class="col-md-3">
               <h5 class="headline5 text-white border-bottom pb-2 ">Nuestras redes sociales</h5>
               <ul class="list-unstyled d-flex ">
-                <li class="px-4"><a href="#" class="text-white "><i class="bi bi-facebook h2"></i></a></li>
-                <li class="px-4"><a href="#" class="text-white"><i class="bi bi-twitter h2"></i></a></li>
-                <li class="px-4"><a href="#" class="text-white"><i class="bi bi-youtube h2 "></i></a></li>
-                <li class="px-4"><a href="#" class="text-white"><i class="bi bi-instagram h2"></i></a></li>
+                <li class="px-3"><a href="#" class="text-white "><i class="bi bi-facebook h2"></i></a></li>
+                <li class="px-3"><a href="#" class="text-white"><i class="bi bi-twitter h2"></i></a></li>
+                <li class="px-3"><a href="#" class="text-white"><i class="bi bi-youtube h2 "></i></a></li>
+                <li class="px-3"><a href="#" class="text-white"><i class="bi bi-instagram h2"></i></a></li>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
               <ul><a href="#" class="text-white">Pagina Web Defensoría del Consumidor Financiero www.defensorialg.com.co</a></ul>
               </ul>
             </div>

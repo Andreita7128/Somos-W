@@ -263,6 +263,7 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-width: 500px;
 }
 .fondo-card .titulo-naranja {
   background-color: #FF8826;

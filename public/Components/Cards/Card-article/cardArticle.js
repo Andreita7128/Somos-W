@@ -667,3 +667,115 @@ class cardBlogDetalle extends HTMLElement {
 }
 
 window.customElements.define("card-blogdetalle", cardBlogDetalle)
+
+
+
+//---------------------
+class cardProductasas extends HTMLElement {
+
+    constructor() {
+        super();
+
+
+        this.datacredito;
+        this.cifin;
+        this.meses;
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.tags;
+        this.likes = 0;
+        this.comments = 0;
+        this.userprofile;
+        this.name;
+
+
+    }
+
+    static get observedAttributes() {
+        return [
+
+            "recurso",
+            "name",
+            "titulo",
+            "contenido",
+
+            "userprofile"
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "recurso":
+
+                this.recurso = newValue
+
+                break;
+
+            case "userprofile":
+
+                this.userprofile = newValue
+
+                break;
+
+            case "name":
+
+                this.name = newValue
+
+                break;
+
+            case "titulo":
+
+                this.titulo = newValue
+
+                break;
+
+            case "contenido":
+
+                this.contenido = newValue
+
+                break;
+
+
+        }
+
+    }
+
+    connectedCallback() {
+
+
+
+        this.innerHTML = `
+        <section class="fondo-card">
+        <section class="titulo-naranja">
+            <img class="imagen-inOrange" src="${this.userprofile}" alt="">
+            <p class="usuario-naranja">${this.name}</p>
+        </section>
+        <section class="card-imagen">
+            <img src="${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <section class="texto-card">
+            <h5 class="titulo">${this.titulo}</h5>
+            <p class="parrafo">
+                ${this.contenido}
+            </p>
+        </section>
+        <section class="card-interactions">
+            <div class="left">
+                <div class="likes">
+                    <i class="bi bi-heart"></i><p>${this.likes}</p></div>
+                <div class="comments">
+                    <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
+            </div>
+            <div class="punticos">...</div>
+        </section>
+    </section>
+        `
+
+    }
+
+
+}
+
+window.customElements.define("card-blogdetalle", cardBlogDetalle)
