@@ -1,0 +1,179 @@
+.text-button-link-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.text-button-link-normal {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.text-button-link-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text-button-link-small {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.fields-text_placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fields-text_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.fields-text_description {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+/* Logo */
+.logo {
+    width: 122px;
+    height: 44.46px;
+}
+
+.logo1 {
+    width: 144px;
+    height: 52.47px;
+}
+
+header {
+    width: 100%;
+    background-color: var(--fill-exit);
+}
+
+/* Buttons */
+
+.button-large {
+    width: 423px;
+    height: 42px;
+    border-radius: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .button-large {
+        width: 327px;
+        height: 42px;
+        border-radius: 48px;
+    }
+}
+
+.button-medium {
+    width: 240px;
+    height: 42px;
+    border-radius: 48px;
+}
+
+.button-small {
+    width: 154px;
+    height: 42px;
+    border-radius: 48px;
+}
+
+.placeholder-input-desktop {
+    width: 459px;
+    height: 44px;
+    gap: 47px;
+    border-radius: 48px 0px 0px 48px;
+}
+
+.placeholder-input-mobile {
+    width: 267px;
+    height: 44px;
+    gap: 47px;
+    border-radius: 48px 0px 0px 48px;
+    background-color: #EEEEEE;
+}
+
+
+.button-toggler {
+    width: 45.22px;
+    height: 45.22px;
+    background-color: var(--color-orange2);
+    border-radius: 62px;
+}
+
+.distance-icon {
+    padding-right: 11px
+}
+
+/* Buttons States*/
+
+.btn-active {
+    border: none; 
+    background: var(--color-blue1);
+    color: var(--color-base-white);
+    box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+}
+
+.btn-pressed {
+    border: none;
+    background: var(--color-blue3);
+    color: var(--color-blue1);
+    box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+}
+
+.btn-inactive {
+    border: none !important;
+    background: #E3E5E6 !important;
+    color: #979C9E !important;
+    box-shadow: 0px 4px 10px #E3E5E5 !important;
+}
+
+.btn-outline {
+    border: 1px solid var(--color-blue1);
+    background-color: transparent;
+    color: var(--color-blue1);
+    filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+}
+
+.btn-outline-inactive {
+    border: 1px solid #CDCFD0;
+    background-color: transparent;
+    color: #CDCFD0;
+    filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+}
+
+.btn-transparent-active {
+    border: none;
+    background-color: transparent;
+    color: var(--color-blue1);
+    box-shadow: none;
+}
+
+.btn-transparent-inactive {
+    border: none;
+    background-color: transparent;
+    color: #CDCFD0;
+    box-shadow: none;
+}
