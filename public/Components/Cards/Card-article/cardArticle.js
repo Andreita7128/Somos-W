@@ -275,6 +275,7 @@ class cardImagen extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
+        <div class = 'supreme'>
         
         <section class="fondo-card">
         <section class="card-imagen">
@@ -286,8 +287,10 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button><!--  aca poner estilo de boton ♥ -->${this.boton}</button>
+        <button class = 'btn card_button'><!--  aca poner estilo de boton ♥ --><h4>${this.boton}</h4></button>
     </section>
+
+        </div>
         
         `
 
@@ -667,3 +670,148 @@ class cardBlogDetalle extends HTMLElement {
 }
 
 window.customElements.define("card-blogdetalle", cardBlogDetalle)
+
+
+
+//---------------------
+class cardProductasas extends HTMLElement {
+
+    constructor() {
+        super();
+
+        this.img;
+        this.datacredito;
+        this.cifin;
+        this.meses;
+        this.interes;
+        this.plazos;
+        this.plazo1;
+        this.plazo2;
+        this.plazo3;
+    }
+
+    static get observedAttributes() {
+        return [
+            "img",
+            "datacredito",
+            "cifin",
+            "meses",
+            "intereses",
+            "plazos",
+            "plazo1",
+            "plazo2",
+            "plazo3"
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+        switch (nameAtr) {
+            case "datacredito":
+                this.datacredito = newValue;
+                break;
+            case "cifin":
+                this.cifin = newValue;
+                break;
+            case "meses":
+                this.meses = newValue;
+                break;
+            case "intereses":
+                this.interes = newValue;
+                break;
+            case "plazos":
+                this.plazos = newValue;
+                break;
+            case "img":
+                this.img = newValue;
+                break;
+
+            case "plazo1":
+                this.plazo1 = newValue;
+                break;
+            case "plazo2":
+                this.plazo2 = newValue;
+                break;
+            case "plazo3":
+                this.plazo3 = newValue;
+                break;
+
+
+        }
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+    <section class="fondo-card">
+    <section class="card-imagen">
+      <img src="${this.img}" class="imagen-inCard" alt="">
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Datacrédito</h4>
+      </div>
+      <div class="col">
+        <h4>CIFIN</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col title_col">
+        <h4>${this.datacredito}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.cifin}</h4>
+      </div>
+    </div>
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Meses</h4>
+      </div>
+      <div class="col">
+        <h4>Intereses</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col title_col">
+        <h4>${this.meses}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.interes}</h4>
+      </div>
+    </div>
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Plazos</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo1}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo2}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo3}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col title_col">
+        <h4>${this.plazos}</h4>
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+  </section>
+  
+
+
+
+   
+    `;
+    }
+}
+
+window.customElements.define("card-productasas", cardProductasas);
