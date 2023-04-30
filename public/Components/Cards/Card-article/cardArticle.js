@@ -275,6 +275,7 @@ class cardImagen extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
+        <div class = 'supreme'>
         
         <section class="fondo-card">
         <section class="card-imagen">
@@ -286,8 +287,10 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button><!--  aca poner estilo de boton ♥ -->${this.boton}</button>
+        <button class = 'btn card_button'><!--  aca poner estilo de boton ♥ --><h4>${this.boton}</h4></button>
     </section>
+
+        </div>
         
         `
 
@@ -676,106 +679,139 @@ class cardProductasas extends HTMLElement {
     constructor() {
         super();
 
-
+        this.img;
         this.datacredito;
         this.cifin;
         this.meses;
-        this.recurso;
-        this.titulo;
-        this.contenido;
-        this.tags;
-        this.likes = 0;
-        this.comments = 0;
-        this.userprofile;
-        this.name;
-
-
+        this.interes;
+        this.plazos;
+        this.plazo1;
+        this.plazo2;
+        this.plazo3;
     }
 
     static get observedAttributes() {
         return [
-
-            "recurso",
-            "name",
-            "titulo",
-            "contenido",
-
-            "userprofile"
+            "img",
+            "datacredito",
+            "cifin",
+            "meses",
+            "intereses",
+            "plazos",
+            "plazo1",
+            "plazo2",
+            "plazo3"
         ]
     }
 
     attributeChangedCallback(nameAtr, oldValue, newValue) {
-
         switch (nameAtr) {
-            case "recurso":
-
-                this.recurso = newValue
-
+            case "datacredito":
+                this.datacredito = newValue;
+                break;
+            case "cifin":
+                this.cifin = newValue;
+                break;
+            case "meses":
+                this.meses = newValue;
+                break;
+            case "intereses":
+                this.interes = newValue;
+                break;
+            case "plazos":
+                this.plazos = newValue;
+                break;
+            case "img":
+                this.img = newValue;
                 break;
 
-            case "userprofile":
-
-                this.userprofile = newValue
-
+            case "plazo1":
+                this.plazo1 = newValue;
                 break;
-
-            case "name":
-
-                this.name = newValue
-
+            case "plazo2":
+                this.plazo2 = newValue;
                 break;
-
-            case "titulo":
-
-                this.titulo = newValue
-
-                break;
-
-            case "contenido":
-
-                this.contenido = newValue
-
+            case "plazo3":
+                this.plazo3 = newValue;
                 break;
 
 
         }
-
     }
 
     connectedCallback() {
-
-
-
         this.innerHTML = `
-        <section class="fondo-card">
-        <section class="titulo-naranja">
-            <img class="imagen-inOrange" src="${this.userprofile}" alt="">
-            <p class="usuario-naranja">${this.name}</p>
-        </section>
-        <section class="card-imagen">
-            <img src="${this.recurso}" class="imagen-inCard" alt="">
-        </section>
-        <section class="texto-card">
-            <h5 class="titulo">${this.titulo}</h5>
-            <p class="parrafo">
-                ${this.contenido}
-            </p>
-        </section>
-        <section class="card-interactions">
-            <div class="left">
-                <div class="likes">
-                    <i class="bi bi-heart"></i><p>${this.likes}</p></div>
-                <div class="comments">
-                    <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
-            </div>
-            <div class="punticos">...</div>
-        </section>
+    <section class="fondo-card">
+    <section class="card-imagen">
+      <img src="${this.img}" class="imagen-inCard" alt="">
     </section>
-        `
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Datacrédito</h4>
+      </div>
+      <div class="col">
+        <h4>CIFIN</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col title_col">
+        <h4>${this.datacredito}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.cifin}</h4>
+      </div>
+    </div>
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Meses</h4>
+      </div>
+      <div class="col">
+        <h4>Intereses</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col title_col">
+        <h4>${this.meses}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.interes}</h4>
+      </div>
+    </div>
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Plazos</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo1}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo2}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo3}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col title_col">
+        <h4>${this.plazos}</h4>
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+  </section>
+  
 
+
+
+   
+    `;
     }
-
-
 }
 
-window.customElements.define("card-blogdetalle", cardBlogDetalle)
+window.customElements.define("card-productasas", cardProductasas);

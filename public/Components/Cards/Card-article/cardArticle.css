@@ -254,16 +254,29 @@ h5 {
 }
 .fondo-card {
   background-color: white;
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
   padding: 35px 40px;
+  margin-top: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 500px;
+  max-width: 772px;
+}
+.fondo-card .card_button {
+  border: 1px solid #00B1BB;
+  color: #00B1BB;
+}
+.fondo-card .card_button:hover {
+  background-color: #00B1BB;
+  color: #F2F2F2;
+}
+.fondo-card .card_button > h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
 .fondo-card .titulo-naranja {
   background-color: #FF8826;
@@ -415,4 +428,30 @@ h5 {
   line-height: 18px;
   color: #737373;
   line-height: 180% !important;
+}
+
+.title_row {
+  background-color: #8A90B5 !important;
+  width: 100%;
+  border-radius: 8.84097px 8.84097px 0px 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.title_row h4 {
+  font-size: 16px;
+}
+
+.title_col {
+  width: 100%;
+}
+.title_col h4 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.contenedores {
+  width: 100%;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=cardArticle.css.map */
