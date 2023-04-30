@@ -3,32 +3,15 @@
 .fondo-card {
 
     background-color: white;
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
     padding: 35px 40px;
-    margin-top: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 772px;
-
-    & .card_button{
-        border: 1px solid $color_blue1;
-        
-        color: $color_blue1;
-    }
-
-    & .card_button:hover{
-        background-color: $color_blue1;
-        color: $color_base_white;
-    }
-    & .card_button> h4{
-        font-size: 20px;
-       font-weight: 500;
-    }
 
 
     & .titulo-naranja {
@@ -209,7 +192,6 @@
 
         margin-top: -35px;
         height: fit-content;
-        background-color: #707070;
 
         & .imagen-inCard {
             position: relative;
@@ -253,63 +235,4 @@
             line-height: 180% !important;
         }
     }
-}
-
-
-// ----------------------------------------------------
-
-.card_horizontal {
-
-    &_container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 301px;
-        background: $color_accent_white;
-        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-    }
-
-    &_img {
-        width: 44.5%;
-        height: 301px;
-        border-radius: 20px 0px 0px 20px;
-    }
-
-    &_body {
-        padding: 33px 55px;
-    }
-}
-
-
-.title_row{
-    background-color: $color_dark_violet3 !important ;
-    width: 100%;
-    border-radius: 8.84097px 8.84097px 0px 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-
-
-    & h4{
-        font-size: 16px;
-    }
-    
-}
-
-.title_col{
-    width: 100%;
-& h4{
-    font-size: 14px !important;
-    font-weight: 500 !important;
-}
-}
-
-.contenedores{
-    width: 100%;
-    padding-top: 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    
-    
-    
 }

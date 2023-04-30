@@ -13,12 +13,12 @@ class BreadComponent extends HTMLElement {
             <div class="breadcrumb-title-section">
                 <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
                     <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Level 1</a></li>
-                    <li class="breadcrumb-item"><a href="#">Level 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Level 3</li>
+                    <li class="breadcrumb-item" id="bread_lv1"><a href="#"><span>Level 1</span></a></li>
+                    <li class="breadcrumb-item" id="bread_lv2"><a href="#"><span>Level 1</span></a></li>
+                    <li class="breadcrumb-item active" id="bread_lv3" aria-current="page"><span>Level 1</span></li>
                     </ol>
                 </nav>
-                <h1 class="breadcrumb-title">Titulo de la Sección</h1>
+                <h1 class="breadcrumb-title" id="bread_title"><span>Titulo de la Sección</span></h1>
             </div>        
         `
     }
