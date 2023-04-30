@@ -6,4 +6,25 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+#bread_lv1::after {
+  content: "hola";
+}
+#bread_lv2::after {
+  content: "Nivel 2";
+}
+#bread_lv3::after {
+  content: "Nivel 3";
+}
+
+.breadcrumb-item span {
+  display: none;
+}
+
+#bread_title::after {
+  content: "Tus Productos";
+}
+#bread_title span {
+  display: none;
 }/*# sourceMappingURL=productos.css.map */
