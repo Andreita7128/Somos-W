@@ -30,25 +30,31 @@ export default class salvavidasComp extends HTMLElement {
         <input type="checkbox" name="" id="btn-plus">
         <section id="content-in-help">
 
-            <section class="to-search-salvavidas">
-                <h5>barra de busqueda</h5>
-            </section>
-            
-            <section class="preguntas-sugeridas">
-                <div id="preguntas-frecuentes-titulo">
-                    <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p>
-                </div>
-                <div id="preguntas-frecuentes-sugerencias">
-                   <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un credito? </button> 
-                   <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
-                   <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
-                </div>
-            
-            
-            </section>
-            <section >
-                <button id="just-to-know">Educación financiera</button> 
-            </section>
+        <section class="saludo-salva"><p>¡Como estas! Estoy para ayudarte
+        en lo que necesites.</p><img src="./recursos/imagenes/mascota.png" alt="" srcset=""></section>
+    
+
+        <section class="to-search-salvavidas">
+            <h5>barra de busqueda</h5>
+        </section>
+        
+        <section class="preguntas-sugeridas">
+            <div id="preguntas-frecuentes-titulo">
+                <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p> 
+                <button id="vermas" style = "color: #00B1BB; text-decoration: underline;"class="btn_large_transparent">Quiero ver mas</button>
+
+            </div>
+            <div id="preguntas-frecuentes-sugerencias">
+               <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un credito? </button> 
+               <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
+               <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
+            </div>
+        
+        
+        </section>
+        <section >
+            <button id="just-to-know">Educación financiera</button> 
+        </section>
 
         </section>
         <div class="btn-more">
@@ -67,8 +73,25 @@ window.customElements.define("salvavidas-comp", salvavidasComp)
 
 
 document.getElementById("microcredito_salvalogo").addEventListener("click", changeToMicro);
+document.getElementById("vermas").addEventListener("click", changeToVermas);
+function changeToVermas() {
+    document.getElementById("content-in-help").innerHTML = `<section class="encabezado">
+<i class="bi bi-arrow-left-short x "></i><p class="h5"style="color: #000;font-size: 14px; font-weight:bold;">Recomendado para ti</p>
+</section>
+<section class="lista-botones">
 
-function changeToMicro () {
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">¿Cómo solicitar un Gota Ahorro?</button>
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">¿Cómo solicitar un Crédito?</button>
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">No se como crear un perfil</button>
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">Cómo lograr un CDT</button>
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">Donde esta el blog</button>
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">¿Cómo ingresar a Yo construyo?</button>
+<button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">¿Cómo hacer un ahorro?</button>
+
+</section>`
+}
+
+function changeToMicro() {
 
 
 
@@ -94,17 +117,17 @@ function changeToMicro () {
             </section>
     `;
 
-    
-
-document.getElementById("borrar").addEventListener("click",returnToMain);
 
 
+    document.getElementById("borrar").addEventListener("click", returnToMain);
 
 
- }
 
 
-function returnToMain () {
+}
+
+
+function returnToMain() {
 
     console.log(document.getElementById("content-in-help").innerHTML)
 
@@ -132,14 +155,12 @@ function returnToMain () {
     <button id="just-to-know">Educación financiera</button> 
 </section>
     
-`     ;
+`;
 
-console.log(document.getElementById("borrar").innerHTML);
-
-
-document.getElementById("microcredito_salvalogo").addEventListener("click",returnToMain);
+    console.log(document.getElementById("borrar").innerHTML);
 
 
+    document.getElementById("microcredito_salvalogo").addEventListener("click", returnToMain);
 
 
 
