@@ -70,9 +70,10 @@ class Footer extends HTMLElement {
                 <li class="px-3"><a href="#" class="text-white"><i class="bi bi-twitter h2"></i></a></li>
                 <li class="px-3"><a href="#" class="text-white"><i class="bi bi-youtube h2 "></i></a></li>
                 <li class="px-3"><a href="#" class="text-white"><i class="bi bi-instagram h2"></i></a></li>
+                </ul><a href="#" class="text-white"style= "font-size:13px" >Pagina Web Defensoría del Consumidor Financiero www.defensorialg.com.co</a>
               </div>
               <div class="col-md-4">
-              <ul><a href="#" class="text-white">Pagina Web Defensoría del Consumidor Financiero www.defensorialg.com.co</a></ul>
+              
               </ul>
             </div>
           </div>

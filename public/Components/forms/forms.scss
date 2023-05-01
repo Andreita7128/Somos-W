@@ -1,0 +1,69 @@
+@import '../../../landing.scss';
+
+
+#msform{
+    background-color: $color_orange1;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#msform fieldset{
+    background-color: white;
+    border: 0 none;
+    border-radius: 0 0 15px 1px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+#msform fieldset:not(:first-of-type){
+    display: none;
+}
+
+#msform input, #msform textarea{
+    padding: 15px;
+    border: 1px solid $color_text_disable;
+    background-color: $fill_input;
+    border-radius: 48px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box ;
+
+}
+
+
+#msform input:focus, #msform textarea:focus{
+-moz-bpx-shadow:none !important;
+-webkit-box-shadow:none !important ;
+box-shadow: none !important;
+border: 1px solid $color_base_gray;
+outline-width: 0;
+transition: All 0.5s ease-in;
+-webkit-transition: All 0.5s ease-out;
+-moz-transition: All 0.5s ease-in;
+-o-transition: All 0.5 ease-in;
+}
+
+#msform .action-button{
+    width: 300px;
+    background-color: $color_blue1;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+
+
+}
+
+#msform .action-button:hover, #msform .action-button:focus{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px $color_blue1;
+}
+
+#msform .action-button-previous{
+    width: 100px;
+}
