@@ -180,6 +180,7 @@ p {
 .first-column-personal-info {
   display: flex;
   flex-direction: column;
+  width: 25%;
   margin-right: 80px;
 }
 
