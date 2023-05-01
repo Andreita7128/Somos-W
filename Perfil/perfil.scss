@@ -85,7 +85,49 @@ p {
 }
 
 
+
 /********************************************* Tipografia importada del css de Andrea *****************************************/
+.sidebar-container{
+    height: 80vh;
+}
+
+#navbarDropdown{
+    color: $color_orange1;
+}
+
+.profile-info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 40px;
+}
+
+#bread_lv{
+    &1::after{
+        content: "hola";
+    }
+    &2::after{
+        content: "Nivel 2";
+    }
+    &3::after{
+        content: "Nivel 3";
+    }
+}
+.breadcrumb-item span{
+    display: none;
+}
+
+#bread_title{
+    &::after{
+        content: "Tus Productos";
+    }
+    span{
+        display: none;
+    }
+}
+
+
 .headline-profilePicture {
     column-width: 20%;
 }
@@ -116,7 +158,7 @@ p {
 
 
 
-.user-product-container{
+.user-product-container1{
     background-color: #ffffff;
     width: 100%;
     border-radius: 20px;
@@ -134,11 +176,12 @@ p {
     padding: 15px 25px 0;
 }
 
-.user-product-data{
-    padding: 20px;
+.user-product-data1{
+    /* padding: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .editButton {
