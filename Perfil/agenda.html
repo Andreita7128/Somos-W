@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     
     <!--Nuestros css's-->
-    <link rel="stylesheet" href="/landing.css">
     <link rel="stylesheet" href="/public/Components/tags/tags.css">
     <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
     <link rel="stylesheet" href="/public/Components/Footer/footer.css">
-    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="productos.css">
 
     <!--Typography-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,30 +24,25 @@
 </head>
 
 <body>
-    
     <w-nav-bar></w-nav-bar>
-    <br>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="user-content">
 
-            <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
-                <user-sidebar></user-sidebar>
-            </aside>
-
-            <main class="main-content col">
-                <bread-n-title></bread-n-title>
-
-                <div class="products-container">
-                        <user-agenda class="col"></user-agenda>
-                </div>
-            </main>
-            
-        </div>
+        <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
+            <user-sidebar></user-sidebar>
+        </aside>
+        
+        <main class="main-content">
+            <div class="products-title">
+                <h4>Tu Agenda Financiera</h4>
+            </div>
+    
+            <div class="products-container">
+                <user-agenda class="user_agenda"></user-agenda>
+            </div>
+        </main>
     </div>
-    <!--user-product></user-product>
-    <user-agenda></user-agenda>
-    <breadcrumb-line></breadcrumb-line>
-    <bread-n-title></bread-n-title-->
+    
+    
     <w-footer></w-footer>
 
     <script type="module" src="/public/Components/components.js"></script>
