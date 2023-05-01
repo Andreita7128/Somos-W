@@ -53,8 +53,6 @@ render() {
                   </div>
                 <input type="text" name = "fname" placeholder="Escriba su nombre aquí">
                 <input type="text" name="lname" placeholder="Escriba su apellido aquí">
-
-                <input type="button" name="next" class="next action-button" value="Continuar"/>
                 
 
             </fieldset>
@@ -95,8 +93,6 @@ render() {
                 <li><a class="dropdown-item" href="#">NIT</a></li>
               </ul>
             </div>
-            <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-            <input type="button" name="next" class="next action-button" value="Next"/>
         
 
 
