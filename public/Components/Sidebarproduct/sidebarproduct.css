@@ -264,6 +264,7 @@ h5 {
     width: 50%;
   }
 }
+<<<<<<< HEAD
 #title_home {
   display: none;
 }
@@ -682,6 +683,8 @@ h5 {
     border-radius: 20px;
   }
 }
+=======
+>>>>>>> 094c6bba578ff78d18396b8358633a36f39737b2
 .btn-sidebar {
   width: 100% !important;
   height: auto;
