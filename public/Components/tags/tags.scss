@@ -1,5 +1,8 @@
+@import '../../../landing.scss';
+
+
 /*Colors*/
-/*Various*/
+/*Various
 $color_text: #27262C;
 $color_text_disable: #979C9E;
 $color_base_white: #F2F2F2;
@@ -16,30 +19,30 @@ $fill_generic: rgba(0, 177, 187, 0.2);
 $fill_input: #F2F4F5;
 $fill_disabled: #E3E5E5;
 
-/*Blue*/
+/*Blue
 $color_blue1: #00B1BB;
 $color_blue2: #2FD9DE;
 $color_blue3: #BDF0F2;
 
-/*Dark Violet*/
+/*Dark Violet
 $color_dark_violet1: #2D3982;
 $color_dark_violet2: #535C97;
 $color_dark_violet3: #8A90B5;
 $color_dark_violet4: #C3C5D4;
 
-/*Violet*/
+/*Violet
 $color_violet1: #6321A6;
 $color_violet2: #8E50B7;
 $color_violet3: #BA93D2;
 $color_violet4: #E4D4ED;
 
-/*Orange*/
+/*Orange
 $color_orange1: #F25C05;
 $color_orange2: #FF8826;
 $color_orange3: #FFB67D;
 
-/*Yellow*/
-$color_yellow1: #e3ff0b;
+/*Yellow
+$color_yellow1: #e3ff0b;*/
 
 // *************** MODIFICACION COLOR DE <P> *******************//
 p {
@@ -60,12 +63,20 @@ p {
         }
     }
 }
+.side-item span{
+    margin-left: 10px;
+}
 
 .side-link {
     font-weight: 600;
     color: $color_blue1;
+<<<<<<< HEAD
 
     &.active {
+=======
+    margin-bottom: 11px;
+    &.active{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
         background-color: $color_blue1 !important;
     }
 }
@@ -147,10 +158,16 @@ p {
             border-radius: 0 0 20px 20px;
         }
     }
+<<<<<<< HEAD
 
     &-item {
 
         a {
+=======
+    
+    &-item{
+        a{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -159,7 +176,6 @@ p {
             color: $color_violet1;
             text-decoration: none;
         }
-
     }
 
     .active {
@@ -171,21 +187,29 @@ p {
 
 .user {
 
+<<<<<<< HEAD
     &-product {
 
         &-container {
             background-color: $color_accent_white;
 
+=======
+    &-product{
+        &-container{
+            background-color: $color_accent_white;
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
             max-width: 528px;
+            min-width: 450px;
             max-height: 290px;
+           //min-height: 290px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 4px 14px $color_violet4;
-
-            margin-top: 30px;
-            margin-left: 30px;
-            margin-bottom: 30px;
+            //margin-top: 30px;
+            //margin-left: 30px;
+            //margin-bottom: 30px;
         }
+<<<<<<< HEAD
 
         &-head {
             background-color: $color_violet1;
@@ -210,11 +234,32 @@ p {
             padding: 10px 25px;
 
             &-item {
+=======
+        &-head{
+            padding: 10px 30px 1px;
+            h5{
+                color: $color_base_white;
+            }
+        }
+        &-body{
+            padding: 27px 50px 0px;
+            h3{
+                color: $color_violet1;
+            }
+        }
+        &-data{
+            display: flex;
+            flex-direction: row;
+            padding: 10px 25px ;
+            &-item{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
                 margin-right: 50px;
             }
         }
     }
+}
 
+<<<<<<< HEAD
     &-info {}
 }
 
@@ -222,12 +267,30 @@ p {
     &-container {
         width: 100%;
         max-width: 528px;
+=======
+.ahorro{
+    background-color: $color_violet1;
+}
+.credito{
+    background-color: $color_orange1;
+
+}
+.seguro{
+    background-color: $color_blue1;
+}
+.inversion{
+    background-color: #343c7f;
+}
+
+.agenda{
+    &-container{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
         background-color: $color_blue3;
         border-radius: 20px;
         overflow: hidden;
-
         box-shadow: 0 4px 14px $color_blue3;
-
+        
+        width: 100%;
     }
 
     &-head {

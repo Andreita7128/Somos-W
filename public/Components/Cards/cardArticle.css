@@ -883,12 +883,29 @@ h5 {
   font-size: 16px;
 }
 
+.title_row2 {
+  background-color: #6321A6 !important;
+  width: 100%;
+  height: auto;
+  border-radius: 8.84097px 8.84097px 0px 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.title_row2 h4 {
+  font-size: 13px;
+}
+
 .title_col {
+  justify-content: space-between;
   width: 100%;
 }
 .title_col h4 {
   font-size: 14px !important;
   font-weight: 500 !important;
+}
+
+.contenedores .row .col.title_col h4 {
+  width: 100%;
 }
 
 .contenedores {
@@ -898,7 +915,17 @@ h5 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+<<<<<<< HEAD:public/Components/Cards/cardArticle.css
 .icon {
   font-size: 50px;
   color: #F25C05;
+=======
+.w-100 {
+  border-bottom: 1px solid #2D3982;
+}
+
+.locura {
+  width: 100%;
+  margin: 0;
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3:public/Components/Cards/Card-article/cardArticle.css
 }/*# sourceMappingURL=cardArticle.css.map */

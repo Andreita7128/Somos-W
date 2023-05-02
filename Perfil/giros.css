@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #35cbd3;
+}
+
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
+/* Typography */
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* ************************************************************************************** */
+#bread_lv1::after {
+  content: "Inicio";
+  color: #6321A6;
+}
+#bread_lv2::after {
+  content: "Mi perfil W";
+  color: #6321A6;
+}
+#bread_lv3::after {
+  content: "Giros Internacionales";
+  color: #6321A6;
+  font-weight: bold;
+}
+
+.breadcrumb-item span {
+  display: none;
+}
+
+#bread_title::after {
+  content: "Giros Internacionales";
+  color: #F25C05;
+}
+#bread_title span {
+  display: none;
+}
+
+.headerLabel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 54px;
+  background-color: #FF8826;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.textHeaderLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F2F4F5;
+}
+
+.giros-sontainer-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* CONFIGURACIÓN DEL CONTAINER */
+.label-user-giros {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #27262C;
+}
+
+.sublabel-user-giros {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #27262C;
+  margin-left: 20px;
+}
+
+.sublabel-user-giros-purple {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6321A6;
+  margin-left: 20px;
+}
+
+.sublabel-user-giros-proceso {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FDA624;
+  margin-left: 20px;
+}
+
+.sublabel-user-giros-finalizado {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2DC071;
+  margin-left: 20px;
+}
+
+.sublabel-user-giros-cancelado {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #EB3232;
+  margin-left: 20px;
+}
+
+.user-giros-container {
+  background-color: #F8F8F8;
+  width: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px #E4D4ED;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.user-giros-head {
+  background-color: #6321A6;
+  padding: 10px 30px 1px;
+}
+
+.user-giros-head h5 {
+  color: #F2F2F2;
+}
+
+.user-giros-body {
+  padding: 20px;
+}
+
+.user-giros-firstInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-giros-secondInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.purple {
+  color: #6321A6;
+}
+
+.user-giros-secondInfo-especific {
+  margin-top: 20px;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-giros-body h3 {
+  color: #6321A6;
+}
+
+.user-giros-data {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 25px;
+}
+
+.user-giros-data-item {
+  margin-right: 50px;
+}
+
+.separator {
+  margin-top: 20px;
+  border-bottom: 1px solid #BA93D2;
+}/*# sourceMappingURL=giros.css.map */
