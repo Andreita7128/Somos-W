@@ -704,7 +704,7 @@ h5 {
   width: 100% !important;
   height: 44px !important;
   background-color: #00B1BB !important;
-  color: #F2F2F2;
+  color: #F2F2F2 !important;
   padding-top: 7% !important;
 }
 .navup_buttons:hover {
@@ -729,7 +729,7 @@ h5 {
   background-color: #F2F2F2;
 }
 .second_nav_link li a {
-  color: #F25C05;
+  color: #F25C05 !important;
 }
 .second_nav_link li a:hover {
   color: #27262C !important;
