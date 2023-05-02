@@ -110,14 +110,20 @@ class Forms extends HTMLElement {
                       <li><a class="dropdown-item" href="#">Cesar</a></li>
                       <li><a class="dropdown-item" href="#">Choco</a></li>
                       <li><a class="dropdown-item" href="#">Cordoba</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                      <li><a class="dropdown-item" href="#">Cundinamarca</a></li>
+                      <li><a class="dropdown-item" href="#">Guainía</a></li>
+                      <li><a class="dropdown-item" href="#">Guaviare</a></li>
+                      <li><a class="dropdown-item" href="#">Huila</a></li>
+                      <li><a class="dropdown-item" href="#">La Guajira</a></li>
+                      <li><a class="dropdown-item" href="#">Magdalena</a></li>
+                      <li><a class="dropdown-item" href="#">Meta</a></li>
+                      <li><a class="dropdown-item" href="#">Nariño</a></li>
+                      <li><a class="dropdown-item" href="#">Norte de Santander</a></li>
+                      <li><a class="dropdown-item" href="#">Putumayo</a></li>
+                      <li><a class="dropdown-item" href="#">Quindio</a></li>
+                      <li><a class="dropdown-item" href="#">Risaralda</a></li>
+                      <li><a class="dropdown-item" href="#">San Andrés y Providencia</a></li>
+                      <li><a class="dropdown-item" href="#">Valle del Cauca</a></li>
 
                     </ul>
                   </div>
@@ -131,9 +137,11 @@ class Forms extends HTMLElement {
                       Departamento
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                      <li><a class="dropdown-item" href="#">Cali</a></li>
+                      <li><a class="dropdown-item" href="#">Popayan</a></li>
+                      <li><a class="dropdown-item" href="#">Medellin</a></li>
+                      <li><a class="dropdown-item" href="#">Bogota</a></li>
+                      <li><a class="dropdown-item" href="#">Cartagena</a></li>
                     </ul>
                   </div>
                 </div>
