@@ -18,9 +18,11 @@ class Sidebar extends HTMLElement {
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="side-item">
-                        <a href="/Perfil/perfil.html" class="nav-link side-link active" aria-current="page">
+
+                        <a href="/Perfil/perfil.html" class="nav-link side-link active " aria-current="page">
                         <i class="bi bi-person"></i>
                         <span>Perfil</span>
+
                         </a>
                     </li>
                     
@@ -32,16 +34,18 @@ class Sidebar extends HTMLElement {
                     </li>
 
                     <li class="side-item">
-                        <a href="#" class="side-link nav-link link-body-emphasis">
+                        <a href="/Perfil/giros.html" class="side-link nav-link link-body-emphasis">
                         <i class="bi bi-send"></i>
                         <span>Giros Internacionales</span>
                         </a>
                     </li>
 
                     <li class="side-item">
-                        <a href="#" class="side-link nav-link link-body-emphasis">
+
+                        <a href="/Perfil/alcancias.html" class="side-link nav-link link-body-emphasis">
                         <i class="bi bi-piggy-bank"></i>
                         <span>Alcancias</span>
+
                         </a>
                     </li>
 
