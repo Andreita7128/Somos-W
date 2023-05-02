@@ -345,6 +345,9 @@ h5 {
   content: "05 Mayo";
   display: none;
 }
+.product-2 .user-product-data-item {
+  display: none;
+}
 .product-2 span {
   display: none;
 }
@@ -364,6 +367,9 @@ h5 {
 }
 .product-3 #product-limit::before {
   content: "05 Mayo";
+  display: none;
+}
+.product-3 .user-product-data-item {
   display: none;
 }
 .product-3 span {

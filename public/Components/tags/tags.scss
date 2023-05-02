@@ -178,7 +178,9 @@ p{
         &-container{
             background-color: $color_accent_white;
             max-width: 528px;
+            min-width: 450px;
             max-height: 290px;
+           //min-height: 290px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 4px 14px $color_violet4;
