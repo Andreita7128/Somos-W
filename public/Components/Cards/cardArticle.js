@@ -145,6 +145,7 @@ class cardBoton extends HTMLElement {
     constructor() {
         super();
 
+        this.icon;
         this.recurso;
         this.titulo;
         this.contenido;
@@ -155,6 +156,7 @@ class cardBoton extends HTMLElement {
 
     static get observedAttributes() {
         return [
+            "icon",
             "recurso",
             "titulo",
             "contenido",
@@ -165,6 +167,12 @@ class cardBoton extends HTMLElement {
     attributeChangedCallback(nameAtr, oldValue, newValue) {
 
         switch (nameAtr) {
+            case "icon":
+
+                this.icon = newValue
+
+                break;
+
             case "recurso":
 
                 this.recurso = newValue
@@ -197,16 +205,15 @@ class cardBoton extends HTMLElement {
         this.innerHTML = `
         
         <section class="fondo-card">
-        <section class="logo-section">
-            <img src= "${this.recurso}" class="logo-inCard" alt="">
-        </section>
+        <i class="${this.icon} icon">
+        </i>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
             <p class="parrafo">
             ${this.contenido}   
             </p>
         </section>
-        <button><!--  aca poner estilo de boton ♥ -->${this.boton}</button>
+        <button class="btn btn_medium btn_medium_active"><!--  aca poner estilo de boton ♥ -->${this.boton}</button>
     </section>
         
         `
@@ -396,7 +403,8 @@ class cardForBlog extends HTMLElement {
             "recurso",
             "titulo",
             "contenido",
-            "boton",
+            "likes",
+            "comments",
         ]
     }
 
@@ -421,9 +429,15 @@ class cardForBlog extends HTMLElement {
 
                 break;
 
-            case "boton":
+            case "likes":
 
-                this.boton = newValue
+                this.likes = newValue
+
+                break;
+
+            case "comments":
+
+                this.comments = newValue
 
                 break;
         }
@@ -433,6 +447,7 @@ class cardForBlog extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
+        <link rel="stylesheet" href="cardArticle.css">
         <section class="fondo-card">
         <section class="card-imagen">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
@@ -458,12 +473,9 @@ class cardForBlog extends HTMLElement {
             <div class="punticos">...</div>
         </section>
     </section>
-       
+
         `
-
     }
-
-
 }
 
 window.customElements.define("card-forblog", cardForBlog)
@@ -638,6 +650,7 @@ class cardBlogDetalle extends HTMLElement {
 
 
         this.innerHTML = `
+        <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
         <section class="fondo-card">
         <section class="titulo-naranja">
             <img class="imagen-inOrange" src="${this.userprofile}" alt="">
