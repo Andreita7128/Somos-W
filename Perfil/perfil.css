@@ -334,6 +334,7 @@ p {
     border-radius: 10px;
     padding: 10px;
   }
+  /* PRIMERA TARJETA */
   .personal-info-container {
     background-color: #ffffff;
     padding: 25px;
@@ -374,5 +375,10 @@ p {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
+  }
+  /* SEGUNDA TARJETA */
+  .personal-info-container {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=perfil.css.map */
