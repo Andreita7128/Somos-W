@@ -294,7 +294,7 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button class = 'btn card_button'><!--  aca poner estilo de boton ♥ --><h4>${this.boton}</h4></button>
+        <button class = 'btn bt_medium btn_medium_active'><!--  aca poner estilo de boton ♥ --><h4>${this.boton}</h4></button>
     </section>
 
         </div>
