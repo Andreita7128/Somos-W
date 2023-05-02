@@ -3,13 +3,10 @@
 .user-content{
     display: flex;
     flex-direction: row;
-
 }
 
 .sidebar-container{
     height: 100vh;
-    width: 300px;
-    margin-right: 30px;
 }
 
 .main-content{
@@ -21,17 +18,29 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        gap: 30px;
         width: 100%;
         
         .user_agenda{
-           // margin: 0 auto;
-            width: 90%;
+            width: 100%;
+        }
+
+        &-select{
+            ul{
+                list-style: none;
+                :first-child{
+                    margin-top: 40px;
+                }
+            }
+            li{
+                margin-bottom: 10px;
+            }
         }
     }
     &-title{
         background-color: $color_orange2;
         margin-top: 51px;
+        margin-bottom: 41px;
         padding: 15px 30px 10px;
         border-radius: 20px;
         color: white;
@@ -43,10 +52,94 @@
 // AQUI CAMBIO EL CONTENIDO DE LOS PRODUCTOS DEL USUARIO
 .product-1{
     #product-name::before{
-        content: "hola";
+        content: "Yo Construyo - Crédito";
+    }
+    #product-id::before{
+        content: "4685 2546 2546 985";
+    }
+    #product-saldo::before{
+        content: "21.326.088";
+    }
+    #product-nextPay::before{
+        content: "560.300";
+    }
+    #product-limit::before{
+        content: "05 Mayo";
     }
     span{
         display: none;
     }
 }
-//colocar bien los media querys
+
+.product-2{
+    #product-name::before{
+        content: "Cuenta de Ahorro Básica - Ahorro";
+    }
+    #product-id::before{
+        content: "307 235468 12";
+    }
+    #product-saldo::before{
+        content: "5.600.000";
+    }
+    #product-nextPay::before{
+        content: "0";
+        display: none;
+    }
+    #product-limit::before{
+        content: "05 Mayo";
+        display: none;
+    }
+    span{
+        display: none;
+    }
+}
+
+.product-3{
+    #product-name::before{
+        content: "CDT - Inversión";
+    }
+    #product-id::before{
+        content: "12 365 498 125";
+    }
+    #product-saldo::before{
+        content: "18.000.000";
+    }
+    #product-nextPay::before{
+        content: "560.300";
+        display: none;
+    }
+    #product-limit::before{
+        content: "05 Mayo";
+        display: none;
+    }
+    span{
+        display: none;
+    }
+}
+
+.product-4{
+    #product-name::before{
+        content: "Gotahorro - Crédito";
+    }
+    #product-id::before{
+        content: "4685 2546 2546 985";
+    }
+    #product-saldo::before{
+        content: "3.320.000";
+    }
+    #product-nextPay::before{
+        content: "100.000";
+    }
+    #product-limit::before{
+        content: "21 Mayo";
+    }
+    span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar-container{
+        height: 50vh;
+    }
+}

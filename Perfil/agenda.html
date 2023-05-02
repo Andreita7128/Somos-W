@@ -25,21 +25,23 @@
 
 <body>
     <w-nav-bar></w-nav-bar>
-    <div class="user-content">
+    <div class="user-content container-fluid p-0">
+        <div class="row">
 
-        <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
-            <user-sidebar></user-sidebar>
-        </aside>
+            <aside class="sidebar-container col-12 col-md-3 col-xl-3 bd-sidebar">
+                <user-sidebar></user-sidebar>
+            </aside>
+            
+            <main class="main-content col">
+                <div class="products-title">
+                    <h4>Tu Agenda Financiera</h4>
+                </div>
         
-        <main class="main-content">
-            <div class="products-title">
-                <h4>Tu Agenda Financiera</h4>
-            </div>
-    
-            <div class="products-container">
-                <user-agenda class="user_agenda"></user-agenda>
-            </div>
-        </main>
+                <div class="products-container">
+                    <user-agenda class="user_agenda"></user-agenda>
+                </div>
+            </main>
+        </div>
     </div>
     
     

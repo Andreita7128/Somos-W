@@ -26,21 +26,27 @@
 <body>
     
     <w-nav-bar></w-nav-bar>
-    <div class=" user-content ">
-        <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
-            <user-sidebar></user-sidebar>
-        </aside>
-        <main class="main-content">
-            <div class="products-title">
-                <h4>Tus Productos</h4>
-            </div>
-            <div class="products-container">
-                <user-product class="product-1"></user-product>
-                <user-product class="product-2"></user-product>
-                <user-product class="product-3"></user-product>
-                <user-product class="product-4"></user-product>
-            </div>
-        </main>
+    <div class=" user-content container-fluid p-0">
+
+        <div class="row">
+
+            <aside class="sidebar-container col-12 col-md-3 col-xl-3 bd-sidebar">
+                <user-sidebar></user-sidebar>
+            </aside>
+    
+            <main class="main-content col">
+                <div class="products-title">
+                    <h4>Tus Productos</h4>
+                </div>
+                <div class="products-container">
+                    <user-product class="product-1"></user-product>
+                    <user-product class="product-2"></user-product>
+                    <user-product class="product-3"></user-product>
+                    <user-product class="product-4"></user-product>
+                </div>
+            </main>
+        </div>
+
     </div>
     
     <w-footer></w-footer>

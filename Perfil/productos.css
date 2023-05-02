@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -259,8 +260,6 @@ h5 {
 
 .sidebar-container {
   height: 100vh;
-  width: 300px;
-  margin-right: 30px;
 }
 
 .main-content {
@@ -271,14 +270,25 @@ h5 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 30px;
   width: 100%;
 }
 .products-container .user_agenda {
-  width: 90%;
+  width: 100%;
+}
+.products-container-select ul {
+  list-style: none;
+}
+.products-container-select ul :first-child {
+  margin-top: 40px;
+}
+.products-container-select li {
+  margin-bottom: 10px;
 }
 .products-title {
   background-color: #FF8826;
   margin-top: 51px;
+  margin-bottom: 41px;
   padding: 15px 30px 10px;
   border-radius: 20px;
   color: white;
@@ -287,8 +297,87 @@ h5 {
 }
 
 .product-1 #product-name::before {
-  content: "hola";
+  content: "Yo Construyo - Crédito";
+}
+.product-1 #product-id::before {
+  content: "4685 2546 2546 985";
+}
+.product-1 #product-saldo::before {
+  content: "21.326.088";
+}
+.product-1 #product-nextPay::before {
+  content: "560.300";
+}
+.product-1 #product-limit::before {
+  content: "05 Mayo";
 }
 .product-1 span {
   display: none;
+}
+
+.product-2 #product-name::before {
+  content: "Cuenta de Ahorro Básica - Ahorro";
+}
+.product-2 #product-id::before {
+  content: "307 235468 12";
+}
+.product-2 #product-saldo::before {
+  content: "5.600.000";
+}
+.product-2 #product-nextPay::before {
+  content: "0";
+  display: none;
+}
+.product-2 #product-limit::before {
+  content: "05 Mayo";
+  display: none;
+}
+.product-2 span {
+  display: none;
+}
+
+.product-3 #product-name::before {
+  content: "CDT - Inversión";
+}
+.product-3 #product-id::before {
+  content: "12 365 498 125";
+}
+.product-3 #product-saldo::before {
+  content: "18.000.000";
+}
+.product-3 #product-nextPay::before {
+  content: "560.300";
+  display: none;
+}
+.product-3 #product-limit::before {
+  content: "05 Mayo";
+  display: none;
+}
+.product-3 span {
+  display: none;
+}
+
+.product-4 #product-name::before {
+  content: "Gotahorro - Crédito";
+}
+.product-4 #product-id::before {
+  content: "4685 2546 2546 985";
+}
+.product-4 #product-saldo::before {
+  content: "3.320.000";
+}
+.product-4 #product-nextPay::before {
+  content: "100.000";
+}
+.product-4 #product-limit::before {
+  content: "21 Mayo";
+}
+.product-4 span {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-container {
+    height: 50vh;
+  }
 }/*# sourceMappingURL=productos.css.map */
