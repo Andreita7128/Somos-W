@@ -1,4 +1,4 @@
-@import "../../../../landing.scss";
+@import '../../../landing.scss';
 
 .fondo-card {
 
@@ -15,25 +15,26 @@
     gap: 8px;
     max-width: 772px;
 
-    & .card_button{
+    & .card_button {
         border: 1px solid $color_blue1;
-        
+
         color: $color_blue1;
     }
 
-    & .card_button:hover{
+    & .card_button:hover {
         background-color: $color_blue1;
         color: $color_base_white;
     }
-    & .card_button> h4{
+
+    & .card_button>h4 {
         font-size: 20px;
-       font-weight: 500;
+        font-weight: 500;
     }
 
 
     & .titulo-naranja {
 
-        background-color: $color_orange2;
+        background-color: $color_blue1;
         width: calc(100% + 80px);
         height: 80px;
         position: relative;
@@ -282,20 +283,23 @@
 }
 
 
-.title_row{
-    background-color: $color_dark_violet3 !important ;
+.title_row {
+    background-color: $color_dark_violet3 !important;
     width: 100%;
     border-radius: 8.84097px 8.84097px 0px 0px;
     margin-left: 0px;
     margin-right: 0px;
 
 
-    & h4{
+    & h4 {
         font-size: 16px;
     }
-    
+
 }
 
+<<<<<<< HEAD:public/Components/Cards/cardArticle.scss
+.title_col {
+=======
 
 .title_row2{
     background-color: $color_violet1 !important ;
@@ -314,26 +318,32 @@
 
 .title_col{
    justify-content: space-between;
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3:public/Components/Cards/Card-article/cardArticle.scss
     width: 100%;
-& h4{
-    font-size: 14px !important;
-    font-weight: 500 !important;
-}
+
+    & h4 {
+        font-size: 14px !important;
+        font-weight: 500 !important;
+    }
 }
 .contenedores .row .col.title_col h4 {
     width: 100%;
   }
   
 
-.contenedores{
+.contenedores {
     width: 100%;
     padding-top: 0;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    
-    
-    
 }
+<<<<<<< HEAD:public/Components/Cards/cardArticle.scss
+
+.icon {
+    font-size: 50px;
+    color: $color_orange1;
+}
+=======
 .w-100{
     border-bottom: 1px solid $color_dark_violet1;
 }
@@ -342,3 +352,4 @@
     margin: 0;
 }
 
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3:public/Components/Cards/Card-article/cardArticle.scss

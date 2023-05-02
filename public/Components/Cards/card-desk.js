@@ -1,0 +1,74 @@
+class CardDesk extends HTMLElement {
+    constructor() {
+        super();
+        this.photo;
+        this.title;
+        this.text;
+        this.btn;
+    }
+
+    static get observedAttributes() {
+        return [
+            "photo",
+            "title",
+            "text",
+            "btn",
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "photo":
+
+                this.photo = newValue
+
+                break;
+
+            case "title":
+
+                this.title = newValue
+
+                break;
+
+            case "text":
+
+                this.text = newValue
+
+                break;
+            
+            case "btn":
+
+                this.btn = newValue
+
+                break;
+        }
+
+    }
+
+
+    connectedCallback() {
+        this.render()
+    }
+
+    render() {
+        this.innerHTML = `
+    <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
+    <article class="card_horizontal_container">
+            <img class="card_horizontal_img" src="${this.photo}" alt="">
+            <section class="card_horizontal_body">
+                <h3>${this.title}</h3>
+                <p class="body_1"> ${this.text} </p>
+                <button class="btn btn_medium_active">
+                    ${this.btn}
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </section>
+        </article>
+    `
+    }
+
+}
+
+customElements.define('w-card-desk', CardDesk)
+export default CardDesk
