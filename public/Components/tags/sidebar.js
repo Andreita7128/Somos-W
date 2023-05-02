@@ -10,9 +10,8 @@ class Sidebar extends HTMLElement {
     render() {
         this.innerHTML = `
             <link rel="stylesheet" href="tags.css">
-            <div class="sidebar-container d-flex flex-column flex-shrink-0 p-3 bg-body-secondary" >
+            <div class="sidebar-container d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" >
                 <h3 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <svg class="bi pe-none me-2" width="40" height="32"></svg>
                     <span class="fs-4">Mi Perfil W</span>
                 </h3>
         
@@ -20,43 +19,43 @@ class Sidebar extends HTMLElement {
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="side-item">
                         <a href="/Perfil/perfil.html" class="nav-link side-link active" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                        Perfil
+                        <i class="bi bi-person"></i>
+                        <span>Perfil</span>
                         </a>
                     </li>
                     
                     <li class="side-item">
                         <a href="/Perfil/productos.html" class="side-link nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                        Tus Productos
+                        <i class="bi bi-wallet2"></i>
+                        <span>Tus Productos</span>
                         </a>
                     </li>
 
                     <li class="side-item">
                         <a href="#" class="side-link nav-link link-body-emphasis">
-                            <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                        Giros Internacionales
+                        <i class="bi bi-send"></i>
+                        <span>Giros Internacionales</span>
                         </a>
                     </li>
 
                     <li class="side-item">
                         <a href="#" class="side-link nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                        Alcancias
+                        <i class="bi bi-piggy-bank"></i>
+                        <span>Alcancias</span>
                         </a>
                     </li>
 
                     <li class="side-item">
                         <a href="/Perfil/agenda.html" class="side-link nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                        Agenda Financiera
+                        <i class="bi bi-calendar-week"></i>
+                        <span>Agenda Financiera</span>
                         </a>
                     </li>
 
                     <li class="side-item">
                         <a href="/Perfil/extractos.html" class="side-link nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                        Extractos y Certificados
+                        <i class="bi bi-file-earmark-text"></i>
+                        <span>Extractos y Certificados</span>
                         </a>
                     </li>
                 </ul>

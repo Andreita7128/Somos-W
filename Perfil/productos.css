@@ -264,6 +264,7 @@ h5 {
 
 .main-content {
   width: 100%;
+  padding-bottom: 30px;
 }
 
 .products-container {
@@ -272,6 +273,18 @@ h5 {
   flex-wrap: wrap;
   gap: 30px;
   width: 100%;
+}
+.products-container-select h5 {
+  color: #2D3982;
+}
+.products-container-select li {
+  color: #2D3982;
+}
+.products-container-form h3 {
+  color: #2D3982;
+}
+.products-container-form .dropdown {
+  margin: 15px 0;
 }
 .products-container .user_agenda {
   width: 100%;

@@ -306,6 +306,10 @@ p {
   color: #00B1BB;
 }
 
+.side-item span {
+  margin-left: 10px;
+}
+
 .side-link {
   font-weight: 600;
   color: #00B1BB;
@@ -440,6 +444,7 @@ p {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 14px #BDF0F2;
+  width: 100%;
 }
 .agenda-head {
   background-color: #00B1BB;

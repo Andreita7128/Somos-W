@@ -7,10 +7,12 @@
 
 .sidebar-container{
     height: 100vh;
+    //position: ;
 }
 
 .main-content{
     width: 100%;
+    padding-bottom: 30px;
 }
 
 .products{
@@ -21,6 +23,22 @@
         gap: 30px;
         width: 100%;
         
+        &-select{
+            h5{
+                color: $color_dark_violet1;
+            }
+            li{
+                color: $color_dark_violet1;
+            }
+        }
+        &-form{
+            h3{
+                color: $color_dark_violet1;
+            }
+            .dropdown{
+                margin: 15px 0;
+            }
+        }
         .user_agenda{
             width: 100%;
         }
