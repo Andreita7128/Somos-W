@@ -419,6 +419,7 @@ h5 {
 }
 
 .footerW {
+  margin-top: 10px;
   padding-top: 20px;
   background-color: #2D3982 !important;
   border-top: none;
@@ -441,6 +442,7 @@ footer {
 
 .line-color {
   border-bottom: #eb2f00 !important;
+  border: none;
 }
 
 .separadortitulo {

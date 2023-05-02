@@ -7,16 +7,14 @@
     <title>Usuario.Nombre - Banco W</title>
 
     <!--Css Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     
     <!--Nuestros css's-->
-    <link rel="stylesheet" href="/landing.css">
     <link rel="stylesheet" href="/public/Components/tags/tags.css">
     <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
     <link rel="stylesheet" href="/public/Components/Footer/footer.css">
-    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="productos.css">
 
     <!--Typography-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,35 +23,39 @@
 </head>
 
 <body>
-    
     <w-nav-bar></w-nav-bar>
-    <br>
-    <div class="container-fluid">
+    <div class="user-content container-fluid p-0">
         <div class="row">
 
-            <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
+            <aside class="sidebar-container col-12 col-md-3 col-xl-3 bd-sidebar">
                 <user-sidebar></user-sidebar>
             </aside>
-
+            
             <main class="main-content col">
-                <bread-n-title></bread-n-title>
-
+                <div class="products-title">
+                    <h4>Tu Agenda Financiera</h4>
+                </div>
+        
                 <div class="products-container">
-                        <user-agenda class="col"></user-agenda>
+                    <user-agenda class="user_agenda"></user-agenda>
                 </div>
             </main>
-            
         </div>
     </div>
-    <!--user-product></user-product>
-    <user-agenda></user-agenda>
-    <breadcrumb-line></breadcrumb-line>
-    <bread-n-title></bread-n-title-->
+    
+    
     <w-footer></w-footer>
 
     <script type="module" src="/public/Components/components.js"></script>
     <!--Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

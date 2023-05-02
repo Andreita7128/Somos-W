@@ -10,5 +10,6 @@ import "./tags/sidebar.js"
 import "./tags/breadcrumb.js"
 import "./tags/breadcomponent.js"
 import "./Cards/Card-article/cardArticle.js"
+import "./forms/forms.js"
 
 

@@ -624,7 +624,20 @@ h5 {
   font-size: 16px;
 }
 
+.title_row2 {
+  background-color: #6321A6 !important;
+  width: 100%;
+  height: auto;
+  border-radius: 8.84097px 8.84097px 0px 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.title_row2 h4 {
+  font-size: 13px;
+}
+
 .title_col {
+  justify-content: space-between;
   width: 100%;
 }
 .title_col h4 {
@@ -632,9 +645,22 @@ h5 {
   font-weight: 500 !important;
 }
 
+.contenedores .row .col.title_col h4 {
+  width: 100%;
+}
+
 .contenedores {
   width: 100%;
   padding-top: 0;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.w-100 {
+  border-bottom: 1px solid #2D3982;
+}
+
+.locura {
+  width: 100%;
+  margin: 0;
 }/*# sourceMappingURL=cardArticle.css.map */
