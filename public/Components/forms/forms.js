@@ -46,7 +46,7 @@ class Forms extends HTMLElement {
                 <div class="form-group">
                   <div class="dropdown">
                     <button class="btn btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Cédula de ciudadanía <i class="bi bi-chevron-down float-end"></i>
+                      Cédula de ciudadanía 
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" href="#">Acción</a></li>
@@ -81,13 +81,47 @@ class Forms extends HTMLElement {
               </div>
               <div id="etapa-2" style="display:none;">
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                <label for="nombre">Celular:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Ingresa tu numero celular">
                 </div>
+
                 <div class="form-group">
-                  <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                <label for="nombre">Departamento:</label>
+                <div class="dropdown">
+                    <button class="btn btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Departamento
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item" href="#">Acción</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    </ul>
+                  </div>
+                
                 </div>
-                <button type="button" class="btn btn-secondary anterior">Anterior</button>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+
+                <div class="form-group">
+                <label for="nombre">Ciudad:</label>
+                <div class="dropdown">
+                    <button class="btn btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Departamento
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item" href="#">Acción</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="terms">
+  <label class="form-check-label" for="terms">
+    Acepto los términos y condiciones
+  </label>
+</div>
+
+                <button type="button" class="btn btn_large_outline_active anterior text-center">Anterior</button>
+                <button type="submit" class="btn btn_large_active">Enviar</button>
               </div>
             </form>
           </div>

@@ -1057,11 +1057,16 @@ h5 {
 }
 
 .title_col {
+  justify-content: space-between;
   width: 100%;
 }
 .title_col h4 {
   font-size: 14px !important;
   font-weight: 500 !important;
+}
+
+.contenedores .row .col.title_col h4 {
+  width: 100%;
 }
 
 .contenedores {
@@ -1109,17 +1114,17 @@ h5 {
 
 /* Estilo para la imagen en el formulario */
 .card-imagen {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* Estilo para los botones del formulario */
 .btn {
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 /* Estilo para el dropdown del formulario */
 .dropdown {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* Estilo para el título del formulario */
@@ -1167,4 +1172,8 @@ label {
   width: 50%;
   background-color: #00B1BB;
   color: white;
+}
+
+.form-check {
+  margin-top: 50px;
 }/*# sourceMappingURL=forms.css.map */

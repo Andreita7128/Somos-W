@@ -688,6 +688,9 @@ class cardProductasas extends HTMLElement {
         this.plazo1;
         this.plazo2;
         this.plazo3;
+        this.plazos1;
+        this.plazos2;
+        this.plazos3;
     }
 
     static get observedAttributes() {
@@ -700,7 +703,11 @@ class cardProductasas extends HTMLElement {
             "plazos",
             "plazo1",
             "plazo2",
-            "plazo3"
+            "plazo3",
+            "plazos1",
+            "plazos2",
+            "plazos3",
+
         ]
     }
 
@@ -734,7 +741,15 @@ class cardProductasas extends HTMLElement {
             case "plazo3":
                 this.plazo3 = newValue;
                 break;
-
+            case "plazos1":
+                this.plazos1 = newValue;
+                break;
+            case "plazos2":
+                this.plazos2= newValue;
+                break;
+                case "plazos3":
+                    this.plazos3 = newValue;
+                    break;
 
         }
     }
@@ -796,12 +811,18 @@ class cardProductasas extends HTMLElement {
       <h4>${this.plazo3}</h4>
       </div>
     </div>
-    <div class="row">
+    <div class="row ">
       <div class="col title_col">
         <h4>${this.plazos}</h4>
       </div>
-      <div class="col">
-      
+      <div class="col title_col ">
+        <h4>${this.plazos1}</h4>
+      </div>
+      <div class="col title_col ">
+        <h4>${this.plazos2}</h4>
+      </div>
+      <div class="col title_col ">
+        <h4 style = ''>${this.plazos3}</h4>
       </div>
     </div>
   </section>
@@ -1159,7 +1180,7 @@ class Cardtablatres extends HTMLElement {
         this.titulo1;
         this.titulo2;
         this.titulo3;
-       
+
         this.datocola1;
         this.datocola2;
         this.datocola3;
@@ -1167,11 +1188,11 @@ class Cardtablatres extends HTMLElement {
         this.datocolb1;
         this.datocolb2;
         this.datocolb3;
-     
+
         this.datocolc1;
         this.datocolc2;
         this.datocolc3;
- 
+
         this.datocold1;
         this.datocold2;
         this.datocold3;
@@ -1183,7 +1204,7 @@ class Cardtablatres extends HTMLElement {
         this.datocolf1;
         this.datocolf2;
         this.datocolf3;
-      
+
     }
 
     static get observedAttributes() {
@@ -1193,37 +1214,37 @@ class Cardtablatres extends HTMLElement {
             "titulo2",
             "titulo3",
 
-    
+
             "datocola1",
             "datocola2",
             "datocola3",
-        
-            
+
+
             "datocolb1",
             "datocolb2",
             "datocolb3",
-        
-            
+
+
             "datocolc1",
             "datocolc2",
             "datocolc3",
-        
-            
+
+
             "datocold1",
             "datocold2",
             "datocold3",
-        
-            
+
+
             "datocole1",
             "datocole2",
             "datocole3",
-        
-            
+
+
             "datocolf1",
             "datocolf2",
             "datocolf3",
-        
-            
+
+
 
 
         ]
@@ -1244,7 +1265,7 @@ class Cardtablatres extends HTMLElement {
             case "titulo3":
                 this.titulo3 = newValue;
                 break;
-      
+
 
 
                 //Filas   
@@ -1258,7 +1279,7 @@ class Cardtablatres extends HTMLElement {
             case "datocola3":
                 this.datocola3 = newValue;
                 break;
-        
+
 
             case "datocolb1":
                 this.datocolb1 = newValue;
@@ -1269,7 +1290,7 @@ class Cardtablatres extends HTMLElement {
             case "datocolb3":
                 this.datocolb3 = newValue;
                 break;
-     
+
             case "datocolc1":
                 this.datocolc1 = newValue;
                 break;
@@ -1280,7 +1301,7 @@ class Cardtablatres extends HTMLElement {
             case "datocolc3":
                 this.datocolc3 = newValue;
                 break;
-     
+
             case "datocold1":
                 this.datocold1 = newValue;
                 break;
@@ -1290,7 +1311,7 @@ class Cardtablatres extends HTMLElement {
             case "datocold3":
                 this.datocold3 = newValue;
                 break;
-        
+
             case "datocole1":
                 this.datocole1 = newValue;
                 break;
@@ -1300,7 +1321,7 @@ class Cardtablatres extends HTMLElement {
             case "datocole3":
                 this.datocole3 = newValue;
                 break;
-     
+
 
 
             case "datocolf1":
@@ -1312,7 +1333,7 @@ class Cardtablatres extends HTMLElement {
             case "datocolf3":
                 this.datocolf3 = newValue;
                 break;
- 
+
             case "datocolg1":
                 this.datocolg1 = newValue;
                 break;

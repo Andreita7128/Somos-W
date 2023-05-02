@@ -1,3 +1,6 @@
+@import './../Creditos/credito.scss';
+
+
 .image-card{
     width: 10px !important;
 }
@@ -21,9 +24,20 @@ section{
     }
 }
 
+
 @media (max-width: 1250px) {
+
+    .form-control{
+        margin-right: 0 !important;
+        height: 43px;
+        border-radius: 48px 0px 0px 48px;
+    }
     .marginis{
         margin-left: 0px !important;
+    }
+
+    .desaparecer{
+        display: none;
     }
     
 }
