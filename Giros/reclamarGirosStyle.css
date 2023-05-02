@@ -26,12 +26,14 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: center;
 } 
 
 #menuLateral {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  width: 50%;
 }
 
 #cardsInfo{
