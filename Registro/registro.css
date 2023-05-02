@@ -556,11 +556,6 @@ h5 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-  .container_all_products::-webkit-scrollbar {
-    display: none;
   }
   .container_product_similar {
     display: flex;
@@ -763,4 +758,12 @@ h5 {
 .icon {
   font-size: 25px;
   color: #6321A6;
+}
+
+.log {
+  color: #979C9E;
+}
+
+.btn_a {
+  text-decoration: none;
 }/*# sourceMappingURL=registro.css.map */
