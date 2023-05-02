@@ -299,39 +299,51 @@ h5 {
 
 #product_similar {
   padding: 30px 174px;
-  background-color: #F8F8F8;
+  background-color: #F2F2F2;
 }
 
 .container_all {
   display: flex;
+  flex-direction: column;
   margin: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 .container_product_similar {
-  width: 133.05px;
-  height: 71.64px;
+  width: 18%;
+  height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14.3289px 10.235px 10.235px;
-  background-color: white;
-  box-shadow: 0px 3.16274px 11.0696px rgba(0, 0, 0, 0.15);
-  border-radius: 10.235px 0px 0px 10.235px;
-  font-size: 30px;
+  padding: 8px 25px;
+  font-size: 31px;
+  border-radius: 0% !important;
+  background-color: #FAFAFA;
+  box-shadow: none !important;
 }
 .container_product_similar_active {
-  background-color: #2FD9DE;
+  background: #2FD9DE;
+  box-shadow: 0px 3.16274px 11.0696px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 20px !important;
 }
-.container_product_similar_text {
-  margin-top: -7px;
+.container_product_similar_active_text {
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: #27262C;
 }
 .container_all_products {
-  height: 467px;
-  padding: 42px 0px;
+  background-color: #FAFAFA;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px 28px;
+  gap: 50px;
+  width: 70%;
+  height: 112px;
+  border-radius: 20px;
 }
 
 #container_product_select {
@@ -339,31 +351,30 @@ h5 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10.2457px 43.0318px;
-  float: right;
+  padding: 40px 40px;
   width: 100%;
   height: 470px;
-  background-color: white;
+  background-color: #FAFAFA;
   box-shadow: 0px 3.16604px 11.0812px rgba(0, 0, 0, 0.15);
-  border-radius: 20.4913px;
+  border-radius: 24px;
 }
 
 .product_selected_img {
-  width: 50%;
-  float: left;
+  width: 100%;
+}
+.product_selected_img_container {
+  width: 43%;
 }
 .product_selected_text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   align-items: flex-start;
   padding: 10.2457px;
   gap: 5.12px;
-  width: 377.04px;
-  height: 368.84px;
-  background: #FFFFFF;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  width: 43%;
+  background-color: #FAFAFA;
 }
 
 .list_product {
@@ -379,12 +390,12 @@ h5 {
 }
 
 .container_cards_img {
-  width: 45%;
+  width: 50%;
   margin-left: -80px;
   float: left;
 }
 .container_cards_img_img {
-  width: 45%;
+  width: 100%;
 }
 .container_cards_container_1 {
   display: flex;
@@ -450,7 +461,7 @@ h5 {
   display: flex;
   width: 100%;
   height: 254px;
-  background: #F8F8F8;
+  background: #FAFAFA;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   justify-content: center;
@@ -488,7 +499,7 @@ h5 {
     padding: 0px 20px;
     align-items: center;
     background-color: #F25C05;
-    color: #F8F8F8;
+    color: #FAFAFA;
   }
   #carousel {
     padding: 0px;
@@ -537,7 +548,7 @@ h5 {
   }
   .container_all_products {
     margin-top: 20px;
-    background-color: #F8F8F8;
+    background-color: #FAFAFA;
     width: 100%;
     height: 80px;
     padding: 42px 20px;
@@ -567,7 +578,7 @@ h5 {
     box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
   }
   .container_product_similar_active_text {
-    color: #F8F8F8;
+    color: #FAFAFA;
   }
   .container_product_similar_text {
     color: #00B1BB;
@@ -642,15 +653,15 @@ h5 {
     border-radius: 20px 20px 0px 0px;
   }
   .card_landing_title_orange {
-    background-color: #F8F8F8;
+    background-color: #FAFAFA;
     color: #FF8826;
   }
   .card_landing_title_violet {
-    background-color: #F8F8F8;
+    background-color: #FAFAFA;
     color: #8E50B7;
   }
   .card_landing_title_blue {
-    background-color: #F8F8F8;
+    background-color: #FAFAFA;
     color: #2FD9DE;
   }
   .card_landing_body {
@@ -680,7 +691,7 @@ h5 {
   color: #F25C05;
 }
 .breadcrumb-title-section {
-  background-color: #F8F8F8;
+  background-color: #FAFAFA;
   padding: 14px;
   border-radius: 0 0 20px 20px;
 }
