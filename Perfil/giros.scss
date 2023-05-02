@@ -95,11 +95,11 @@ p {
         color: #6321A6;
     }
     &2::after{
-        content: "Comunidad W";
+        content: "Mi perfil W";
         color: #6321A6;
     }
     &3::after{
-        content: "W Contigo";
+        content: "Giros Internacionales";
         color: #6321A6;
         font-weight: bold;
     }
@@ -174,6 +174,24 @@ p {
     font-weight: 500;
     font-size: 16px;
     color: $color_warning;
+
+    margin-left: 20px;
+}
+
+.sublabel-user-giros-finalizado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color_success;
+
+    margin-left: 20px;
+}
+
+.sublabel-user-giros-cancelado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color_error;
 
     margin-left: 20px;
 }
