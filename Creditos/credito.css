@@ -1,3 +1,5 @@
+
+
 @charset "UTF-8";
 * {
   margin: 0;
@@ -418,11 +420,23 @@ h5 {
   border-radius: 20px;
 }
 
+
 .image-card {
   width: 10px !important;
 }
 
 .marginis {
+
+  margin-left: 300px !important;
+}
+
+section.hero {
+  padding: 80px 0;
+}
+section .text {
+  padding: 14px 100px;
+  padding-right: 0px;
+
   margin-left: 175px !important;
 }
 
@@ -514,4 +528,5 @@ section h3 {
 }
 .dropdown_reactive:active {
   background-color: #00B1BB !important;
+
 }/*# sourceMappingURL=credito.css.map */
