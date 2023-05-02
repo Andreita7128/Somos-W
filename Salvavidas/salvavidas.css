@@ -483,7 +483,7 @@ h5 {
   visibility: visible;
   bottom: 110px;
   height: auto;
-  max-height: 360px;
+  max-height: 618px;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -644,4 +644,171 @@ h5 {
 
 #info-salvalogo img {
   margin: 10px 40px auto 40px;
+}
+
+.titulomicro {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+  display: flex;
+  align-items: center;
+  /* Violeta/main */
+  color: #6321A6;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.contenidomicro {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155.5%;
+  /* or 28px */
+  display: flex;
+  align-items: center;
+  color: #000000;
+  max-width: 380px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.imagenesmicro {
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.search_button {
+  width: 15% !important;
+  height: 35px !important;
+  background-color: #00B1BB !important;
+  color: #F2F2F2;
+  border-radius: 0% 48px 48px 0% !important;
+  margin: 0 !important;
+}
+.search_button:hover {
+  background-color: white !important;
+  color: #00B1BB !important;
+}
+
+.form-control {
+  margin-right: 0 !important;
+  border-radius: 48px 0px 0px 48px;
+}
+
+.placeholder-input-desktop {
+  width: 189px;
+  height: 35px;
+  border: none;
+  background-color: #F2F4F5;
+}
+
+.form-control {
+  padding-left: 10px;
+}
+
+.header-chat {
+  background-color: #2FD9DE;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-chat p {
+  margin: 0;
+}
+
+.header-chat i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.header-contenido {
+  display: flex;
+  align-items: center;
+}
+
+.pregunta-chat {
+  margin-right: 0px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin: 10px;
+}
+
+.profile-pic {
+  width: 51px;
+  height: 51px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-body {
+  background-color: #f2f2f2;
+  width: auto;
+  height: auto;
+  max-width: 282px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.respuesta .comment-body {
+  max-width: 282px;
+  margin-right: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Nueva clase para respuesta */
+.respuesta {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.banco-pic {
+  width: 51px;
+  height: 51px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.botonayuda-div {
+  display: flex;
+  justify-content: center;
+  margin-right: -25px;
+}
+
+.inputchatsalvavidas {
+  border-top: 2px #00B1BB;
+  border-style: solid none none none;
+  width: 100%;
+  height: 45px;
+  background-color: #FAFAFA;
+  text-align: start;
+  color: #303233;
+}
+
+.inputchatsalvavidas::-moz-placeholder {
+  color: #979C9E;
+}
+
+.inputchatsalvavidas::placeholder {
+  color: #979C9E;
 }/*# sourceMappingURL=salvavidas.css.map */

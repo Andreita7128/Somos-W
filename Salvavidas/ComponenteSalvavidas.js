@@ -45,7 +45,7 @@ export default class salvavidasComp extends HTMLElement {
 
             </div>
             <div id="preguntas-frecuentes-sugerencias">
-               <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un credito? </button> 
+               <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un Microcredito? </button> 
                <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
                <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
             </div>
@@ -92,6 +92,7 @@ function changeToVermas() {
 }
 
 function changeToMicro() {
+    
 
 
 
@@ -102,19 +103,25 @@ function changeToMicro() {
                     <button id= "borrar">otra barrita</button>
             </section>
 
-            <section class="preguntas-sugeridas">
-                <div id="preguntas-frecuentes-titulo">
-                    <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p>
-                </div>
-            </section>
+            <section class="encabezadoseccion">
+<i class="bi bi-chevron-left "></i>
+<button class="btn btn_large_outline_active" style="background-color: #CCEFF1; width: 370px; padding: auto 15px auto;">Microcrédito</button>
 
-            <section id ="info-salvalogo">
-                <h5 id="tittle-info-salvalogo">Cómo solicitar un credito</h5>
+</section>
+<section>
+<h5 class="titulomicro">Estás a un paso de solicitarlo</h5>
+<p class="contenidomicro">Llena el formulario que estás visualizando
+y un analista de crédito se contactará lo 
+más pronto posible.</p>
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/mascota2.png" alt=""></section></section>
+<!-- <p class="contenidomicro">Para realizar este proceso deberás de
+    rellenar un formulario que encontraras 
+    bajando un poco en la pagina.</p>
 
-                <p class="texto-en-info"> Para realizar esta tarea requerimos que sigas los siguientes pasos: </p>
 
-                <img id="img-in-salvalogo" src="form 1.png" alt="">
-            </section>
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/form 1.png" alt=""><img src="./recursos/imagenes/mascota2.png" alt=""></section></section> -->
+
+</section>
     `;
 
 
@@ -135,33 +142,60 @@ function returnToMain() {
 
     document.getElementById("content-in-help").innerHTML = `
     
-    <section id="borrar" class="to-search-salvavidas">
-   <h5 >otra barrita</h5>
-</section>
+    <section class="saludo-salva"><p>¡Como estas! Estoy para ayudarte
+        en lo que necesites.</p><img src="./recursos/imagenes/mascota.png" alt="" srcset=""></section>
+    
 
-<section class="preguntas-sugeridas">
-    <div id="preguntas-frecuentes-titulo">
-        <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p>
-    </div>
-    <div id="preguntas-frecuentes-sugerencias">
-       <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un credito? </button> 
-       <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
-       <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
-    </div>
+        <section class="to-search-salvavidas">
+            <h5>barra de busqueda</h5>
+        </section>
+        
+        <section class="preguntas-sugeridas">
+            <div id="preguntas-frecuentes-titulo">
+                <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p> 
+                <button id="vermas" style = "color: #00B1BB; text-decoration: underline;"class="btn_large_transparent">Quiero ver mas</button>
 
-
-</section>
-<section >
-    <button id="just-to-know">Educación financiera</button> 
-</section>
+            </div>
+            <div id="preguntas-frecuentes-sugerencias">
+               <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un Microcredito? </button> 
+               <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
+               <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
+            </div>
+        
+        
+        </section>
+        <section >
+            <button id="just-to-know">Educación financiera</button> 
+        </section>
     
 `;
 
-    console.log(document.getElementById("borrar").innerHTML);
+
+   
 
 
-    document.getElementById("microcredito_salvalogo").addEventListener("click", returnToMain);
+    document.getElementById("microcredito_salvalogo").addEventListener("click", changeToMicro);
 
 
 
 }
+
+let textocambiar=`
+<section class="encabezadoseccion">
+<i class="bi bi-chevron-left "></i>
+<button class="btn btn_large_outline_active" style="background-color: #CCEFF1; width: 370px; padding: auto 15px auto;">Microcrédito</button>
+
+</section>
+<section>
+<h5 class="titulomicro">¿Cómo solicitar un Microcrédito?</h5>
+<p class="contenidomicro">Llena el formulario y un analista de
+crédito se contactara lo mas pronto posible.</p>
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/mascota2.png" alt=""></section></section>
+<!-- <p class="contenidomicro">Para realizar este proceso deberás de
+    rellenar un formulario que encontraras 
+    bajando un poco en la pagina.</p>
+
+
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/form 1.png" alt=""><img src="./recursos/imagenes/mascota2.png" alt=""></section></section> -->
+
+</section>`

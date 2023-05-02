@@ -20,7 +20,15 @@ footer{
 }
 
 .line-color{
-    border-bottom:$color_orange1 !important;
-    width: 1px;
-    border-style: solid;
+    border-bottom: #eb2f00 !important;
+    
+}
+
+.separadortitulo{
+    border: 2px solid $color_orange1 !important;
+    width: 80px;
+    opacity: 1;
+    border-radius: 26px;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
