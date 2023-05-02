@@ -1,3 +1,5 @@
+
+
 export default class salvavidasComp extends HTMLElement {
 
     constructor() {
@@ -5,6 +7,83 @@ export default class salvavidasComp extends HTMLElement {
 
         this.algo;
 
+        this.home = `           
+        <section class="saludo-salva">
+        <p>¡Como estas! Estoy para ayudarte
+            en lo que necesites.</p><img src="/salvavidas/recursos/imagenes/mascota.png" alt="" srcset="">
+    </section>
+
+    <!-- Botón de búsqueda, en salvavidas.scss están los estilos -->
+    <section class="to-search-salvavidas">
+        <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-2 placeholder-input-desktop headline5" type="search"
+                placeholder="Pregúntame algo" aria-label="Search">
+            <button class="btn btn_large_active search_button " type="submit"><i
+            id="buscar-conversacion" class="bi bi-chat"></i></button>
+        </form>
+    </section>
+
+    <section class="preguntas-sugeridas">
+        <div id="preguntas-frecuentes-titulo">
+            <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p>
+            <button id="vermas" style="color: #00B1BB; text-decoration: underline;"
+                class="btn_large_transparent">Quiero ver mas</button>
+
+        </div>
+        <div id="preguntas-frecuentes-sugerencias">
+            <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un
+                Microcredito? </button>
+            <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button>
+            <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button>
+        </div>
+
+
+    </section>
+    <section>
+        <button id="just-to-know">Educación financiera</button>
+    </section>`
+
+    this.micro = `
+    <section class="encabezadoseccion">
+<i class="bi bi-chevron-left "></i>
+<button id= "regresa_main" class="btn btn_large_outline_active" style="background-color: #CCEFF1; width: 370px; padding: auto 15px auto;">Microcrédito</button>
+
+</section>
+<section>
+<h5 class="titulomicro">Estás a un paso de solicitarlo</h5>
+<p class="contenidomicro">Llena el formulario que estás visualizando
+y un analista de crédito se contactará lo 
+más pronto posible.</p>
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/mascota2.png" alt=""></section></section>
+<!-- <p class="contenidomicro">Para realizar este proceso deberás de
+rellenar un formulario que encontraras 
+bajando un poco en la pagina.</p>
+
+
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/form 1.png" alt=""><img src="/salvavidas/recursos/imagenes/mascota2.png" alt=""></section></section> -->
+
+</section>`
+
+        
+
+    document.getElementById("btn-plus")
+
+    }
+
+    startrun () {
+
+        if (!sessionStorage.getItem("active")) {
+            sessionStorage.setItem("active",false)}
+
+        
+        
+        if (sessionStorage.getItem("active") === true) {
+            document.getElementById("btn-plus").checked = true
+            
+        }
+        
+
+    
     }
 
     static get observedAttributes() {
@@ -25,58 +104,73 @@ export default class salvavidasComp extends HTMLElement {
 
     connectedCallback() {
 
-        this.innerHTML = `
+        this.startrun()
+   
+
+        if (!sessionStorage.getItem("etapa")) {
+            sessionStorage.setItem("etapa","main")
+            
+        }
+
+        if (sessionStorage.getItem("etapa") === "main") {
+                    this.innerHTML = `
         <section class="contenedor">
-        <input type="checkbox" name="" id="btn-plus">
+        <input type="checkbox" name="" id="btn-plus" >
         <section id="content-in-help">
-
-        <section class="saludo-salva"><p>¡Como estas! Estoy para ayudarte
-        en lo que necesites.</p><img src="./recursos/imagenes/mascota.png" alt="" srcset=""></section>
-    
-
-        <section class="to-search-salvavidas">
-            <h5>barra de busqueda</h5>
-        </section>
-        
-        <section class="preguntas-sugeridas">
-            <div id="preguntas-frecuentes-titulo">
-                <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p> 
-                <button id="vermas" style = "color: #00B1BB; text-decoration: underline;"class="btn_large_transparent">Quiero ver mas</button>
-
-            </div>
-            <div id="preguntas-frecuentes-sugerencias">
-               <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un Microcredito? </button> 
-               <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
-               <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
-            </div>
-        
-        
-        </section>
-        <section >
-            <button id="just-to-know">Educación financiera</button> 
-        </section>
-
+        ${this.home}
         </section>
         <div class="btn-more">
-            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="./recursos/imagenes/salvalogo-default.svg" width="80"
+            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="/salvavidas/recursos/imagenes/salvalogo-default.svg" width="80"
+                    alt="Boton salvavidas"></label>
+        </div>
+    </section>
+        `
+        document.getElementById("microcredito_salvalogo").addEventListener("click", changeToMicro);
+        document.getElementById("vermas").addEventListener("click", changeToVermas);
+        
+        document.getElementById("buscar-conversacion").addEventListener("click",conversacion)
+
+
+  
+        }
+        if (sessionStorage.getItem("etapa") === "Microcre") {
+             this.innerHTML = `
+        <section class="contenedor">
+        <input type="checkbox" name="" id="btn-plus" >
+        <section id="content-in-help">
+        ${this.micro}
+        </section>
+        <div class="btn-more">
+            <label for="btn-plus" class="salvavidas-logo"><img id="salvalogo" src="/salvavidas/recursos/imagenes/salvalogo-default.svg" width="80"
                     alt="Boton salvavidas"></label>
         </div>
     </section>
         `
 
+        
+    document.getElementById("regresa_main").addEventListener("click", returnToMain);
+
+window.scroll(0,700)
+
+
+        }
+
+      //  console.log(document.getElementById("btn-plus").checked)
     }
 
+    
 
 }
 
 window.customElements.define("salvavidas-comp", salvavidasComp)
 
 
-document.getElementById("microcredito_salvalogo").addEventListener("click", changeToMicro);
-document.getElementById("vermas").addEventListener("click", changeToVermas);
+
+
 function changeToVermas() {
+
     document.getElementById("content-in-help").innerHTML = `<section class="encabezado">
-<i class="bi bi-arrow-left-short x "></i><p class="h5"style="color: #000;font-size: 14px; font-weight:bold;">Recomendado para ti</p>
+<i id="volvermain" class="bi bi-arrow-left-short x " style="cursor: pointer;"></i><p class="h5"style="color: #000;font-size: 14px; font-weight:bold;">Recomendado para ti</p>
 </section>
 <section class="lista-botones">
 
@@ -89,23 +183,31 @@ function changeToVermas() {
 <button style="height: 30px !important;" class="btn btn_large_outline btn_large_outline_active">¿Cómo hacer un ahorro?</button>
 
 </section>`
+
+document.getElementById("volvermain").addEventListener("click", returnToMain)
+
 }
 
 function changeToMicro() {
     
+    console.log(sessionStorage.getItem("etapa"))
 
-
-
-
-    document.getElementById("content-in-help").innerHTML = `
+        sessionStorage.setItem("etapa","Microcre")
     
-    <section class="to-search-salvavidas">
-                    <button id= "borrar">otra barrita</button>
-            </section>
+    
+        sessionStorage.setItem("active",true)
+ 
+if (window.location.href != "http://127.0.0.1:5500/Creditos/credito.html") {
+    
+ window.location.href = "/Creditos/credito.html"
+}
+
+else{
+      document.getElementById("content-in-help").innerHTML = `
 
             <section class="encabezadoseccion">
 <i class="bi bi-chevron-left "></i>
-<button class="btn btn_large_outline_active" style="background-color: #CCEFF1; width: 370px; padding: auto 15px auto;">Microcrédito</button>
+<button id= "regresa_main" class="btn btn_large_outline_active" style="background-color: #CCEFF1; width: 370px; padding: auto 15px auto;">Microcrédito</button>
 
 </section>
 <section>
@@ -113,21 +215,22 @@ function changeToMicro() {
 <p class="contenidomicro">Llena el formulario que estás visualizando
 y un analista de crédito se contactará lo 
 más pronto posible.</p>
-<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/mascota2.png" alt=""></section></section>
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/mascota2.png" alt=""></section></section>
 <!-- <p class="contenidomicro">Para realizar este proceso deberás de
     rellenar un formulario que encontraras 
     bajando un poco en la pagina.</p>
 
 
-<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/form 1.png" alt=""><img src="./recursos/imagenes/mascota2.png" alt=""></section></section> -->
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/form 1.png" alt=""><img src="/salvavidas/recursos/imagenes/mascota2.png" alt=""></section></section> -->
 
 </section>
-    `;
+    `;  
+}
 
 
 
-    document.getElementById("borrar").addEventListener("click", returnToMain);
 
+    document.getElementById("regresa_main").addEventListener("click", returnToMain);
 
 
 
@@ -136,39 +239,50 @@ más pronto posible.</p>
 
 function returnToMain() {
 
+    console.log(this.home)
+        sessionStorage.setItem("etapa","main")
+   
+
     console.log(document.getElementById("content-in-help").innerHTML)
 
     document.getElementById("content-in-help").innerHTML = "";
 
-    document.getElementById("content-in-help").innerHTML = `
-    
-    <section class="saludo-salva"><p>¡Como estas! Estoy para ayudarte
-        en lo que necesites.</p><img src="./recursos/imagenes/mascota.png" alt="" srcset=""></section>
-    
+    document.getElementById("content-in-help").innerHTML = `           
+    <section class="saludo-salva">
+    <p>¡Como estas! Estoy para ayudarte
+        en lo que necesites.</p><img src="/salvavidas/recursos/imagenes/mascota.png" alt="" srcset="">
+</section>
 
-        <section class="to-search-salvavidas">
-            <h5>barra de busqueda</h5>
-        </section>
-        
-        <section class="preguntas-sugeridas">
-            <div id="preguntas-frecuentes-titulo">
-                <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p> 
-                <button id="vermas" style = "color: #00B1BB; text-decoration: underline;"class="btn_large_transparent">Quiero ver mas</button>
+<!-- Botón de búsqueda, en salvavidas.scss están los estilos -->
+<section class="to-search-salvavidas">
+    <form class="d-flex my-2 my-lg-0">
+        <input class="form-control me-2 placeholder-input-desktop headline5" type="search"
+            placeholder="Pregúntame algo" aria-label="Search">
+        <button class="btn btn_large_active search_button " type="submit"><i
+                class="bi bi-chat"></i></button>
+    </form>
+</section>
 
-            </div>
-            <div id="preguntas-frecuentes-sugerencias">
-               <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un Microcredito? </button> 
-               <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button> 
-               <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button> 
-            </div>
-        
-        
-        </section>
-        <section >
-            <button id="just-to-know">Educación financiera</button> 
-        </section>
-    
-`;
+<section class="preguntas-sugeridas">
+    <div id="preguntas-frecuentes-titulo">
+        <p class="title-salvavidas-preguntas"> Preguntas Frecuentes</p>
+        <button id="vermas" style="color: #00B1BB; text-decoration: underline;"
+            class="btn_large_transparent">Quiero ver mas</button>
+
+    </div>
+    <div id="preguntas-frecuentes-sugerencias">
+        <button class="pregunta-frecuente-salvavidas" id="microcredito_salvalogo"> ¿Cómo sacar un
+            Microcredito? </button>
+        <button class="pregunta-frecuente-salvavidas"> ¿Cómo solicitar un Gota Ahorro? </button>
+        <button class="pregunta-frecuente-salvavidas"> ¿Cómo ingresar a yo construyo? </button>
+    </div>
+
+
+</section>
+<section>
+    <button id="just-to-know">Educación financiera</button>
+</section>`
+;
 
 
    
@@ -176,6 +290,7 @@ function returnToMain() {
 
     document.getElementById("microcredito_salvalogo").addEventListener("click", changeToMicro);
 
+    document.getElementById("vermas").addEventListener("click", changeToVermas);
 
 
 }
@@ -190,12 +305,97 @@ let textocambiar=`
 <h5 class="titulomicro">¿Cómo solicitar un Microcrédito?</h5>
 <p class="contenidomicro">Llena el formulario y un analista de
 crédito se contactara lo mas pronto posible.</p>
-<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/mascota2.png" alt=""></section></section>
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/mascota2.png" alt=""></section></section>
 <!-- <p class="contenidomicro">Para realizar este proceso deberás de
     rellenar un formulario que encontraras 
     bajando un poco en la pagina.</p>
 
 
-<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="./recursos/imagenes/form 1.png" alt=""><img src="./recursos/imagenes/mascota2.png" alt=""></section></section> -->
+<section style="display: flex; justify-content: space-around;"> <section class="imagenesmicro"><img src="/salvavidas/recursos/imagenes/form 1.png" alt=""><img src="/salvavidas/recursos/imagenes/mascota2.png" alt=""></section></section> -->
 
 </section>`
+
+//console.log(document.getElementById("btn-plus").checked)
+if (!sessionStorage.getItem("active")) {
+   sessionStorage.setItem("active",false) 
+}
+if (sessionStorage.getItem("active")===true) {
+    
+        document.getElementById("btn-plus").checked = true
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+function conversacion() {
+
+    //console.log(this.home)
+    //    sessionStorage.setItem("etapa","main")
+
+    console.log(document.getElementById("content-in-help").innerHTML)
+
+    document.getElementById("content-in-help").innerHTML = "";
+
+    document.getElementById("content-in-help").innerHTML = `           
+    <header class="header-chat">
+    <div class="header-contenido">
+        <i style="cursor:pointer;" id="chatback" class="bi bi-chevron-left"></i>
+        <p>Asistente virtual</p>
+    </div>
+</header>
+
+<!-- Pregunta -->
+<section class="pregunta-chat">
+    <div class="comment pregunta">
+        <img class="profile-pic" src="/Salvavidas/recursos/imagenes/Icono-pregunta.png">
+        <div class="comment-body">
+            <div class="comment-message">Como crear un perfil
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Respuesta -->
+<section class="respuesta-chat">
+    <div class="comment respuesta">
+        <img class="banco-pic" src="/Salvavidas/recursos/imagenes/Icono-respuesta.png">
+        <div class="comment-body">
+            <div class="comment-message">Para crear un perfil, tendrás que dirigirte a <a href="">Mi perfil aquí.</a> <br><br>
+                Te proporcionare también algunas opciones que podran ayudarte. <br><br>
+                Si tienes mas dudas continua escribiendo.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Botón que sale con la respuesta -->
+<section class="botonayuda-chat">
+    <div class="botonayuda-div" style="transform: scale(1.6); margin-top: 30px;">
+    <button class="pregunta-frecuente-salvavidas"> ¿Cómo crear un perfil? </button>
+    </div>
+</section>
+
+<!-- Input de escribir -->
+<section class="inputescribir-chat">
+    <input class="inputchatsalvavidas" type="text" placeholder="Escribe aquí tu mensaje">
+</section> `
+;
+
+document.getElementById("chatback").addEventListener("click", returnToMain)
+
+}
