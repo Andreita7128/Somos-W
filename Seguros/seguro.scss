@@ -41,3 +41,31 @@ section{
     }
     
 }
+#bread_lv{
+    &1::after{
+        content: "Inicio";
+        color: #6321A6;
+    }
+    &2::after{
+        content: "Seguros";
+        color: #6321A6;
+    }
+    &3::after{
+        content: "Seguro soy vida";
+        color: #6321A6;
+        font-weight: bold;
+    }
+}
+.breadcrumb-item span{
+    display: none;
+}
+
+#bread_title{
+    &::after{
+        content: "Seguro soy vida";
+        color: #F25C05;
+    }
+    span{
+        display: none;
+    }
+}
