@@ -49,9 +49,8 @@ class Forms extends HTMLElement {
                       Cédula de ciudadanía 
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                      <li><a class="dropdown-item" href="#">Cédula de extranjería</a></li>
+                      <li><a class="dropdown-item" href="#">NIT</a></li>
                     </ul>
                   </div>
                   <label for="nombre">Número de documento:</label>
@@ -63,9 +62,15 @@ class Forms extends HTMLElement {
                       Producto
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                      <li><a class="dropdown-item" href="#">Microcrédito</a></li>
+                      <li><a class="dropdown-item" href="#">Gotahorro</a></li>
+                      <li><a class="dropdown-item" href="#">Inmueble productivo</a></li>
+                      <li><a class="dropdown-item" href="#">Crédito de vehículo</a></li>
+                      <li><a class="dropdown-item" href="#">CDT</a></li>
+                      <li><a class="dropdown-item" href="#">Cuenta de ahorro</a></li>
+                      <li><a class="dropdown-item" href="#">Deposito de bajo monto</a></li>
+                      <li><a class="dropdown-item" href="#">Reclamar giros</a></li>
+                      <li><a class="dropdown-item" href="#">Enviar giros</a></li>
                     </ul>
                   </div>
                   <label for="nombre">Nombre:</label>
@@ -92,9 +97,28 @@ class Forms extends HTMLElement {
                       Departamento
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item" href="#">Amazonas</a></li>
+                      <li><a class="dropdown-item" href="#">Antioquia</a></li>
+                      <li><a class="dropdown-item" href="#">Arauca</a></li>
+                      <li><a class="dropdown-item" href="#">Atlantico</a></li>
+                      <li><a class="dropdown-item" href="#">Bolivar</a></li>
+                      <li><a class="dropdown-item" href="#">Boyaca</a></li>
+                      <li><a class="dropdown-item" href="#">Caldas</a></li>
+                      <li><a class="dropdown-item" href="#">Caqueta</a></li>
+                      <li><a class="dropdown-item" href="#">Casanare</a></li>
+                      <li><a class="dropdown-item" href="#">Cauca</a></li>
+                      <li><a class="dropdown-item" href="#">Cesar</a></li>
+                      <li><a class="dropdown-item" href="#">Choco</a></li>
+                      <li><a class="dropdown-item" href="#">Cordoba</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
                       <li><a class="dropdown-item" href="#">Acción</a></li>
                       <li><a class="dropdown-item" href="#">Otra acción</a></li>
                       <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                      <li><a class="dropdown-item" href="#">Acción</a></li>
+                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+
                     </ul>
                   </div>
                 

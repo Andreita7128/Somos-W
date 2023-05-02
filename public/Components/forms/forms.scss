@@ -9,6 +9,9 @@
 .dropdown-menu{
     background-color:whitesmoke;
     width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    
 }
 .formdrop{
     width: 50%;
