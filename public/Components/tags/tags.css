@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+  font-style: normal;
+  line-height: 120% !important;
+}
+
 /*Colors*/
 /*Various*/
 /*Blue*/
@@ -5,6 +14,286 @@
 /*Violet*/
 /*Orange*/
 /*Yellow*/
+/* Typography */
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.body {
+  font-weight: 500;
+}
+.body_1 {
+  font-size: 18px;
+}
+.body_2 {
+  font-size: 16px;
+}
+.body_3 {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .body {
+    font-weight: 500;
+  }
+  .body_1 {
+    font-size: 16px;
+  }
+  .body_2 {
+    font-size: 14px;
+  }
+  .body_3 {
+    font-size: 12px;
+  }
+}
+.text_button_bold {
+  font-weight: 600;
+  font-size: 20px;
+}
+.text_button_medium {
+  font-weight: 600;
+  font-size: 18px;
+}
+.text_button_small {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text_field::-moz-placeholder {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text_field::placeholder {
+  font-weight: 600;
+  font-size: 20px;
+}
+.text_field_title {
+  font-weight: 400;
+  font-size: 14px;
+}
+.text_field_description {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.btn {
+  height: 42px;
+  border-radius: 48px;
+  box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+}
+.btn_large {
+  width: 29.4%;
+}
+.btn_large:active {
+  border: none;
+  background: #00B1BB;
+  color: #F2F2F2;
+}
+.btn_large:hover {
+  border: none;
+  background: #BDF0F2;
+  color: #00B1BB;
+}
+.btn_large:disabled {
+  border: none;
+  background: #E3E5E5;
+  color: #979C9E;
+}
+.btn_large_outline {
+  filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+  background-color: transparent;
+}
+.btn_large_outline:active {
+  border: 1px solid #00B1BB;
+  color: #00B1BB;
+}
+.btn_large_outline:disabled {
+  border: 1px solid #CDCFD0;
+  color: #CDCFD0;
+}
+.btn_large_transparent {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn_large_transparent:active {
+  color: #00B1BB;
+}
+.btn_large_transparent:disabled {
+  color: #CDCFD0;
+}
+.btn_medium {
+  width: 19.1%;
+}
+.btn_medium:active {
+  border: none;
+  background: #00B1BB;
+  color: #F2F2F2;
+}
+.btn_medium:hover {
+  border: none;
+  background: #BDF0F2;
+  color: #00B1BB;
+}
+.btn_medium:disabled {
+  border: none;
+  background: #E3E5E5;
+  color: #979C9E;
+}
+.btn_medium_outline {
+  filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+  background-color: transparent;
+}
+.btn_medium_outline:active {
+  border: 1px solid #00B1BB;
+  color: #00B1BB;
+}
+.btn_medium_outline:disabled {
+  border: 1px solid #CDCFD0;
+  color: #CDCFD0;
+}
+.btn_medium_transparent {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn_medium_transparent:active {
+  color: #00B1BB;
+}
+.btn_medium_transparent:disabled {
+  color: #CDCFD0;
+}
+.btn_small {
+  width: 10.7%;
+}
+.btn_small:active {
+  border: none;
+  background: #00B1BB;
+  color: #F2F2F2;
+}
+.btn_small:hover {
+  border: none;
+  background: #BDF0F2;
+  color: #00B1BB;
+}
+.btn_small:disabled {
+  border: none;
+  background: #E3E5E5;
+  color: #979C9E;
+}
+.btn_small_outline {
+  filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+  background-color: transparent;
+}
+.btn_small_outline:active {
+  border: 1px solid #00B1BB;
+  color: #00B1BB;
+}
+.btn_small_outline:disabled {
+  border: 1px solid #CDCFD0;
+  color: #CDCFD0;
+}
+.btn_small_transparent {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn_small_transparent:active {
+  color: #00B1BB;
+}
+.btn_small_transparent:disabled {
+  color: #CDCFD0;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn_large {
+    width: 22.71%;
+  }
+}
+/*Colors*/
+/*Various
+$color_text: #27262C;
+$color_text_disable: #979C9E;
+$color_base_white: #F2F2F2;
+$color_accent_white: #F8F8F8;
+$color_base_gray: #27262C;
+$color_accent_black: #000000;
+$color_gray_btn: #CDCFD0;
+$color_error: #EB3232;
+$color_warning: #FDA624;
+$color_success: #2DC071;
+$fill_success: rgba(45, 192, 113, 0.2);
+$fill_error: rgba(235, 50, 50, 0.2);
+$fill_generic: rgba(0, 177, 187, 0.2);
+$fill_input: #F2F4F5;
+$fill_disabled: #E3E5E5;
+
+/*Blue
+$color_blue1: #00B1BB;
+$color_blue2: #2FD9DE;
+$color_blue3: #BDF0F2;
+
+/*Dark Violet
+$color_dark_violet1: #2D3982;
+$color_dark_violet2: #535C97;
+$color_dark_violet3: #8A90B5;
+$color_dark_violet4: #C3C5D4;
+
+/*Violet
+$color_violet1: #6321A6;
+$color_violet2: #8E50B7;
+$color_violet3: #BA93D2;
+$color_violet4: #E4D4ED;
+
+/*Orange
+$color_orange1: #F25C05;
+$color_orange2: #FF8826;
+$color_orange3: #FFB67D;
+
+/*Yellow
+$color_yellow1: #e3ff0b;*/
 p {
   color: #27262C;
 }
@@ -17,9 +306,14 @@ p {
   color: #00B1BB;
 }
 
+.side-item span {
+  margin-left: 10px;
+}
+
 .side-link {
   font-weight: 600;
   color: #00B1BB;
+  margin-bottom: 11px;
 }
 .side-link.active {
   background-color: #00B1BB !important;
@@ -103,16 +397,13 @@ p {
 .user-product-container {
   background-color: #F8F8F8;
   max-width: 528px;
+  min-width: 450px;
   max-height: 290px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 14px #E4D4ED;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 30px;
 }
 .user-product-head {
-  background-color: #6321A6;
   padding: 10px 30px 1px;
 }
 .user-product-head h5 {
@@ -132,13 +423,29 @@ p {
 .user-product-data-item {
   margin-right: 50px;
 }
+
+.ahorro {
+  background-color: #6321A6;
+}
+
+.credito {
+  background-color: #F25C05;
+}
+
+.seguro {
+  background-color: #00B1BB;
+}
+
+.inversion {
+  background-color: #343c7f;
+}
+
 .agenda-container {
-  width: 100%;
-  max-width: 528px;
   background-color: #BDF0F2;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 14px #BDF0F2;
+  width: 100%;
 }
 .agenda-head {
   background-color: #00B1BB;
