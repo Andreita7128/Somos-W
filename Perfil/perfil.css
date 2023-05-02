@@ -148,7 +148,7 @@ p {
   background-color: #F2F2F2;
 }
 .second_nav_link li a {
-  color: #F25C05;
+  color: #F25C05 ;
 }
 .second_nav_link li a:hover {
   color: #27262C !important;
