@@ -15,7 +15,8 @@ class Footer extends HTMLElement {
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-              <h5 class="headline5 text-white border-bottom pb-2">Acerca de nosotros</h5>
+              <h5 class="headline5 text-white pb-2">Acerca de nosotros</h5>
+              <hr class = "separadortitulo">
               <ul class="list-unstyled">
                 <li><a href="#" class="text-white">Quiénes sómos</a></li>
                 </ul>
@@ -30,7 +31,8 @@ class Footer extends HTMLElement {
               </ul>
             </div>
             <div class="col-md-3">
-              <h5 class="headline5 text-white border-bottom pb-2">Tasas y tarifas</h5>
+              <h5 class="headline5 text-white  pb-2">Tasas y tarifas</h5>
+              <hr class = "separadortitulo">
               <ul class="list-unstyled">
                 <li><a href="#" class="text-white">Microcrédito</a></li>
                 </ul>
@@ -50,7 +52,8 @@ class Footer extends HTMLElement {
               </ul>
             </div>
             <div class="col-md-3">
-              <h5 class="headline5 text-white border-bottom pb-2">Te escuchamos</h5>
+              <h5 class="headline5 text-white  pb-2">Te escuchamos</h5>
+              <hr class = "separadortitulo">
               <ul class="list-unstyled">
                 
               <li><a href="#" class="text-white ">Consultas, quejas o reclamos </a></li>
@@ -64,7 +67,8 @@ class Footer extends HTMLElement {
               </ul>
             </div>
             <div class="col-md-3">
-              <h5 class="headline5 text-white border-bottom pb-2 ">Nuestras redes sociales</h5>
+              <h5 class="headline5 text-white  pb-2 ">Nuestras redes sociales</h5>
+              <hr class = "separadortitulo">
               <ul class="list-unstyled d-flex ">
                 <li class="px-3"><a href="#" class="text-white "><i class="bi bi-facebook h2"></i></a></li>
                 <li class="px-3"><a href="#" class="text-white"><i class="bi bi-twitter h2"></i></a></li>

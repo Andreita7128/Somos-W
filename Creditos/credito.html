@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario.Nombre - Banco W</title>
+    <title>Credito - Banco W</title>
 
     <!--Css Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,27 +33,29 @@
 <body>
 
     <w-nav-bar></w-nav-bar>
-    <bread-n-title></bread-n-title>
-   
+
     
+
+    <bread-n-title></bread-n-title>
+
+
     <div class="container-fluid">
         <div class="row">
-            
+
 
             <!-- <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
                 <user-sidebar></user-sidebar>
             </aside> -->
             <section class="portada">
                 <div class="container">
-                    <div class="row flex-column-reverse flex-md-row">
-                        <div class="col-md-6">
+                    <div class="row flex-column-reverse flex-md-row ">
+                        <div class="col-md-6 style_better">
                             <h1 class="headline1">Fortalecimiento para tu negocio</h1>
                             <span>
-                                <h2 class="body1-desktop">Tenemos un crédito enfocado a microempresarios y
-                                    emprendedores como tú.</h2>
+                                <h3 class="">Tenemos un crédito enfocado a microempresarios y
+                                    emprendedores como tú.</h3>
                             </span>
-                            <a href="#" class="btn button-large-desktop btn-active text-button-link-normal">Solicita
-                                tu crédito aquí <i class="bi bi-arrow-right"></i></a>
+                           
                         </div>
                         <div class="col-md-6 ">
                             <img src="img/portada.png" class="img-fluid" alt="Imagen de ejemplo">
@@ -61,22 +63,23 @@
                     </div>
                 </div>
             </section>
-            <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
-                <product-sidebar></product-sidebar>
+            <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar d-sm-none d-md-block">
+                <product-sidebar reference="./credito.html"></product-sidebar>
             </aside>
 
 
-       
-        
+
+
             <main class="main-content col marginis">
                 <div class="container-fluid mx-auto text-center">
-                <div class="dropdown d-sm-block d-md-none d-flex justify-content-center">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                     Caracteristicas
-                    </button>
+                    <div class="dropdown d-sm-block d-md-none d-flex justify-content-center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Caracteristicas
+                        </button>
 
-                  
-                    <!-- <ul class="dropdown-menu" style="left: 50%; transform: translateX(-50%);" aria-labelledby="dropdownMenuButton1">
+
+                        <!-- <ul class="dropdown-menu" style="left: 50%; transform: translateX(-50%);" aria-labelledby="dropdownMenuButton1">
                         <card-imagen recurso="./img/caracteristicas.png" contenido='
                                     &#x2022; Antigüedad mínima del negocio: 1 año. 
                                      <br>&#x2022; Monto: desde 1 SMMLV hasta 120 SMMLV </br>
@@ -121,9 +124,9 @@
                                     ' class="imagen-inCard"></card-imagen>
                       
                     </ul> -->
-                   
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <card-productasas recurso="./img/caracteristicas.png" meses='
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <card-productasas recurso="./img/caracteristicas.png" meses='
                                     &#x2022; Antigüedad mínima del negocio: 1 año. 
                                      <br>&#x2022; Monto: desde 1 SMMLV hasta 120 SMMLV </br>
                                      <br>&#x2022;<b> Tasa fija </b> durante toda la vigencia del préstamo.</br> 
@@ -133,19 +136,25 @@
                                     Exequial,Soy Vida, Soy Protección Familiar y Soy Patrimonio Seguro.</br>
                                     <br>&#x2022; Opción de ahorrar mientras se paga el crédito con el <b> Pagahorro.</b></br>
                                     ' class="imagen-inCard"></card-productasas>
-                      
-                    </ul>
-                  </div>
+
+                        </ul>
+                    </div>
 
                 </div>
-               
+
+                <div id="formulario">
+                <w-form img="./img/titulo_form1.png"></w-form>
+                </div>
 
 
-   
 
 
-     <article id="idk" class="d-sm-none d-md-block">
-                    <card-imagen recurso="./img/caracteristicas.png" contenido='
+
+                <article id="caracteristicas" class="d-sm-none d-md-block">
+                    
+                    <card-imagen 
+                    recurso="./img/caracteristicas.png" 
+                    contenido='
                         &#x2022; Antigüedad mínima del negocio: 1 año. 
                          <br>&#x2022; Monto: desde 1 SMMLV hasta 120 SMMLV </br>
                          <br>&#x2022;<b> Tasa fija </b> durante toda la vigencia del préstamo.</br> 
@@ -154,73 +163,73 @@
                         <br>&#x2022; Opción de adquirir de manera <b> opcional seguros </b> como: Soy Previsión
                         Exequial,Soy Vida, Soy Protección Familiar y Soy Patrimonio Seguro.</br>
                         <br>&#x2022; Opción de ahorrar mientras se paga el crédito con el <b> Pagahorro.</b></br>
-                        '
-                        titulo = ' '
-                        boton  = 'Más sobre pagahorro'
-                        
-                        
-                        class="imagen-inCard"></card-imagen>
-                    </article>
-                    <div id="locate_caract" class="d-md-block d-sm-none">
-                        <card-imagen recurso="./img/requisitos.png" 
-                        contenido='
+                        ' 
+                        titulo=' ' 
+                        boton='Más sobre pagahorro' 
+                        class="imagen-inCard">
+                    </card-imagen>
+
+
+
+                </article>
+
+               
+                <div id="requisitos" class="d-md-block d-sm-none">
+                    <card-imagen recurso="./img/requisitos.png" contenido='
                         &#x2022; Fotocopia de la <b>cédula de ciudadanía</b> 
                         <br>&#x2022; 2 <b> referencias comerciales</b> y/o personales, y una familiar.
                         <br>&#x2022; <b>Facturas </b> de compra del ultimo año y servicios públicos al día.
                         <br>&#x2022; Seguro <b>deudores</b>.
-                        ' 
-                        titulo = ' '
-                        boton = 'Seguro deudores aquí'
-                        
-                        
-                        class="imagen-inCard" id="caracteristicas"></card-imagen>
-                    </div>
-
-                    <div id="locate_caract" class="d-md-block d-sm-none">
-                        <card-simple recurso="./img/cancelacion.png" 
-                        contenido='
-                        El crédito queda cancelado en el momento en que se pague la totalidad de cuotas y el saldo quede en cero. Puedes solicitar el paz y salvo a través de la Línea de Servicio al Cliente o en la agencia en la que tu crédito fue desembolsado.  
-                        ' 
-                        titulo = ' '
-                        boton = 'Seguro deudores aquí'
-                        
-                        
-                        class="imagen-inCard" id="caracteristicas"></card-simple>
-                    </div>
-          
-               
-
-                    <div id="locate_caract">
-                        <card-productasas img="./img/Tasas y tarifas.png" 
-                        datacredito='$5.500 * + IVA'
-                        cifin = '$3.700 + IVA'
-                        meses ='1 a 36'
-                        intereses = '3.58%'
-                        plazos = 'Tasas en días E.A'
-                        plazo1 = '90-119'
-                        plazo2 = '120-149'
-                        plazo3 = '150-179'
-                        
-
-                         class="imagen-inCard" id="caracteristicas"></card-productasas>
-                    </div>
-                   
-
+                        ' titulo=' ' boton='Seguro deudores aquí' class="imagen-inCard" id="caracteristicas">
+                    </card-imagen>
                 </div>
-               
-            </main>
 
+                <div id="tasas">
+                    <card-productasas img="./img/Tasas y tarifas.png" datacredito='$5.500 * + IVA' cifin='$3.700 + IVA'
+                        meses='1 a 36' intereses='3.58%' plazos='Tasas en días E.A' plazo1='90-119' plazo2='120-149'
+                        plazo3='150-179' class="imagen-inCard" id="caracteristicas"></card-productasas>
+                </div>
+
+                <div id="cancelar" class="d-md-block d-sm-none">
+                    <card-simple recurso="./img/cancelacion.png" contenido='
+                        El crédito queda cancelado en el momento en que se pague la totalidad de cuotas y el saldo quede en cero. Puedes solicitar el paz y salvo a través de la Línea de Servicio al Cliente o en la agencia en la que tu crédito fue desembolsado.  
+                        ' titulo=' ' class="imagen-inCard" id="caracteristicas">
+                    </card-simple>
+                </div>
+
+
+
+            
+
+                <div id="locate_caract">
+                    <card-productablas img="./img/cobertura.png" titulo1='Cobertura'
+                     titulo2=' '
+                     titulo3=' '
+                     titulo4='Menores de 60' 
+                     titulo5='Mayores de 60' 
+                     datocola1 = 'hola'
+                     datocola2 = ' '
+                     datocola3 = ' '
+                     
+                     class="imagen-inCard" id="caracteristicas">
+                    </card-productablas>
+                </div>
+
+              
         </div>
+
+        </main>
+
     </div>
-    
-    
+    </div>
+
+
     <!--user-product></user-product>
     <user-agenda></user-agenda>
     <breadcrumb-line></breadcrumb-line>
     <bread-n-title></bread-n-title-->
     <w-footer></w-footer>
 
-    <w-form></w-form>
 
 
 
@@ -229,7 +238,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
-    
+
 
 </body>
 

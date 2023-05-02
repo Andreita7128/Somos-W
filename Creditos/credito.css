@@ -1,0 +1,30 @@
+.image-card {
+  width: 10px !important;
+}
+
+.marginis {
+  margin-left: 175px !important;
+}
+
+section.portada {
+  margin-top: 10px;
+}
+section .style_better {
+  margin-top: 80px;
+}
+section h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (max-width: 1250px) {
+  .marginis {
+    margin-left: 0px !important;
+  }
+}
+.sidebar-container {
+  position: sticky;
+  top: 30px;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+}/*# sourceMappingURL=credito.css.map */
