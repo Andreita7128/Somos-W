@@ -20,7 +20,7 @@
                 <form class="d-flex my-2 my-lg-0">
                     <input class="form-control me-2 placeholder-input-desktop headline5" type="search"
                     placeholder="¿Que estas buscando?" aria-label="Search">
-                <button class="btn btn_large search_button " type="submit"><i class="bi bi-search"></i></button>
+                <button class="btn btn_large_active search_button " type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -57,11 +57,11 @@
                 </form>
                 <ul class="navbar-nav mx-auto second_nav_link">
                     <li class="nav-item d-md-none d-block">
-                        <a class="nav-link btn btn_large text-center text-white mx-auto" style="margin-top: 5px;"
+                        <a class="nav-link btn btn_large_active text-center text-white mx-auto" style="margin-top: 5px;"
                         href="#">Mi perfil W</a>
                     </li>
                     <li class="nav-item d-md-none d-block">
-                        <a class="nav-link btn btn_large text-center text-white mx-auto " style="margin-top: 18px;"
+                        <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
                         href="#">Canales de atención</a>
                     </li>
                     <li class="nav-item border-bottom-gg">
@@ -84,7 +84,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Seguros </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Opción 1</a>
+                            <a class="dropdown-item" href="../../../Seguros/seguros.html">Seguro soy vida</a>
                             <a class="dropdown-item" href="#">Opción 2</a>
                             <a class="dropdown-item" href="#">Opción 3</a>
                         </div>

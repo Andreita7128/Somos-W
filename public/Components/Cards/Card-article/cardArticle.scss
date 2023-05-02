@@ -296,13 +296,34 @@
     
 }
 
+
+.title_row2{
+    background-color: $color_violet1 !important ;
+    width: 100%;
+    height: auto;
+    border-radius: 8.84097px 8.84097px 0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+    & h4{
+        font-size: 13px;
+    }
+    
+}
+
 .title_col{
+   justify-content: space-between;
     width: 100%;
 & h4{
     font-size: 14px !important;
     font-weight: 500 !important;
 }
 }
+.contenedores .row .col.title_col h4 {
+    width: 100%;
+  }
+  
 
 .contenedores{
     width: 100%;
@@ -313,3 +334,11 @@
     
     
 }
+.w-100{
+    border-bottom: 1px solid $color_dark_violet1;
+}
+.locura{
+    width: 100%;
+    margin: 0;
+}
+
