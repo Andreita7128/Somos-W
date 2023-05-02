@@ -1205,6 +1205,10 @@ class Cardtablatres extends HTMLElement {
         this.datocolf2;
         this.datocolf3;
 
+        this.datocolg1;
+        this.datocolg2;
+        this.datocolg3;
+
     }
 
     static get observedAttributes() {
@@ -1244,6 +1248,9 @@ class Cardtablatres extends HTMLElement {
             "datocolf2",
             "datocolf3",
 
+            "datocolg1",
+            "datocolg2",
+            "datocolg3",
 
 
 
@@ -1356,8 +1363,12 @@ class Cardtablatres extends HTMLElement {
         <section class="fondo-card">
         <section class="card-imagen">
           <img src="${this.img}" class="imagen-inCard" alt="">
+          
         </section>
+        <h3 style= 'font-size: 14px; padding-right:35%;'>*EL reembolso de gastos médicos por maternidad o paternidad serán abonados al capital del microcrédito, el reembolso de gastos médicos por recién nacido serán girados directamente al asegurado </h4>
+
         <section class="contenedores">
+        
     <div class="row bg-dark text-white title_row2">
       <div class="col">
         <h4>${this.titulo1}</h4>
@@ -1412,6 +1423,38 @@ class Cardtablatres extends HTMLElement {
       </div>
       <div class="col title_col">
         <h4>${this.datocold3}</h4>
+      </div>
+
+      <div class="w-100"></div> <!-- Divisor de fila -->
+      <div class="col title_col">
+        <h4>${this.datocole1}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocole2}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocole3}</h4>
+      </div>
+
+      <div class="w-100"></div> <!-- Divisor de fila -->
+      <div class="col title_col">
+        <h4>${this.datocolf1}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolf2}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolf3}</h4>
+      </div>
+      <div class="w-100"></div> <!-- Divisor de fila -->
+      <div class="col title_col">
+        <h4>${this.datocolg1}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolg2}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolg3}</h4>
       </div>
   
         </section>
