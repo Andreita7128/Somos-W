@@ -31,7 +31,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  btn navup_buttons text-center text-button-link-normal" style="margin-left: 10px;"
-                        href="#"><i class="bi bi-person distance-icon"></i>Mi perfil W</a>
+                        href="../../../Registro/iniciarSesión.html"><i class="bi bi-person distance-icon"></i>Mi perfil W</a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +102,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
                         aria-expanded="false"> Comunidad W </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">W contigo</a>
+                            <a class="dropdown-item" href="../../../ComunidadW/comunidadW.html">W contigo</a>
                             <a class="dropdown-item" href="#">Opción 2</a>
                             <a class="dropdown-item" href="#">Opción 3</a>
                         </div>
