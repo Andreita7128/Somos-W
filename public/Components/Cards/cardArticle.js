@@ -47,9 +47,10 @@ class cardSimple extends HTMLElement {
         this.innerHTML = `
         
         <section class="fondo-card">
-        <section class="card-imagen">
-            <img src= "${this.recurso}" class="imagen-inCard" alt="">
-        </section>
+        <section class="logo-section">
+        
+            <img src= "${this.recurso}" class="logo-inCard" alt="">
+     </section>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
             <p class="parrafo">
@@ -125,7 +126,7 @@ class cardOrange extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button><!--  aca poner estilo de boton ♥ -->${this.boton}</button>
+        <button class="btn btn_medium btn_medium_active " ><h5><!--  aca poner estilo de boton ♥ -->${this.boton}</h5></button>
     </section>
         
         `
@@ -213,7 +214,7 @@ class cardBoton extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button class="btn btn_medium btn_medium_active"><!--  aca poner estilo de boton ♥ -->${this.boton}</button>
+        <button class="btn btn_medium btn_medium_active"><!--  aca poner estilo de boton ♥ --><h5>${this.boton}</h5></button>
     </section>
         
         `
@@ -294,7 +295,7 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button class = 'btn bt_medium btn_medium_active'><!--  aca poner estilo de boton ♥ --><h4>${this.boton}</h4></button>
+        <button class = 'btn btn_medium btn_medium_active'><!--  aca poner estilo de boton ♥ --><h5>${this.boton}</h5></button>
     </section>
 
         </div>
@@ -505,6 +506,8 @@ class cardComentarios extends HTMLElement {
             "titulo",
             "contenido",
             "name",
+            "likes",
+            "comments",
         ]
     }
 
@@ -532,6 +535,16 @@ class cardComentarios extends HTMLElement {
             case "name":
 
                 this.name = newValue
+
+                break;
+            case "comments":
+
+                this.comments = newValue
+
+                break;
+            case "likes":
+
+                this.likes = newValue
 
                 break;
         }
@@ -603,7 +616,9 @@ class cardBlogDetalle extends HTMLElement {
             "titulo",
             "contenido",
 
-            "userprofile"
+            "userprofile",
+            "comments",
+            "likes"
         ]
     }
 
@@ -637,6 +652,17 @@ class cardBlogDetalle extends HTMLElement {
             case "contenido":
 
                 this.contenido = newValue
+
+                break;
+
+            case "comments":
+
+                this.comments = newValue
+
+                break;
+            case "likes":
+
+                this.likes = newValue
 
                 break;
 
@@ -758,11 +784,11 @@ class cardProductasas extends HTMLElement {
                 this.plazos1 = newValue;
                 break;
             case "plazos2":
-                this.plazos2= newValue;
+                this.plazos2 = newValue;
                 break;
-                case "plazos3":
-                    this.plazos3 = newValue;
-                    break;
+            case "plazos3":
+                this.plazos3 = newValue;
+                break;
 
         }
     }
