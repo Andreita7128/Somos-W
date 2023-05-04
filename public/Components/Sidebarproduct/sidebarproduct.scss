@@ -5,7 +5,7 @@
 .btn-sidebar{
     width: 100% !important;
     height: auto;
-    color: $color_blue2;
+    color: $color_blue2 !important;
     border: 1px solid !important;
     border-color: $color_blue2;
    
@@ -13,7 +13,7 @@
 
     &:hover{
         background-color: $color_blue1;
-        color: $color_base_white;
+        color: $color_base_white !important;
     }
 }
 
