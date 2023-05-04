@@ -1,5 +1,8 @@
+@import '../../../landing.scss';
+
+
 /*Colors*/
-/*Various*/
+/*Various
 $color_text: #27262C;
 $color_text_disable: #979C9E;
 $color_base_white: #F2F2F2;
@@ -16,62 +19,70 @@ $fill_generic: rgba(0, 177, 187, 0.2);
 $fill_input: #F2F4F5;
 $fill_disabled: #E3E5E5;
 
-/*Blue*/
+/*Blue
 $color_blue1: #00B1BB;
 $color_blue2: #2FD9DE;
 $color_blue3: #BDF0F2;
 
-/*Dark Violet*/
+/*Dark Violet
 $color_dark_violet1: #2D3982;
 $color_dark_violet2: #535C97;
 $color_dark_violet3: #8A90B5;
 $color_dark_violet4: #C3C5D4;
 
-/*Violet*/
+/*Violet
 $color_violet1: #6321A6;
 $color_violet2: #8E50B7;
 $color_violet3: #BA93D2;
 $color_violet4: #E4D4ED;
 
-/*Orange*/
+/*Orange
 $color_orange1: #F25C05;
 $color_orange2: #FF8826;
 $color_orange3: #FFB67D;
 
-/*Yellow*/
-$color_yellow1: #e3ff0b;
+/*Yellow
+$color_yellow1: #e3ff0b;*/
 
 // *************** MODIFICACION COLOR DE <P> *******************//
-p{
+p {
     color: $color_text;
 }
 
-.badge{
+.badge {
     --bs-badge-font-weight: 400;
 
 }
 
 // *************** AQUI ABAJO LOS ESTILOS DE sidebar, breadcrumbs, user product, agenda *******************//
 
-.sidebar{
-    &-container{
-        h3{
+.sidebar {
+    &-container {
+        h3 {
             color: $color_blue1;
         }
     }
 }
+.side-item span{
+    margin-left: 10px;
+}
 
-.side-link{
+.side-link {
     font-weight: 600;
     color: $color_blue1;
+<<<<<<< HEAD
 
+    &.active {
+=======
+    margin-bottom: 11px;
     &.active{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
         background-color: $color_blue1 !important;
     }
 }
 
-.tag{
-    &_w{
+.tag {
+    &_w {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -81,25 +92,25 @@ p{
         padding: 8px 16px;
     }
 
-    &_family{
+    &_family {
         background-color: $color_violet3;
         color: $color_violet1;
     }
 
-    &_business{
-       background-color: $color_blue3;
-       color: $color_blue1;
+    &_business {
+        background-color: $color_blue3;
+        color: $color_blue1;
     }
 
-    &_grow{
+    &_grow {
         background-color: $color_orange3;
         color: $color_orange1;
     }
 }
 
-.check{
+.check {
 
-    &-label{
+    &-label {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -107,27 +118,27 @@ p{
         line-height: 20px;
     }
 
-    &-button{
+    &-button {
         background-color: $color_accent_white;
         width: 25px;
         height: 25px;
         margin-right: 13px;
 
-        &:checked{
+        &:checked {
             background-color: $color_blue1;
             border-color: transparent;
         }
 
     }
 
-    &-container{
-        display: flex ;
+    &-container {
+        display: flex;
         align-items: center;
     }
 }
 
-.slide{
-    &-label{
+.slide {
+    &-label {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
@@ -136,21 +147,27 @@ p{
     }
 }
 
-.breadcrumb{
+.breadcrumb {
 
-    &-title{
+    &-title {
         color: $color_orange1;
 
-        &-section{
+        &-section {
             background-color: $color_accent_white;
-            padding: 14px ;
+            padding: 14px;
             border-radius: 0 0 20px 20px;
         }
     }
+<<<<<<< HEAD
+
+    &-item {
+
+        a {
+=======
     
     &-item{
-        
         a{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -159,94 +176,139 @@ p{
             color: $color_violet1;
             text-decoration: none;
         }
-
     }
-    .active{
+
+    .active {
         font-weight: 600;
         font-size: 16px;
         color: $color_violet1;
     }
 }
 
-.user{
+.user {
 
+<<<<<<< HEAD
+    &-product {
+
+        &-container {
+            background-color: $color_accent_white;
+
+=======
     &-product{
-
         &-container{
             background-color: $color_accent_white;
-            
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
             max-width: 528px;
+            min-width: 450px;
             max-height: 290px;
+           //min-height: 290px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 4px 14px $color_violet4;
-
-            margin-top: 30px;
-            margin-left: 30px;
-            margin-bottom: 30px;
+            //margin-top: 30px;
+            //margin-left: 30px;
+            //margin-bottom: 30px;
         }
+<<<<<<< HEAD
 
-        &-head{
+        &-head {
             background-color: $color_violet1;
             padding: 10px 30px 1px;
 
-            h5{
+            h5 {
                 color: $color_base_white;
             }
         }
 
-        &-body{
+        &-body {
             padding: 27px 50px 0px;
 
-            h3{
+            h3 {
                 color: $color_violet1;
             }
         }
 
+        &-data {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 25px;
+
+            &-item {
+=======
+        &-head{
+            padding: 10px 30px 1px;
+            h5{
+                color: $color_base_white;
+            }
+        }
+        &-body{
+            padding: 27px 50px 0px;
+            h3{
+                color: $color_violet1;
+            }
+        }
         &-data{
             display: flex;
             flex-direction: row;
             padding: 10px 25px ;
-
             &-item{
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
                 margin-right: 50px;
             }
         }
     }
+}
 
-    &-info{
+<<<<<<< HEAD
+    &-info {}
+}
 
-    }
+.agenda {
+    &-container {
+        width: 100%;
+        max-width: 528px;
+=======
+.ahorro{
+    background-color: $color_violet1;
+}
+.credito{
+    background-color: $color_orange1;
+
+}
+.seguro{
+    background-color: $color_blue1;
+}
+.inversion{
+    background-color: #343c7f;
 }
 
 .agenda{
     &-container{
-        width: 100%;
-        max-width: 528px;
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
         background-color: $color_blue3;
         border-radius: 20px;
         overflow: hidden;
-
         box-shadow: 0 4px 14px $color_blue3;
-
+        
+        width: 100%;
     }
 
-    &-head{
+    &-head {
         background-color: $color_blue1;
         padding: 10px 25px 1px;
 
-        h5{
+        h5 {
             color: $color_base_white;
         }
     }
 
-    &-body{
+    &-body {
         padding: 10px 35px 1px;
-        
+
     }
 }
 
-.calendar{
+.calendar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -254,52 +316,53 @@ p{
     border-radius: 20px;
     box-shadow: 0 3px 11px rgba(0, 0, 0, 0.15);
     padding: 10px 43px 1px;
-    
-    &-container{
+
+    &-container {
         background-color: $fill_input;
         border-radius: 20px;
     }
 
-    &-item-selected{
+    &-item-selected {
         font-weight: 700;
 
-        p{
+        p {
             color: $color_blue1;
         }
     }
 
-    &-data{
+    &-data {
         padding: 30px 30px;
         margin-bottom: 30px;
     }
 
-    &-event{
+    &-event {
 
-        &-head{
+        &-head {
 
-            h5{
+            h5 {
                 font-family: 700;
                 color: $color_dark_violet2;
             }
 
-            p{
+            p {
                 color: $color_base_gray;
             }
         }
 
-        &-body{
+        &-body {
             display: flex;
             flex-direction: row;
         }
 
-        &-detail{
+        &-detail {
             margin-right: 50px;
 
-            :first-child{
+            :first-child {
                 font-weight: 700;
                 color: $color_dark_violet2;
             }
-            p{
+
+            p {
                 color: $color_base_gray;
             }
 
@@ -308,41 +371,44 @@ p{
 }
 
 @media only screen and (max-width: 768px) {
-    .user{
-        &-product{
-            &-head{
+    .user {
+        &-product {
+            &-head {
                 padding: 15px 20px 1px;
             }
-            &-body{
+
+            &-body {
                 padding: 27px 20px 0px;
             }
-            &-data{
-                padding: 10px 20px ;
+
+            &-data {
+                padding: 10px 20px;
             }
         }
     }
 
-    .agenda{
-        &-head{
+    .agenda {
+        &-head {
             padding: 15px 20px 1px;
         }
-        &-body{
+
+        &-body {
             padding: 10px 20px 1px;
-            
+
         }
     }
 
-    .calendar{
+    .calendar {
         padding: 10px 28px 1px;
-        
-    
-        &-data{
+
+
+        &-data {
             padding: 20px 20px;
             margin-bottom: 20px;
         }
-    
-        &-event{
-            &-detail{
+
+        &-event {
+            &-detail {
                 margin-right: 25px;
             }
         }

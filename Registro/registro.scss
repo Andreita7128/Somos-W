@@ -1,0 +1,96 @@
+@import '../landing.scss';
+
+.log_in {
+    padding: 50px 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+
+        & h3 {
+            color: $color_blue1;
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+            color: $color_text_disable;
+            margin-bottom: 50px;
+        }
+    }
+
+    &_img {
+        width: 69%;
+
+        &_img {
+            margin-left: -25px;
+            width: 100%;
+        }
+    }
+}
+
+.text_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+    font-weight: bold;
+    gap: 7px;
+    margin: 10px 0px;
+
+    &_signup {
+        display: flex;
+        text-align: left !important;
+        flex-direction: column;
+        justify-content: start !important;
+        font-weight: bold;
+        gap: 7px;
+        margin: 10px 0px;
+
+        & p {
+            text-align: left;
+            color: $color_text_disable;
+            margin: 0px;
+        }
+    }
+
+    & p {
+        text-align: left;
+        color: $color_text_disable;
+        margin: 0px;
+    }
+}
+
+.btn_class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container_icons {
+    margin: -50px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 25px;
+    color: $color_violet1;
+}
+
+
+.log {
+    color: $color_text_disable;
+}
+
+.btn_a {
+    text-decoration: none;
+}

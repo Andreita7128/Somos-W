@@ -18,7 +18,7 @@ class BreadComponent extends HTMLElement {
                     <li class="breadcrumb-item active" id="bread_lv3" aria-current="page"><span>Level 1</span></li>
                     </ol>
                 </nav>
-                <h1 class="breadcrumb-title" id="bread_title"><span>Titulo de la Sección</span></h1>
+                <h4 class="breadcrumb-title" id="bread_title"><span>Titulo de la Sección</span></h4>
             </div>        
         `
     }

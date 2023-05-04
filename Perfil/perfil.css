@@ -1,5 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* body {
+body {
   background-color: #35cbd3;
 }
 
@@ -42,6 +43,135 @@ p {
 }
 
 /********************************************* Tipografia importada del css de Andrea *****************************************/
+#bread_lv1::after {
+  content: "Inicio";
+  color: #6321A6;
+}
+#bread_lv2::after {
+  content: "Comunidad W";
+  color: #6321A6;
+}
+#bread_lv3::after {
+  content: "W Contigo";
+  color: #6321A6;
+  font-weight: bold;
+}
+
+.breadcrumb-item span {
+  display: none;
+}
+
+#bread_title::after {
+  content: "Perfil";
+  color: #F25C05;
+}
+#bread_title span {
+  display: none;
+}
+
+.sidebar-container {
+  height: 80vh;
+}
+
+#navbarDropdown {
+  color: #F25C05;
+}
+
+.profile-info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+#bread_lv1::after {
+  content: "inicio";
+}
+#bread_lv2::after {
+  content: "Mi perfil W";
+}
+#bread_lv3::after {
+  content: "Tu perfil";
+}
+
+.breadcrumb-item span {
+  display: none;
+}
+
+#bread_title::after {
+  content: "Tu perfil";
+}
+#bread_title span {
+  display: none;
+}
+
+/* CONFIGURACIÓN DEL NAVBAR */
+.search_button {
+  width: 15% !important;
+  height: 44px !important;
+  background-color: #00B1BB !important;
+  color: #F25C05;
+  border-radius: 0% 48px 48px 0% !important;
+  margin: 0 !important;
+}
+.search_button:hover {
+  background-color: white !important;
+  color: #00B1BB !important;
+}
+
+.navup_buttons {
+  width: 100% !important;
+  height: 44px !important;
+  background-color: #00B1BB !important;
+  color: #F2F2F2;
+  padding-top: 7% !important;
+}
+.navup_buttons:hover {
+  background-color: rgb(242, 241, 241) !important;
+  color: #00B1BB !important;
+}
+
+.form-control {
+  margin-right: 0 !important;
+  border-radius: 48px 0px 0px 48px;
+}
+
+.placeholder-input-desktop {
+  width: 459px;
+  height: 44px;
+  border: none;
+  background-color: #F4F4F4;
+  margin-left: 10%;
+}
+
+.second_nav {
+  background-color: #F2F2F2;
+}
+.second_nav_link li a {
+  color: #F25C05 ;
+}
+.second_nav_link li a:hover {
+  color: #27262C !important;
+}
+.second_nav_link li a:active {
+  color: #27262C !important;
+}
+.second_nav_link li a:focus {
+  color: #27262C !important;
+}
+.second_nav_link li .button_toggler {
+  width: 45.22px;
+  height: 45.22px;
+  background-color: #F25C05;
+  border-radius: 62px !important;
+}
+
+.button_toggler {
+  width: 45.22px;
+  height: 45.22px;
+  background-color: #F25C05;
+}
+
 .headline-profilePicture {
   -moz-column-width: 20%;
        column-width: 20%;
@@ -70,11 +200,14 @@ p {
   line-height: 120%;
 }
 
-.user-product-container {
-  background-color: #f1f1f1;
+.user-product-container1 {
+  background-color: #ffffff;
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .informacionSection {
@@ -85,8 +218,8 @@ p {
   padding: 15px 25px 0;
 }
 
-.user-product-data {
-  padding: 20px;
+.user-product-data1 {
+  /* padding: 20px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -109,7 +242,7 @@ p {
 }
 
 .columnButton {
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .profilePicture {
@@ -120,4 +253,132 @@ p {
 
 .informationLabel {
   margin-left: 40px;
+}
+
+/* ------------------------------------------------------------------- */
+/* SECOND INFO CONTAINER INFO */
+.container-personal-info-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personal-info-container {
+  background-color: #ffffff;
+  padding: 25px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.personal-info-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.default-tittle-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #979C9E;
+}
+
+.response-tittle-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #27262C;
+}
+
+.user-personal-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.first-column-personal-info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 80px;
+}
+
+.second-column-personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONFIGURACIÓN MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+  .textHeaderLabel {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #F2F4F5;
+  }
+  .headerLabel {
+    width: 100%;
+    height: 44px;
+    background-color: #F25C05;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  /* PRIMERA TARJETA */
+  .personal-info-container {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .profilePicture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .labelProfileImg {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  .informationLabel {
+    margin-left: 0%;
+  }
+  .headline5-desktop {
+    text-align: center;
+    font-size: 18px;
+  }
+  p {
+    text-align: center;
+  }
+  .user-product-data1 {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .columnButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* SEGUNDA TARJETA */
+  .personal-info-container {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=perfil.css.map */
