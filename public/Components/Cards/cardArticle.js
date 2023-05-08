@@ -392,7 +392,7 @@ class cardForBlog extends HTMLElement {
         this.titulo;
         this.contenido;
         this.boton;
-        this.tags;
+        this.tags = "";
         this.likes = 0;
         this.comments = 0;
 
@@ -406,6 +406,7 @@ class cardForBlog extends HTMLElement {
             "contenido",
             "likes",
             "comments",
+            "tags"
         ]
     }
 
@@ -441,6 +442,12 @@ class cardForBlog extends HTMLElement {
                 this.comments = newValue
 
                 break;
+                
+                case "tags":
+
+                this.tags = newValue
+
+                break;
         }
 
     }
@@ -448,15 +455,13 @@ class cardForBlog extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-        <link rel="stylesheet" href="cardArticle.css">
-        <section class="fondo-card">
+       <section class="fondo-card">
         <section class="card-imagen">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
         </section>
         <section class="labels-site">
-            <div>tag</div> 
-            <div>tag</div> 
-            <div>tag</div> 
+        ${this.tags}
+           
         </section>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
@@ -476,8 +481,14 @@ class cardForBlog extends HTMLElement {
     </section>
 
         `
+
+ 
+      }
     }
-}
+
+
+    
+
 
 window.customElements.define("card-forblog", cardForBlog)
 
