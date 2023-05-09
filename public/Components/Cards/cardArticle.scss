@@ -1,5 +1,10 @@
 @import '../../../style.scss';
 
+
+.imagefondo{
+    max-width: 328px !important;
+}
+
 .fondo-card {
 
     background-color: white;
@@ -14,6 +19,8 @@
     flex-direction: column;
     gap: 8px;
     max-width: 772px;
+
+
 
     & .card_button {
         border: 1px solid $color_blue1;
@@ -200,7 +207,6 @@
 
         margin-top: -35px;
         height: fit-content;
-        background-color: #707070;
 
         & .imagen-inCard {
             position: relative;
