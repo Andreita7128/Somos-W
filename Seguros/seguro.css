@@ -296,6 +296,9 @@ section h3 {
   .desaparecer {
     display: none;
   }
+  .desaparecer-cards {
+    display: none;
+  }
 }
 .sidebar-container {
   position: sticky;

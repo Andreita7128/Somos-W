@@ -41,7 +41,15 @@ section {
     .desaparecer {
         display: none;
     }
+    .desaparecer-cards{
+        display: none;
+    }
+}
 
+@media (max-width: 800px) {
+    #tasas{
+        display: none;
+    }
 }
 
 .sidebar-container {
@@ -124,3 +132,4 @@ section {
 .dropdown_form{
     overflow-y: auto !important;
 }
+
