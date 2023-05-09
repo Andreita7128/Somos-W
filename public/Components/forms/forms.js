@@ -137,11 +137,39 @@ class Forms extends HTMLElement {
                       Departamento
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item" href="#">Cali</a></li>
-                      <li><a class="dropdown-item" href="#">Popayan</a></li>
-                      <li><a class="dropdown-item" href="#">Medellin</a></li>
-                      <li><a class="dropdown-item" href="#">Bogota</a></li>
-                      <li><a class="dropdown-item" href="#">Cartagena</a></li>
+                    <li value="">-</li>
+                    <li value="Arauca">Arauca</li>
+                    <li value="Armenia">Armenia</li>
+                    <li value="Barranquilla">Barranquilla</li>
+                    <li value="Bogotá">Bogotá</li>
+                    <li value="Bucaramanga">Bucaramanga</li>
+                    <li value="Cali">Cali</li>
+                    <li value="Cartagena">Cartagena</li>
+                    <li value="Cúcuta">Cúcuta</li>
+                    <li value="Florencia">Florencia</li>
+                    <li value="Ibagué">Ibagué</li>
+                    <li value="Leticia">Leticia</li>
+                    <li value="Manizales">Manizales</li>
+                    <li value="Medellín">Medellín</li>
+                    <li value="Mitú">Mitú</li>
+                    <li value="Mocoa">Mocoa</li>
+                    <li value="Montería">Montería</li>
+                    <li value="Neiva">Neiva</li>
+                    <li value="Pasto">Pasto</li>
+                    <li value="Pereira">Pereira</li>
+                    <li value="Popayán">Popayán</li>
+                    <li value="Puerto Carreño">Puerto Carreño</li>
+                    <li value="Puerto Inírida">Puerto Inírida</li>
+                    <li value="Quibdó">Quibdó</li>
+                    <li value="Riohacha">Riohacha</li>
+                    <li value="San Andrés">San Andrés</li>
+                    <li value="San José del Guaviare">San José del Guaviare</li>
+                    <li value="Santa Marta">Santa Marta</li>
+                    <li value="Sincelejo">Sincelejo</li>
+                    <li value="Tunja">Tunja</li>
+                    <li value="Valledupar">Valledupar</li>
+                    <li value="Villavicencio">Villavicencio</li>
+                    <li value="Yopal">Yopal</li>
                     </ul>
                   </div>
                 </div>
@@ -151,7 +179,6 @@ class Forms extends HTMLElement {
     Acepto los términos y condiciones
   </label>
 </div>
-
                 <button type="button" class="btn btn_large_outline_active anterior text-center">Anterior</button>
                 <button type="submit" class="btn btn_large_active">Enviar</button>
               </div>

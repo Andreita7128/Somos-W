@@ -15,6 +15,10 @@
         background-color: $color_blue1;
         color: $color_base_white !important;
     }
+    & :active{
+        background-color: $color_blue1;
+        color: $color_base_white !important;
+    }
 }
 
 .list-group{

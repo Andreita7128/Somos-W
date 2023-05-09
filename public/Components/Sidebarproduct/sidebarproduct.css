@@ -276,6 +276,10 @@ h5 {
   background-color: #00B1BB;
   color: #F2F2F2 !important;
 }
+.btn-sidebar :active {
+  background-color: #00B1BB;
+  color: #F2F2F2 !important;
+}
 
 .list-group {
   height: calc(100vh - 100px);

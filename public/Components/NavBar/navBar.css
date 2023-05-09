@@ -304,6 +304,7 @@ h5 {
 
 .second_nav {
   background-color: #F2F2F2;
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
 }
 .second_nav_link li a {
   color: #F25C05 !important;
