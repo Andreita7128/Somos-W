@@ -219,7 +219,59 @@ body{
     overflow: hidden;
     box-shadow: 0 4px 14px #E4D4ED;
     
-}
+  }
+
+  .label-user-giros{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: $color_base_gray;
+  }
+
+  .sublabel-user-giros {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_base_gray;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-purple {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: $color_violet1;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-proceso {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_warning;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-finalizado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_success;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-cancelado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_error;
+
+    margin-left: 20px;
+  }
 
   
 }
