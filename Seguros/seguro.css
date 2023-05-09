@@ -301,7 +301,6 @@ section h3 {
   position: sticky;
   top: 30px;
   height: calc(100vh - 20px);
-  overflow-y: auto;
 }
 
 .button_toggler {
@@ -363,6 +362,10 @@ section h3 {
   background-color: #00B1BB !important;
 }
 
+.dropdown_form {
+  overflow-y: auto !important;
+}
+
 .image-card {
   width: 10px !important;
 }
@@ -420,4 +423,10 @@ section h3 {
 }
 #bread_title span {
   display: none;
+}
+
+.sidebar-container {
+  position: sticky;
+  top: 30px;
+  height: calc(100vh - 20px);
 }/*# sourceMappingURL=seguro.css.map */

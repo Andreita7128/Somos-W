@@ -69,3 +69,8 @@ section{
         display: none;
     }
 }
+.sidebar-container{
+    position: sticky;
+    top: 30px;
+    height: calc(100vh - 20px);
+}
