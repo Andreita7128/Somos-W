@@ -1465,3 +1465,87 @@ class Cardtablatres extends HTMLElement {
 }
 
 window.customElements.define("card-productabla3", Cardtablatres);
+
+// --------------------------------------------------------------------------------
+
+class cardImg extends HTMLElement {
+
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.boton;
+
+
+    }
+
+    static get observedAttributes() {
+        return [
+            "recurso",
+            "titulo",
+            "contenido",
+            "boton",
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "recurso":
+
+                this.recurso = newValue
+
+                break;
+
+            case "titulo":
+
+                this.titulo = newValue
+
+                break;
+
+            case "contenido":
+
+                this.contenido = newValue
+
+                break;
+
+            case "boton":
+
+                this.boton = newValue
+
+                break;
+        }
+
+    }
+
+    connectedCallback() {
+
+        this.innerHTML = `
+
+        <div class = 'supreme'>
+        
+        <section class="fondo-card imagefondo">
+        <section class="card-imagen">
+            <img src= "${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <section class="texto-card" style="display: flex; align-items: center;" >
+            <h5 class="titulo" style=" margin-top: 40px;">${this.titulo}</h5>
+            <p class="parrafo" style="text-align: center;">
+            ${this.contenido}   
+            </p>
+        </section>
+        <button  class = 'btn btn_large btn_large_outline btn_large_active btn_large_outline_active' style="display: flex; justify-content: space-around; align-items:center;"><div></div><h5>${this.boton}</h5> <i class="bi bi-arrow-right"></i> </button>
+    </section>
+
+        </div>
+        
+        `
+
+    }
+
+
+}
+
+window.customElements.define("card-productosimg", cardImg)
