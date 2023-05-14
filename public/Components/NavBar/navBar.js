@@ -75,8 +75,11 @@
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
-                            <a class="dropdown-item" href="#">Opción 2</a>
-                            <a class="dropdown-item" href="#">Opción 3</a>
+                            <a class="dropdown-item" href="#">Yo construyo</a>
+                            <a class="dropdown-item" href="#">Gotahorro</a>
+                            <a class="dropdown-item" href="#">Inmueble productivo</a>
+                            <a class="dropdown-item" href="#">Credito vehiculo</a>
+                            
                             
                         </div>
                     </li>
@@ -85,7 +88,7 @@
                         aria-expanded="false"> Seguros </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Seguros/seguros.html">Seguro soy vida</a>
-                            <a class="dropdown-item" href="#">Opción 2</a>
+                            <a class="dropdown-item" href="#"></a>
                             <a class="dropdown-item" href="#">Opción 3</a>
                         </div>
                     </li>
