@@ -105,6 +105,11 @@ h5 {
   font-size: 20px;
 }
 
+.text_field:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .text_field::placeholder {
   font-weight: 600;
   font-size: 20px;
@@ -560,6 +565,7 @@ h5 {
 }
 .fondo-card .card-imagen {
   margin-top: -35px;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #707070;
@@ -611,7 +617,8 @@ h5 {
 }
 .card_horizontal_body {
   padding: 33px 55px;
-=======
+}
+
 .title_row {
   background-color: #8A90B5 !important;
   width: 100%;
