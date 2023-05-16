@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -265,59 +264,12 @@ h5 {
     width: 50%;
   }
 }
-.image-card {
-  width: 10px !important;
-}
-
-.marginis {
-  margin-left: 175px !important;
-}
-
-section.portada {
-  margin-top: 10px;
-}
-section .style_better {
-  margin-top: 80px;
-}
-section h3 {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-@media (max-width: 1250px) {
-  .form-control {
-    margin-right: 0 !important;
-    height: 43px;
-    border-radius: 48px 0px 0px 48px;
-  }
-  .marginis {
-    margin-left: 0px !important;
-  }
-  .desaparecer {
-    display: none;
-  }
-}
-.sidebar-container {
-  position: sticky;
-  top: 30px;
-  height: calc(100vh - 20px);
-  overflow-y: auto;
-}
-
-.button_toggler {
-  border-radius: 25px;
-}
-
 #bread_lv1::after {
   content: "Inicio";
   color: #6321A6;
 }
 #bread_lv2::after {
-  content: "Créditos";
-  color: #6321A6;
-}
-#bread_lv3::after {
-  content: "Microcrédito";
+  content: "Creditos";
   color: #6321A6;
   font-weight: bold;
 }
@@ -327,97 +279,15 @@ section h3 {
 }
 
 #bread_title::after {
-  content: "Microcrédito";
+  content: "Creditos";
   color: #F25C05;
 }
 #bread_title span {
   display: none;
 }
 
-.dropdown_W {
-  background-color: white;
-  color: #00B1BB;
-}
-.dropdown_W button {
-  width: 100%;
-  margin-bottom: 0px !important;
-}
-
-.dropdown {
-  margin-bottom: 0px !important;
-  color: #00B1BB;
-}
-
-.cardmobile {
-  width: 100%;
-}
-
-.dropdown_reactive {
-  margin-left: 0% !important;
-}
-.dropdown_reactive:focus {
-  background-color: #00B1BB !important;
-  color: white;
-}
-.dropdown_reactive:active {
-  background-color: #00B1BB !important;
-}
-
-.image-card {
-  width: 10px !important;
-}
-
-.marginis {
-  margin-left: 175px !important;
-}
-
-section.portada {
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-section .style_better {
-  margin-top: 80px;
-}
-section h3 {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-@media (max-width: 1250px) {
-  .form-control {
-    margin-right: 0 !important;
-    height: 43px;
-    border-radius: 48px 0px 0px 48px;
-  }
-  .marginis {
-    margin-left: 0px !important;
-  }
-  .desaparecer {
-    display: none;
-  }
-}
-#bread_lv1::after {
-  content: "Inicio";
-  color: #6321A6;
-}
-#bread_lv2::after {
-  content: "Seguros";
-  color: #6321A6;
-}
-#bread_lv3::after {
-  content: "Seguro soy vida";
-  color: #6321A6;
-  font-weight: bold;
-}
-
-.breadcrumb-item span {
-  display: none;
-}
-
-#bread_title::after {
-  content: "Seguro soy vida";
-  color: #F25C05;
-}
-#bread_title span {
-  display: none;
-}/*# sourceMappingURL=seguro.css.map */
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  content: ">" !important;
+}/*# sourceMappingURL=creditos.css.map */

@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil / giros</title>
+    <title> creditos </title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,9 @@
     <link rel="stylesheet" href="/public/Components/tags/tags.css">
     <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
     <link rel="stylesheet" href="/public/Components/Footer/footer.css">
-    <link rel="stylesheet" href="giros.css">
+    <link rel="stylesheet" href="/credito/credito.css">
+    
+    <link rel="stylesheet" href="creditos.css">
     
     <!---->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -46,7 +48,54 @@
 
     <w-nav-bar></w-nav-bar>
 
-    <w-footer></w-footer>
+    <bread-n-title></bread-n-title>
+
+    <section class="portada">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row ">
+                <div class="col-md-6 style_better">
+                    <h1 class="headline1">Conoce todos nuestros créditos</h1>
+                    <span>
+                        <p class="body_1">Tenemos un crédito enfocado a microempresarios y
+                            emprendedores como tú.</p>
+                    </span>
+                   
+                </div>
+                <div class="col-md-6 ">
+                    <img src="img/creditosPortada.png" class="img-fluid" alt="Imagen de ejemplo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="channels_assistance">
+        <h3>¿Tienes dudas o sugerencias?</h3>
+        <p class="body_1">Consulta nuestros canales de atención</p>
+        <section class="channels_container">
+            <div class="channels_container_channel">
+                <i class="bi bi-person-lines-fill"></i>
+                <p class="body_1 channels_container_channel_text">Analista de crédito</p>
+            </div>
+            <div class="channels_container_channel">
+                <i class="bi bi-telephone-fill"></i>
+                <p class="body_1 channels_container_channel_text">Línea gratuita</p>
+            </div>
+            <div class="channels_container_channel">
+                <i class="bi bi-phone-fill"></i>
+                <p class="body_1 channels_container_channel_text">Celular</p>
+            </div>
+            <div class="channels_container_channel">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p class="body_1 channels_container_channel_text">Oficinas físicas</p>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <w-footer></w-footer>
+    </footer>
 
     <script type="module" src="/public/Components/components.js"></script>
     <!--Js Bootstrap-->
