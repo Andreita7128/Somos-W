@@ -18,12 +18,27 @@
   height: auto;
 }
 
+@media (max-width: 768px) {
+  #bannerTop {
+    display: block;
+    size: 100%;
+    padding: 0;
+  }
+
+  #CTAText {
+    font-size: 16px;
+  }
+
+  #CTAimg {
+    width: 100%;
+  }
+}
+
 #cardsInfoGiro {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
-
 }
 
 #menuLateral {
@@ -33,25 +48,24 @@
   width: 50%;
 }
 
-
 #cardsInfo {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 100px;
+  padding-left: 100px;
 }
 
 #bread_lv1::after {
   content: "Inicio";
-  color: #6321A6;
+  color: #6321a6;
 }
 #bread_lv2::after {
   content: "Giros";
-  color: #6321A6;
+  color: #6321a6;
 }
 #bread_lv3::after {
   content: "Reclamar Giros";
-  color: #6321A6;
+  color: #6321a6;
   font-weight: bold;
 }
 
@@ -61,8 +75,8 @@
 
 #bread_title::after {
   content: "Reclamar Giros";
-  color: #F25C05;
+  color: #f25c05;
 }
 #bread_title span {
   display: none;
-}/*# sourceMappingURL=reclamar.css.map */
+} /*# sourceMappingURL=reclamar.css.map */
