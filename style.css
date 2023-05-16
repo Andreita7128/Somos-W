@@ -1,4 +1,10 @@
-
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +17,6 @@
 p {
   margin-bottom: 0px;
 }
-
 
 /* Typography */
 h1 {
@@ -175,7 +180,6 @@ h5 {
   color: #CDCFD0;
 }
 .btn_medium {
-
   width: auto;
   padding: 9px 75px;
 }
@@ -185,7 +189,6 @@ h5 {
   width: 20px;
   height: 20px;
   background-size: cover;
-
 }
 .btn_medium_active {
   border: none;

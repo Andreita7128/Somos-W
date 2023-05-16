@@ -281,6 +281,10 @@ h5 {
     width: 50%;
   }
 }
+.imagefondo {
+  max-width: 328px !important;
+}
+
 .fondo-card {
   background-color: white;
   width: 100%;
@@ -430,7 +434,6 @@ h5 {
   margin-top: -35px;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #707070;
 }
 .fondo-card .card-imagen .imagen-inCard {
   position: relative;
@@ -510,14 +513,14 @@ h5 {
   margin-right: 0px;
 }
 .title_col .title_row2 h4 {
-  font-size: 13px;
+  font-size: 10px;
 }
 .title_col .title_col {
   justify-content: space-between;
   width: 100%;
 }
 .title_col .title_col h4 {
-  font-size: 14px !important;
+  font-size: 10px !important;
   font-weight: 500 !important;
 }
 
