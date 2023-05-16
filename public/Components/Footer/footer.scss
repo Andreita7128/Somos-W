@@ -1,5 +1,7 @@
-@import '../../../landing.scss';
+@import '../../../style.scss';
+
 .footerW{
+    margin-top: 10px;
     padding-top: 20px;
     background-color:$color_dark_violet1!important;
     border-top: none;
@@ -20,7 +22,16 @@ footer{
 }
 
 .line-color{
-    border-bottom:$color_orange1 !important;
-    width: 1px;
-    border-style: solid;
+    border-bottom: #eb2f00 !important;
+    
+    border: none;
+}
+
+.separadortitulo{
+    border: 2px solid $color_orange1 !important;
+    width: 80px;
+    opacity: 1;
+    border-radius: 26px;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }

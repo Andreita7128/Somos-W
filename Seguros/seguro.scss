@@ -1,0 +1,79 @@
+@import './../Creditos/credito.scss';
+
+
+.image-card {
+    width: 10px !important;
+}
+
+.marginis {
+    margin-left: 175px !important;
+}
+
+section {
+
+    &.portada {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    & .style_better {
+        margin-top: 80px;
+    }
+
+    & h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+
+    .form-control {
+        margin-right: 0 !important;
+        height: 43px;
+        border-radius: 48px 0px 0px 48px;
+    }
+
+    .marginis {
+        margin-left: 0px !important;
+    }
+
+    .desaparecer {
+        display: none;
+    }
+
+}
+
+#bread_lv {
+    &1::after {
+        content: "Inicio";
+        color: #6321A6;
+    }
+
+    &2::after {
+        content: "Seguros";
+        color: #6321A6;
+    }
+
+    &3::after {
+        content: "Seguro soy vida";
+        color: #6321A6;
+        font-weight: bold;
+    }
+}
+
+.breadcrumb-item span {
+    display: none;
+}
+
+#bread_title {
+    &::after {
+        content: "Seguro soy vida";
+        color: #F25C05;
+    }
+
+    span {
+        display: none;
+    }
+}

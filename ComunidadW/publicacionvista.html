@@ -12,10 +12,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!--Css link-->
-    <link rel="stylesheet" href="/landing.css">
-    <link rel="stylesheet" href="/ComunidadW/modded-components/Cards.css">
-    <link rel="stylesheet" href="/ComunidadW/modded-components/Breadcrumb.css">
-    <link rel="stylesheet" href="/ComunidadW/modded-components/Buttons.css">
+    <link rel="stylesheet" href="/ComunidadW/publicacionvista.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
 
@@ -33,43 +30,118 @@
 
     <header>
         <w-nav-bar></w-nav-bar>
+        <section class="breadcrumb_section">
+            <bread-n-title></bread-n-title>
+        </section>
     </header>
 
-    <card-history></card-history>
+    <section id="detail_view">
+        <a href="/ComunidadW/comunidadW.html" style="color: black; font-size: 16px; margin-left: 5.2%;"><i
+                class="bi bi-chevron-left"></i></a>
+    </section>
 
-    <!--Migas de pan-->
-    <div id="breadcrumb-container">
-        <ul class="bread-crumb">
-            <li class="text-button-link-medium breadcrumb-text"><a href="#">Inicio</a></li>
-            <li class="text-button-link-medium breadcrumb-text"><a href="#">Comunidad W</a></li>
-            <li class="active text-button-link-medium"> W Contigo </li>
-        </ul>
-    </div>
+<<<<<<< HEAD
+    <section class="infocard">
+        <article id="detail_view_infocard">
+            <card-blogdetalle name=" Aurora Chávez " userprofile="/ComunidadW/img/avatar.png" boton="medium active"
+                recurso="/ComunidadW/img/Frame539.png" titulo="Microcrédito una buena opción" contenido="Al principio no sabíamos que era un microcrédito pero luego nos enteramos que era la mejor opción gracias a que... descubrimos que un microcrédito era 
+            la mejor opción para financiar nuestro proyecto de emprendimiento debido a su flexibilidad en los requisitos de crédito, montos adecuados, tasas de interés razonables, 
+            plazos de pago flexibles, capacitación empresarial y enfoque en la inclusión financiera. Obtener un microcrédito nos permitió superar barreras financieras y materializar 
+            nuestro proyecto con éxito."></card-blogdetalle>
+        </article>
+    </section>
+=======
+    <bread-n-title></bread-n-title>
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
 
-    <a href="comunidadw.html" style="color: black; font-size: 24px; margin-left: 3%;"><i class="bi bi-chevron-left"></i></a>
+    <section id="comments">
+        <h2>Comentarios</h2>
 
+<<<<<<< HEAD
+        <card-comentario name=" Aurora Chávez " recurso="/ComunidadW/img/Commentpic.png" titulo="Breve título"
+            contenido="¡Vaya reflexión! He aprendido demasiado, creo que considerare tomar el microcrédito.">
+        </card-comentario>
+
+        <card-comentario name=" Aurora Chávez " recurso="/ComunidadW/img/Commentpic.png" titulo="Breve título"
+            contenido="¡Vaya reflexión! He aprendido demasiado, creo que considerare tomar el microcrédito.">
+        </card-comentario>
+    </section>
+=======
     <card-blogdetalle name=" Aurora Chávez " userprofile="/ComunidadW/img/avatar.png" boton="medium active" recurso="/ComunidadW/img/Frame539.png" titulo="Microcrédito una buena opción"
     contenido="Al principio no sabíamos que era un microcrédito pero luego nos enteramos que era la mejor opción gracias a que... descubrimos que un microcrédito era 
     la mejor opción para financiar nuestro proyecto de emprendimiento debido a su flexibilidad en los requisitos de crédito, montos adecuados, tasas de interés razonables, 
     plazos de pago flexibles, capacitación empresarial y enfoque en la inclusión financiera. Obtener un microcrédito nos permitió superar barreras financieras y materializar 
     nuestro proyecto con éxito."></card-blogdetalle>
-
+    <br>
     <h3>Comentarios</h3>
+    <br>
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
 
-    <card-comentario name=" Aurora Chávez " recurso="/ComunidadW/img/Commentpic.png" titulo="Breve título"
-    contenido="¡Vaya reflexión! He aprendido demasiado, creo que considerare tomar el microcrédito."></card-comentario>
+    <section id="btn_mas">
+        <button class="btn btn_small btn_small_active">
+            Ver más
+        </button>
+    </section>
+    
+    <section id="w_card">
+        <div id="w_card_desk">
+            <w-card-desk photo="../Images/card.png" title="Atrévete a ser parte de la comunidad W"
+                text="Cuéntanos tu historia de grandeza, agrega una categoría a la que pertenezcas y se parte de la comunidad W"
+                btn="Publica tu historia"></w-card-desk>
+        </div>
 
-    <card-comentario name=" Aurora Chávez " recurso="/ComunidadW/img/Commentpic.png" titulo="Breve título"
-    contenido="¡Vaya reflexión! He aprendido demasiado, creo que considerare tomar el microcrédito."></card-comentario>
+        <div id="w_card_mobile">
+            <card-imagen recurso="../Images/card.png" titulo="Atrévete a ser parte de la comunidad W"
+            contenido="Cuéntanos tu historia de grandeza, agrega una categoría a la que pertenezcas y se parte de la comunidad W"
+            boton="Publica tu historia"></card-imagen>
+        </div>
+    </section>
 
+<<<<<<< HEAD
+    <section id="ours_labels">
+        <div id="ours_labels_title">
+            <h3>Nuestras etiquetas</h3>
+        </div>
+        <div class="container_labels">
+            <div class="container_labels_info">
+                <i class="bi bi-people"></i>
+                <h5>Aprende en Familia</h5>
+                <p class="body_2">Comparte en familia historias de enseñanza financiera </p>
+            </div>
+            <div class="container_labels_info">
+                <i class="bi bi-graph-up"></i>
+                <h5>Crece con tu negocio</h5>
+                <p class="body_2">Lee historias de crecimientos de negocios y aprende sobre decisiones financieras</p>
+            </div>
+            <div class="container_labels_info">
+                <i class="bi bi-emoji-smile"></i>
+                <h5>Crecemos juntos</h5>
+                <p class="body_2">Toma la oportunidad de crecer y aprender con historias reales para tomar acción de tu
+                    vida financiera</p>
+            </div>
+        </div>
+
+        <article id="ours_labels_card">
+            <card-boton icon="bi bi-people" titulo="Conoce más sobre 
+            nuestras categorías" contenido="Aprende sobre nuestras categorías, estas te ayudaran a encontrar las historias que mas se ajusten a tus intereses"
+            boton="Continuar"></card-boton>
+
+        </article>
+    </section>
+=======
+    <br>
     <button class="btn rounded-pill text-button-link-normal" type="button" id="send-form-btn"
                 style="width: 310px; height: 42px; border: 1px solid #00B1BB; background-color: #00B1BB; color: #FFFFFF; margin-bottom: 10px;">
                 Ver más
     </button>
+    <br>
+    <br>
 
-    <card-imagen boton="medium active" recurso="/ComunidadW/img/Frame535.jpg" titulo="Atrévete a ser parte de la Comunidad W"
+    <card-imagen boton="Publica tu historia" recurso="/ComunidadW/img/Frame535.jpg" titulo="Atrévete a ser parte de la Comunidad W"
     contenido="Cuéntanos tu historia de grandeza, agrega una categoría y se parte de la comunidad W">
     </card-imagen>
+
+    <br>
 
         <!--Card categorías-->
         <section class="card">
@@ -87,13 +159,16 @@
                 </div>
             </a>
         </section>
+>>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
+
+        <br>
 
     <footer>
         <w-footer></w-footer>
     </footer>
 
 
-    <script type="module" src="/public/Components/components.js"></script>
+    <script type="module" src="../public/Components/components.js"></script>
 
     <!--Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

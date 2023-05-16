@@ -1,4 +1,4 @@
-@import '../../../landing.scss';
+@import '../../../style.scss';
 
 .search_button{
     width: 15% !important;
@@ -18,7 +18,7 @@
     width: 100% !important;
     height: 44px !important;
     background-color: $color_blue1 !important;
-    color: $color_base_white;
+    color: $color_base_white !important;
     padding-top: 7% !important;
     &:hover{
         background-color: rgb(242, 241, 241) !important ;
@@ -45,7 +45,7 @@
     &_link{
         li{
             a{
-                color: $color_orange1;
+                color: $color_orange1 !important;
                 &:hover{
                     color: $color_base_gray !important;
                 }
