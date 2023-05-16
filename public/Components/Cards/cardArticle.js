@@ -1837,3 +1837,107 @@ class cardImg extends HTMLElement {
 }
     
 window.customElements.define("card-productosimg", cardImg)
+
+//SIMULADOR----------------------------------------------------------------------------------------------------------------------------------------------------------
+class Simulador extends HTMLElement {
+    constructor() {
+        super();
+
+        this.recurso;
+
+    }
+
+        static get observedAttributes() {
+            return [
+                "recurso",
+         
+
+            ]
+        }
+    
+        attributeChangedCallback(nameAtr, oldValue, newValue) {
+    
+            switch (nameAtr) {
+                case "recurso":
+    
+                    this.recurso = newValue
+    
+                    break;
+    
+                
+
+                    
+        }
+
+    }
+    connectedCallback() {
+
+        this.innerHTML = `
+        
+        
+        
+        <section class="fondo-card">
+        <section class="card-imagen">
+          <img src="${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form id="formulario" method="post" action="">
+              <h3> Tipo de crédito </h3>
+            
+                <div id="etapa-1">
+                  <div class="form-group">
+                    <div class="dropdown">
+                      <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nuevo <i class="bi bi-chevron-down float-end"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Renovación</a></li>
+                        <li><a class="dropdown-item" href="#">Preferencial</a></li>
+                      </ul>
+                    </div>
+                    <h3 for="nombre">Digita el monto:</h3>
+                    <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Monto">
+                    <p style = "margin-bottom:20px">Máx. $50.000.000</p>
+                  </div>
+
+
+                  <h3> Plazo en meses</h3>
+            
+                  <div id="etapa-1">
+                    <div class="form-group">
+                      <div class="dropdown">
+                        <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          2 meses <i class="bi bi-chevron-down float-end"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" >4 meses</a></li>
+                          <li><a class="dropdown-item" >6 meses</a></li>
+                        </ul>
+                      </div>
+
+                      <h3 class = "simulacion" style = "margin-bottom:20px;">Tasa de simulación 2.02% M.V</h3>
+         
+                  <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn_continuar siguiente">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+                  </div>
+                </div>
+            
+
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+        
+        `
+
+    }
+}
+    
+window.customElements.define("w-simulador", Simulador)
