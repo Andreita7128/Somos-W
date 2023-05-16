@@ -389,4 +389,9 @@ section h3 {
 
 .simulacion {
   color: #6321A6;
+}
+
+.dropdown-menu.show {
+  display: block;
+  width: auto;
 }/*# sourceMappingURL=credito.css.map */

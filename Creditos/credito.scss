@@ -138,3 +138,8 @@ section {
     color: $color_violet1;
 }
 
+.dropdown-menu.show {
+    display: block;
+    width: auto;
+}
+
