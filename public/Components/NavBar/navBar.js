@@ -26,12 +26,12 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link btn navup_buttons text-center text-button-link-normal" href="#"><i
-                        class="bi bi-telephone distance-icon"></i>Canal de atención</a>
+                        <a class="btn btn_medium btn_medium_active text_button_medium nav_btn" href="#"><i
+                        class="bi bi-telephone"></i>Canal de atención</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  btn navup_buttons text-center text-button-link-normal" style="margin-left: 10px;"
-                        href="../../../Registro/iniciarSesión.html"><i class="bi bi-person distance-icon"></i>Mi perfil W</a>
+                        <a class="btn btn_medium btn_medium_active text_button_medium nav_btn" style="margin-left: 10px;"
+                        href="../../../Registro/iniciarSesión.html"><i class="bi bi-person"></i>Mi perfil W</a>
                     </li>
                 </ul>
             </div>
