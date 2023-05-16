@@ -126,7 +126,7 @@ class cardOrange extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button class="btn btn_medium btn_medium_active " ><h5><!--  aca poner estilo de boton ♥ -->${this.boton}</h5></button>
+        <button class="btn btn_medium btn_medium_active style = "display: flex; justify-content: center">" ><h5><!--  aca poner estilo de boton ♥ -->${this.boton}</h5></button>
     </section>
         
         `
