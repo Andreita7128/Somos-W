@@ -275,6 +275,18 @@
 
     &_body {
         padding: 33px 55px;
+
+        & h3 {
+            margin-bottom: 20px;
+        }
+
+        & p {
+            margin: 20px 0px;
+        }
+
+        & button {
+            margin-top: 40px;
+        }
     }
 }
 
