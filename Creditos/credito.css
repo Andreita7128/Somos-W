@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +19,6 @@ p {
   margin-bottom: 0px;
 }
 
-/*Colors*/
-/*Various*/
-/*Blue*/
-/*Dark Violet*/
-/*Violet*/
-/*Orange*/
-/*Yellow*/
 /* Typography */
 h1 {
   font-weight: 700;
@@ -127,9 +127,20 @@ h5 {
   height: 42px;
   border-radius: 48px;
   box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .btn_large {
-  width: 423px;
+  width: auto;
+  padding: 0px 82px;
+}
+.btn_large i {
+  position: absolute;
+  transform: translateX(1000%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
 }
 .btn_large_active {
   border: none;
@@ -170,9 +181,15 @@ h5 {
   color: #CDCFD0;
 }
 .btn_medium {
-  display: flex;
-  flex-direction: row;
-  padding: 9px 29px;
+  width: auto;
+  padding: 9px 75px;
+}
+.btn_medium i {
+  position: absolute;
+  transform: translateX(700%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
 }
 .btn_medium_active {
   border: none;
@@ -296,12 +313,19 @@ section h3 {
   .desaparecer {
     display: none;
   }
+  .desaparecer-cards {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #tasas {
+    display: none;
+  }
 }
 .sidebar-container {
   position: sticky;
   top: 30px;
   height: calc(100vh - 20px);
-  overflow-y: auto;
 }
 
 .button_toggler {
@@ -361,4 +385,8 @@ section h3 {
 }
 .dropdown_reactive:active {
   background-color: #00B1BB !important;
+}
+
+.dropdown_form {
+  overflow-y: auto !important;
 }/*# sourceMappingURL=credito.css.map */

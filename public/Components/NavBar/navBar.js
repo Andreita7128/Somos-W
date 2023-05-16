@@ -5,6 +5,7 @@
 
     connectedCallback() {
         this.render()
+        this.setupSearchForm();
     }
 
     render() {
@@ -17,7 +18,7 @@
                     <img class="logo1" src="/public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
                 </a>
             <div class="d-flex justify-content-center align-items-center">
-                <form class="d-flex my-2 my-lg-0">
+                <form id = 'search-1' class="d-flex my-2 my-lg-0">
                     <input class="form-control me-2 placeholder-input-desktop headline5" type="search"
                     placeholder="¿Que estas buscando?" aria-label="Search">
                 <button class="btn btn_large_active search_button " type="submit"><i class="bi bi-search"></i></button>
@@ -57,7 +58,7 @@
                 </form>
                 <ul class="navbar-nav mx-auto second_nav_link">
                     <li class="nav-item d-md-none d-block">
-                        <a class="nav-link btn btn_large_active text-center text-white mx-auto" style="margin-top: 5px;"
+                        <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
                         href="#">Mi perfil W</a>
                     </li>
                     <li class="nav-item d-md-none d-block">
@@ -75,8 +76,11 @@
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
-                            <a class="dropdown-item" href="#">Opción 2</a>
-                            <a class="dropdown-item" href="#">Opción 3</a>
+                            <a class="dropdown-item" href="#">Yo construyo</a>
+                            <a class="dropdown-item" href="#">Gotahorro</a>
+                            <a class="dropdown-item" href="#">Inmueble productivo</a>
+                            <a class="dropdown-item" href="#">Credito vehiculo</a>
+                            
                             
                         </div>
                     </li>
@@ -85,17 +89,19 @@
                         aria-expanded="false"> Seguros </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Seguros/seguros.html">Seguro soy vida</a>
-                            <a class="dropdown-item" href="#">Opción 2</a>
-                            <a class="dropdown-item" href="#">Opción 3</a>
+                            <a class="dropdown-item" href="#">Seguro soy protección familiar</a>
+                            <a class="dropdown-item" href="#">Seguro soy patrimonio seguro</a>
+                            <a class="dropdown-item" href="#">Seguro soy previsión exequial</a>
+                            
                         </div>
                     </li>
-                    <li class="nav-item dropdown border-bottom-gg">
+                    <li class="nav-item dropdown border-bottom-gg ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Giros internacionales </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Opción 1</a>
-                            <a class="dropdown-item" href="#">Opción 2</a>
-                            <a class="dropdown-item" href="#">Opción 3</a>
+                            <a class="dropdown-item" href="#">Reclamar giros</a>
+                            <a class="dropdown-item" href="#">Enviar Giros</a>
+                            
                         </div>
                     </li>
                     <li class="nav-item dropdown border-bottom-gg">
@@ -122,6 +128,16 @@
     </nav>
   
         `
+    }
+
+    setupSearchForm(){
+        const searchForm = this.querySelector('#search-2');
+        searchForm.addEventListener('submit',this.handleSearchSubmit.bind(this));
+    }
+
+    handleSearchSubmit(event){
+        event.preventDefault();
+        const searchInput = this.querySelector
     }
 
 }

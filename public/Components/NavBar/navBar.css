@@ -1,3 +1,10 @@
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +18,6 @@ p {
   margin-bottom: 0px;
 }
 
-/*Colors*/
-/*Various*/
-/*Blue*/
-/*Dark Violet*/
-/*Violet*/
-/*Orange*/
-/*Yellow*/
 /* Typography */
 h1 {
   font-weight: 700;
@@ -131,9 +131,20 @@ h5 {
   height: 42px;
   border-radius: 48px;
   box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .btn_large {
-  width: 423px;
+  width: auto;
+  padding: 0px 82px;
+}
+.btn_large i {
+  position: absolute;
+  transform: translateX(1000%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
 }
 .btn_large_active {
   border: none;
@@ -174,9 +185,15 @@ h5 {
   color: #CDCFD0;
 }
 .btn_medium {
-  display: flex;
-  flex-direction: row;
-  padding: 9px 29px;
+  width: auto;
+  padding: 9px 75px;
+}
+.btn_medium i {
+  position: absolute;
+  transform: translateX(700%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
 }
 .btn_medium_active {
   border: none;
@@ -309,9 +326,10 @@ h5 {
 
 .second_nav {
   background-color: #F2F2F2;
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
 }
 .second_nav_link li a {
-  color: #F25C05 !important;
+  color: #F25C05;
 }
 .second_nav_link li a:hover {
   color: #27262C !important;
@@ -333,4 +351,20 @@ h5 {
   width: 45.22px;
   height: 45.22px;
   background-color: #F25C05;
+  border-radius: 62px !important;
+}
+
+.change-white {
+  color: #F2F2F2;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: none;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
 }/*# sourceMappingURL=navBar.css.map */

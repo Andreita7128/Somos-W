@@ -29,6 +29,7 @@ section {
 
     .form-control {
         margin-right: 0 !important;
+        
         height: 43px;
         border-radius: 48px 0px 0px 48px;
     }
@@ -40,15 +41,21 @@ section {
     .desaparecer {
         display: none;
     }
+    .desaparecer-cards{
+        display: none;
+    }
+}
 
+@media (max-width: 800px) {
+    #tasas{
+        display: none;
+    }
 }
 
 .sidebar-container {
     position: sticky;
     top: 30px;
     height: calc(100vh - 20px);
-
-    overflow-y: auto;
 }
 
 .button_toggler {
@@ -122,3 +129,7 @@ section {
     }
 
 }
+.dropdown_form{
+    overflow-y: auto !important;
+}
+
