@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/landing.css">
-    <link rel="stylesheet" href="reclamar.css">
+    <link rel="stylesheet" href="CDT.css">
     <link rel="stylesheet" href="/Creditos/credito.css">
     <link rel="stylesheet" href="/public/Components/Cards/cardArticle.css">
     <link rel="stylesheet" href="/public/Components/Breadcrumb/breadcrumb.css">
@@ -42,26 +42,27 @@
 
         <!-- Se divide el banner en dos secciones para contener el texto y las imagenes -->
         <section id="CTAText">
-            <h1 id="">Colombianos en el exterior</h1>
-            <p>Reclama los giros que te envían tus familiares, amigos o conocidos desde el exterior.</p>
+            <h1 id="">Depósito de dinero de libre negociación</h1>
+            <p>Es la forma fácil de invertir y cumplir tus propósitos para obtener los rendimientos en el plazo que
+                elijas. </p>
         </section>
 
         <section id="CTAimg">
 
-            <img src="/Giros/imgs/CTAimg.png" alt="">
+            <img src="/CDT/imgs/CDT.png" alt="">
 
         </section>
     </section>
 
 
 
-    <section id="cardsInfoGiro">
+    <section id="cardsInfoCDT">
 
         <!--Menu lateral-->
         <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar d-sm-none d-md-block desaparecer">
             <product-sidebar reference="./reclamarGiro.html"
-                locations="Deposito,Oficinas,Caracteristicas,Beneficios,Devoluciones"
-                button-names='Depósito a mi cuenta,Oficinas y corresponsales,Características ,Beneficios,Devoluciones'>
+                locations="Simulador,Beneficios,Caracteristicas,Requisitos,Cancelar,Tasas"
+                button-names='Simulador,Beneficios,Características,Requisitos,Cancelar mi CDT,Tasas y tarifas'>
             </product-sidebar>
         </aside>
 
@@ -72,26 +73,25 @@
 
 
 
-            <article id="Deposito">
+            <article id="Simulador">
 
-                <card-inputs recurso="/Giros/imgs/Deposito a mi cuenta bancaria.png" contenido="Estos son los documentos requeridos para solicitar tu seguro
-            *A partir del 1 de octubre del 2021" " titulocard=" Persona Natural" botoncard="Conoce mas aqui"
-                    titulocard2="Persona Juridica" botoncard2="Conoce mas aqui ">
-
+                <card-simple recurso="/CDT/imgs/Abre tu CDT.png" " titulocard=" Persona Natural"
+                    botoncard="Conoce mas aqui" titulocard2="Persona Juridica" botoncard2="Conoce mas aqui ">
 
 
 
 
 
-                </card-inputs>
+
+                    </card-simpple>
 
             </article>
 
 
 
-            <article id="Oficinas">
+            <article id="Simulador">
 
-                <card-inputs recurso="/Giros/imgs/Oficinas y corresponsales.png" contenido="Puedes hacer tu solicitud de crédito o cualquier consulta a través de los siguientes canales:
+                <card-simple recurso="/CDT/imgs/Simulador.png" contenido="Puedes hacer tu solicitud de crédito o cualquier consulta a través de los siguientes canales:
             " titulocard=" Linea Gratuita" botoncard="01 8000 515656" titulocard2="Celular" botoncard2="01 8000 515656"
                     titulocard3="Celular" botoncard3="01 8000 515656">
 
@@ -100,7 +100,7 @@
 
 
 
-                </card-inputs>
+                </card-simple>
 
             </article>
             <!-- Card con tabla -->
@@ -128,27 +128,31 @@
 
             <article id="Caracteristicas">
 
-                <card-imagen boton="Conoce mas" recurso="\Giros\imgs\Características.png" titulo=" "
-                    contenido="&#x2022; Recepción de giros internacionales de más de 190 países.<br>
-                &#x2022; Tu giro internacional llega en cuestión de minutos.<br>
-                &#x2022; Reclama tu giro internacional en cualquiera de nuestras 157 oficinas del Banco W y más de 2.500 puntos habilitados SuperGiros y Su Red. Conócelos aquí En SuperGiros y Su Red reclama giros de hasta USD 1.000, para montos superiores acércate a nuestras oficinas.<br>
-                &#x2022;  Para recibir tus giros internacionales, no tienes que ser cliente del Banco W.<br>
-                &#x2022; Puedes recibir el dinero de giro en una cuenta de ahorro del Banco W o de cualquier otra entidad financiera en Colombia.<br>
-                &#x2022;  Para reclamar tus giros internacionales en las oficinas o alianzas, solo necesitas tu cédula original y el número de referencia del giro (Código o PIN de transacción).">
+                <card-imagen boton="Conoce mas" recurso="/CDT/imgs/Beneficios.png" titulo=" " contenido="&#x2022;
+                     Recepción de giros internacionales de más de 190 países.<br>
+                &#x2022; Obtener un CDT fácil y rápido<br>
+                
+                
+                
+                &#x2022; Amplias alternativas de plazos y montos<br>
+                &#x2022; Asesoría personalizada<br>
+                &#x2022; Nuestro CDT cuenta con el respaldo del Seguro de Depósitos Fogafín por lo que tu dinero está seguro>
+            
                 </card-imagen>
             </article>
 
-            <article id="Beneficios">
+            <article id=" Beneficios">
 
-                <card-imagen boton="Conoce mas" recurso="\Giros\imgs\Beneficios.png" titulo=" "
-                    contenido="Reclama con seguridad tus giros internacionales en el Banco W. Somos una entidad con 40 años de trayectoria y 10 años como Banco apoyando a los colombianos.
+                    <card-imagen boton="Conoce mas" recurso="\Giros\imgs\Beneficios.png" titulo=" "
+                        contenido="Reclama con seguridad tus giros internacionales en el Banco W. Somos una entidad con 40 años de trayectoria y 10 años como Banco apoyando a los colombianos.
                     Seguridad en el pago de tu dinero ya que somos una entidad con 40 años de trayectoria y 10 años como Banco apoyando a los colombianos.">
-                </card-imagen>
+                    </card-imagen>
 
             </article>
 
 
-            <article id="Devoluciones">
+            <article id="Caracteristicas">
+                
                 <card-simple boton="Conoce mas" recurso="\Giros\imgs\Devoluciones.png" titulo=" "
                     contenido="¿Cuál es el proceso de devolución del dinero de mi giro si éste no podrá ser pagado en Colombia?
                     
@@ -162,7 +166,42 @@
                     El tiempo de estas devoluciones dependerá de los procesos de reintegro establecidos a cada remesadora.">
                 </card-simple>
 
-            </article>
+
+
+
+                <article id="Requisitos">
+                    <card-simple boton="Conoce mas" recurso="\Giros\imgs\Devoluciones.png" titulo=" "
+                        contenido="¿Cuál es el proceso de devolución del dinero de mi giro si éste no podrá ser pagado en Colombia?
+                        
+                    Recuerda que tu giro internacional se anulará y será reenviado al origen (a la remesadora del exterior) en el caso en que tu cuenta sea diferente a la cuenta que nos envió el ordenante para depositar el giro, también se anulará si tu documento ID no coincide con el que nos suministró el ordenante para depositar el giro, también podrá anularse si supera el tiempo de disponibilidad del orden especificado por la remesadora. Así mismo, existen diversos motivos por los que no podemos pagar tu giro. ¡Recuerda enviar la información correcta y oportunamente para pagar tu giro!<br>
+                        
+                    <b>Si tu giro fue anulado, pasará el siguiente proceso:</b><br>
+                    &#x2022;  En Banco W notificamos de manera inmediata a la remesadora que tu giro no podrá ser pagado, y solicitamos devolver el dinero a tu ordenante.<br>
+                    &#x2022;  La remesadora recibe esta confirmación y procede con la devolución del dinero.
+                        
+                        Recuerda que el proceso de devolución de dinero obedece a las políticas de reintegros de cada remesadora.
+                        El tiempo de estas devoluciones dependerá de los procesos de reintegro establecidos a cada remesadora.">
+                    </card-simple>
+
+
+
+
+
+                    <article id="Cancelar">
+                        <card-simple boton="Conoce mas" recurso="\Giros\imgs\Devoluciones.png" titulo=" "
+                            contenido="¿Cuál es el proceso de devolución del dinero de mi giro si éste no podrá ser pagado en Colombia?
+                            
+                        Recuerda que tu giro internacional se anulará y será reenviado al origen (a la remesadora del exterior) en el caso en que tu cuenta sea diferente a la cuenta que nos envió el ordenante para depositar el giro, también se anulará si tu documento ID no coincide con el que nos suministró el ordenante para depositar el giro, también podrá anularse si supera el tiempo de disponibilidad del orden especificado por la remesadora. Así mismo, existen diversos motivos por los que no podemos pagar tu giro. ¡Recuerda enviar la información correcta y oportunamente para pagar tu giro!<br>
+                            
+                        <b>Si tu giro fue anulado, pasará el siguiente proceso:</b><br>
+                        &#x2022;  En Banco W notificamos de manera inmediata a la remesadora que tu giro no podrá ser pagado, y solicitamos devolver el dinero a tu ordenante.<br>
+                        &#x2022;  La remesadora recibe esta confirmación y procede con la devolución del dinero.
+                            
+                            Recuerda que el proceso de devolución de dinero obedece a las políticas de reintegros de cada remesadora.
+                            El tiempo de estas devoluciones dependerá de los procesos de reintegro establecidos a cada remesadora.">
+                        </card-simple>
+
+                    </article>
 
         </div>
 
