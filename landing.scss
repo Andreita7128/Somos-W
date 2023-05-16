@@ -1,386 +1,78 @@
-$tittleSize1 : 24px;
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif !important;
-    font-style: normal;
-    line-height: 120% !important;
-}
-
-p {
-    margin-bottom: 0px;
-}
-
-/*Colors*/
-/*Various*/
-$color_text: #27262C;
-$color_text_disable: #979C9E;
-$color_base_white: #F2F2F2;
-$color_accent_white: #FAFAFA;
-$color_base_gray: #27262C;
-$color_accent_black: #000000;
-$color_gray_btn: #CDCFD0;
-$color_error: #EB3232;
-$color_warning: #FDA624;
-$color_success: #2DC071;
-$fill_success: rgba(45, 192, 113, 0.2);
-$fill_error: rgba(235, 50, 50, 0.2);
-$fill_generic: rgba(0, 177, 187, 0.2);
-$fill_input: #F2F4F5;
-$fill_disabled: #E3E5E5;
-
-
-/*Blue*/
-$color_blue1: #00B1BB;
-$color_blue2: #2FD9DE;
-$color_blue3: #BDF0F2;
-
-/*Dark Violet*/
-$color_dark_violet1: #2D3982;
-$color_dark_violet2: #535C97;
-$color_dark_violet3: #8A90B5;
-$color_dark_violet4: #C3C5D4;
-
-/*Violet*/
-$color_violet1: #6321A6;
-$color_violet2: #8E50B7;
-$color_violet3: #BA93D2;
-$color_violet4: #E4D4ED;
-
-/*Orange*/
-$color_orange1: #F25C05;
-$color_orange2: #FF8826;
-$color_orange3: #FFB67D;
-
-/*Yellow*/
-$color_yellow1: #e3ff0b;
-
-
-/* Typography */
-
-h1 {
-    font-weight: 700;
-    font-size: 56px;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 48px;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-h4 {
-    font-weight: 700;
-    font-size: 24px;
-}
-
-h5 {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.body {
-    font-weight: 500;
-
-    &_1 {
-        font-size: 18px;
-    }
-
-    &_2 {
-        font-size: 16px;
-    }
-
-    &_3 {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    h1 {
-        font-weight: 700;
-        font-size: 32px;
-    }
-
-    h2 {
-        font-weight: 700;
-        font-size: 28px;
-    }
-
-    h3 {
-        font-weight: 700;
-        font-size: 18px;
-    }
-
-    h4 {
-        font-weight: 700;
-        font-size: 16px;
-    }
-
-    h5 {
-        font-weight: 700;
-        font-size: 14px;
-    }
-
-    .body {
-        font-weight: 500;
-
-        &_1 {
-            font-size: 16px;
-        }
-
-        &_2 {
-            font-size: 14px;
-        }
-
-        &_3 {
-            font-size: 12px;
-        }
-    }
-}
-
-.text_button {
-    &_bold {
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    &_medium {
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-    &_small {
-        font-weight: 400;
-        font-size: 16px;
-    }
-}
-
-.text_field {
-    &::placeholder {
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    &_title {
-        font-weight: 400;
-        font-size: 14px;
-    }
-
-    &_description {
-        font-weight: 400;
-        font-size: 12px;
-    }
-}
-
-//Buttons
-
-.btn {
-    height: 42px;
-    border-radius: 48px;
-    box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
-
-    &_large {
-        width: 423px;
-
-        &_active {
-            border: none;
-            background: $color_blue1;
-            color: $color_base_white;
-        }
-
-        &:hover {
-            border: none;
-            background: $color_blue3;
-            color: $color_blue1;
-        }
-
-        &:disabled {
-            border: none;
-            background: $fill_disabled;
-            color: $color_text_disable;
-        }
-
-        &_outline {
-            filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
-            background-color: transparent;
-
-            &_active {
-                border: 1px solid $color_blue1;
-                color: $color_blue1;
-            }
-
-            &:disabled {
-                border: 1px solid $color_gray_btn;
-                color: $color_gray_btn;
-            }
-        }
-
-        &_transparent {
-            border: none;
-            background-color: transparent;
-            box-shadow: none;
-
-            &_active {
-                color: $color_blue1;
-            }
-
-            &:disabled {
-                color: $color_gray_btn;
-            }
-        }
-    }
-
-    &_medium {
-        display: flex;
-        flex-direction: row;
-        padding: 9px 29px;
-
-        &_active {
-            border: none;
-            background: $color_blue1;
-            color: $color_base_white;
-        }
-
-        &:hover {
-            border: none;
-            background: $color_blue3;
-            color: $color_blue1;
-        }
-
-        &:disabled {
-            border: none;
-            background: $fill_disabled;
-            color: $color_text_disable;
-        }
-
-        &_outline {
-            filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
-            background-color: transparent;
-
-            &_active {
-                border: 1px solid $color_blue1;
-                color: $color_blue1;
-            }
-
-            &:disabled {
-                border: 1px solid $color_gray_btn;
-                color: $color_gray_btn;
-            }
-        }
-
-        &_transparent {
-            border: none;
-            background-color: transparent;
-            box-shadow: none;
-
-            &_active {
-                color: $color_blue1;
-            }
-
-            &:disabled {
-                color: $color_gray_btn;
-            }
-        }
-    }
-
-    &_small {
-        width: 10.7%;
-
-        &_active {
-            border: none;
-            background: $color_blue1;
-            color: $color_base_white;
-        }
-
-        &:hover {
-            border: none;
-            background: $color_blue3;
-            color: $color_blue1;
-        }
-
-        &:disabled {
-            border: none;
-            background: $fill_disabled;
-            color: $color_text_disable;
-        }
-
-        &_outline {
-            filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
-            background-color: transparent;
-
-            &_active {
-                border: 1px solid $color_blue1;
-                color: $color_blue1;
-            }
-
-            &:disabled {
-                border: 1px solid $color_gray_btn;
-                color: $color_gray_btn;
-            }
-        }
-
-        &_transparent {
-            border: none;
-            background-color: transparent;
-            box-shadow: none;
-
-            &_active {
-                color: $color_blue1;
-            }
-
-            &:disabled {
-                color: $color_gray_btn;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .btn {
-        &_large {
-            width: 100%;
-        }
-
-        &_medium {
-            width: 75%;
-        }
-
-        &_small {
-            width: 50%;
-        }
-    }
-
-
-}
+@import './style.scss';
 
 #title_home {
     display: none;
 }
 
 #carousel {
-    padding: 50px 174px;
+    padding: 50px 12%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    $carousel-dark-control-icon-filter: invert(1) grayscale(100);
 }
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+    color: $color_text;
+    font-size: 30px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    margin: -136px;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+    color: $color_text;
+    font-size: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: $color_text;
+}
+.carousel-indicators {
+    position: relative;
+}
+
+.w-100 {
+    border-bottom: none;
+}
+
 
 .container_carousel {
 
     &_text {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        width: 120%;
         float: left;
+        justify-content: center;
+        align-items: flex-start;
+        color: $color_text;
+
+        & h1 {
+            margin-bottom: 30px;
+        }
+
+        & p {
+            margin-bottom: 30px;
+            width: 90%;
+        }
     }
 
     &_img {
-        width: 100%;
         float: right;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -388,7 +80,7 @@ h5 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 174px;
+    padding: 20px 12%;
 }
 
 .card {
@@ -402,7 +94,7 @@ h5 {
 }
 
 #product_similar {
-    padding: 30px 174px;
+    padding: 30px 12%;
     background-color: $color_base_white;
 }
 
@@ -418,38 +110,24 @@ h5 {
     }
 
     &_product_similar {
-        width: 18%;
         height: 72px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 8px 25px;
-        font-size: 31px;
-        border-radius: 0% !important;
-        background-color: $color_accent_white;
-        box-shadow: none !important;
 
-        &_active {
-            background: $color_blue2;
-            box-shadow: 0px 3.16274px 11.0696px rgba(0, 0, 0, 0.15) !important;
-            border-radius: 20px !important;
-
-            &_text {
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: $color_text;
-            }
-        }
-
+        --bs-nav-pills-link-active-bg: #00B1BB;
+        --bs-nav-pills-link-active-color: #27262C;
+        --bs-nav-pills-border-radius: 20px;
+        --bs-nav-link-color: #27262C;
+        //--bs-link-hover-color: 
     }
 
     &_all_products {
         background-color: $color_accent_white;
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
         padding: 20px 28px;
         gap: 50px;
         width: 70%;
@@ -499,7 +177,7 @@ h5 {
 }
 
 #about_profile {
-    padding: 30px 174px;
+    padding: 30px 12%;
 
     &_cards {
         display: flex;
@@ -590,7 +268,7 @@ h5 {
 }
 
 #channels_assistance {
-    padding: 50px 174px;
+    padding: 50px 12%;
 }
 
 .channels_container {
@@ -653,6 +331,7 @@ h5 {
         padding: 0px;
         justify-content: center;
         flex-direction: column-reverse;
+        $carousel-control-color: $color_text;
     }
 
     .container_carousel {

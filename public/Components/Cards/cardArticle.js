@@ -295,7 +295,7 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button class = 'btn btn_medium btn_medium_active'><!--  aca poner estilo de boton ♥ --><h5>${this.boton}</h5></button>
+        <button class = 'btn btn_medium_active'><!--  aca poner estilo de boton ♥ --><h5>${this.boton}</h5></button>
     </section>
 
         </div>
@@ -820,10 +820,10 @@ class cardProductasas extends HTMLElement {
       </div>
     </div>
     <div class="row">
-      <div class="col title_col">
+      <div class="col locura">
         <h4>${this.datacredito}</h4>
       </div>
-      <div class="col title_col">
+      <div class="col locura">
         <h4>${this.cifin}</h4>
       </div>
     </div>
@@ -838,10 +838,10 @@ class cardProductasas extends HTMLElement {
       </div>
     </div>
     <div class="row">
-      <div class="col title_col">
+      <div class="col locura">
         <h4>${this.meses}</h4>
       </div>
-      <div class="col title_col">
+      <div class="col locura">
         <h4>${this.interes}</h4>
       </div>
     </div>
@@ -862,16 +862,16 @@ class cardProductasas extends HTMLElement {
       </div>
     </div>
     <div class="row ">
-      <div class="col title_col">
+      <div class="col locura">
         <h4>${this.plazos}</h4>
       </div>
-      <div class="col title_col ">
+      <div class="col locura ">
         <h4>${this.plazos1}</h4>
       </div>
-      <div class="col title_col ">
+      <div class="col locura ">
         <h4>${this.plazos2}</h4>
       </div>
-      <div class="col title_col ">
+      <div class="col locura ">
         <h4 style = ''>${this.plazos3}</h4>
       </div>
     </div>
@@ -1255,6 +1255,10 @@ class Cardtablatres extends HTMLElement {
         this.datocolf2;
         this.datocolf3;
 
+        this.datocolg1;
+        this.datocolg2;
+        this.datocolg3;
+
     }
 
     static get observedAttributes() {
@@ -1294,6 +1298,9 @@ class Cardtablatres extends HTMLElement {
             "datocolf2",
             "datocolf3",
 
+            "datocolg1",
+            "datocolg2",
+            "datocolg3",
 
 
 
@@ -1406,9 +1413,13 @@ class Cardtablatres extends HTMLElement {
         <section class="fondo-card">
         <section class="card-imagen">
           <img src="${this.img}" class="imagen-inCard" alt="">
+          
         </section>
+        <h3 style= 'font-size: 14px; padding-right:35%;'>*EL reembolso de gastos médicos por maternidad o paternidad serán abonados al capital del microcrédito, el reembolso de gastos médicos por recién nacido serán girados directamente al asegurado </h4>
+
         <section class="contenedores">
-    <div class="row bg-dark text-white title_row2">
+        
+    <div class="row bg-dark text-white superior_row">
       <div class="col">
         <h4>${this.titulo1}</h4>
       </div>
@@ -1454,7 +1465,7 @@ class Cardtablatres extends HTMLElement {
       </div>
  
       <div class="w-100"></div> <!-- Divisor de fila -->
-      <div class="col title_col">
+      <div class="col title_col2">
         <h4>${this.datocold1}</h4>
       </div>
       <div class="col title_col">
@@ -1462,6 +1473,38 @@ class Cardtablatres extends HTMLElement {
       </div>
       <div class="col title_col">
         <h4>${this.datocold3}</h4>
+      </div>
+
+      <div class="w-100"></div> <!-- Divisor de fila -->
+      <div class="col title_col">
+        <h4>${this.datocole1}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocole2}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocole3}</h4>
+      </div>
+
+      <div class="w-100"></div> <!-- Divisor de fila -->
+      <div class="col title_col">
+        <h4>${this.datocolf1}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolf2}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolf3}</h4>
+      </div>
+      <div class="w-100"></div> <!-- Divisor de fila -->
+      <div class="col title_col">
+        <h4>${this.datocolg1}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolg2}</h4>
+      </div>
+      <div class="col title_col">
+        <h4>${this.datocolg3}</h4>
       </div>
   
         </section>
@@ -1476,3 +1519,321 @@ class Cardtablatres extends HTMLElement {
 }
 
 window.customElements.define("card-productabla3", Cardtablatres);
+
+
+//Card Más información -----------------------------------------------------------------------------------------------------------------------------------------
+
+class cardWithinputs extends HTMLElement {
+
+
+
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.boton;
+
+        this.titulocard;
+        this.botoncard;
+        this.titulocard1;
+        this.botoncard1;
+        this.titulocard2;
+        this.botoncard2;
+        this.titulocard3;
+        this.botoncard3;
+        this.titulocard4;
+        this.botoncard4;
+        this.titulocard5;
+        this.botoncard5;
+
+
+
+    }
+
+    static get observedAttributes() {
+        return [
+            "recurso",
+            "titulo",
+            "contenido",
+            "boton",
+
+            "titulocard",
+            "botoncard",
+            "titulocard2",
+            "botoncard2",
+            "titulocard3",
+            "botoncard3",
+            "titulocard4",
+            "botoncard4",
+            "titulocard5",
+
+
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "recurso":
+
+                this.recurso = newValue
+
+                break;
+
+            case "titulo":
+
+                this.titulo = newValue
+
+                break;
+
+            case "contenido":
+
+                this.contenido = newValue
+
+                break;
+
+            case "boton":
+
+                this.boton = newValue
+
+                break;
+
+
+            case "titulocard":
+                this.titulocard = newValue
+
+                break;
+
+            case "botoncard":
+                this.botoncard = newValue
+
+                break;
+
+            case "titulocard2":
+                this.titulocard2 = newValue
+
+                break;
+
+            case "botoncard2":
+                this.botoncard2 = newValue
+
+                break;
+            case "titulocard3":
+                this.titulocard3 = newValue
+
+                break;
+
+            case "botoncard3":
+                this.botoncard3 = newValue
+
+                break;
+            case "titulocard4":
+                this.titulocard4 = newValue
+
+                break;
+
+            case "botoncard4":
+                this.botoncard4 = newValue
+
+                break;
+            case "titulocard5":
+                this.titulocard5 = newValue
+
+                break;
+
+            case "botoncard5":
+                this.botoncard5 = newValue
+
+                break;
+
+
+        }
+
+    }
+
+    connectedCallback() {
+
+        this.innerHTML = `
+
+        <div class = 'supreme'>
+        
+        <section class="fondo-card">
+        <section class="card-imagen">
+            <img src= "${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <section class="texto-card">
+            <p class="parrafo">
+            ${this.contenido}   
+            </p>
+        </section>
+
+        
+
+<div class="row">
+<div class="col-12">
+<div class = "card border-0">
+    <div class="card-body row body-details">
+      <div class="col-6">
+        <h5 class="title-inputcard">${this.titulocard}</h5>
+      </div>
+      <div class="col-6">
+        <button class="btn btn_medium_outline_active botoncard">${this.botoncard} <i class="bi bi-arrow-right float-end"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="row">
+        <div class="col-12">
+        <div class = "card border-0">
+            <div class="card-body row body-details">
+              <div class="col-6">
+                <h5 class="title-inputcard">${this.titulocard2}</h5>
+              </div>
+              <div class="col-6">
+                <button class="btn btn_medium_outline_active botoncard">${this.botoncard2} <i class="bi bi-arrow-right float-end"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+      <div class="col-12">
+      <div class = "card border-0">
+          <div class="card-body row body-details">
+            <div class="col-6">
+              <h5 class="title-inputcard">${this.titulocard3}</h5>
+            </div>
+            <div class="col-6">
+              <button class="btn btn_medium_outline_active botoncard">${this.botoncard3} <i class="bi bi-arrow-right float-end"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+    <div class="col-12">
+    <div class = "card border-0">
+        <div class="card-body row body-details">
+          <div class="col-6">
+            <h5 class="title-inputcard">${this.titulocard4}</h5>
+          </div>
+          <div class="col-6">
+            <button class="btn btn_medium_outline_active botoncard">${this.botoncard4} <i class="bi bi-arrow-right float-end"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    </section>
+    
+   
+
+        
+        `
+
+    }
+
+
+}
+
+
+window.customElements.define("card-inputs", cardWithinputs)
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+class cardImg extends HTMLElement {
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.boton;
+    }
+
+        static get observedAttributes() {
+            return [
+                "recurso",
+                "titulo",
+                "contenido",
+                "boton",
+
+            ]
+        }
+    
+        attributeChangedCallback(nameAtr, oldValue, newValue) {
+    
+            switch (nameAtr) {
+                case "recurso":
+    
+                    this.recurso = newValue
+    
+                    break;
+    
+                case "titulo":
+    
+                    this.titulo = newValue
+    
+                    break;
+    
+                case "contenido":
+    
+                    this.contenido = newValue
+    
+                    break;
+    
+                case "boton":
+    
+                    this.boton = newValue
+    
+                    break;
+
+                    
+        }
+
+    }
+    connectedCallback() {
+
+        this.innerHTML = `
+        
+        <div class = 'supreme'>
+        
+        <section class="fondo-card imagefondo">
+        <section class="card-imagen">
+            <img src= "${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <section class="texto-card" style="display: flex; align-items: center;" >
+            <h5 class="titulo" style=" margin-top: 40px;">${this.titulo}</h5>
+            <p class="parrafo" style="text-align: center;">
+            ${this.contenido}   
+            </p>
+        </section>
+        <button  class = 'btn btn_large btn_large_outline btn_large_active btn_large_outline_active' style="display: flex; justify-content: space-around; align-items:center;"><div></div><h5>${this.boton}</h5> <i class="bi bi-arrow-right"></i> </button>
+    </section>
+
+        </div>
+
+        
+        `
+
+    }
+}
+    
+window.customElements.define("card-productosimg", cardImg)

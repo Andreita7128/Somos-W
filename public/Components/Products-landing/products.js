@@ -1,18 +1,18 @@
-class CardDesk extends HTMLElement {
+class ProductsLanding extends HTMLElement {
     constructor() {
         super();
         this.photo;
+        this.section;
         this.title;
         this.text;
-        this.btn;
     }
 
     static get observedAttributes() {
         return [
             "photo",
             "title",
+            "section",
             "text",
-            "btn",
         ]
     }
 
@@ -31,15 +31,15 @@ class CardDesk extends HTMLElement {
 
                 break;
 
-            case "text":
+            case "section":
 
-                this.text = newValue
+                this.section = newValue
 
                 break;
             
-            case "btn":
+            case "text":
 
-                this.btn = newValue
+                this.text = newValue
 
                 break;
         }
@@ -58,9 +58,9 @@ class CardDesk extends HTMLElement {
             <img class="card_horizontal_img" src="${this.photo}" alt="">
             <section class="card_horizontal_body">
                 <h3>${this.title}</h3>
-                <p class="body_1"> ${this.text} </p>
-                <button class="btn btn_medium btn_medium_active text_button_medium">
-                    ${this.btn}
+                <p class="body_1"> ${this.section} </p>
+                <button class="text text_medium_active">
+                    ${this.text}
                     <i class="bi bi-arrow-right"></i>
                 </button>
             </section>
@@ -70,5 +70,5 @@ class CardDesk extends HTMLElement {
 
 }
 
-customElements.define('w-card-desk', CardDesk)
-export default CardDesk
+customElements.define('w-card-desk', ProductsLanding)
+export default ProductsLanding

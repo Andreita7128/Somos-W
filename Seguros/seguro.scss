@@ -1,24 +1,26 @@
 @import './../Creditos/credito.scss';
 
 
-.image-card{
+.image-card {
     width: 10px !important;
 }
-.marginis{
+
+.marginis {
     margin-left: 175px !important;
 }
 
-section{
-    
-    &.portada{
+section {
+
+    &.portada {
         margin-top: 10px;
         margin-bottom: 40px;
     }
-   & .style_better{
+
+    & .style_better {
         margin-top: 80px;
     }
 
-    & h3{
+    & h3 {
         font-weight: 500;
         font-size: 20px;
     }
@@ -27,45 +29,56 @@ section{
 
 @media (max-width: 1250px) {
 
-    .form-control{
+    .form-control {
         margin-right: 0 !important;
         height: 43px;
         border-radius: 48px 0px 0px 48px;
     }
-    .marginis{
+
+    .marginis {
         margin-left: 0px !important;
     }
 
-    .desaparecer{
+    .desaparecer {
         display: none;
     }
-    
+
 }
-#bread_lv{
-    &1::after{
+
+#bread_lv {
+    &1::after {
         content: "Inicio";
         color: #6321A6;
     }
-    &2::after{
+
+    &2::after {
         content: "Seguros";
         color: #6321A6;
     }
-    &3::after{
+
+    &3::after {
         content: "Seguro soy vida";
         color: #6321A6;
         font-weight: bold;
     }
 }
-.breadcrumb-item span{
+
+.breadcrumb-item span {
     display: none;
 }
 
-#bread_title{
-    &::after{
+#bread_title {
+    &::after {
         content: "Seguro soy vida";
         color: #F25C05;
     }
-    span{
+
+    span {
         display: none;
     }
+}
+.sidebar-container{
+    position: sticky;
+    top: 30px;
+    height: calc(100vh - 20px);
 }
