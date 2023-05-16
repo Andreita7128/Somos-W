@@ -1630,6 +1630,155 @@ class Cardtablanueve extends HTMLElement {
 
 window.customElements.define("card-productabla9", Cardtablanueve);
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+/* MAS PRUEBAS DE CARDS DENTRO DE CARDS */
+
+class cardWithinputs2 extends HTMLElement {
+    constructor() {
+      super();
+  
+      this.recurso;
+      this.titulo;
+      this.contenido;
+      this.boton;
+  
+      this.titulocard;
+      this.botoncard;
+      this.titulocard1;
+      this.botoncard1;
+      this.titulocard2;
+      this.botoncard2;
+      this.titulocard3;
+      this.botoncard3;
+
+    }
+  
+    static get observedAttributes() {
+      return [
+        "recurso",
+        "titulo",
+        "contenido",
+        "boton",
+  
+        "titulocard",
+        "botoncard",
+        "titulocard2",
+        "botoncard2",
+
+
+      ];
+    }
+  
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+      switch (nameAtr) {
+        case "recurso":
+          this.recurso = newValue;
+  
+          break;
+  
+        case "titulo":
+          this.titulo = newValue;
+  
+          break;
+  
+        case "contenido":
+          this.contenido = newValue;
+  
+          break;
+  
+        case "boton":
+          this.boton = newValue;
+  
+          break;
+  
+        case "titulocard":
+          this.titulocard = newValue;
+  
+          break;
+  
+        case "botoncard":
+          this.botoncard = newValue;
+  
+          break;
+  
+        case "titulocard2":
+          this.titulocard2 = newValue;
+  
+          break;
+  
+        case "botoncard2":
+          this.botoncard2 = newValue;
+  
+          break;
+        
+      }
+    }
+  
+    connectedCallback() {
+      this.innerHTML = `
+  
+          <div class = 'supreme'>
+          
+          <section class="fondo-card">
+          <section class="card-imagen">
+              <img src= "${this.recurso}" class="imagen-inCard" alt="">
+          </section>
+          <section class="texto-card">
+              <p class="parrafo">
+              ${this.contenido}   
+              </p>
+          </section>
+  
+          
+  
+  <div class="row">
+  <div class="col-12">
+  <div class = "card border-0">
+      <div class="card-body row body-details">
+        <div class="col-6">
+          <h5 class="title-inputcard">${this.titulocard}</h5>
+        </div>
+        <div class="col-6">
+          <button class="btn btn_medium_outline_active botoncard">${this.botoncard} <i class="bi bi-arrow-right float-end"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+        
+          <div class="row">
+          <div class="col-12">
+          <div class = "card border-0">
+              <div class="card-body row body-details">
+                <div class="col-6">
+                  <h5 class="title-inputcard">${this.titulocard2}</h5>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn_medium_outline_active botoncard">${this.botoncard2} <i class="bi bi-arrow-right float-end"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+      
+  
+  
+  
+      </section>
+      
+     
+  
+          
+          `;
+    }
+  }
+  
+  window.customElements.define("card-inputs2", cardWithinputs2);
+
+
+
 //Card Más información -----------------------------------------------------------------------------------------------------------------------------------------
 
 class cardWithinputs extends HTMLElement {
