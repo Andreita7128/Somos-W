@@ -1,0 +1,85 @@
+[
+    {
+        "id":0,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+    
+    {
+        "id":1,
+        "product":"Seguros",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":2,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":3,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":4,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":5,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":6,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":7,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    },
+
+
+    {
+        "id":8,
+        "product":"Crédito",
+        "img-portada":"./Creditos/img/portada.png",
+        "titulo-portada": "Fortalecimiento para tu negocio",
+        "texto-portada": "Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+    }
+
+
+
+
+
+]

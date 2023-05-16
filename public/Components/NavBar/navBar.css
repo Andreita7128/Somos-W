@@ -321,9 +321,10 @@ h5 {
 
 .second_nav {
   background-color: #F2F2F2;
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
 }
 .second_nav_link li a {
-  color: #F25C05 !important;
+  color: #F25C05;
 }
 .second_nav_link li a:hover {
   color: #27262C !important;
@@ -345,4 +346,20 @@ h5 {
   width: 45.22px;
   height: 45.22px;
   background-color: #F25C05;
+  border-radius: 62px !important;
+}
+
+.change-white {
+  color: #F2F2F2;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: none;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
 }/*# sourceMappingURL=navBar.css.map */

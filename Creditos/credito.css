@@ -313,12 +313,19 @@ section h3 {
   .desaparecer {
     display: none;
   }
+  .desaparecer-cards {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #tasas {
+    display: none;
+  }
 }
 .sidebar-container {
   position: sticky;
   top: 30px;
   height: calc(100vh - 20px);
-  overflow-y: auto;
 }
 
 .button_toggler {
@@ -378,4 +385,8 @@ section h3 {
 }
 .dropdown_reactive:active {
   background-color: #00B1BB !important;
+}
+
+.dropdown_form {
+  overflow-y: auto !important;
 }/*# sourceMappingURL=credito.css.map */
