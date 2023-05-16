@@ -1727,3 +1727,6 @@ class cardWithinputs extends HTMLElement {
 }
 
 window.customElements.define("card-inputs", cardWithinputs)
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------

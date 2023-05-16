@@ -46,7 +46,7 @@
     &_link{
         li{
             a{
-                color: $color_orange1 !important;
+                color: $color_orange1 ;
                 &:hover{
                     color: $color_base_gray !important;
                 }
@@ -74,4 +74,7 @@
     width: 45.22px;
     height: 45.22px;
     background-color: $color_orange1;
+}
+.change-white{
+    color: $color_base_white;
 }
