@@ -392,7 +392,7 @@ class cardForBlog extends HTMLElement {
         this.titulo;
         this.contenido;
         this.boton;
-        this.tags;
+        this.tags = "";
         this.likes = 0;
         this.comments = 0;
 
@@ -406,6 +406,7 @@ class cardForBlog extends HTMLElement {
             "contenido",
             "likes",
             "comments",
+            "tags"
         ]
     }
 
@@ -441,6 +442,12 @@ class cardForBlog extends HTMLElement {
                 this.comments = newValue
 
                 break;
+                
+                case "tags":
+
+                this.tags = newValue
+
+                break;
         }
 
     }
@@ -448,15 +455,13 @@ class cardForBlog extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-        <link rel="stylesheet" href="cardArticle.css">
-        <section class="fondo-card">
+       <section class="fondo-card">
         <section class="card-imagen">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
         </section>
         <section class="labels-site">
-            <div>tag</div> 
-            <div>tag</div> 
-            <div>tag</div> 
+        ${this.tags}
+           
         </section>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
@@ -476,8 +481,14 @@ class cardForBlog extends HTMLElement {
     </section>
 
         `
+
+ 
+      }
     }
-}
+
+
+    
+
 
 window.customElements.define("card-forblog", cardForBlog)
 
@@ -1509,9 +1520,12 @@ class Cardtablatres extends HTMLElement {
 
 window.customElements.define("card-productabla3", Cardtablatres);
 
+
 //Card Más información -----------------------------------------------------------------------------------------------------------------------------------------
 
 class cardWithinputs extends HTMLElement {
+
+
 
     constructor() {
         super();
@@ -1520,6 +1534,7 @@ class cardWithinputs extends HTMLElement {
         this.titulo;
         this.contenido;
         this.boton;
+
         this.titulocard;
         this.botoncard;
         this.titulocard1;
@@ -1534,6 +1549,7 @@ class cardWithinputs extends HTMLElement {
         this.botoncard5;
 
 
+
     }
 
     static get observedAttributes() {
@@ -1542,6 +1558,7 @@ class cardWithinputs extends HTMLElement {
             "titulo",
             "contenido",
             "boton",
+
             "titulocard",
             "botoncard",
             "titulocard2",
@@ -1551,7 +1568,7 @@ class cardWithinputs extends HTMLElement {
             "titulocard4",
             "botoncard4",
             "titulocard5",
-            "botoncard5",
+
 
         ]
     }
@@ -1582,6 +1599,7 @@ class cardWithinputs extends HTMLElement {
                 this.boton = newValue
 
                 break;
+
 
             case "titulocard":
                 this.titulocard = newValue
@@ -1629,6 +1647,8 @@ class cardWithinputs extends HTMLElement {
                 this.botoncard5 = newValue
 
                 break;
+
+
         }
 
     }
@@ -1636,6 +1656,7 @@ class cardWithinputs extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
+
         <div class = 'supreme'>
         
         <section class="fondo-card">
@@ -1718,6 +1739,7 @@ class cardWithinputs extends HTMLElement {
     </section>
     
    
+
         
         `
 
@@ -1726,7 +1748,92 @@ class cardWithinputs extends HTMLElement {
 
 }
 
+
 window.customElements.define("card-inputs", cardWithinputs)
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+class cardImg extends HTMLElement {
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.boton;
+    }
+
+        static get observedAttributes() {
+            return [
+                "recurso",
+                "titulo",
+                "contenido",
+                "boton",
+
+            ]
+        }
+    
+        attributeChangedCallback(nameAtr, oldValue, newValue) {
+    
+            switch (nameAtr) {
+                case "recurso":
+    
+                    this.recurso = newValue
+    
+                    break;
+    
+                case "titulo":
+    
+                    this.titulo = newValue
+    
+                    break;
+    
+                case "contenido":
+    
+                    this.contenido = newValue
+    
+                    break;
+    
+                case "boton":
+    
+                    this.boton = newValue
+    
+                    break;
+
+                    
+        }
+
+    }
+    connectedCallback() {
+
+        this.innerHTML = `
+        
+        <div class = 'supreme'>
+        
+        <section class="fondo-card imagefondo">
+        <section class="card-imagen">
+            <img src= "${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <section class="texto-card" style="display: flex; align-items: center;" >
+            <h5 class="titulo" style=" margin-top: 40px;">${this.titulo}</h5>
+            <p class="parrafo" style="text-align: center;">
+            ${this.contenido}   
+            </p>
+        </section>
+        <button  class = 'btn btn_large btn_large_outline btn_large_active btn_large_outline_active' style="display: flex; justify-content: space-around; align-items:center;"><div></div><h5>${this.boton}</h5> <i class="bi bi-arrow-right"></i> </button>
+    </section>
+
+        </div>
+
+        
+        `
+
+    }
+}
+    
+window.customElements.define("card-productosimg", cardImg)
