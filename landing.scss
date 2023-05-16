@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    $carousel-dark-control-icon-filter: invert(1) grayscale(100);
 }
 
 .carousel-item.active {
@@ -96,6 +95,12 @@
 #product_similar {
     padding: 30px 12%;
     background-color: $color_base_white;
+    color: $color_text;
+
+    & h3 {
+        margin: 55px 0px;
+        width: 50%;
+    }
 }
 
 .container {
