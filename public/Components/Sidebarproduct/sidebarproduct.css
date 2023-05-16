@@ -284,14 +284,18 @@ h5 {
 .btn-sidebar {
   width: 100% !important;
   height: auto;
-  color: #2FD9DE;
+  color: #2FD9DE !important;
   border: 1px solid !important;
   border-color: #2FD9DE;
   margin-bottom: 16px;
 }
 .btn-sidebar:hover {
   background-color: #00B1BB;
-  color: #F2F2F2;
+  color: #F2F2F2 !important;
+}
+.btn-sidebar :active {
+  background-color: #00B1BB;
+  color: #F2F2F2 !important;
 }
 
 .list-group {
