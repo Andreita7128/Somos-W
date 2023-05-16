@@ -229,6 +229,7 @@ body{
 }
 
 .columnButton {
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -253,6 +254,7 @@ body{
 }
 
 .personal-info-container {
+
     background-color: #ffffff;
     padding: 25px;
     width: 100%;
@@ -287,7 +289,7 @@ body{
 .user-personal-information {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .info-section {
@@ -295,6 +297,20 @@ body{
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.info-section-alternative {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.info-section-alternative-inside{
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
 }
 
 .first-column-personal-info{
@@ -386,6 +402,16 @@ body{
         flex-direction: column;
     }
 
+    .user-personal-information{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info-section-alternative-inside{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
 
 }
 

@@ -1,5 +1,5 @@
 @import '../../../style.scss';
-@import '../Cards/Card-article/cardArticle.scss';
+@import '../Cards/cardArticle.scss';
 
 
 .dropdown-toggle::after {
@@ -9,9 +9,13 @@
 .dropdown-menu{
     background-color:whitesmoke;
     width: 100%;
+ 
+    // overflow-y: auto;
+    
 }
 .formdrop{
-    width: 50%;
+    width: 100%;
+    background-color:rgba(0, 177, 187, 0.2);
     & button{
         text-align: left;
     }
@@ -52,13 +56,14 @@
   }
   
   /* Estilo para los botones del formulario */
-  .btn {
+  .btn_formulario {
+    margin-bottom: 20px;
     margin-right: 40px;
   }
   
   /* Estilo para el dropdown del formulario */
   .dropdown {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   
   /* Estilo para el título del formulario */
@@ -82,8 +87,8 @@
   }
   
   /* Estilo para los inputs del formulario */
-  .form-control {
-    margin-bottom: 20px;
+  .form-control_formulario {
+    margin-bottom: 20px !important;
   }
   .form-input{
     border-radius: 20px !important;
@@ -108,7 +113,10 @@
   }
 
   .form-check{
-    margin-top: 50px;
+    margin-top: 30px;
   }
   
-  
+  .dropdown_form{
+    max-height: 500px;
+    overflow-y: auto;
+  }
