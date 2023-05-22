@@ -69,7 +69,7 @@
                         <a class="nav-link" href="../../../landing.html">Inicio</a>
                     </li>
                     <li class="nav-item border-bottom-gg">
-                        <a class="nav-link" href="#">Ahorro e inversión</a>
+                        <a class="nav-link" href="../../../CDT/CDT.html">Ahorro e inversión</a>
                     </li>
                     <li class="nav-item dropdown border-bottom-gg">
                         <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
@@ -99,7 +99,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Giros internacionales </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Reclamar giros</a>
+                            <a class="dropdown-item" href="../../../Giros/reclamarGiro.html">Reclamar giros</a>
                             <a class="dropdown-item" href="#">Enviar Giros</a>
                             
                         </div>
