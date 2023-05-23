@@ -562,6 +562,10 @@ h5 {
     color: #27262C;
   }
 }
+.img_planB {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
