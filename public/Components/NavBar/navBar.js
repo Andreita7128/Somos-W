@@ -112,6 +112,7 @@
                             <a class="dropdown-item" href="../../../ComunidadW/comunidadW.html">W contigo</a>
                             <a class="dropdown-item" href="#">Premios invencibles W</a>
                             <a class="dropdown-item" href="#">Refiere y gana</a>
+                            <a class="dropdown-item" href="../../../clasificados/clasificados.html">Clasificados</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown ">

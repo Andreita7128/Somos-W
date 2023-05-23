@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Colors*/
 /*Various*/
 /*Blue*/
@@ -55,6 +56,105 @@ h5 {
 }
 .body_3 {
   font-size: 14px;
+}
+
+#labelHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#greenInput {
+  width: 423px;
+  height: 42px;
+  border-color: #2DC071;
+  background-color: rgba(45, 192, 113, 0.2);
+  border-radius: 48px;
+}
+
+#redInput {
+  width: 423px;
+  height: 42px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  border-radius: 48px;
+}
+
+#grayInput {
+  width: 423px;
+  height: 42px;
+  border-color: #CDCFD0;
+  background-color: #F2F2F2;
+  border-radius: 48px;
+}
+
+#inputSearch {
+  /* width: 519px;
+  height: 44px; */
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+}
+
+#inputSearch input[type=text] {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#inputSearch button {
+  background-color: #00B1BB;
+}
+
+#inputButtonSize {
+  width: 519px;
+  height: 44px;
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+  /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+}
+#inputButtonSize #inputButtonColor {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#dropDownStyleGreen {
+  width: 423px;
+  height: 42px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262c;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -277,6 +377,193 @@ h5 {
     width: 50%;
   }
 }
+/* Input internacional */
+/* Cajita */
+.form-group {
+  width: 100%;
+  max-width: 310px;
+  height: 42px;
+  border: 2px solid #00B1BB;
+  border-radius: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-group:not(.form-group_error):not(.form-group_exito):focus-within {
+  background: rgba(0, 177, 187, 0.2);
+  border: 2px solid #2FD9DE;
+}
+.form-group_error {
+  border-color: #EB3232;
+  background: rgba(235, 50, 50, 0.2);
+}
+.form-group_error:focus-within {
+  background: rgba(235, 50, 50, 0.2);
+  border: 2px solid #EB3232;
+}
+.form-group_exito {
+  border-color: #2DC071;
+  background: rgba(45, 192, 113, 0.2);
+}
+.form-group_exito:focus-within {
+  background: rgba(45, 192, 113, 0.2);
+  border: 2px solid #2DC071;
+}
+
+/* No difiere */
+.select-container {
+  width: 80px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
+
+/* Form de el country a elegir */
+.country-select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding-left: 24px;
+  border-radius: 48px;
+}
+
+/* Contenedor de la flag */
+.flag-icon-container {
+  width: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
+
+/* Icono de la flag */
+.flag-icon {
+  width: 20px;
+  height: 8px;
+}
+
+/* Escribir dentro del imput */
+.input-number {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  border-radius: 48px;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    display: flex;
+    /* Utilizar flexbox para disposición */
+    flex-direction: row;
+    /* Especificar la dirección de fila o columna según las necesidades */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* Especificar columnas de ancho flexible */
+  }
+  .country-select {
+    font-size: 16px;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  .input-number {
+    margin-left: 16%;
+    font-size: 16px;
+    width: 100%;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  #greenInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(45, 192, 113, 0.2);
+    border-radius: 48px;
+  }
+  #redInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    border-radius: 48px;
+  }
+  #grayInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #CDCFD0;
+    background-color: #f4f4f4;
+    border-radius: 48px;
+  }
+  #inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+  }
+  #inputSearch input[type=text] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #inputSearch button {
+    background-color: #00B1BB;
+  }
+  #inputButtonSize {
+    width: 25.93%;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+  }
+  #inputButtonSize #inputButtonColor {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #dropDownStyleGreen {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262c;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
+  }
+}
+a {
+  text-decoration: none;
+}
+
 #title_home {
   display: none;
 }
@@ -438,6 +725,10 @@ h5 {
 
 #about_profile {
   padding: 30px 12%;
+  color: #27262C;
+}
+#about_profile h3 {
+  margin: 55px 0px;
 }
 #about_profile_cards {
   display: flex;
@@ -509,6 +800,9 @@ h5 {
 
 #channels_assistance {
   padding: 50px 12%;
+}
+#channels_assistance h3 {
+  margin: 35px 0px;
 }
 
 .channels_container {
@@ -796,6 +1090,105 @@ h5 {
   font-size: 14px;
 }
 
+#labelHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#greenInput {
+  width: 423px;
+  height: 42px;
+  border-color: #2DC071;
+  background-color: rgba(45, 192, 113, 0.2);
+  border-radius: 48px;
+}
+
+#redInput {
+  width: 423px;
+  height: 42px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  border-radius: 48px;
+}
+
+#grayInput {
+  width: 423px;
+  height: 42px;
+  border-color: #CDCFD0;
+  background-color: #F2F2F2;
+  border-radius: 48px;
+}
+
+#inputSearch {
+  /* width: 519px;
+  height: 44px; */
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+}
+
+#inputSearch input[type=text] {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#inputSearch button {
+  background-color: #00B1BB;
+}
+
+#inputButtonSize {
+  width: 519px;
+  height: 44px;
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+  /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+}
+#inputButtonSize #inputButtonColor {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#dropDownStyleGreen {
+  width: 423px;
+  height: 42px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262c;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-weight: 700;
@@ -1014,6 +1407,189 @@ h5 {
   }
   .btn_small {
     width: 50%;
+  }
+}
+/* Input internacional */
+/* Cajita */
+.form-group {
+  width: 100%;
+  max-width: 310px;
+  height: 42px;
+  border: 2px solid #00B1BB;
+  border-radius: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-group:not(.form-group_error):not(.form-group_exito):focus-within {
+  background: rgba(0, 177, 187, 0.2);
+  border: 2px solid #2FD9DE;
+}
+.form-group_error {
+  border-color: #EB3232;
+  background: rgba(235, 50, 50, 0.2);
+}
+.form-group_error:focus-within {
+  background: rgba(235, 50, 50, 0.2);
+  border: 2px solid #EB3232;
+}
+.form-group_exito {
+  border-color: #2DC071;
+  background: rgba(45, 192, 113, 0.2);
+}
+.form-group_exito:focus-within {
+  background: rgba(45, 192, 113, 0.2);
+  border: 2px solid #2DC071;
+}
+
+/* No difiere */
+.select-container {
+  width: 80px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
+
+/* Form de el country a elegir */
+.country-select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding-left: 24px;
+  border-radius: 48px;
+}
+
+/* Contenedor de la flag */
+.flag-icon-container {
+  width: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
+
+/* Icono de la flag */
+.flag-icon {
+  width: 20px;
+  height: 8px;
+}
+
+/* Escribir dentro del imput */
+.input-number {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  border-radius: 48px;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    display: flex;
+    /* Utilizar flexbox para disposición */
+    flex-direction: row;
+    /* Especificar la dirección de fila o columna según las necesidades */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* Especificar columnas de ancho flexible */
+  }
+  .country-select {
+    font-size: 16px;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  .input-number {
+    margin-left: 16%;
+    font-size: 16px;
+    width: 100%;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  #greenInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(45, 192, 113, 0.2);
+    border-radius: 48px;
+  }
+  #redInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    border-radius: 48px;
+  }
+  #grayInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #CDCFD0;
+    background-color: #f4f4f4;
+    border-radius: 48px;
+  }
+  #inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+  }
+  #inputSearch input[type=text] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #inputSearch button {
+    background-color: #00B1BB;
+  }
+  #inputButtonSize {
+    width: 25.93%;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+  }
+  #inputButtonSize #inputButtonColor {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #dropDownStyleGreen {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262c;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
   }
 }
 .imagefondo {
@@ -1320,7 +1896,11 @@ h5 {
 
 .filter-section {
   background-color: #FAFAFA;
-  height: 100px;
+}
+.filter-section .container {
+  display: flex;
+  justify-content: center;
+  height: 124px;
 }
 
 .see_more_button {
@@ -1354,17 +1934,41 @@ h5 {
   border-radius: 20px;
   overflow: hidden;
   gap: 50px;
-  margin-bottom: 100px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 .publish_img {
   background-color: #FF8826;
   max-height: 300px;
   height: 100%;
+  margin-left: -16px;
 }
 .publish_body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+}
+
+.form-title {
+  margin-top: 56px;
+  color: #00B1BB;
+}
+.form-title p {
+  color: gray;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 88px;
+}
+.form-control {
+  border-radius: 0 !important;
+}
+.form .filters {
+  background-color: #00B1BB;
+  color: #FAFAFA;
 }/*# sourceMappingURL=clasificados.css.map */
