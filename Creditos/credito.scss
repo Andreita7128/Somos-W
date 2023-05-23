@@ -50,6 +50,9 @@ section {
     #tasas{
         display: none;
     }
+    .marginis{
+        flex: 0 0 100% !important;
+    }
 }
 
 .sidebar-container {
@@ -118,7 +121,6 @@ section {
 
 .dropdown_reactive {
     margin-left: 0% !important;
-
     &:focus {
         background-color: $color_blue1 !important;
         color: white;
