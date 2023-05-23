@@ -23,7 +23,6 @@
   flex-direction: row;
   width: 100%;
   justify-content: center;
-
 }
 
 #menuLateral {
@@ -33,12 +32,10 @@
   width: 50%;
 }
 
-
 #cardsInfo {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 100px;
 }
 
 #bread_lv1::after {
