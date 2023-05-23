@@ -1,48 +1,4 @@
-@import '../../../landing.scss';
-
-
-/*Colors*/
-/*Various
-$color_text: #27262C;
-$color_text_disable: #979C9E;
-$color_base_white: #F2F2F2;
-$color_accent_white: #F8F8F8;
-$color_base_gray: #27262C;
-$color_accent_black: #000000;
-$color_gray_btn: #CDCFD0;
-$color_error: #EB3232;
-$color_warning: #FDA624;
-$color_success: #2DC071;
-$fill_success: rgba(45, 192, 113, 0.2);
-$fill_error: rgba(235, 50, 50, 0.2);
-$fill_generic: rgba(0, 177, 187, 0.2);
-$fill_input: #F2F4F5;
-$fill_disabled: #E3E5E5;
-
-/*Blue
-$color_blue1: #00B1BB;
-$color_blue2: #2FD9DE;
-$color_blue3: #BDF0F2;
-
-/*Dark Violet
-$color_dark_violet1: #2D3982;
-$color_dark_violet2: #535C97;
-$color_dark_violet3: #8A90B5;
-$color_dark_violet4: #C3C5D4;
-
-/*Violet
-$color_violet1: #6321A6;
-$color_violet2: #8E50B7;
-$color_violet3: #BA93D2;
-$color_violet4: #E4D4ED;
-
-/*Orange
-$color_orange1: #F25C05;
-$color_orange2: #FF8826;
-$color_orange3: #FFB67D;
-
-/*Yellow
-$color_yellow1: #e3ff0b;*/
+@import '../../../style.scss';
 
 // *************** MODIFICACION COLOR DE <P> *******************//
 p {
@@ -63,21 +19,22 @@ p {
         }
     }
 }
-.side-item span{
+
+.side-item span {
     margin-left: 10px;
 }
 
 .side-link {
     font-weight: 600;
     color: $color_blue1;
-<<<<<<< HEAD
 
     &.active {
-=======
-    margin-bottom: 11px;
-    &.active{
->>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
-        background-color: $color_blue1 !important;
+        margin-bottom: 11px;
+
+        &.active {
+
+            background-color: $color_blue1 !important;
+        }
     }
 }
 
@@ -158,16 +115,13 @@ p {
             border-radius: 0 0 20px 20px;
         }
     }
-<<<<<<< HEAD
+}
 
+&-item {}
+
+a {
     &-item {
-
         a {
-=======
-    
-    &-item{
-        a{
->>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -187,79 +141,80 @@ p {
 
 .user {
 
-<<<<<<< HEAD
     &-product {
 
         &-container {
             background-color: $color_accent_white;
-
-=======
-    &-product{
-        &-container{
-            background-color: $color_accent_white;
->>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
-            max-width: 528px;
-            min-width: 450px;
-            max-height: 290px;
-           //min-height: 290px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 14px $color_violet4;
-            //margin-top: 30px;
-            //margin-left: 30px;
-            //margin-bottom: 30px;
         }
-<<<<<<< HEAD
 
-        &-head {
-            background-color: $color_violet1;
-            padding: 10px 30px 1px;
-
-            h5 {
-                color: $color_base_white;
+        &-product {
+            &-container {
+                background-color: $color_accent_white;
+                max-width: 528px;
+                min-width: 450px;
+                max-height: 290px;
+                //min-height: 290px;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 4px 14px $color_violet4;
+                //margin-top: 30px;
+                //margin-left: 30px;
+                //margin-bottom: 30px;
             }
-        }
 
-        &-body {
-            padding: 27px 50px 0px;
+            &-head {
+                background-color: $color_violet1;
+                padding: 10px 30px 1px;
 
-            h3 {
-                color: $color_violet1;
+                h5 {
+                    color: $color_base_white;
+                }
             }
-        }
 
-        &-data {
-            display: flex;
-            flex-direction: row;
-            padding: 10px 25px;
+            &-body {
+                padding: 27px 50px 0px;
 
-            &-item {
-=======
-        &-head{
-            padding: 10px 30px 1px;
-            h5{
-                color: $color_base_white;
+                h3 {
+                    color: $color_violet1;
+                }
             }
-        }
-        &-body{
-            padding: 27px 50px 0px;
-            h3{
-                color: $color_violet1;
-            }
-        }
-        &-data{
-            display: flex;
-            flex-direction: row;
-            padding: 10px 25px ;
-            &-item{
->>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
-                margin-right: 50px;
+
+            &-data {
+                display: flex;
+                flex-direction: row;
+                padding: 10px 25px;
+
+                &-item {
+                    &-head {
+                        padding: 10px 30px 1px;
+
+                        h5 {
+                            color: $color_base_white;
+                        }
+                    }
+
+                    &-body {
+                        padding: 27px 50px 0px;
+
+                        h3 {
+                            color: $color_violet1;
+                        }
+                    }
+
+                    &-data {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 10px 25px;
+
+                        &-item {
+                            margin-right: 50px;
+                        }
+                    }
+                }
             }
         }
     }
-}
 
-<<<<<<< HEAD
     &-info {}
 }
 
@@ -267,105 +222,109 @@ p {
     &-container {
         width: 100%;
         max-width: 528px;
-=======
-.ahorro{
-    background-color: $color_violet1;
-}
-.credito{
-    background-color: $color_orange1;
 
-}
-.seguro{
-    background-color: $color_blue1;
-}
-.inversion{
-    background-color: #343c7f;
-}
-
-.agenda{
-    &-container{
->>>>>>> b14593ac23ee2fd2d0a38ec1427d0368974ee4f3
-        background-color: $color_blue3;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 14px $color_blue3;
-        
-        width: 100%;
-    }
-
-    &-head {
-        background-color: $color_blue1;
-        padding: 10px 25px 1px;
-
-        h5 {
-            color: $color_base_white;
+        .ahorro {
+            background-color: $color_violet1;
         }
-    }
 
-    &-body {
-        padding: 10px 35px 1px;
+        .credito {
+            background-color: $color_orange1;
 
-    }
-}
-
-.calendar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: $color_accent_white;
-    border-radius: 20px;
-    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.15);
-    padding: 10px 43px 1px;
-
-    &-container {
-        background-color: $fill_input;
-        border-radius: 20px;
-    }
-
-    &-item-selected {
-        font-weight: 700;
-
-        p {
-            color: $color_blue1;
         }
-    }
 
-    &-data {
-        padding: 30px 30px;
-        margin-bottom: 30px;
-    }
+        .seguro {
+            background-color: $color_blue1;
+        }
 
-    &-event {
+        .inversion {
+            background-color: #343c7f;
+        }
 
-        &-head {
+        .agenda {
+            &-container {
+                background-color: $color_blue3;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 4px 14px $color_blue3;
 
-            h5 {
-                font-family: 700;
-                color: $color_dark_violet2;
+                width: 100%;
             }
+
+            &-head {
+                background-color: $color_blue1;
+                padding: 10px 25px 1px;
+
+                h5 {
+                    color: $color_base_white;
+                }
+            }
+
+            &-body {
+                padding: 10px 35px 1px;
+            }
+
+        }
+    }
+
+    .calendar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $color_accent_white;
+        border-radius: 20px;
+        box-shadow: 0 3px 11px rgba(0, 0, 0, 0.15);
+        padding: 10px 43px 1px;
+
+        &-container {
+            background-color: $fill_input;
+            border-radius: 20px;
+        }
+
+        &-item-selected {
+            font-weight: 700;
 
             p {
-                color: $color_base_gray;
+                color: $color_blue1;
             }
         }
 
-        &-body {
-            display: flex;
-            flex-direction: row;
+        &-data {
+            padding: 30px 30px;
+            margin-bottom: 30px;
         }
 
-        &-detail {
-            margin-right: 50px;
+        &-event {
 
-            :first-child {
-                font-weight: 700;
-                color: $color_dark_violet2;
+            &-head {
+
+                h5 {
+                    font-family: 700;
+                    color: $color_dark_violet2;
+                }
+
+                p {
+                    color: $color_base_gray;
+                }
             }
 
-            p {
-                color: $color_base_gray;
+            &-body {
+                display: flex;
+                flex-direction: row;
             }
 
+            &-detail {
+                margin-right: 50px;
+
+                :first-child {
+                    font-weight: 700;
+                    color: $color_dark_violet2;
+                }
+
+                p {
+                    color: $color_base_gray;
+                }
+
+            }
         }
     }
 }

@@ -2,14 +2,18 @@ class Sidebarproduct extends HTMLElement {
   constructor() {
     super();
     this.reference = '';
+    this.locations = [];
+    this.buttonNames = [];
   }
 
   static get observedAttributes() {
-    return ['reference'];
+    return ['reference', 'locations', 'button-names'];
   }
 
   connectedCallback() {
     this.reference = this.getAttribute('reference') || this.defaultAttributeValue('reference');
+    this.locations = this.getAttribute('locations')?.split(',') || this.defaultAttributeValue('locations').split(',');
+    this.buttonNames = this.getAttribute('button-names')?.split(',') || this.defaultAttributeValue('button-names').split(',');
     this.render();
   }
 
@@ -17,12 +21,18 @@ class Sidebarproduct extends HTMLElement {
     if (name === 'reference') {
       this.reference = newValue;
       this.render();
+    } else if (name === 'locations') {
+      this.locations = newValue.split(',');
+      this.render();
+    } else if (name === 'button-names') {
+      this.buttonNames = newValue.split(',');
+      this.render();
     }
   }
 
   defaultAttributeValue(name) {
     const attribute = this.getAttributeNode(name);
-    return attribute?.defaultValue ?? '';
+    return attribute?.defaultValue || '';
   }
 
   render() {
@@ -34,21 +44,16 @@ class Sidebarproduct extends HTMLElement {
           <div class="col-lg-3 col-md-4 d-none d-md-block tam-sidebar">
             <div class="border-right" id="sidebar-wrapper">
               <div class="list-group list-group-flush">
-                <a href="${this.reference}#formulario" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Solicitar mi crédito</a>
-                <a href="${this.reference}#caracteristicas" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Características</a>
-                <a href="${this.reference}#requisitos" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Requisitos</a>
-                <a href="${this.reference}#tasas" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Tasas y tarifas</a>
-                <a href="${this.reference}#cancelar" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Cancelar mi crédito</a>
-                <a href="${this.reference}#" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Mi información</a>
+                ${this.locations.map((location, i) => `
+                  <a href="${this.reference}#${location}" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">${this.buttonNames[i]} <i class="bi bi-arrow-right float-end"></i></a>
+                `).join('')}
               </div>
             </div>
           </div>
           <!-- /Sidebar -->
 
           <!-- Contenido principal -->
-          <div class="col-lg-9 col-md-8">
-            
-          </div>
+          <div class="col-lg-9 col-md-8"></div>
           <!-- /Contenido principal -->
         </div>
       </div>
@@ -58,4 +63,5 @@ class Sidebarproduct extends HTMLElement {
 
 customElements.define('product-sidebar', Sidebarproduct);
 
-export default Sidebarproduct;
+
+  

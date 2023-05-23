@@ -1,4 +1,4 @@
-@import '../landing.scss';
+@import '../style.scss';
 
 .user-content{
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .main-content{
-    width: 100%;
+    //width: 100%;
     padding-bottom: 30px;
 }
 
@@ -162,8 +162,20 @@
     }
 }
 
+
 @media only screen and (max-width: 768px) {
     .sidebar-container{
         height: 50vh;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .products-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
