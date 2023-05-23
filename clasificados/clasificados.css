@@ -71,7 +71,7 @@ h5 {
 }
 
 #greenInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #2DC071;
   background-color: rgba(45, 192, 113, 0.2);
@@ -79,7 +79,7 @@ h5 {
 }
 
 #redInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #EB3232;
   background-color: rgba(235, 50, 50, 0.2);
@@ -87,7 +87,7 @@ h5 {
 }
 
 #grayInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #CDCFD0;
   background-color: #F2F2F2;
@@ -127,11 +127,12 @@ h5 {
 }
 
 #dropDownStyleGreen {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #00B1BB;
   background-color: rgba(0, 177, 187, 0.2);
   color: #27262c;
+  margin: 0px 20px;
 }
 
 #dropDownStyleRed {
@@ -368,7 +369,8 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 100%;
+    width: auto;
+    padding: 9px 65px;
   }
   .btn_medium {
     width: auto;
@@ -384,8 +386,6 @@ h5 {
   width: 100%;
   max-width: 310px;
   height: 42px;
-  border: 2px solid #00B1BB;
-  border-radius: 48px;
   position: relative;
   display: flex;
   align-items: center;
@@ -561,6 +561,10 @@ h5 {
     color: #27262C;
   }
 }
+.img_planB {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -586,7 +590,8 @@ a {
   font-size: 30px;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   margin: -136px;
 }
 
@@ -844,9 +849,9 @@ a {
 
 @media only screen and (max-width: 768px) {
   #title_home {
+    display: none;
     width: 120%;
     margin-left: -30px;
-    display: flex;
     height: 380px;
     padding: 0px 20px;
     align-items: start;
@@ -857,30 +862,19 @@ a {
   #title_home h1 {
     margin: 30px 20px;
   }
+  .img_planB {
+    display: flex;
+    width: 100%;
+  }
   #carousel {
     display: none;
   }
   #carousel_cards {
-    display: flex;
+    display: none;
     margin: -300px 20px 20px 20px;
   }
-  .container_carousel {
-    background-color: white;
-    padding: 20px 20px;
-    height: 100%;
-  }
-  .container_carousel_text {
-    margin: 20px 0px;
-    width: 100%;
-    float: none;
-  }
-  .container_carousel_img {
-    float: none;
-  }
-  .container_carousel_img_bg {
-    background-color: #FFB67D;
-  }
   #w_contigo_landing {
+    display: none;
     justify-content: center;
     flex-direction: column;
     padding: 20px 20px;
@@ -890,8 +884,10 @@ a {
   }
   .card_mobile {
     display: flex;
+    width: 100%;
   }
   #product_similar {
+    display: none;
     padding: 30px 0px;
     background-color: white;
   }
@@ -909,7 +905,7 @@ a {
     background-color: #FAFAFA;
     width: 100%;
     height: 80px;
-    padding: 42px 20px;
+    padding: 42px 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -920,7 +916,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    width: 154px;
+    width: 100%;
     height: 42px;
     border-radius: 48px;
     box-shadow: none;
@@ -941,7 +937,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     float: right;
     width: 100%;
     height: auto;
@@ -960,14 +956,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 5px;
     width: 100%;
     height: auto;
     background: white;
     flex: none;
   }
   #about_profile {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 30px 20px;
   }
@@ -1038,6 +1034,14 @@ a {
     background: white;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+  }
+  #channels_assistance {
+    display: none;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+  }
+  #channels_assistance h3 {
+    margin: 35px 0px;
   }
 }
 /*Colors*/
@@ -1112,7 +1116,7 @@ h5 {
 }
 
 #greenInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #2DC071;
   background-color: rgba(45, 192, 113, 0.2);
@@ -1120,7 +1124,7 @@ h5 {
 }
 
 #redInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #EB3232;
   background-color: rgba(235, 50, 50, 0.2);
@@ -1128,7 +1132,7 @@ h5 {
 }
 
 #grayInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #CDCFD0;
   background-color: #F2F2F2;
@@ -1168,11 +1172,12 @@ h5 {
 }
 
 #dropDownStyleGreen {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #00B1BB;
   background-color: rgba(0, 177, 187, 0.2);
   color: #27262c;
+  margin: 0px 20px;
 }
 
 #dropDownStyleRed {
@@ -1409,7 +1414,8 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 100%;
+    width: auto;
+    padding: 9px 65px;
   }
   .btn_medium {
     width: auto;
@@ -1425,8 +1431,6 @@ h5 {
   width: 100%;
   max-width: 310px;
   height: 42px;
-  border: 2px solid #00B1BB;
-  border-radius: 48px;
   position: relative;
   display: flex;
   align-items: center;
