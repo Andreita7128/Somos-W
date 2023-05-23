@@ -121,8 +121,8 @@
                         aria-expanded="false"> Comunidad W </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../ComunidadW/comunidadW.html">W contigo</a>
-                            <a class="dropdown-item" href="#">Premios invencibles W</a>
-                            <a class="dropdown-item" href="#">Refiere y gana</a>
+                            <a class="dropdown-item" href="../../../ComunidadW/Premios-Invencibles/premios.html">Premios invencibles W</a>
+                            <a class="dropdown-item" href="../../../ComunidadW/Refiere/refiere.html">Refiere y gana</a>
                             <a class="dropdown-item" href="../../../clasificados/clasificados.html">Clasificados</a>
                         </div>
                     </li>
