@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="reclamarGirosStyle.css">
 
     <link rel="stylesheet" href="../public/Components/Cards/Card-article/cardArticle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!--     <link rel="stylesheet" href="/landing.css"> -->
     <link rel="stylesheet" href="/public/Components/Sidebarproduct/sidebarproduct.css">
 
@@ -61,19 +62,27 @@
         <!--Menu lateral-->
         <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar d-sm-none d-md-block desaparecer">
             <product-sidebar reference="./CDT.html"
+
+                locations="Simulador,Beneficios,Devoluciones,Requisitos,CancelarCDT,Tasas"
+                button-names='Simulador,Beneficios,Devoluciones,Requisitos,Cancelar mi CDT,Tasas y tarifas'>
+/*
                 locations="Abre,Simulador,Beneficios,Caracteristicas,Requisitos,Cancelar,Tasas"
                 button-names='Abre tu CDT,Simulador,Beneficios,Características,Requisitos,Cancelar mi CDT,Tasas y tarifas'>
+          */
             </product-sidebar>
         </aside>
 
         <!--cards derecha-->
-
+        <main class="main-content col marginis">
         <div id="cardsInfo">
 
 
 
 
-            <article id="Abre">
+            <article id="formulario">
+
+       //     <article id="Abre">
+
 
                 <card-imagen recurso="/CDT/imgs/Abre tu CDT.png" " titulocard=" Persona Natural"
                     botoncard="Conoce mas aqui" titulocard2="Persona Juridica" botoncard2="Conoce mas aqui ">
@@ -147,18 +156,111 @@
 
 
 
-            <article id="Caracteristicas">
 
-                <card-simple boton="Conoce mas" recurso="/CDT/imgs/Caracteristicas.png" titulo=" " contenido="<b>CDT Físico:</b><br>
-                    &#x2022;CDT Capitalizable: Al vencer el CDT, si el titular no solicita su cancelación, este se extiende más tiempo, por el valor del capital más los intereses y, sobre este valor el banco liquidará los intereses del nuevo periodo.<br>
-                    &#x2022;CDT Rentabilidad: Al vencer el CDT, si el titular no solicita su cancelación, este se extiende más tiempo, pero solo por el capital inicial, los intereses generados hasta la fecha quedarán en una cuenta y podrán ser reclamados en el momento en el que el titular quiera.<br>
-                    <b>CDT desmaterializado:</b><br>
-                    No tienen renovación automática, por lo tanto, los recursos del cliente quedarán a la vista sin generar rendimientos adicionales a los términos inicialmente pactados. Si desea realizar el proceso de renovación, deberá contactar al personal comercial 
-                          del Banco W.">
+            <article id="caracteristicas">
+
+                <card-imagen boton="Conoce mas" recurso="/CDT/imgs/Caracteristicas.png" titulo=" " contenido=
+       
+                
+                "
+                <b>CDT Físico</b>
+                <br>
+                &#x2022;
+                CDT Capitalizable: Al vencer el CDT, si el titular no solicita su cancelación, este se extiende más tiempo, por el valor del capital más los intereses y, sobre este valor el banco liquidará los intereses del nuevo periodo.
+                     
+                     
+                <br>
+                &#x2022; CDT Rentabilidad: Al vencer el CDT, si el titular no solicita su cancelación, este se extiende más tiempo, pero solo por el capital inicial, los intereses generados hasta la fecha quedarán en una cuenta y podrán ser reclamados en el momento en el que el titular quiera.<br>
+                <br>
+                <b>CDT desmaterializado</b>
+                <br>
+                &#x2022; No tienen renovación automática, por lo tanto, los recursos del cliente quedarán a la vista sin generar rendimientos adicionales a los términos inicialmente pactados. Si desea realizar el proceso de renovación, deberá contactar al personal comercial 
+                del Banco W.<br> "></card-imagen>
+                
+                
+            </article>
+            <a href=""></a>
+
+
+            
+            <article id="Requisitos">
+
+                <card-imagen boton="Abre tu CDT" recurso="/CDT/imgs/Requisitos.png" titulo=" " contenido=
+       
+                
+                "
+                <b>Persona natural:</b>
+                <br>
+                &#x2022;
+                Fotocopia ampliada al 150% del documento de identificación (con firma y huella) 
+                <br>
+                &#x2022;
+                Documentos soporte de la actividad económica y declaración de origen de fondos. <a href =''>Clic aquí para conocer más.</a>
+                <br>
+
+                <b>Persona jurídica:</b>
+                <br>
+                &#x2022; Certificado de Cámara de Comercio o certificado de existencia y representación legal, expedido por autoridad competente vigente, no mayor a 30 días.<br>
+                &#x2022; Fotocopia del RUT.<br>
+                &#x2022; Fotocopia ampliada al 150% del documento de identidad del representante legal y de las personas autorizadas en el manejo de la inversión con firma y huella.<br>
+                &#x2022; Declaración de renta del último periodo gravable.<br>
+                "></card-imagen>
+                
+                
+            </article>
+            
+
+            <article id=" Beneficios">
+
+                    <card-imagen boton="Conoce mas" recurso="\Giros\imgs\Beneficios.png" titulo=" "
+                        contenido="Reclama con seguridad tus giros internacionales en el Banco W. Somos una entidad con 40 años de trayectoria y 10 años como Banco apoyando a los colombianos.
+                    Seguridad en el pago de tu dinero ya que somos una entidad con 40 años de trayectoria y 10 años como Banco apoyando a los colombianos.">
+                    </card-imagen>
+
+            </article>
+
+
+            <article id="Devoluciones">
+                
+                <card-simple boton="Conoce mas" recurso="\Giros\imgs\Devoluciones.png" titulo=" "
+                    contenido="¿Cuál es el proceso de devolución del dinero de mi giro si éste no podrá ser pagado en Colombia?
+                    
+                Recuerda que tu giro internacional se anulará y será reenviado al origen (a la remesadora del exterior) en el caso en que tu cuenta sea diferente a la cuenta que nos envió el ordenante para depositar el giro, también se anulará si tu documento ID no coincide con el que nos suministró el ordenante para depositar el giro, también podrá anularse si supera el tiempo de disponibilidad del orden especificado por la remesadora. Así mismo, existen diversos motivos por los que no podemos pagar tu giro. ¡Recuerda enviar la información correcta y oportunamente para pagar tu giro!<br>
+                    
+                <b>Si tu giro fue anulado, pasará el siguiente proceso:</b><br>
+                &#x2022;  En Banco W notificamos de manera inmediata a la remesadora que tu giro no podrá ser pagado, y solicitamos devolver el dinero a tu ordenante.<br>
+                &#x2022;  La remesadora recibe esta confirmación y procede con la devolución del dinero.
+                    
+                    Recuerda que el proceso de devolución de dinero obedece a las políticas de reintegros de cada remesadora.
+                    El tiempo de estas devoluciones dependerá de los procesos de reintegro establecidos a cada remesadora.">
+                  
+                </card-simple>
+
+            </article>
+
+            <article id="CancelarCDT">
+                
+                <card-simple boton="Conoce mas" recurso="\CDT\imgs\Cancelar.png" titulo=" "
+                    contenido="<b>CDT físico:</b>
+                    <br>
+                    1.Dirigete a la oficina de radicación del CDT. <br>
+                    2.Entrega el CDT original y presenta documento de identidad. <br>
+                    3.El Banco constata la validez de la titularidad y realiza el pago de acuerdo a la forma en la que lo requieras. <br>
+                    4.Recibe los recursos monetarios. <br>
+
+                    <b>CDT desmaterializado:</b>
+                    <br>
+                    1.Dirígete a la oficina de tu preferencia o contacta a tu ejecutivo de captación. <br>
+                    2.Diligencia la carta de instrucciones para redimir tu título y presenta tu documento de identidad. <br>
+                    3.El Banco constata la validez de la titularidad y realiza el pago de acuerdo a la forma en la que lo requieras. <br>
+                    4. Recibe los recursos monetarios.
+                    
+
+               ">
                 </card-simple>
 
 
-
+            </article>
 
                 <article id="Requisitos">
                     <card-simple boton="Conoce mas" recurso="/CDT/imgs/Requisitos.png" titulo=" " contenido="<b>Persona natural:</b><br>
@@ -176,12 +278,22 @@
 
 
 
+
                     <article id="Cancelar">
+
+                        <card-simple boton="Conoce mas" recurso="\Giros\imgs\Devoluciones.png" titulo=" "
+                            contenido="
+                          
+                            
+                            
+                        Recuerda que tu giro internacional se anulará y será reenviado al origen (a la remesadora del exterior) en el caso en que tu cuenta sea diferente a la cuenta que nos envió el ordenante para depositar el giro, también se anulará si tu documento ID no coincide con el que nos suministró el ordenante para depositar el giro, también podrá anularse si supera el tiempo de disponibilidad del orden especificado por la remesadora. Así mismo, existen diversos motivos por los que no podemos pagar tu giro. ¡Recuerda enviar la información correcta y oportunamente para pagar tu giro!<br>
+
                         <card-simple boton="Conoce mas" recurso="/CDT/imgs/Cancelar mi CDT.png" titulo=" " contenido="<b>CDT físico:</b><br>
                             &#x2022; Dirígete a la oficina de radicación del CDT.<br>
                             &#x2022;Entrega el CDT original y presenta documento de identidad.<br>
                             &#x2022;El Banco constata la validez de la titularidad y realiza el pago de acuerdo a la forma en la que lo requieras.<br>
                             &#x2022;Recibe los recursos monetarios.<br>
+
                             
                            <b> CDT desmaterializado:</b><br>
                            &#x2022; Dirígete a la oficina de tu preferencia o contacta a tu ejecutivo de captación.<br>
@@ -227,22 +339,35 @@
     </section>
 
     </section>
+    </main>
 
     <w-footer></w-footer>
 
-
-
-
-    <script src="../public/Components/components.js"></script>
-    <!--     <script src="/public/Components/Sidebarproduct/sidebarproduct.js"></script> -->
-    <script type="module" src="/public/Components/components.js"> </script>
+    <script type="module" src="/public/Components/components.js"></script>
+    <!--Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="/public/Components/Cards/cardArticle.js"></script>
-    <script src="/Giros/reclamarGiros.js"></script>
-    <script src="/Giros/reclamarGiros_2.js"></script>
-    <script src="/public/Components/Sidebarproduct/sidebarproduct.js"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+
+    <link rel="stylesheet" href="/Salvavidas/salvavidas.css">
+
+    <script type="module" src="/Salvavidas/ComponenteSalvavidas.js"></script>
+
+    <!--Nuestros css's-->
+    <link rel="stylesheet" href="/landing.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/public/Components/tags/tags.css">
+    <link rel="stylesheet" href="../public/Components/Cards/cardArticle.css">
+    <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
+    <link rel="stylesheet" href="/public/Components/Footer/footer.css">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="credito.css">
+    <link rel="stylesheet" href="/public/Components/forms/forms.css">
+
+
+
+  
 </body>
 
 </html>

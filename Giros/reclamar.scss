@@ -41,15 +41,15 @@
   }
   #bread_lv{
     &1::after{
-        content: "Inicio";
+        content: "Inicio" ;
         color: #6321A6;
     }
     &2::after{
-        content: "Giros";
+        content: "Giros" !important;
         color: #6321A6;
     }
     &3::after{
-        content: "Reclamar Giros";
+        content: "Reclamar Giros" !important;
         color: #6321A6;
         font-weight: bold;
     }
@@ -60,7 +60,7 @@
 
 #bread_title{
     &::after{
-        content: "Reclamar Giros";
+        content: "Reclamar Giros" !important ;
         color: #F25C05;
     }
     span{
