@@ -75,6 +75,7 @@
                         <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../../Creditos/all-credits.html">Todos</a>
                             <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
                             <a class="dropdown-item" href="#">Yo construyo</a>
                             <a class="dropdown-item" href="#">Gotahorro</a>
@@ -126,7 +127,7 @@
             </div>
         </div>
     </nav>
-  
+
         `
     }
 
