@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="/public/Components/tags/tags.css">
 
+    
     <link rel="stylesheet" href="clasificados.css">
 
 </head>
@@ -31,17 +32,20 @@
                 <div class="col">
                     <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item" id="bread_lv1"><a href="#"><span>Inicio</span></a></li>
-                            <li class="breadcrumb-item" id="bread_lv2"><a href="#"><span>Comunidad W</span></a></li>
-                            <li class="breadcrumb-item" id="bread_lv2"><a href="#"><span>Clasificados</span></a></li>
-                            <li class="breadcrumb-item active" id="bread_lv3" aria-current="page"><span>Publica tu Empresa</span></li>
+                            <li class="breadcrumb-item" id="bread_lv1"><a href="/landing.html"><span>Inicio</span></a></li>
+                            <li class="breadcrumb-item" id="bread_lv2"><a href="/ComunidadW/comunidadw.html"><span>Comunidad W</span></a></li>
+                            <li class="breadcrumb-item" id="bread_lv2"><a href="/clasificados/clasificados.html"><span>Clasificados</span></a></li>
+                            <li class="breadcrumb-item active" id="bread_lv3" aria-current="page"><span>Publica tu Clasificado</span></li>
                         </ol>
                     </nav>
-                    <h4 class="breadcrumb-title" id="bread_title"><span>Publica tu Empresa</span></h4>
+                    <h4 class="breadcrumb-title" id="bread_title"><span>Clasificados</span></h4>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- CIRUCLO DE FONDO-->
+    <span class="dot"></span>
 
     <!-- FORMULARIO PARA CREAR UN COMERCIO - NO ES FUNCIONAL PORQUE NO HAY BASE DE DATOS-->
     <div class="container">
@@ -51,7 +55,6 @@
                     <div class="form-title">
                         <h3>Publica tu clasificado</h3>
                         <p class="body_2">Ingresa los siguientes datos por favor</p>
-                        <hr>
                     </div>
                     <div class="form-group">
                         <label for="negocio_nombre">Nombre de tu negocio</label>
@@ -77,15 +80,11 @@
                     </div>
                     <div class="form-group">
                         <label for="negocio_input_file">Sube una foto de tu negocio</label>
-                        <input type="file" class="form-control-file" id="negocio_input_file">
+                        <input type="file" class="form-control-file" id="negocio_input_file" placeholder="papito">
                     </div>
                     <div class="form-group">
                         <label for="negocio_id_number">Número de Identificación</label>
                         <input type="number" class="form-control" id="negocio_id_number" placeholder="Escribe aquí tu identificación">
-                    </div>
-                    <div class="form-group">
-                        <label for="negocio_input_file">Sube una foto de tu negocio</label>
-                        <input type="file" class="form-control-file" id="negocio_input_file">
                     </div>
                     <div class="form-group">
                         <label for="negocio_phone">Número de Celular Personal</label>
@@ -129,7 +128,7 @@
                     </div>
                     <div class="form-group">
                         <label for="negocio_url">Sitio Web</label>
-                        <input type="number" class="form-control" id="negocio_url" placeholder="Enlace de tu sitio web">
+                        <input type="text" class="form-control" id="negocio_url" placeholder="Enlace de tu sitio web">
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="check_terminos">
@@ -158,5 +157,7 @@
     <w-footer></w-footer>
     <script type="module" src="../public/Components/components.js"></script>
 
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
