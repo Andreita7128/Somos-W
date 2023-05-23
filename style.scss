@@ -121,6 +121,7 @@ h5 {
     width: 300px;
     height: 42px;
     border-color: $color_error;
+
     background-color: $fill_error;
     border-radius: 48px;
 }
@@ -174,6 +175,29 @@ h5 {
     color: #27262c;
     margin: 0px 20px;
 
+  }
+  
+  #dropDownStyleRed {
+      width: 423px;
+      height: 42px;
+      border-width: 2px;
+    //  border-color: $color_errorBorder;
+      background-color: $fill_error;
+      color: #27262C;
+    }
+  
+    #dropDownStyleCyan {
+      width: 423px;
+      height: 42px;
+      border-width: 2px;
+      border-color: $color_blue1;
+      background-color: $fill_generic;
+      color: #27262C;
+    }
+    
+  
+  
+  .dropdown-toggle {
 
 }
 
@@ -612,6 +636,7 @@ h5 {
     #redInput {
         width: 29.38%;
         height: 42px;
+
         border-color: $color_error;
         background-color: $fill_error;
         border-radius: 48px;
@@ -620,7 +645,9 @@ h5 {
     #grayInput {
         width: 29.38%;
         height: 42px;
+
         border-color: $color_gray_btn;
+
         background-color: #f4f4f4;
         border-radius: 48px;
     }
@@ -665,6 +692,29 @@ h5 {
         background-color: $fill_generic;
         color: #27262c;
 
+      
+        
+      }
+      
+      #dropDownStyleRed {
+          width: 29.38%;
+          height: 42px;
+          border-width: 2px;
+     //     border-color: $color_errorBorder;
+          background-color: $fill_error;
+          color: #27262C;
+        }
+      
+        #dropDownStyleCyan {
+          width: 29.38%;
+          height: 42px;
+          border-width: 2px;
+          border-color: $color_blue1;
+          background-color: $fill_generic;
+          color: #27262C;
+        }
+
+
 
     }
 
@@ -685,4 +735,5 @@ h5 {
         background-color: $fill_generic;
         color: #27262C;
     }
+
 }

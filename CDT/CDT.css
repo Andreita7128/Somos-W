@@ -7,6 +7,9 @@
   background-color: white;
 }
 
+.marginis{
+  flex: 0 0 50% ;
+}
 #CTAText {
   padding: 10%;
   /* font-family: 'Montserrat', sans-serif;
@@ -32,6 +35,9 @@
   #CTAimg {
     width: 100%;
   }
+  .marginis{
+    flex: 0 0 100% !;
+}
 }
 
 #cardsInfoCDT {
@@ -52,7 +58,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding-left: 100px;
+  
 }
 
 #bread_lv1::after {
@@ -60,21 +66,21 @@
   color: #6321a6;
 }
 #bread_lv2::after {
-  content: "CDT";
+  content: "Ahorro e inversión" !important;
   color: #6321a6;
 }
-/*  #bread_lv3::after {
-    content: "Reclamar Giros";
+  #bread_lv3::after {
+    content: "CDT" !important;
     color: #6321A6;
     font-weight: bold;
-  } */
+  } 
 
 .breadcrumb-item span {
   display: none;
 }
 
 #bread_title::after {
-  content: "CDT";
+  content: "CDT"!important;
   color: #f25c05;
 }
 #bread_title span {

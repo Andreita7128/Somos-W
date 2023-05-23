@@ -53,7 +53,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark  second_nav">
             <div class="container-fluid mx-auto ">
                 <a class="navbar-brand d-md-none" href="#">
-                <img class="logo1" src="/public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
+                <img class="logo1" src="/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
                 </a>
     
             <button class="navbar-toggler ms-auto button_toggler" type="button" data-bs-toggle="collapse"

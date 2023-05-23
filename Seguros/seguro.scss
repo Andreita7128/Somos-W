@@ -36,7 +36,7 @@ section {
     }
 
     .marginis {
-        margin-left: 0px !important;
+        margin-left: 50% !important;
     }
 
     .desaparecer {
@@ -45,6 +45,14 @@ section {
 
 }
 
+@media (max-width: 800px) {
+  
+
+.marginis{
+    flex: 0 0 100% !important;
+    margin-left: 0% !important;
+}
+}
 #bread_lv {
     &1::after {
         content: "Inicio";
