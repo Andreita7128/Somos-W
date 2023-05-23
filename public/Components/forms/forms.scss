@@ -3,18 +3,18 @@
 
 
 .dropdown-toggle::after {
-    display: none;
+    display: none !important;
 }
 
 .dropdown-menu{
     background-color:whitesmoke;
-    width: 100%;
+    width: 100% !important;
  
     // overflow-y: auto;
     
 }
 .formdrop{
-    width: 100%;
+    width: 100% !important;
     background-color:rgba(0, 177, 187, 0.2);
     & button{
         text-align: left;
@@ -22,7 +22,7 @@
 }
 
 .dropdown-menu button {
-    text-align: left;
+    text-align: left !important;
   }
   
 
@@ -46,44 +46,44 @@
     /* Estilo para la sección del formulario */
 .fondo-card {
     background-color: white;
-    padding: 40px;
-    margin-top: 50px;
+    padding: 40px !important;
+    margin-top: 50px !important;
   }
   
   /* Estilo para la imagen en el formulario */
   .card-imagen {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
   
   /* Estilo para los botones del formulario */
   .btn_formulario {
-    margin-bottom: 20px;
-    margin-right: 40px;
+    margin-bottom: 20px !important;
+    margin-right: 40px !important;
   }
   
   /* Estilo para el dropdown del formulario */
   .dropdown {
-    margin-bottom: 100px;
+    margin-bottom: 100px !important;
   }
   
   /* Estilo para el título del formulario */
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   
   /* Estilo para la barra de progreso */
   .progress {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   
   /* Estilo para el contenedor de los elementos del formulario */
   #etapa-1, #etapa-2 {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   
   /* Estilo para las etiquetas del formulario */
   label {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
   }
   
   /* Estilo para los inputs del formulario */
@@ -101,22 +101,22 @@
   }
 
   .my-label{
-    width: 50%;
+    width: 50% !important;
   }
 
   .btn{
     &_continuar{
-        width: 50%;
+        width: 50% !important;
         background-color: $color_blue1;
         color: white;
     }
   }
 
   .form-check{
-    margin-top: 30px;
+    margin-top: 30px !important;
   }
   
   .dropdown_form{
-    max-height: 500px;
-    overflow-y: auto;
+    max-height: 500px !important;
+    overflow-y: auto !important;
   }
