@@ -1,6 +1,17 @@
     class NavBar extends HTMLElement {
         constructor() {
             super()
+            this.pages = [
+                {url: '/landing.html', title: 'Inicio'},
+                {url: '../../../CDT/CDT.html', title: 'CDT'},
+                {url: '../../../Creditos/credito.html', title: 'microcredito'},
+                {url: '/landing.html', title: 'Inicio'},
+                {url: '/landing.html', title: 'Inicio'},
+                
+
+
+
+            ]
     }
 
     connectedCallback() {
@@ -133,13 +144,28 @@
     }
 
     setupSearchForm(){
-        const searchForm = this.querySelector('#search-2');
-        searchForm.addEventListener('submit',this.handleSearchSubmit.bind(this));
+        const searchForm1 = this.querySelector('#search-1');
+    const searchForm2 = this.querySelector('#search-2');
+    searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
+    searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
+  
     }
 
     handleSearchSubmit(event){
         event.preventDefault();
-        const searchInput = this.querySelector
+        const searchInput = this.querySelector('input[type = "search"]')
+        const searchTerm = searchInput.value;
+
+        if(searchTerm.trim() !== ''){
+            const searchResults = this.pages.filter((page)=> page.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()))
+        if(searchResults.length > 0){
+            const firstResult = searchResults[0];
+            window.location.href = firstResult.url
+
+        }else{
+            console.log('no se encontro la busqueda')
+        }
+        }
     }
 
 }
