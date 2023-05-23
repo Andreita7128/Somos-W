@@ -387,6 +387,15 @@ section h3 {
   overflow-y: auto !important;
 }
 
+.simulacion {
+  color: #6321A6;
+}
+
+.dropdown-menu.show {
+  display: block;
+  width: auto;
+}
+
 .image-card {
   width: 10px !important;
 }

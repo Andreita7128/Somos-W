@@ -385,4 +385,13 @@ section h3 {
 
 .dropdown_form {
   overflow-y: auto !important;
+}
+
+.simulacion {
+  color: #6321A6;
+}
+
+.dropdown-menu.show {
+  display: block;
+  width: auto;
 }/*# sourceMappingURL=credito.css.map */

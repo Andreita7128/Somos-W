@@ -53,8 +53,8 @@ class Forms extends HTMLElement {
                       <li><a class="dropdown-item" href="#">NIT</a></li>
                     </ul>
                   </div>
-                  <label for="nombre">Número de documento:</label>
-                  <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="1041259846">
+                  <label for="nombre">Número de documento*</label>
+                  <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Escribe tu numero de documento">
                 </div>
                 <div class="form-group">
                   <div class="dropdown">
@@ -73,12 +73,12 @@ class Forms extends HTMLElement {
                       <li><a class="dropdown-item" href="#">Enviar giros</a></li>
                     </ul>
                   </div>
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Nombre">
+                  <label for="nombre">Nombre*</label>
+                  <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Escribe tu numero nombre aquí">
                 </div>
                 <div class="form-group">
-                  <label for="nombre">Apellido:</label>
-                  <input type="text" class="form-control form-control_formulario form-input" id="apellido" placeholder="Apellido">
+                  <label for="nombre">Apellido*</label>
+                  <input type="text" class="form-control form-control_formulario form-input" id="apellido" placeholder="Escribe tu apellido aquí">
                 </div>
                 <div class="col-md-12 text-center">
                   <button type="button" class="btn btn_continuar siguiente">Continuar <i class="bi bi-arrow-right float-end"></i></button>
