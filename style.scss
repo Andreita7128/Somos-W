@@ -462,11 +462,13 @@ h5 {
 
     .btn {
         &_large {
-            width: 100%;
+            width: auto;
+            padding: 9px 65px;
         }
 
         &_medium {
-            width: 75%;
+            width: auto;
+            padding: 9px 25px;
         }
 
         &_small {

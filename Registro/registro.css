@@ -368,10 +368,12 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 100%;
+    width: auto;
+    padding: 9px 65px;
   }
   .btn_medium {
-    width: 75%;
+    width: auto;
+    padding: 9px 25px;
   }
   .btn_small {
     width: 50%;
@@ -560,6 +562,10 @@ h5 {
     color: #27262C;
   }
 }
+.planB_mobile {
+  display: none;
+}
+
 .log_in {
   padding: 50px 12%;
   width: 100%;
@@ -644,4 +650,28 @@ h5 {
 
 .btn_a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .planB_btn {
+    width: 80% !important;
+    position: absolute;
+    left: 31px;
+    right: 32px;
+    top: 455px;
+  }
+  .planB_mobile {
+    display: flex;
+    width: 100%;
+  }
+  .planB_mobile_btn {
+    width: 80% !important;
+    position: absolute;
+    left: 31px;
+    right: 32px;
+    top: 850px;
+  }
+  .log_in {
+    display: none;
+  }
 }/*# sourceMappingURL=registro.css.map */

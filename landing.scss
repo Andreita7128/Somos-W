@@ -25,7 +25,8 @@ a {
     font-size: 30px;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     margin: -136px;
 }
 
@@ -41,6 +42,7 @@ a {
     border-radius: 100%;
     background-color: $color_text;
 }
+
 .carousel-indicators {
     position: relative;
 }
@@ -337,42 +339,41 @@ a {
 @media only screen and (max-width: 768px) {
 
     #title_home {
-        display: flex;
-        height: 100px;
+        display: none;
+
+        width: 120%;
+        margin-left: -30px;
+        //display: flex;
+        height: 380px;
         padding: 0px 20px;
-        align-items: center;
-        background-color: $color_orange1;
+        align-items: start;
+        background-color: $color_orange2;
         color: $color_accent_white;
+        border-radius: 0px 0px 100% 100%;
+
+        & h1 {
+            margin: 30px 20px;
+        }
+    }
+
+    .img_planB {
+        display: flex;
+        width: 100%;
     }
 
     #carousel {
-        padding: 0px;
-        justify-content: center;
-        flex-direction: column-reverse;
-        $carousel-control-color: $color_text;
-    }
+        display: none;
 
-    .container_carousel {
-        background-color: white;
-        padding: 20px 20px;
-        height: 100%;
-
-        &_text {
-            margin: 20px 0px;
-            width: 100%;
-            float: none;
-        }
-
-        &_img {
-            float: none;
-
-            &_bg {
-                background-color: $color_orange3;
-            }
+        &_cards {
+            display: none;
+            margin: -300px 20px 20px 20px;
+            
         }
     }
 
     #w_contigo_landing {
+        display: none;
+
         justify-content: center;
         flex-direction: column;
         padding: 20px 20px;
@@ -385,10 +386,13 @@ a {
 
         &_mobile {
             display: flex;
+            width: 100%;
+
         }
     }
 
     #product_similar {
+        display: none;
         padding: 30px 0px;
         background-color: white;
 
@@ -410,7 +414,7 @@ a {
                 background-color: $color_accent_white;
                 width: 100%;
                 height: 80px;
-                padding: 42px 20px;
+                padding: 42px 8px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -423,7 +427,7 @@ a {
             justify-content: center;
             align-items: center;
             padding: 8px 16px;
-            width: 154px;
+            width: 100%;
             height: 42px;
             border-radius: 48px;
             box-shadow: none;
@@ -450,7 +454,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         float: right;
         width: 100%;
         height: auto;
@@ -473,7 +477,7 @@ a {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            padding: 20px;
+            padding: 5px;
             width: 100%;
             height: auto;
             background: white;
@@ -482,7 +486,7 @@ a {
     }
 
     #about_profile {
-        display: flex;
+        display: none;
         flex-direction: column;
         padding: 30px 20px;
 
@@ -575,6 +579,17 @@ a {
             border-radius: 20px;
         }
 
+    }
+
+    #channels_assistance {
+        display: none;
+
+        padding: 50px 20px;
+        flex-wrap: wrap;
+
+        & h3 {
+            margin: 35px 0px;
+        }
     }
 
 }
