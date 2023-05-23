@@ -425,7 +425,7 @@ function conversacion() {
     <div class="comment respuesta">
         <img class="banco-pic" src="/Salvavidas/recursos/imagenes/Icono-respuesta.png">
         <div class="comment-body">
-            <div class="comment-message">Para crear un perfil, tendrás que dirigirte a <a href="">Mi perfil aquí.</a> <br><br>
+            <div class="comment-message">Para crear un perfil, tendrás que dirigirte a <a href=".././Registro/registro.html">Mi perfil aquí.</a> <br><br>
                 Te proporcionare también algunas opciones que podran ayudarte. <br><br>
                 Si tienes mas dudas continua escribiendo.
             </div>

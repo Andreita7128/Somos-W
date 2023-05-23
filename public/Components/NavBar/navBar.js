@@ -70,7 +70,7 @@
                 <ul class="navbar-nav mx-auto second_nav_link">
                     <li class="nav-item d-md-none d-block">
                         <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
-                        href="#">Mi perfil W</a>
+                        href="../../../Registro/iniciarSesión.html">Mi perfil W</a>
                     </li>
                     <li class="nav-item d-md-none d-block">
                         <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"

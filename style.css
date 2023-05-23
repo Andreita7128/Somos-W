@@ -368,10 +368,12 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 100%;
+    width: auto;
+    padding: 9px 65px;
   }
   .btn_medium {
-    width: 75%;
+    width: auto;
+    padding: 9px 25px;
   }
   .btn_small {
     width: 50%;
