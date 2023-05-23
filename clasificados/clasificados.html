@@ -16,8 +16,12 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-     <link rel="stylesheet" href="/public/Components/tags/tags.css">
+    <link rel="stylesheet" href="/public/Components/tags/tags.css">
+
+    
+
     <link rel="stylesheet" href="clasificados.css">
+
 </head>
 
 <body>
@@ -47,8 +51,10 @@
             <div class="col-12 col-md-6 classified-banner_leftCol">
                 <h1>Apoya los negocios de microempresarios colombianos</h1>
                 <p class="body_1">Aquí encontrarás lo que necesites y podrás publicar tu anuncio</p>
-                <button class="btn_large btn_large_active btn text_button_medium">Publica tu clasificado aquí<i
-                    class="bi bi-arrow-right"></i></button>
+                <a href="add_commerce.html">
+                    <button class="btn_large btn_large_active btn text_button_medium">Publica tu clasificado aquí<i
+                        class="bi bi-arrow-right"></i></button>
+                </a>
             </div>
             <div class="col col-md-6">
                 <img class="classified-banner-img" src="res/classified-banner-img.png" alt="señorita sonriente.png">
@@ -59,12 +65,41 @@
     <!-- FILTROS DE LOS CLASIFICADOS-->
     <div class="filter-section">
         <div class="container">
-            <div class="row">
-                <div class="classified-filter">
-                    <button>Ciudad</button>
-                    <button>Categoria</button>
+            <form>
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                        <label for="city-filter"></label>
+                        <select class="form-control btn_large btn_large_active btn text_button_medium" id="exampleFormControlSelect1">
+                          <option disabled selected>Ciudad</option>
+                          <option>Bogotá</option>
+                          <option>Cali</option>
+                          <option>Popayan</option>
+                          <option>Palmira</option>
+                          <option>Santander de Quilichao</option>
+                          <option>Yumbo</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                        <label for="category-filter"></label>
+                        <select class="form-control filters btn_large btn_large_active btn text_button_medium" id="exampleFormControlSelect1">
+                          <option disabled selected>Categoría</option>
+                          <option>Construcción</option>
+                          <option>Diseño</option>
+                          <option>Estética y Cosmetica</option>
+                          <option>Inmobiliaria</option>
+                          <option>Joyería</option>
+                          <option>Restaurante</option>
+                          <option>Ropa</option>
+                          <option>Veterinaria</option>
+                        </select>
+                      </div>
+                  </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -77,72 +112,72 @@
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-1.png"
+                    titulo="Luzatt Accesorios"
+                    contenido="Luzatt es una marca Colombiana de accesorios en tendencia, para mujeres que quieren sentirse...">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-2.png"
+                    titulo="Venta de Apartamento"
+                    contenido="Venta de apartamento en Ciudad Pacífica, 62 m2, 4 Piso, amplio balcón, estudio, habitación...">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-3.png"
+                    titulo="Acuarela"
+                    contenido="Creamos y producimos Jabones artesanales, Exfoliantes Cremas y sérum naturales...">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-4.png"
+                    titulo="Eli Gonzalez"
+                    contenido="Contribuyo a personas, marcas y empresas a activar su poder a través de la imagen efectiva.">
                 </card-forblog>
             
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-5.png"
+                    titulo="Austral"
+                    contenido="Acabados obra civil servicios de aseo construciones de edificios casa locales comerciales...">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-6.png"
+                    titulo="Califood"
+                    contenido="restaurante street food que nació en la ciudad de Cali. utilizando materia prima de la mas alta...">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-2.png"
+                    titulo="Venta de Apartamento"
+                    contenido="Venta de apartamento en Ciudad Pacífica, 62 m2, 4 Piso, amplio balcón, estudio, habitación...">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
                     boton="Aqui titulo para boton" 
                     likes="120" 
                     comments="130" 
-                    recurso="res/placeholder.png"
-                    titulo="Breve título"
-                    contenido="The gradual accumulation of information about atomic and small-scale behaviour during">
+                    recurso="res/commerce-1.png"
+                    titulo="Eli Gonzalez"
+                    contenido="Contribuyo a personas, marcas y empresas a activar su poder a través de la imagen efectiva.">
                 </card-forblog>
 
                 <card-forblog class="classified-item"
@@ -170,8 +205,10 @@
                 <div class="publish_body">
                     <h3>Publica tu clasificado ahora</h3>
                     <p class="body_2">Publica un anuncio de tu negocio, producto, servicio o microempresa para que llegue a más personas y así ayudarte a impulsar tu iniciativa</p>
-                    <button class="btn_large btn_large_active btn text_button_medium">Publica tu clasificado<i
-                        class="bi bi-arrow-right"></i></button>
+                    <a href="add_commerce.html">
+                        <button class="btn_large btn_large_active btn text_button_medium">Publica tu clasificado<i
+                            class="bi bi-arrow-right"></i></button>
+                    </a>
                 </div>
             </div>
         </div>
