@@ -71,7 +71,7 @@ h5 {
 }
 
 #greenInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #2DC071;
   background-color: rgba(45, 192, 113, 0.2);
@@ -79,7 +79,7 @@ h5 {
 }
 
 #redInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #EB3232;
   background-color: rgba(235, 50, 50, 0.2);
@@ -87,7 +87,7 @@ h5 {
 }
 
 #grayInput {
-  width: 423px;
+  width: 300px;
   height: 42px;
   background-color: #f4f4f4;
   border-color: #CDCFD0;
@@ -128,11 +128,12 @@ h5 {
 }
 
 #dropDownStyleGreen {
-  width: 423px;
+  width: 300px;
   height: 42px;
   border-color: #00B1BB;
   background-color: rgba(0, 177, 187, 0.2);
   color: #27262c;
+  margin: 0px 20px;
 }
 
 #dropDownStyleRed {
@@ -386,8 +387,6 @@ h5 {
   width: 100%;
   max-width: 310px;
   height: 42px;
-  border: 2px solid #00B1BB;
-  border-radius: 48px;
   position: relative;
   display: flex;
   align-items: center;

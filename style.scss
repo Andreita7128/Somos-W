@@ -110,7 +110,7 @@ h5 {
 }
 
 #greenInput {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_success;
     background-color: $fill_success;
@@ -118,7 +118,7 @@ h5 {
 }
 
 #redInput {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_error;
 
@@ -127,7 +127,7 @@ h5 {
 }
 
 #grayInput {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_gray_btn;
     background-color: $color_base_white;
@@ -168,11 +168,12 @@ h5 {
 }
 
 #dropDownStyleGreen {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_blue1;
     background-color: $fill_generic;
     color: #27262c;
+    margin: 0px 20px;
 
   }
   
@@ -508,8 +509,6 @@ h5 {
     width: 100%;
     max-width: 310px;
     height: 42px;
-    border: 2px solid $color_blue1;
-    border-radius: 48px;
     position: relative;
     display: flex;
     align-items: center;
