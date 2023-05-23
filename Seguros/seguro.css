@@ -89,6 +89,7 @@ h5 {
 #grayInput {
   width: 423px;
   height: 42px;
+  background-color: #f4f4f4;
   border-color: #CDCFD0;
   background-color: #F2F2F2;
   border-radius: 48px;
@@ -377,6 +378,75 @@ h5 {
   .btn_small {
     width: 50%;
   }
+  #greenInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(45, 192, 113, 0.2);
+    border-radius: 48px;
+  }
+  #redInput {
+    width: 29.38%;
+    height: 42px;
+    background-color: rgba(235, 50, 50, 0.2);
+    border-radius: 48px;
+  }
+  #grayInput {
+    width: 29.38%;
+    height: 42px;
+    background-color: #f4f4f4;
+    border-radius: 48px;
+  }
+  #inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+  }
+  #inputSearch input[type=text] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #inputSearch button {
+    background-color: #00B1BB;
+  }
+  #inputButtonSize {
+    width: 25.93%;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+  }
+  #inputButtonSize #inputButtonColor {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #dropDownStyleGreen {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262c;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
+  }
 }
 /* Input internacional */
 /* Cajita */
@@ -600,6 +670,9 @@ section h3 {
   #tasas {
     display: none;
   }
+  .marginis {
+    flex: 0 0 100% !important;
+  }
 }
 .sidebar-container {
   position: sticky;
@@ -706,10 +779,16 @@ section h3 {
     border-radius: 48px 0px 0px 48px;
   }
   .marginis {
-    margin-left: 0px !important;
+    margin-left: 50% !important;
   }
   .desaparecer {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .marginis {
+    flex: 0 0 100% !important;
+    margin-left: 0% !important;
   }
 }
 #bread_lv1::after {
