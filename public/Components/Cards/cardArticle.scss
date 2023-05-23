@@ -328,6 +328,7 @@
 
     .title_col {
         justify-content: space-between;
+
         width: 100%;
 
         & h4 {
@@ -395,4 +396,9 @@
     .botoncard{
         width: 100%;
     }
+    
 
+@media(max-width: 768px){
+
+    
+}

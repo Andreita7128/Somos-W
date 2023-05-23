@@ -2071,7 +2071,7 @@ class cardWithtwoinputs extends HTMLElement {
   </div>
 </div>
 </div>
-      
+
         <div class="row">
         <div class="col-12">
         <div class = "card border-0">
@@ -2101,6 +2101,167 @@ class cardWithtwoinputs extends HTMLElement {
 
 
 window.customElements.define("card-inputs2", cardWithtwoinputs)
+
+
+
+
+//card with two input type text
+
+class cardWithtwoinputstxt extends HTMLElement {
+
+
+
+    constructor() {
+        super();
+
+        this.recurso;
+        this.titulo;
+        this.contenido;
+        this.boton;
+
+        this.titulocard;
+        this.botoncard;
+        this.titulocard1;
+        this.botoncard1;
+        this.titulocard2;
+        this.botoncard2;
+      
+
+
+
+    }
+
+    static get observedAttributes() {
+        return [
+            "recurso",
+            "titulo",
+            "contenido",
+            "boton",
+
+            "titulocard",
+            "botoncard",
+            "titulocard2",
+            "botoncard2",
+         
+
+
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+
+        switch (nameAtr) {
+            case "recurso":
+
+                this.recurso = newValue
+
+                break;
+
+            case "titulo":
+
+                this.titulo = newValue
+
+                break;
+
+            case "contenido":
+
+                this.contenido = newValue
+
+                break;
+
+            case "boton":
+
+                this.boton = newValue
+
+                break;
+
+
+            case "titulocard":
+                this.titulocard = newValue
+
+                break;
+
+            case "botoncard":
+                this.botoncard = newValue
+
+                break;
+
+            case "titulocard2":
+                this.titulocard2 = newValue
+
+                break;
+
+            case "botoncard2":
+                this.botoncard2 = newValue
+
+                break;
+    
+        }
+
+    }
+
+    connectedCallback() {
+
+        this.innerHTML = `
+
+        <div class = 'supreme'>
+        
+        <section class="fondo-card">
+        <section class="card-imagen">
+            <img src= "${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <section class="texto-card">
+            <p class="parrafo">
+            ${this.contenido}   
+            </p>
+        </section>
+
+        
+
+<div class="row">
+<div class="col-12">
+<div class = "card border-0">
+    <div class="card-body row body-details">
+      <div class="col-6">
+        <h5 class="title-inputcard">${this.titulocard}</h5>
+      </div>
+      <div class="col-6">
+         <h5  style = "margin-left: 25%; margin-top: 10px">${this.botoncard}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="row">
+        <div class="col-12">
+        <div class = "card border-0">
+            <div class="card-body row body-details">
+              <div class="col-6">
+                <h5 class="title-inputcard">${this.titulocard2}</h5>
+              </div>
+              <div class="col-6">
+              <h5  style = "margin-left: 25%; margin-top: 10px">${this.botoncard2}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+   
+
+        
+        `
+
+    }
+
+
+}
+
+
+window.customElements.define("card-inputs2txt", cardWithtwoinputstxt)
 
 //Card three inputs -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -2295,7 +2456,7 @@ window.customElements.define("card-inputs3", cardWiththreeinputs)
 //Four inputs -----------------------------------------------------------------------------------------------
 
 
-class cardWiththreeinputs extends HTMLElement {
+class cardWithfourinputs extends HTMLElement {
 
 
 
@@ -2315,6 +2476,8 @@ class cardWiththreeinputs extends HTMLElement {
         this.botoncard2;
         this.titulocard3;
         this.botoncard3;
+        this.titulocard4;
+        this.botoncard4;
 
 
     }
@@ -2331,7 +2494,9 @@ class cardWiththreeinputs extends HTMLElement {
             "titulocard2",
             "botoncard2",
             "titulocard3",
-            "botoncard3"
+            "botoncard3",
+            "titulocard4",
+            "botoncard4"
          
 
 
@@ -2395,6 +2560,15 @@ class cardWiththreeinputs extends HTMLElement {
                     this.botoncard3 = newValue
     
                     break;
+                case "titulocard4":
+                    this.titulocard4 = newValue
+
+                    break;
+
+                case "botoncard4":
+                    this.botoncard4 = newValue
+
+                    break;
         
     
         }
@@ -2417,6 +2591,21 @@ class cardWiththreeinputs extends HTMLElement {
             </p>
         </section>
 
+
+        <div class="row">
+        <div class="col-12">
+        <div class = "card border-0">
+            <div class="card-body row body-details">
+              <div class="col-6">
+                <h5 class="title-inputcard">${this.titulocard}</h5>
+              </div>
+              <div class="col-6">
+                <button class="btn btn_medium_outline_active botoncard"><i class="bi bi-geo-alt"></i> ${this.botoncard} </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         
 
 <div class="row">
@@ -2424,10 +2613,10 @@ class cardWiththreeinputs extends HTMLElement {
 <div class = "card border-0">
     <div class="card-body row body-details">
       <div class="col-6">
-        <h5 class="title-inputcard">${this.titulocard}</h5>
+        <h5 class="title-inputcard">${this.titulocard2}</h5>
       </div>
       <div class="col-6">
-        <h5  style = "margin-left: 25%; margin-top: 10px">${this.botoncard}</h5>
+        <h5  style = "margin-left: 25%; margin-top: 10px">${this.botoncard2}</h5>
       </div>
     </div>
   </div>
@@ -2439,10 +2628,10 @@ class cardWiththreeinputs extends HTMLElement {
         <div class = "card border-0">
             <div class="card-body row body-details">
               <div class="col-6">
-                <h5 class="title-inputcard">${this.titulocard2}</h5>
+                <h5 class="title-inputcard">${this.titulocard3}</h5>
               </div>
               <div class="col-6">
-                <h5 style = "margin-left: 30%; margin-top: 10px">${this.botoncard2}</h5>
+                <h5 style = "margin-left: 30%; margin-top: 10px">${this.botoncard3}</h5>
               </div>
             </div>
           </div>
@@ -2455,15 +2644,17 @@ class cardWiththreeinputs extends HTMLElement {
       <div class = "card border-0">
           <div class="card-body row body-details">
             <div class="col-6">
-              <h5 class="title-inputcard">${this.titulocard3}</h5>
+              <h5 class="title-inputcard">${this.titulocard4}</h5>
             </div>
             <div class="col-6">
-              <button class="btn btn_medium_outline_active botoncard"><i class="bi bi-geo-alt"></i> ${this.botoncard3} </button>
+              <button class="btn btn_medium_outline_active botoncard"><i class="bi bi-geo-alt"></i> ${this.botoncard4} </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+  
 
 
     </section>
@@ -2479,4 +2670,630 @@ class cardWiththreeinputs extends HTMLElement {
 }
 
 
-window.customElements.define("card-inputs3", cardWiththreeinputs)
+window.customElements.define("card-inputs4", cardWithfourinputs)
+
+
+//SIMULADOR CDT----------------------------------------------------------------------------------------------------------------------------------------------------------
+class SimuladorCDT extends HTMLElement {
+    constructor() {
+        super();
+
+        this.recurso;
+
+    }
+
+        static get observedAttributes() {
+            return [
+                "recurso",
+         
+
+            ]
+        }
+    
+        attributeChangedCallback(nameAtr, oldValue, newValue) {
+    
+            switch (nameAtr) {
+                case "recurso":
+    
+                    this.recurso = newValue
+    
+                    break;
+    
+                
+
+                    
+        }
+
+    }
+    connectedCallback() {
+
+        this.innerHTML = `
+        
+        
+        
+        <section class="fondo-card">
+        <section class="card-imagen">
+          <img src="${this.recurso}" class="imagen-inCard" alt="">
+        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form id="formulario" method="post" action="">
+            
+         
+                    <h3 for="nombre">Digita la inversión inicial:</h3>
+                    <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Monto">
+              
+                  </div>
+
+
+                  <h3> Plazo en meses</h3>
+            
+                  <div id="etapa-1">
+                    <div class="form-group">
+                      <div class="dropdown">
+                        <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          2 meses <i class="bi bi-chevron-down float-end"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" >4 meses</a></li>
+                          <li><a class="dropdown-item" >6 meses</a></li>
+                        </ul>
+                      </div>
+
+                      <h3 class = "simulacion" style = "margin-bottom:20px;">Tasa de simulación 4%</h3>
+         
+                  <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn_large_active siguiente">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+                  </div>
+                </div>
+            
+
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+        
+        `
+
+    }
+}
+    
+window.customElements.define("w-simulador-cdt", SimuladorCDT)
+
+//tasas y tarifas Col x5
+class cardProductasascolcinco extends HTMLElement {
+
+    constructor() {
+        super();
+
+        this.img;
+        this.datacredito;
+        this.cifin;
+        this.dias1;
+        this.dias2;
+        this.dias3;
+        this.dias4;
+        this.interes;
+
+        this.plazos;
+        this.plazo1;
+        this.plazo2;
+        this.plazo3;
+        this.plazo4;
+        this.plazo5;
+
+
+
+        this.plazos1;
+        this.plazos2;
+        this.plazos3;
+        this.plazos4;
+        this.plazos5;
+
+        this.plazosb;
+        this.plazosb2;
+        this.plazosb3;
+        this.plazosb4;
+        this.plazosb5;
+    }
+
+    static get observedAttributes() {
+        return [
+            "img",
+            "datacredito",
+            "cifin",
+            "dias1",
+            "dias2",
+            "dias3",
+            "dias4",
+            "intereses",
+            "plazos",
+            "plazo1",
+            "plazo2",
+            "plazo3",
+            "plazo4",
+            "plazo5",
+
+            "plazos1",
+            "plazos2",
+            "plazos3",
+            "plazos4",
+            "plazos5",
+
+            "plazosb",
+            "plazosb2",
+            "plazosb3",
+            "plazosb4",
+            "plazosb5"
+
+        ]
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+        switch (nameAtr) {
+            case "datacredito":
+                this.datacredito = newValue;
+                break;
+            case "cifin":
+                this.cifin = newValue;
+                break;
+            case "dias1":
+                this.dias1 = newValue;
+                break;
+            case "dias2":
+                this.dias2 = newValue;
+                break;
+            case "dias3":
+                this.dias3 = newValue;
+                break;
+            case "dias4":
+                this.dias4 = newValue;
+                break;
+            case "intereses":
+                this.interes = newValue;
+                break;
+            case "plazos":
+                this.plazos = newValue;
+                break;
+            case "img":
+                this.img = newValue;
+                break;
+
+            case "plazo1":
+                this.plazo1 = newValue;
+                break;
+            case "plazo2":
+                this.plazo2 = newValue;
+                break;
+            case "plazo3":
+                this.plazo3 = newValue;
+                break;
+            case "plazo4":
+                this.plazo4 = newValue;
+                break;
+            case "plazo5":
+                this.plazo5 = newValue;
+                break;
+
+
+
+
+            case "plazos1":
+                this.plazos1 = newValue;
+                break;
+            case "plazos2":
+                this.plazos2 = newValue;
+                break;
+            case "plazos3":
+                this.plazos3 = newValue;
+                break;
+            case "plazos4":
+                this.plazos4 = newValue;
+                break;
+            case "plazos5":
+                this.plazos5 = newValue;
+                break;
+            
+            case "plazosb":
+                this.plazosb = newValue;
+                break;
+            
+            case "plazosb2":
+                this.plazosb2 = newValue;
+                break;
+            
+            case "plazosb3":
+                this.plazosb3 = newValue;
+                break;
+
+            case "plazosb4":
+                this.plazosb4 = newValue;
+                break;
+            
+            case "plazosb5":
+                this.plazosb5 = newValue;
+                break;
+
+
+
+
+        }
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+    <section class="fondo-card">
+    <section class="card-imagen">
+      <img src="${this.img}" class="imagen-inCard" alt="">
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Datacrédito</h4>
+      </div>
+      <div class="col">
+        <h4>CIFIN</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col locura">
+        <h4>${this.datacredito}</h4>
+      </div>
+      <div class="col locura">
+        <h4>${this.cifin}</h4>
+      </div>
+    </div>
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Meses</h4>
+      </div>
+      <div class="col">
+        <h4>Intereses</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col locura">
+        <h4>${this.dias1}</h4>
+      </div>
+      <div class="col locura">
+        <h4>${this.dias2}</h4>
+      </div>
+      <div class="col locura">
+        <h4>${this.dias3}</h4>
+      </div>
+      <div class="col locura">
+        <h4>${this.dias4}</h4>
+      </div>
+      <div class="col locura">
+        <h4>${this.interes}</h4>
+      </div>
+    </div>
+    </section>
+    <section class = "contenedores">
+    <div class="row bg-dark text-white title_row">
+      <div class="col">
+        <h4>Plazos</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo1}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo2}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo3}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo4}</h4>
+      </div>
+      <div class="col">
+      <h4>${this.plazo5}</h4>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col locura">
+        <h4>${this.plazos}</h4>
+      </div>
+      <div class="col locura ">
+        <h4>${this.plazos1}</h4>
+      </div>
+      <div class="col locura ">
+        <h4>${this.plazos2}</h4>
+      </div>
+      <div class="col locura ">
+        <h4>${this.plazos3}</h4>
+      </div>
+      <div class="col locura ">
+        <h4>${this.plazos4}</h4>
+      </div>
+      <div class="col locura ">
+        <h4 style = ''>${this.plazos3}</h4>
+      </div>
+    </div>
+  </section>
+  
+
+   
+  `;
+}
+}
+
+window.customElements.define("card-productasas-cinco", cardProductasascolcinco);
+
+
+
+//-----------------------------------------------------------------------------------------------------------------
+class Cardtablacinco extends HTMLElement {
+
+  constructor() {
+      super();
+
+      this.img;
+      this.boton;
+      this.titulo1;
+      this.titulo2;
+      this.titulo3;
+      this.titulo4;
+      this.titulo5;
+
+      this.datocola1;
+      this.datocola2;
+      this.datocola3;
+      this.datocola4;
+      this.datocola5;
+
+      this.datocolb1;
+      this.datocolb2;
+      this.datocolb3;
+      this.datocolb4;
+      this.datocolb5;
+
+      this.datocolc1;
+      this.datocolc2;
+      this.datocolc3;
+      this.datocolc4;
+      this.datocolc5;
+
+  }
+
+  static get observedAttributes() {
+      return [
+          "img",
+          "titulo1",
+          "titulo2",
+          "titulo3",
+          "titulo4",
+          "titulo5",
+          
+          
+
+
+          "datocola1",
+          "datocola2",
+          "datocola3",
+          "datocola4",
+          "datocola5",
+
+
+          "datocolb1",
+          "datocolb2",
+          "datocolb3",
+          "datocolb4",
+          "datocolb5",
+          
+
+
+          "datocolc1",
+          "datocolc2",
+          "datocolc3",
+          "datocolc4",
+          "datocolc5",
+          "boton"
+
+
+
+
+
+      ]
+  }
+
+  attributeChangedCallback(nameAtr, oldValue, newValue) {
+      switch (nameAtr) {
+          case "img":
+              this.img = newValue;
+              break;
+              //Columnas
+          case "titulo1":
+              this.titulo1 = newValue;
+              break;
+          case "titulo2":
+              this.titulo2 = newValue;
+              break;
+          case "titulo3":
+              this.titulo3 = newValue;
+              break;
+          case "titulo4":
+              this.titulo4 = newValue;
+              break;
+          case "titulo5":
+              this.titulo5 = newValue;
+              break;
+
+
+
+              //Filas   
+          case "datocola1":
+              this.datocola1 = newValue;
+              break;
+
+          case "datocola2":
+              this.datocola2 = newValue;
+              break;
+          case "datocola3":
+              this.datocola3 = newValue;
+              break;
+          case "datocola4":
+              this.datocola4 = newValue;
+              break;
+          case "datocola5":
+              this.datocola5 = newValue;
+              break;
+
+
+          case "datocolb1":
+              this.datocolb1 = newValue;
+              break;
+          case "datocolb2":
+              this.datocolb2 = newValue;
+              break;
+          case "datocolb3":
+              this.datocolb3 = newValue;
+              break;
+          case "datocolb4":
+              this.datocolb4 = newValue;
+              break;
+          case "datocolb5":
+              this.datocolb5 = newValue;
+              break;
+
+
+              
+          case "datocolc1":
+              this.datocolc1 = newValue;
+              break;
+          case "datocolc2":
+              this.datocolc2 = newValue;
+              break;
+
+          case "datocolc3":
+              this.datocolc3 = newValue;
+              break;
+          case "datocolc4":
+              this.datocolc4 = newValue;
+              break;
+          case "datocolc5":
+              this.datocolc5 = newValue;
+              break;
+        //----------------------------
+          case "boton":
+            this.boton = newValue;
+            break;
+
+
+
+
+
+
+      }
+  }
+
+  connectedCallback() {
+      this.innerHTML = `
+      <section class="fondo-card">
+      <section class="card-imagen">
+        <img src="${this.img}" class="imagen-inCard" alt="">
+        
+      </section>
+      <h3 style= 'font-size: 14px; padding-right:35%;'> <b> Tasas efectivas CDT monto fijo </b> </h4>
+
+      <section class="contenedores">
+      
+  <div class="row bg-dark text-white superior_row">
+    <div class="col">
+      <h4>${this.titulo1}</h4>
+    </div>
+    <div class="col">
+      <h4>${this.titulo2}</h4>
+    </div>
+    <div class="col">
+      <h4>${this.titulo3}</h4>
+    </div>
+    <div class="col">
+    <h4>${this.titulo4}</h4>
+  </div>
+  <div class="col">
+  <h4>${this.titulo5}</h4>
+</div>
+ 
+  </div>
+  <div class="row locura">
+    <div class="col title_col">
+      <h4>${this.datocola1}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocola2}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocola3}</h4>
+    </div>.
+    <div class="col title_col">
+      <h4>${this.datocola4}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocola5}</h4>
+    </div>
+    
+
+
+
+
+    <div class="w-100"></div> <!-- Divisor de fila -->
+    <div class="col title_col">
+      <h4>${this.datocolb1}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocolb2}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocolb3}</h4>
+    </div>
+    <div class="col title_col">
+    <h4>${this.datocolb4}</h4>
+  </div>
+  <div class="col title_col">
+      <h4>${this.datocolb5}</h4>
+    </div>
+
+
+    <div class="w-100"></div> <!-- Divisor de fila -->
+    <div class="col title_col">
+      <h4>${this.datocolc1}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocolc2}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocolc3}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocolc4}</h4>
+    </div>
+    <div class="col title_col">
+      <h4>${this.datocolc5}</h4>
+    </div>
+   
+
+    
+
+      </section>
+      <button class="btn btn_medium_outline_active botoncard" style = "margin-top:2%;"><i class="bi bi-geo-alt"></i> ${this.boton} </button>
+    </section>
+    
+
+
+
+ 
+  `;
+  }
+}
+
+window.customElements.define("card-productablabrutal", Cardtablacinco);
+

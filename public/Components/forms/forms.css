@@ -859,6 +859,15 @@ h5 {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .col {
+    flex: 0 0 50%;
+    padding: 10px;
+  }
+}
 .dropdown-toggle::after {
   display: none;
 }
