@@ -277,6 +277,10 @@ h5 {
     width: 50%;
   }
 }
+a {
+  text-decoration: none;
+}
+
 #title_home {
   display: none;
 }
@@ -438,6 +442,10 @@ h5 {
 
 #about_profile {
   padding: 30px 12%;
+  color: #27262C;
+}
+#about_profile h3 {
+  margin: 55px 0px;
 }
 #about_profile_cards {
   display: flex;
@@ -509,6 +517,9 @@ h5 {
 
 #channels_assistance {
   padding: 50px 12%;
+}
+#channels_assistance h3 {
+  margin: 35px 0px;
 }
 
 .channels_container {

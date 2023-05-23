@@ -1,5 +1,9 @@
 @import './style.scss';
 
+a {
+    text-decoration: none;
+}
+
 #title_home {
     display: none;
 }
@@ -183,6 +187,11 @@
 
 #about_profile {
     padding: 30px 12%;
+    color: $color_text;
+
+    & h3 {
+        margin: 55px 0px;
+    }
 
     &_cards {
         display: flex;
@@ -274,6 +283,10 @@
 
 #channels_assistance {
     padding: 50px 12%;
+
+    & h3 {
+        margin: 35px 0px;
+    }
 }
 
 .channels_container {
