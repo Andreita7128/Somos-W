@@ -1,0 +1,75 @@
+@import '../landing.scss';
+@import '../public/Components/Cards/cardArticle.scss';
+
+.filter-section{
+    background-color: $color_accent_white;
+    height: 100px;
+    //margin: auto 0;
+
+}
+
+.see_more_button{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 ;
+}
+.classified{
+    &-container{
+        //background-color: red;
+    }
+    &-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    &-item{
+        //este estilo se encuentra en cardArticle.scss
+        .fondo-card{
+            width: 328px;
+        }
+    }
+    &-filter{
+        //background-color: rebeccapurple;
+    }
+
+    &-banner{
+        &-img{
+            width: 100%;
+            //max-width: 500px;
+        }
+    }
+    &-banner{
+        &_leftCol{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+
+        }
+    }
+}
+
+.publish{
+    &_card{
+        display: flex;
+        flex-direction: row;
+        background-color: $color_accent_white;
+        border-radius: 20px;
+        overflow: hidden;
+        gap: 50px;
+        margin-bottom: 100px;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        ;
+    }
+    &_img{
+        background-color: $color_orange2;
+        max-height: 300px;
+        height: 100%;
+    }
+    &_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
