@@ -14,7 +14,7 @@
         
         <nav class="navbar navbar-expand-lg navbar-light d-none  d-md-block first-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/landing.html">
                     <img class="logo1" src="/public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
                 </a>
             <div class="d-flex justify-content-center align-items-center">

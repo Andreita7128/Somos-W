@@ -46,7 +46,10 @@
             <h1 id="">Depósito de dinero de libre negociación</h1>
             <p>Es la forma fácil de invertir y cumplir tus propósitos para obtener los rendimientos en el plazo que
                 elijas. </p>
+                <button class="btn btn_medium_active botoncard" style="margin-top: 5%;">Abre tu CDT <i class="bi bi-arrow-right float-end"></i></button>
+            
         </section>
+        
 
         <section id="CTAimg">
 
@@ -54,6 +57,8 @@
 
         </section>
     </section>
+
+    
 
 
 
@@ -78,38 +83,18 @@
 
 
 
-
-            <article id="formulario">
-
-       //     <article id="Abre">
-
-
-                <card-imagen recurso="/CDT/imgs/Abre tu CDT.png" " titulocard=" Persona Natural"
-                    botoncard="Conoce mas aqui" titulocard2="Persona Juridica" botoncard2="Conoce mas aqui ">
-
-
-
-
-
-
-                </card-imagen>
-
-            </article>
+            <div id="formulario">
+                <w-form img="./imgs/Abre tu CDT.png"></w-form>
+            </div>
+            
 
 
 
             <article id="Simulador">
 
-                <card-imagen recurso="/CDT/imgs/Simulador.png" contenido="Puedes hacer tu solicitud de crédito o cualquier consulta a través de los siguientes canales:
-            " titulocard=" Linea Gratuita" botoncard="01 8000 515656" titulocard2="Celular" botoncard2="01 8000 515656"
-                    titulocard3="Celular" botoncard3="01 8000 515656">
-
-
-
-
-
-
-                </card-imagen>
+                <div id="simulador">
+                    <w-simulador-cdt recurso = "./imgs/simulador.png"></w-simulador-cdt>
+                </div>
 
             </article>
             <!-- Card con tabla -->
@@ -333,6 +318,56 @@
 
                     </article>
 
+                    <article id="Tasas">
+                        <card-productablabrutal
+                        img="./imgs/Tasas y tarifas.png" 
+                        titulo1 = 'Monto'
+                        titulo2 = '120-170 días'
+                        titulo3 = '180-269 días'
+                        titulo4 = '270-359 días'
+                        titulo5 = 'Mayor o igual a 350'
+    
+                        datocola1 ='$200.000-$300.000'
+                        datocola2 ='13%'
+                        datocola3 ='13.20%'
+                        datocola4 = '13.50%'
+                        datocola5 = '13.60%'
+                        
+                        datocolb1 ='$300.001-$500.000'
+                        datocolb2 ='13%'
+                        datocolb3 ='13.20%'
+                        datocolb4 = '13.50%'
+                        datocolb5 = '13.60%'
+    
+                        datocolc1 ='$500.000-$999.999'
+                        datocolc2 ='13%'
+                        datocolc3 ='13.20%'
+                        datocolc4 = '13.50%'
+                        datocolc5 = '13.60%'
+
+                        datocold1 ='Gastos medicos por maternidad o paternidad'
+                        datocold2 ='$200.000'
+                        datocold3 ='N/A'
+    
+                        datocole1 ='Gastos medicos por recien nacido'
+                        datocole2 ='$200.000'
+                        datocole3 ='N/A'
+    
+                        datocolf1 ='Auxilio de libre destinación por ITP'
+                        datocolf2 ='$200.000'
+                        datocolf3 ='N/A'
+    
+                        datocolg1 ='Auxilio por muerte accidental'
+                        datocolg2 ='N/A'
+                        datocolg3 ='$300.000'
+    
+    
+    
+                            titulo=' ' 
+                            boton='Mas información aquí' 
+                            class="imagen-inCard">
+                        </card-productablabrutal>
+                </article>
         </div>
 
 
