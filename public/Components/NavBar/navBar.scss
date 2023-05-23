@@ -43,23 +43,14 @@
 
 .second_nav {
     background-color: $color_base_white;
-<<<<<<< HEAD
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
 
     &_link {
         li {
             a {
-                color: $color_orange1 !important;
+                color: $color_orange1;
 
                 &:hover {
-=======
-    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
-    
-    &_link{
-        li{
-            a{
-                color: $color_orange1 ;
-                &:hover{
->>>>>>> dcff4c3d6c19c822e915c1d69c1a048fbcfa9e6a
                     color: $color_base_gray !important;
                 }
 
@@ -70,7 +61,7 @@
                 &:focus {
                     color: $color_base_gray !important;
                 }
-         
+
             }
 
             .button_toggler {
@@ -89,17 +80,14 @@
     width: 45.22px;
     height: 45.22px;
     background-color: $color_orange1;
-<<<<<<< HEAD
 }
 
 .nav_btn i {
     margin-left: 0px !important;
     margin-right: 20px !important;
 }
-=======
-    border-radius: 62px !important;
-}
-.change-white{
+
+.change-white {
     color: $color_base_white;
 }
 
@@ -113,4 +101,4 @@
     border-bottom: 0;
     border-left: .3em solid transparent;
 }
->>>>>>> dcff4c3d6c19c822e915c1d69c1a048fbcfa9e6a
+

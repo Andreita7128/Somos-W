@@ -70,7 +70,7 @@
                 <ul class="navbar-nav mx-auto second_nav_link">
                     <li class="nav-item d-md-none d-block">
                         <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
-                        href="#">Mi perfil W</a>
+                        href="../../../Registro/iniciarSesión.html">Mi perfil W</a>
                     </li>
                     <li class="nav-item d-md-none d-block">
                         <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
@@ -86,6 +86,7 @@
                         <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../../Creditos/all-credits.html">Todos</a>
                             <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
                             <a class="dropdown-item" href="#">Yo construyo</a>
                             <a class="dropdown-item" href="#">Gotahorro</a>
@@ -122,6 +123,7 @@
                             <a class="dropdown-item" href="../../../ComunidadW/comunidadW.html">W contigo</a>
                             <a class="dropdown-item" href="#">Premios invencibles W</a>
                             <a class="dropdown-item" href="#">Refiere y gana</a>
+                            <a class="dropdown-item" href="../../../clasificados/clasificados.html">Clasificados</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown ">
@@ -137,7 +139,7 @@
             </div>
         </div>
     </nav>
-  
+
         `
     }
 

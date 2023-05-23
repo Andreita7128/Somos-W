@@ -237,6 +237,7 @@ class cardImagen extends HTMLElement {
         this.titulo;
         this.contenido;
         this.boton;
+        this.link;
 
 
     }
@@ -247,6 +248,7 @@ class cardImagen extends HTMLElement {
             "titulo",
             "contenido",
             "boton",
+            "link",
         ]
     }
 
@@ -276,6 +278,12 @@ class cardImagen extends HTMLElement {
                 this.boton = newValue
 
                 break;
+            
+            case "link":
+
+                this.link = newValue
+
+                break;
         }
 
     }
@@ -295,7 +303,9 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
-        <button class = 'btn btn_medium_outline_active'><!--  aca poner estilo de boton ♥ --><h4 class = "text_button_small">${this.boton}</h4></button>
+        <a href="${this.link}">
+          <button class = 'btn btn_medium btn_medium_active'><!--  aca poner estilo de boton ♥ --><h4 class = "text_button_small">${this.boton}</h4></button>    
+        </a>
     </section>
 
         </div>
