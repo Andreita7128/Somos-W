@@ -110,7 +110,7 @@ h5 {
 }
 
 #greenInput {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_success;
     background-color: $fill_success;
@@ -118,7 +118,7 @@ h5 {
 }
 
 #redInput {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_error;
 
@@ -127,7 +127,7 @@ h5 {
 }
 
 #grayInput {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_gray_btn;
     background-color: $color_base_white;
@@ -168,34 +168,33 @@ h5 {
 }
 
 #dropDownStyleGreen {
-    width: 423px;
+    width: 300px;
     height: 42px;
     border-color: $color_blue1;
     background-color: $fill_generic;
     color: #27262c;
+    margin: 0px 20px;
+}
 
-  }
-  
-  #dropDownStyleRed {
-      width: 423px;
-      height: 42px;
-      border-width: 2px;
-    //  border-color: $color_errorBorder;
-      background-color: $fill_error;
-      color: #27262C;
-    }
-  
-    #dropDownStyleCyan {
-      width: 423px;
-      height: 42px;
-      border-width: 2px;
-      border-color: $color_blue1;
-      background-color: $fill_generic;
-      color: #27262C;
-    }
-    
-  
- 
+#dropDownStyleRed {
+    width: 423px;
+    height: 42px;
+    border-width: 2px;
+    background-color: $fill_error;
+    color: #27262C;
+}
+
+#dropDownStyleCyan {
+    width: 423px;
+    height: 42px;
+    border-width: 2px;
+    border-color: $color_blue1;
+    background-color: $fill_generic;
+    color: #27262C;
+}
+
+
+.dropdown-toggle {}
 
 #dropDownStyleRed {
     width: 423px;
@@ -371,7 +370,8 @@ h5 {
 
     &_medium {
         width: auto;
-        padding: 9px 75px;
+        height: 42px;
+        padding: 9px 55px;
 
         & i {
             position: relative;
@@ -505,8 +505,6 @@ h5 {
     width: 100%;
     max-width: 310px;
     height: 42px;
-    border: 2px solid $color_blue1;
-    border-radius: 48px;
     position: relative;
     display: flex;
     align-items: center;
@@ -690,28 +688,6 @@ h5 {
         background-color: $fill_generic;
         color: #27262c;
 
-      
-        
-      }
-      
-      #dropDownStyleRed {
-          width: 29.38%;
-          height: 42px;
-          border-width: 2px;
-     //     border-color: $color_errorBorder;
-          background-color: $fill_error;
-          color: #27262C;
-        }
-      
-        #dropDownStyleCyan {
-          width: 29.38%;
-          height: 42px;
-          border-width: 2px;
-          border-color: $color_blue1;
-          background-color: $fill_generic;
-          color: #27262C;
-        }
-
 
 
     }
@@ -720,7 +696,7 @@ h5 {
         width: 29.38%;
         height: 42px;
         border-width: 2px;
-        border-color: $color_error;
+        //     border-color: $color_errorBorder;
         background-color: $fill_error;
         color: #27262C;
     }
@@ -733,4 +709,26 @@ h5 {
         background-color: $fill_generic;
         color: #27262C;
     }
+
+}
+
+#dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: $color_error;
+    background-color: $fill_error;
+    color: #27262C;
+}
+
+#dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: $color_blue1;
+    background-color: $fill_generic;
+    color: #27262C;
+}
+
+}
 
