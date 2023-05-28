@@ -121,7 +121,6 @@ h5 {
     width: 300px;
     height: 42px;
     border-color: $color_error;
-
     background-color: $fill_error;
     border-radius: 48px;
 }
@@ -193,9 +192,6 @@ h5 {
     color: #27262C;
 }
 
-
-.dropdown-toggle {}
-
 #dropDownStyleRed {
     width: 423px;
     height: 42px;
@@ -213,8 +209,6 @@ h5 {
     background-color: $fill_generic;
     color: #27262C;
 }
-
-
 
 .dropdown-toggle {
     text-align: left;
@@ -632,7 +626,6 @@ h5 {
     #redInput {
         width: 29.38%;
         height: 42px;
-
         border-color: $color_error;
         background-color: $fill_error;
         border-radius: 48px;
@@ -641,9 +634,7 @@ h5 {
     #grayInput {
         width: 29.38%;
         height: 42px;
-
         border-color: $color_gray_btn;
-
         background-color: #f4f4f4;
         border-radius: 48px;
     }
@@ -673,12 +664,12 @@ h5 {
         border-radius: 22px;
         border: none;
         /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+    }
 
-        #inputButtonColor {
-            height: 44px;
-            border: none;
-            background-color: #eeeeee;
-        }
+    #inputButtonColor {
+        height: 44px;
+        border: none;
+        background-color: #eeeeee;
     }
 
     #dropDownStyleGreen {
@@ -687,16 +678,12 @@ h5 {
         border-color: $color_success;
         background-color: $fill_generic;
         color: #27262c;
-
-
-
     }
 
     #dropDownStyleRed {
         width: 29.38%;
         height: 42px;
         border-width: 2px;
-        //     border-color: $color_errorBorder;
         background-color: $fill_error;
         color: #27262C;
     }
@@ -710,25 +697,21 @@ h5 {
         color: #27262C;
     }
 
-}
+    #dropDownStyleRed {
+        width: 29.38%;
+        height: 42px;
+        border-width: 2px;
+        border-color: $color_error;
+        background-color: $fill_error;
+        color: #27262C;
+    }
 
-#dropDownStyleRed {
-    width: 29.38%;
-    height: 42px;
-    border-width: 2px;
-    border-color: $color_error;
-    background-color: $fill_error;
-    color: #27262C;
+    #dropDownStyleCyan {
+        width: 29.38%;
+        height: 42px;
+        border-width: 2px;
+        border-color: $color_blue1;
+        background-color: $fill_generic;
+        color: #27262C;
+    }
 }
-
-#dropDownStyleCyan {
-    width: 29.38%;
-    height: 42px;
-    border-width: 2px;
-    border-color: $color_blue1;
-    background-color: $fill_generic;
-    color: #27262C;
-}
-
-}
-
