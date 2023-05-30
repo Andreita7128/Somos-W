@@ -380,6 +380,8 @@ h5 {
   .btn_small {
     width: 50%;
   }
+<<<<<<< HEAD
+=======
   #greenInput {
     width: 29.38%;
     height: 42px;
@@ -630,6 +632,7 @@ h5 {
     background-color: rgba(0, 177, 187, 0.2);
     color: #27262C;
   }
+>>>>>>> origin
 }
 .image-card {
   width: 10px !important;
