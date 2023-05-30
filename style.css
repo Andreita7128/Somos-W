@@ -297,7 +297,8 @@ h5 {
 }
 .btn_medium {
   width: auto;
-  padding: 9px 75px;
+  height: 42px;
+  padding: 9px 55px;
 }
 .btn_medium i {
   position: relative;
