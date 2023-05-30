@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +19,6 @@ p {
   margin-bottom: 0px;
 }
 
-/*Colors*/
-/*Various*/
-/*Blue*/
-/*Dark Violet*/
-/*Violet*/
-/*Orange*/
-/*Yellow*/
 /* Typography */
 h1 {
   font-weight: 700;
@@ -55,6 +56,106 @@ h5 {
 }
 .body_3 {
   font-size: 14px;
+}
+
+#labelHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#greenInput {
+  width: 300px;
+  height: 42px;
+  border-color: #2DC071;
+  background-color: rgba(45, 192, 113, 0.2);
+  border-radius: 48px;
+}
+
+#redInput {
+  width: 300px;
+  height: 42px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  border-radius: 48px;
+}
+
+#grayInput {
+  width: 300px;
+  height: 42px;
+  border-color: #CDCFD0;
+  background-color: #F2F2F2;
+  border-radius: 48px;
+}
+
+#inputSearch {
+  /* width: 519px;
+  height: 44px; */
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+}
+
+#inputSearch input[type=text] {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#inputSearch button {
+  background-color: #00B1BB;
+}
+
+#inputButtonSize {
+  width: 519px;
+  height: 44px;
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+  /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+}
+#inputButtonSize #inputButtonColor {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#dropDownStyleGreen {
+  width: 300px;
+  height: 42px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262c;
+  margin: 0px 20px;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -126,9 +227,18 @@ h5 {
   height: 42px;
   border-radius: 48px;
   box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn_large {
-  width: 423px;
+  width: auto;
+  padding: 0px 82px;
+}
+.btn_large i {
+  position: relative;
+  margin-left: 45px;
+  margin-right: -62px;
 }
 .btn_large_active {
   border: none;
@@ -169,9 +279,13 @@ h5 {
   color: #CDCFD0;
 }
 .btn_medium {
-  display: flex;
-  flex-direction: row;
-  padding: 9px 29px;
+  width: auto;
+  padding: 9px 75px;
+}
+.btn_medium i {
+  position: relative;
+  margin-left: 45px;
+  margin-right: -55px;
 }
 .btn_medium_active {
   border: none;
@@ -255,39 +369,281 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 100%;
+    width: auto;
+    padding: 9px 65px;
   }
   .btn_medium {
-    width: 75%;
+    width: auto;
+    padding: 9px 25px;
   }
   .btn_small {
     width: 50%;
   }
 }
+/* Input internacional */
+/* Cajita */
+.form-group {
+  width: 100%;
+  max-width: 310px;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-group:not(.form-group_error):not(.form-group_exito):focus-within {
+  background: rgba(0, 177, 187, 0.2);
+  border: 2px solid #2FD9DE;
+}
+.form-group_error {
+  border-color: #EB3232;
+  background: rgba(235, 50, 50, 0.2);
+}
+.form-group_error:focus-within {
+  background: rgba(235, 50, 50, 0.2);
+  border: 2px solid #EB3232;
+}
+.form-group_exito {
+  border-color: #2DC071;
+  background: rgba(45, 192, 113, 0.2);
+}
+.form-group_exito:focus-within {
+  background: rgba(45, 192, 113, 0.2);
+  border: 2px solid #2DC071;
+}
+
+/* No difiere */
+.select-container {
+  width: 80px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
+
+/* Form de el country a elegir */
+.country-select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding-left: 24px;
+  border-radius: 48px;
+}
+
+/* Contenedor de la flag */
+.flag-icon-container {
+  width: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
+
+/* Icono de la flag */
+.flag-icon {
+  width: 20px;
+  height: 8px;
+}
+
+/* Escribir dentro del imput */
+.input-number {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  border-radius: 48px;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    display: flex;
+    /* Utilizar flexbox para disposición */
+    flex-direction: row;
+    /* Especificar la dirección de fila o columna según las necesidades */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* Especificar columnas de ancho flexible */
+  }
+  .country-select {
+    font-size: 16px;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  .input-number {
+    margin-left: 16%;
+    font-size: 16px;
+    width: 100%;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  #greenInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(45, 192, 113, 0.2);
+    border-radius: 48px;
+  }
+  #redInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    border-radius: 48px;
+  }
+  #grayInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #CDCFD0;
+    background-color: #f4f4f4;
+    border-radius: 48px;
+  }
+  #inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+  }
+  #inputSearch input[type=text] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #inputSearch button {
+    background-color: #00B1BB;
+  }
+  #inputButtonSize {
+    width: 25.93%;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+  }
+  #inputButtonSize #inputButtonColor {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #dropDownStyleGreen {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262c;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
+  }
+}
+.img_planB {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #title_home {
   display: none;
 }
 
 #carousel {
-  padding: 50px 174px;
+  padding: 50px 12%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-control-next-icon {
+  background-image: none;
+  color: #27262C;
+  font-size: 30px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  margin: -136px;
+}
+
+.carousel-control-prev-icon {
+  background-image: none;
+  color: #27262C;
+  font-size: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #27262C;
+}
+
+.carousel-indicators {
+  position: relative;
+}
+
+.w-100 {
+  border-bottom: none;
 }
 
 .container_carousel_text {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 120%;
   float: left;
+  justify-content: center;
+  align-items: flex-start;
+  color: #27262C;
+}
+.container_carousel_text h1 {
+  margin-bottom: 30px;
+}
+.container_carousel_text p {
+  margin-bottom: 30px;
+  width: 90%;
 }
 .container_carousel_img {
-  width: 100%;
   float: right;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 #w_contigo_landing {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 174px;
+  padding: 20px 12%;
 }
 
 .card_desk {
@@ -298,8 +654,13 @@ h5 {
 }
 
 #product_similar {
-  padding: 30px 174px;
+  padding: 30px 12%;
   background-color: #F2F2F2;
+  color: #27262C;
+}
+#product_similar h3 {
+  margin: 55px 0px;
+  width: 50%;
 }
 
 .container_all {
@@ -311,34 +672,21 @@ h5 {
   gap: 50px;
 }
 .container_product_similar {
-  width: 18%;
   height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 8px 25px;
-  font-size: 31px;
-  border-radius: 0% !important;
-  background-color: #FAFAFA;
-  box-shadow: none !important;
-}
-.container_product_similar_active {
-  background: #2FD9DE;
-  box-shadow: 0px 3.16274px 11.0696px rgba(0, 0, 0, 0.15) !important;
-  border-radius: 20px !important;
-}
-.container_product_similar_active_text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #27262C;
+  --bs-nav-pills-link-active-bg: #00B1BB;
+  --bs-nav-pills-link-active-color: #27262C;
+  --bs-nav-pills-border-radius: 20px;
+  --bs-nav-link-color: #27262C;
 }
 .container_all_products {
   background-color: #FAFAFA;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   padding: 20px 28px;
   gap: 50px;
   width: 70%;
@@ -382,7 +730,11 @@ h5 {
 }
 
 #about_profile {
-  padding: 30px 174px;
+  padding: 30px 12%;
+  color: #27262C;
+}
+#about_profile h3 {
+  margin: 55px 0px;
 }
 #about_profile_cards {
   display: flex;
@@ -453,7 +805,10 @@ h5 {
 }
 
 #channels_assistance {
-  padding: 50px 174px;
+  padding: 50px 12%;
+}
+#channels_assistance h3 {
+  margin: 35px 0px;
 }
 
 .channels_container {
@@ -494,35 +849,32 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   #title_home {
-    display: flex;
-    height: 100px;
+    display: none;
+    width: 120%;
+    margin-left: -30px;
+    height: 380px;
     padding: 0px 20px;
-    align-items: center;
-    background-color: #F25C05;
+    align-items: start;
+    background-color: #FF8826;
     color: #FAFAFA;
+    border-radius: 0px 0px 100% 100%;
+  }
+  #title_home h1 {
+    margin: 30px 20px;
+  }
+  .img_planB {
+    display: flex;
+    width: 100%;
   }
   #carousel {
-    padding: 0px;
-    justify-content: center;
-    flex-direction: column-reverse;
+    display: none;
   }
-  .container_carousel {
-    background-color: white;
-    padding: 20px 20px;
-    height: 100%;
-  }
-  .container_carousel_text {
-    margin: 20px 0px;
-    width: 100%;
-    float: none;
-  }
-  .container_carousel_img {
-    float: none;
-  }
-  .container_carousel_img_bg {
-    background-color: #FFB67D;
+  #carousel_cards {
+    display: none;
+    margin: -300px 20px 20px 20px;
   }
   #w_contigo_landing {
+    display: none;
     justify-content: center;
     flex-direction: column;
     padding: 20px 20px;
@@ -532,8 +884,10 @@ h5 {
   }
   .card_mobile {
     display: flex;
+    width: 100%;
   }
   #product_similar {
+    display: none;
     padding: 30px 0px;
     background-color: white;
   }
@@ -551,7 +905,7 @@ h5 {
     background-color: #FAFAFA;
     width: 100%;
     height: 80px;
-    padding: 42px 20px;
+    padding: 42px 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -562,7 +916,7 @@ h5 {
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    width: 154px;
+    width: 100%;
     height: 42px;
     border-radius: 48px;
     box-shadow: none;
@@ -583,7 +937,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     float: right;
     width: 100%;
     height: auto;
@@ -602,14 +956,14 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 5px;
     width: 100%;
     height: auto;
     background: white;
     flex: none;
   }
   #about_profile {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 30px 20px;
   }
@@ -680,5 +1034,13 @@ h5 {
     background: white;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+  }
+  #channels_assistance {
+    display: none;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+  }
+  #channels_assistance h3 {
+    margin: 35px 0px;
   }
 }/*# sourceMappingURL=landing.css.map */

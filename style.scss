@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif !important;
-    font-style: normal;
-    line-height: 120% !important;
-}
-
-p {
-    margin-bottom: 0px;
-}
-
 /*Colors*/
 /*Various*/
 $color_text: #27262C;
@@ -28,7 +15,6 @@ $fill_error: rgba(235, 50, 50, 0.2);
 $fill_generic: rgba(0, 177, 187, 0.2);
 $fill_input: #F2F4F5;
 $fill_disabled: #E3E5E5;
-
 
 /*Blue*/
 $color_blue1: #00B1BB;
@@ -55,6 +41,18 @@ $color_orange3: #FFB67D;
 /*Yellow*/
 $color_yellow1: #e3ff0b;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    line-height: 120% !important;
+}
+
+p {
+    margin-bottom: 0px;
+}
 
 /* Typography */
 
@@ -98,6 +96,125 @@ h5 {
         font-size: 14px;
     }
 }
+
+#labelHeader {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: $color_base_gray;
+}
+
+.dropdown-toggle {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#greenInput {
+    width: 300px;
+    height: 42px;
+    border-color: $color_success;
+    background-color: $fill_success;
+    border-radius: 48px;
+}
+
+#redInput {
+    width: 300px;
+    height: 42px;
+    border-color: $color_error;
+    background-color: $fill_error;
+    border-radius: 48px;
+}
+
+#grayInput {
+    width: 300px;
+    height: 42px;
+    border-color: $color_gray_btn;
+    background-color: $color_base_white;
+    border-radius: 48px;
+}
+
+#inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+}
+
+#inputSearch input[type="text"] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+}
+
+#inputSearch button {
+    background-color: $color_blue1;
+}
+
+#inputButtonSize {
+    width: 519px;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+
+    #inputButtonColor {
+        height: 44px;
+        border: none;
+        background-color: #eeeeee;
+    }
+}
+
+#dropDownStyleGreen {
+    width: 300px;
+    height: 42px;
+    border-color: $color_blue1;
+    background-color: $fill_generic;
+    color: #27262c;
+    margin: 0px 20px;
+}
+
+#dropDownStyleRed {
+    width: 423px;
+    height: 42px;
+    border-width: 2px;
+    background-color: $fill_error;
+    color: #27262C;
+}
+
+#dropDownStyleCyan {
+    width: 423px;
+    height: 42px;
+    border-width: 2px;
+    border-color: $color_blue1;
+    background-color: $fill_generic;
+    color: #27262C;
+}
+
+#dropDownStyleRed {
+    width: 423px;
+    height: 42px;
+    border-width: 2px;
+    border-color: $color_error;
+    background-color: $fill_error;
+    color: #27262C;
+}
+
+#dropDownStyleCyan {
+    width: 423px;
+    height: 42px;
+    border-width: 2px;
+    border-color: $color_blue1;
+    background-color: $fill_generic;
+    color: #27262C;
+}
+
+.dropdown-toggle {
+    text-align: left;
+    padding-left: 10px;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -183,9 +300,19 @@ h5 {
     height: 42px;
     border-radius: 48px;
     box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &_large {
-        width: 423px;
+        width: auto;
+        padding: 0px 82px;
+
+        & i {
+            position: relative;
+            margin-left: 45px;
+            margin-right: -62px;
+        }
 
         &_active {
             border: none;
@@ -236,9 +363,15 @@ h5 {
     }
 
     &_medium {
-        display: flex;
-        flex-direction: row;
-        padding: 9px 29px;
+        width: auto;
+        height: 42px;
+        padding: 9px 55px;
+
+        & i {
+            position: relative;
+            margin-left: 45px;
+            margin-right: -55px;
+        }
 
         &_active {
             border: none;
@@ -344,15 +477,241 @@ h5 {
 
     .btn {
         &_large {
-            width: 100%;
+            width: auto;
+            padding: 9px 65px;
         }
 
         &_medium {
-            width: 75%;
+            width: auto;
+            padding: 9px 25px;
         }
 
         &_small {
             width: 50%;
         }
+    }
+
+}
+
+/* Input internacional */
+/* Cajita */
+.form-group {
+    width: 100%;
+    max-width: 310px;
+    height: 42px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:not(&_error):not(&_exito) {
+        &:focus-within {
+            background: $fill_generic;
+            border: 2px solid $color_blue2;
+        }
+    }
+
+    &_error {
+        border-color: $color_error;
+        background: $fill_error;
+
+        &:focus-within {
+            background: $fill_error;
+            border: 2px solid $color_error;
+        }
+    }
+
+    &_exito {
+        border-color: $color_success;
+        background: $fill_success;
+
+        &:focus-within {
+            background: $fill_success;
+            border: 2px solid $color_success;
+        }
+    }
+
+}
+
+/* No difiere */
+.select-container {
+    width: 80px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
+
+/* Form de el country a elegir */
+.country-select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    padding-left: 24px;
+    border-radius: 48px;
+}
+
+/* Contenedor de la flag */
+.flag-icon-container {
+    width: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+}
+
+/* Icono de la flag */
+.flag-icon {
+    width: 20px;
+    height: 8px;
+}
+
+/* Escribir dentro del imput */
+.input-number {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    border-radius: 48px;
+    margin-left: 10%;
+}
+
+
+@media (max-width: 768px) {
+
+    .form-group {
+        display: flex;
+        /* Utilizar flexbox para disposición */
+        flex-direction: row;
+        /* Especificar la dirección de fila o columna según las necesidades */
+        display: grid;
+        grid-template-columns: 20% 80%;
+        /* Especificar columnas de ancho flexible */
+    }
+
+    .country-select {
+        font-size: 16px;
+        /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .input-number {
+        margin-left: 16%;
+        font-size: 16px;
+        width: 100%;
+        /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+    }
+
+
+    #greenInput {
+        width: 29.38%;
+        height: 42px;
+        border-color: $color_success;
+        background-color: $fill_success;
+        border-radius: 48px;
+    }
+
+    #redInput {
+        width: 29.38%;
+        height: 42px;
+        border-color: $color_error;
+        background-color: $fill_error;
+        border-radius: 48px;
+    }
+
+    #grayInput {
+        width: 29.38%;
+        height: 42px;
+        border-color: $color_gray_btn;
+        background-color: #f4f4f4;
+        border-radius: 48px;
+    }
+
+    #inputSearch {
+        /* width: 519px;
+        height: 44px; */
+        background-color: #eeeeee;
+        border-radius: 22px;
+        border: none;
+    }
+
+    #inputSearch input[type="text"] {
+        height: 44px;
+        border: none;
+        background-color: #eeeeee;
+    }
+
+    #inputSearch button {
+        background-color: $color_blue1;
+    }
+
+    #inputButtonSize {
+        width: 25.93%;
+        height: 44px;
+        background-color: #eeeeee;
+        border-radius: 22px;
+        border: none;
+        /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+    }
+
+    #inputButtonColor {
+        height: 44px;
+        border: none;
+        background-color: #eeeeee;
+    }
+
+    #dropDownStyleGreen {
+        width: 29.38%;
+        height: 42px;
+        border-color: $color_success;
+        background-color: $fill_generic;
+        color: #27262c;
+    }
+
+    #dropDownStyleRed {
+        width: 29.38%;
+        height: 42px;
+        border-width: 2px;
+        background-color: $fill_error;
+        color: #27262C;
+    }
+
+    #dropDownStyleCyan {
+        width: 29.38%;
+        height: 42px;
+        border-width: 2px;
+        border-color: $color_blue1;
+        background-color: $fill_generic;
+        color: #27262C;
+    }
+
+    #dropDownStyleRed {
+        width: 29.38%;
+        height: 42px;
+        border-width: 2px;
+        border-color: $color_error;
+        background-color: $fill_error;
+        color: #27262C;
+    }
+
+    #dropDownStyleCyan {
+        width: 29.38%;
+        height: 42px;
+        border-width: 2px;
+        border-color: $color_blue1;
+        background-color: $fill_generic;
+        color: #27262C;
     }
 }

@@ -1,5 +1,9 @@
 @import '../style.scss';
 
+.planB_mobile {
+    display: none;
+}
+
 .log_in {
     padding: 50px 12%;
     width: 100%;
@@ -93,4 +97,38 @@
 
 .btn_a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .planB {
+
+        &_btn {
+            width: 80% !important;
+            position: absolute;
+            left: 31px;
+            right: 32px;
+            top: 455px;
+
+        }
+
+        &_mobile {
+            display: flex;
+            width: 100%;
+
+            &_btn {
+                width: 80% !important;
+                position: absolute;
+                left: 31px;
+                right: 32px;
+                top: 850px;
+            }
+        }
+    }
+
+    .log_in {
+        display: none;
+    }
+
+
+
 }

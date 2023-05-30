@@ -29,6 +29,7 @@ section {
 
     .form-control {
         margin-right: 0 !important;
+        
         height: 43px;
         border-radius: 48px 0px 0px 48px;
     }
@@ -40,15 +41,24 @@ section {
     .desaparecer {
         display: none;
     }
+    .desaparecer-cards{
+        display: none;
+    }
+}
 
+@media (max-width: 800px) {
+    #tasas{
+        display: none;
+    }
+    .marginis{
+        flex: 0 0 100% !important;
+    }
 }
 
 .sidebar-container {
     position: sticky;
     top: 30px;
     height: calc(100vh - 20px);
-
-    overflow-y: auto;
 }
 
 .button_toggler {
@@ -111,7 +121,6 @@ section {
 
 .dropdown_reactive {
     margin-left: 0% !important;
-
     &:focus {
         background-color: $color_blue1 !important;
         color: white;
@@ -121,4 +130,17 @@ section {
         background-color: $color_blue1 !important;
     }
 
+}
+.dropdown_form{
+    overflow-y: auto !important;
+    
+}
+
+.simulacion{
+    color: $color_violet1;
+}
+
+.dropdown-menu.show {
+    display: block;
+    width: auto;
 }

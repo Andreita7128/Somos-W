@@ -5,6 +5,7 @@ class CardDesk extends HTMLElement {
         this.title;
         this.text;
         this.btn;
+        this.link;
     }
 
     static get observedAttributes() {
@@ -13,6 +14,7 @@ class CardDesk extends HTMLElement {
             "title",
             "text",
             "btn",
+            "link",
         ]
     }
 
@@ -36,10 +38,16 @@ class CardDesk extends HTMLElement {
                 this.text = newValue
 
                 break;
-            
+
             case "btn":
 
                 this.btn = newValue
+
+                break;
+
+            case "link":
+
+                this.link = newValue
 
                 break;
         }
@@ -59,10 +67,12 @@ class CardDesk extends HTMLElement {
             <section class="card_horizontal_body">
                 <h3>${this.title}</h3>
                 <p class="body_1"> ${this.text} </p>
-                <button class="btn btn_medium_active">
-                    ${this.btn}
-                    <i class="bi bi-arrow-right"></i>
-                </button>
+                <a href="${this.link}">
+                    <button class="btn btn_medium btn_medium_active text_button_medium">
+                        ${this.btn}
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </a>
             </section>
         </article>
     `

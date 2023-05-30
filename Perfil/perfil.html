@@ -50,11 +50,10 @@
         <div class="row">
 
             <aside class="sidebar-container col-12 col-md-3 col-xl-2 bd-sidebar">
-                <user-sidebar></user-sidebar>
+                <user-sidebar route="perfil"></user-sidebar>
             </aside>
 
             <main class="main-content col">
-                <bread-n-title></bread-n-title>
 
         <div class="profile-info-container">
 
@@ -76,7 +75,7 @@
                         
                     </div>
         
-                    <div class="columnButton">
+                    <!-- <div class="columnButton">
                         <button class="editButton">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                 <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -85,17 +84,8 @@
                               Editar
                         </button> 
                         
-                    </div>
+                    </div> -->
                 </div>
-            </div>
-        
-        
-            <!-- SEGUNDA TARJETA DE INFORMACIÓN (INFORMACIÓN PERSONAL) -->
-            <section class="personal-info-container">
-        
-            <div class="container-personal-info-label">
-                <span class="personal-info-label">Información personal</span>
-                
                 <div class="columnButton">
                     <button class="editButton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -108,39 +98,64 @@
                 </div>
             </div>
         
+        
+            <!-- SEGUNDA TARJETA DE INFORMACIÓN (INFORMACIÓN PERSONAL) -->
+            <section class="personal-info-container">
+        
+            <div class="container-personal-info-label">
+                <span class="personal-info-label">Información personal</span>
+                
+
+            </div>
+        
                 <div class="user-personal-information">
                     <div class="first-column-personal-info">
         
-                        <div class="info-section">
-                            <span class="default-tittle-label"> Nombres </span> 
-                            <span class="response-tittle-label"> Sandra </span>
+                        <div class="info-section-alternative">
+                            <div class="info-section-alternative-inside">
+                                <span class="default-tittle-label"> Nombres </span> 
+                                <span class="response-tittle-label"> Sandra </span>
+                            </div>
+
+                            <div class="info-section-alternative-inside">
+                                <span class="default-tittle-label"> Apellidos </span> 
+                                <span class="response-tittle-label"> Rodriguez </span>
+                            </div>
+
+                            
                         </div>
         
                         <div class="info-section">
                             <span class="default-tittle-label"> Email </span>
                             <span class="response-tittle-label"> SandraRodriguez@gmail.com </span>
                         </div>
+
+                        <div class="info-section">
+                            <span class="default-tittle-label"> Celular </span>
+                            <span class="response-tittle-label"> (+57)3114291293 </span>
+                        </div>
         
                         <div class="info-section">
                             <span class="default-tittle-label"> Biografía </span>
                             <span class="response-tittle-label"> Emprendedora principiante </span>
                         </div>
-                            
+    
                     </div>
-        
-                    <div class="second-column-personal-info">
-        
-                        <div class="info-section">
-                            <span class="default-tittle-label"> Apellidos </span>
-                            <span class="response-tittle-label"> Rodriguez </span>
-                        </div>
-        
-                        <div class="info-section">
-                            <span class="default-tittle-label"> Celular </span>
-                            <span class="response-tittle-label"> +57 311 429 1293 </span>
-                        </div>
-                    </div>
+                    
                 </div>
+
+                <div class="columnButton">
+                    <button class="editButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                          </svg>
+                          Editar
+                    </button> 
+                    
+                </div>
+
+                
             </section>
         
             <!-- TERCERA TARJETA DE INFORMACION (DIRECCIÓN) -->
@@ -149,6 +164,36 @@
                 <div class="container-personal-info-label">
                     <span class="personal-info-label">Dirección</span>
                     
+    
+                </div>
+            
+                    <div class="user-personal-information">
+                        <div class="first-column-personal-info">
+            
+                            <div class="info-section-alternative">
+                                <div class="info-section-alternative-inside">
+                                    <span class="default-tittle-label"> País </span> 
+                                    <span class="response-tittle-label"> Colombia </span>
+                                    
+                                </div>
+    
+                                <div class="info-section-alternative-inside">
+                                    <span class="default-tittle-label"> Ciudad </span> 
+                                    <span class="response-tittle-label"> ValledelCauca,Cali </span>
+                                </div>
+    
+                                
+                            </div>
+            
+                            <div class="info-section">
+                                <span class="default-tittle-label"> Código Postal </span>
+                                <span class="response-tittle-label"> CAL 23221 </span>
+                            </div>
+           
+                        </div>
+                        
+                    </div>
+    
                     <div class="columnButton">
                         <button class="editButton">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -159,32 +204,8 @@
                         </button> 
                         
                     </div>
-                </div>
-            
-                    <div class="user-personal-information">
-                        <div class="first-column-personal-info">
-            
-                            <div class="info-section">
-                                <span class="default-tittle-label"> País </span> 
-                                <span class="response-tittle-label"> Colombia </span>
-                            </div>
-            
-                            <div class="info-section">
-                                <span class="default-tittle-label"> Código Postal </span>
-                                <span class="response-tittle-label"> CAL 23221 </span>
-                            </div>
-            
-                                
-                        </div>
-            
-                        <div class="second-column-personal-info">
-            
-                            <div class="info-section">
-                                <span class="default-tittle-label"> Ciudad </span>
-                                <span class="response-tittle-label"> Valle del Cauca, Cali </span>
-                            </div>
-                        </div>
-                    </div>
+    
+                    
                 </section>
 
         </div>

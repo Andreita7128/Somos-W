@@ -15,6 +15,10 @@
     }
 }
 
+.breadcrumb {
+    color: $color_violet1 !important;
+}
+
 .breadcrumb-item span {
     display: none;
 }
@@ -22,6 +26,7 @@
 #bread_title {
     &::after {
         content: "W Contigo";
+        color: $color_orange1 !important;
     }
 
     span {
@@ -33,6 +38,9 @@
     margin: 15px 12%;
 }
 
+#breadcrumb_title {
+}
+
 #share {
     display: flex;
     flex-direction: row;
@@ -42,15 +50,21 @@
 #container_text_btn {
     display: flex;
     flex-direction: column;
-    width: 51.52%;
+    width: 65%;
     margin-right: -10px;
+
+    & p {
+        margin: 20px 0px;
+        width: 90%;
+    }
 }
 
 #container_img_share {
     width: 52%;
 
     &_img {
-        width: 100%;
+        width: 120%;
+        margin: -20px;
     }
 }
 
