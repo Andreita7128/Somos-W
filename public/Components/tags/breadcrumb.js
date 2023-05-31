@@ -9,7 +9,7 @@ class Breadcrumb extends HTMLElement {
 
     render() {
         this.innerHTML = `
-            <link rel="stylesheet" href="tags.css">
+            <link rel="stylesheet" href="../../../public/Components/tags/tags.css">
             <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item" id="bread_lv1"><a href="#"><span>Level 1</span></a></li>
