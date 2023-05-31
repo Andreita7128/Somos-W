@@ -303,9 +303,11 @@ class cardImagen extends HTMLElement {
             ${this.contenido}   
             </p>
         </section>
+        <section id="section-btn">
         <a href="${this.link}">
-          <button class = 'btn btn_medium btn_medium_active'><!--  aca poner estilo de boton ♥ --><h4 class = "text_button_small">${this.boton}</h4></button>    
+          <button class = 'btn btn_icon btn_medium btn_medium_outline_active text_button_small'>${this.boton} <i class="bi bi-arrow-right right"></i></button>    
         </a>
+    </section>
     </section>
 
         </div>
