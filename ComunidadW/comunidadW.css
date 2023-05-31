@@ -629,10 +629,6 @@ h5 {
   display: none;
 }
 
-.breadcrumb_section {
-  margin: 15px 12%;
-}
-
 #share {
   display: flex;
   flex-direction: row;
