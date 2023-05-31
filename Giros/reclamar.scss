@@ -39,31 +39,4 @@
       justify-content: flex-end;
       flex-direction: column;
   }
-  #bread_lv{
-    &1::after{
-        content: "Inicio" ;
-        color: #6321A6;
-    }
-    &2::after{
-        content: "Giros" !important;
-        color: #6321A6;
-    }
-    &3::after{
-        content: "Reclamar Giros" !important;
-        color: #6321A6;
-        font-weight: bold;
-    }
-}
-.breadcrumb-item span{
-    display: none;
-}
-
-#bread_title{
-    &::after{
-        content: "Reclamar Giros" !important ;
-        color: #F25C05;
-    }
-    span{
-        display: none;
-    }
-}
+  
