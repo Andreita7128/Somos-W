@@ -155,7 +155,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle nav-link-pressed redirect-unique" href="../../../Creditos/all-credits.html" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../../../Creditos/all-credits.html">Todos</a>
+                            <a class="dropdown-item" href="../../../Creditos/All/all-credits.html">Todos</a>
                             <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
                             <a class="dropdown-item" href="#">Yo construyo</a>
                             <a class="dropdown-item" href="#">Gotahorro</a>

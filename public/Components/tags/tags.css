@@ -682,29 +682,30 @@ p {
   line-height: 24px;
 }
 
-.breadcrumb-title h4 {
-  color: #F25C05;
-  padding: 0px 12%;
+#breadcrumb {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0%;
+  color: #6321A6;
 }
-.breadcrumb-title-section {
+#breadcrumb li {
+  margin-right: 5px;
+}
+#breadcrumb a {
+  text-decoration: none;
+  color: #6321A6;
+}
+#breadcrumb-item {
+  font-weight: bold;
+}
+#breadcrumb-title {
+  color: #F25C05;
+}
+#breadcrumb-title-section {
   background-color: #FAFAFA;
   padding: 14px 12%;
   border-radius: 0 0 20px 20px;
-}
-
-a-item a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6321A6;
-  text-decoration: none;
-}
-a .active {
-  font-weight: 600;
-  font-size: 16px;
-  color: #6321A6;
 }
 
 .user-product-container {
