@@ -297,7 +297,8 @@ h5 {
 }
 .btn_medium {
   width: auto;
-  padding: 9px 75px;
+  height: 42px;
+  padding: 9px 55px;
 }
 .btn_medium i {
   position: relative;
@@ -893,7 +894,8 @@ h5 {
 }
 .btn_medium {
   width: auto;
-  padding: 9px 75px;
+  height: 42px;
+  padding: 9px 55px;
 }
 .btn_medium i {
   position: relative;
@@ -1533,10 +1535,6 @@ h5 {
 }
 
 /* Estilo para el dropdown del formulario */
-.dropdown {
-  margin-bottom: 100px !important;
-}
-
 /* Estilo para el título del formulario */
 h2 {
   margin-bottom: 30px !important;

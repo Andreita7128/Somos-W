@@ -1,29 +1,77 @@
+
+
     class NavBar extends HTMLElement {
         constructor() {
             super()
-            this.pages = [
-                {url: '/landing.html', title: 'Inicio'},
-                {url: '../../../CDT/CDT.html', title: 'CDT'},
-                {url: '../../../Creditos/credito.html', title: 'microcredito'},
-                {url: '/landing.html', title: 'Inicio'},
-                {url: '/landing.html', title: 'Inicio'},
-                
+            this.pages = [{
+                    url: '/landing.html',
+                    title: 'Inicio'
+                },
+                {
+                    url: '../../../CDT/CDT.html',
+                    title: 'CDT'
+                },
+                {
+                    url: '../../../Creditos/credito.html',
+                    title: 'microcredito'
+                },
+                {
+                    url: '/landing.html',
+                    title: 'Inicio'
+                },
+                {
+                    url: '/landing.html',
+                    title: 'Inicio'
+                },
+
 
 
 
             ]
-    }
+        }
 
-    connectedCallback() {
-        this.render()
-        this.setupSearchForm();
-    }
+        connectedCallback() {
+            this.render();
+            this.setupSearchForm();
+            this.setupCreditRedirect();
+            this.hideDropdownMenu();
+            
+            const dropdownToggle = this.querySelector('.redirect-unique');
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+          
+            dropdownToggle.addEventListener('click', () => {
+              if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
+                this.hideDropdownMenu();
+              } else {
+                this.showDropdownMenu();
+              }
+            });
+          
+            dropdownMenu.addEventListener('mouseleave', () => {
+              this.hideDropdownMenu();
+            });
+          }
+          
+          showDropdownMenu() {
+            const dropdownToggle = this.querySelector('.redirect-unique');
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+            dropdownToggle.setAttribute('aria-expanded', 'true');
+            dropdownMenu.classList.add('show');
+          }
+          
+          hideDropdownMenu() {
+            const dropdownToggle = this.querySelector('.redirect-unique');
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+            dropdownToggle.setAttribute('aria-expanded', 'false');
+            dropdownMenu.classList.remove('show');
+          }
+          
 
-    render() {
-        this.innerHTML = `
+        render() {
+            this.innerHTML = `
         <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
         
-        <nav class="navbar navbar-expand-lg navbar-light d-none  d-md-block first-nav">
+        <nav class="navbar navbar-expand-lg navbar-light d-none  d-md-block first-nav fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/landing.html">
                     <img class="logo1" src="/public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
@@ -50,7 +98,7 @@
         </div>
     </nav>
     
-        <nav class="navbar navbar-expand-lg navbar-dark  second_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark  second_nav fixed-top">
             <div class="container-fluid mx-auto background_responsive_navbar">
                 <a class="navbar-brand d-md-none" href="#">
                 <img class="logo1" src="/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
@@ -80,11 +128,26 @@
                     <li class="nav-item border-bottom-gg">
                         <a class="nav-link" href="../../../landing.html">Inicio</a>
                     </li>
-                    <li class="nav-item border-bottom-gg">
-                        <a class="nav-link" href="../../../CDT/CDT.html">Ahorro e inversión</a>
-                    </li>
+         
+
                     <li class="nav-item dropdown border-bottom-gg">
                         <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"> Ahorro e inversión </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../../CDT/CDT.html">CDT</a>
+                            <a class="dropdown-item" href="#">Cuenta de ahorro</a>
+                            <a class="dropdown-item" href="#">Deposito de bajo monto</a>
+                            <a class="dropdown-item" href="#">Ahorranza</a>
+           
+                            
+                            
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown border-bottom-gg">
+                        <a class="nav-link dropdown-toggle nav-link-pressed redirect-unique" href="../../../Creditos/all-credits.html" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Creditos/all-credits.html">Todos</a>
@@ -97,6 +160,8 @@
                             
                         </div>
                     </li>
+
+                    
                     <li class="nav-item dropdown border-bottom-gg">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Seguros </a>
@@ -140,53 +205,82 @@
             </div>
         </div>
     </nav>
+    
 
         `
-        const perfilLink = this.querySelector('#perfil-link');
+            var dropdownToggle = document.querySelector('.redirect-unique');
 
-        // Obtener el valor de sesionActiva del localStorage
-        const sesionActiva = sessionStorage.getItem('sesionActiva');
-      
-        if (sesionActiva === 'true') {
-          // Si la sesión está activa, cambiar el enlace a otro destino
-          perfilLink.href = '../../..//Perfil/perfil.html';
-        } else {
-          // Si la sesión no está activa, mantener el enlace original
-          perfilLink.href = '../../../Registro/iniciarSesión.html';
+            // Agregar el evento hover para mostrar el menú desplegable al hacer hover
+            dropdownToggle.addEventListener('mouseover', function () {
+                this.setAttribute('aria-expanded', 'true');
+                this.nextElementSibling.classList.add('show');
+            });
+
+            // Agregar el evento click para redireccionar al hacer clic en la etiqueta
+            dropdownToggle.addEventListener('click', function () {
+                var href = this.getAttribute('href');
+                window.location.href = href;
+            });
+            document.body.style.paddingTop = "8rem";
+
+            const perfilLink = this.querySelector('#perfil-link');
+
+            // Obtener el valor de sesionActiva del localStorage
+            const sesionActiva = sessionStorage.getItem('sesionActiva');
+
+            if (sesionActiva === 'true') {
+                // Si la sesión está activa, cambiar el enlace a otro destino
+                perfilLink.href = '../../..//Perfil/perfil.html';
+            } else {
+                // Si la sesión no está activa, mantener el enlace original
+                perfilLink.href = '../../../Registro/iniciarSesión.html';
+            }
         }
-    }
 
-    setupSearchForm(){
-        const searchForm1 = this.querySelector('#search-1');
-    const searchForm2 = this.querySelector('#search-2');
-    searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
-    searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
-  
-    }
+        setupSearchForm() {
+            const searchForm1 = this.querySelector('#search-1');
+            const searchForm2 = this.querySelector('#search-2');
+            searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
+            searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
 
-    handleSearchSubmit(event){
-        event.preventDefault();
-        const searchInput = this.querySelector('input[type = "search"]')
-        const searchTerm = searchInput.value;
-
-        if(searchTerm.trim() !== ''){
-            const searchResults = this.pages.filter((page)=> page.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()))
-        if(searchResults.length > 0){
-            const firstResult = searchResults[0];
-            window.location.href = firstResult.url
-
-        }else{
-            console.log('no se encontro la busqueda')
         }
-        }
-    }
 
+
+        handleSearchSubmit(event) {
+            event.preventDefault();
+            const searchInput = this.querySelector('input[type = "search"]')
+            const searchTerm = searchInput.value;
+
+            if (searchTerm.trim() !== '') {
+                const searchResults = this.pages.filter((page) => page.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()))
+                if (searchResults.length > 0) {
+                    const firstResult = searchResults[0];
+                    window.location.href = firstResult.url
+
+                } else {
+                    console.log('no se encontro la busqueda')
+                }
+            }
+        }
+
+        setupCreditRedirect() {
+            const creditLink = this.querySelector('.nav-link-pressed');
+            const creditUrl = creditLink.getAttribute('href');
+            creditLink.removeAttribute('data-bs-toggle'); // Eliminar el atributo data-bs-toggle
+            creditLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.location.href = creditUrl;
+            });
+        }
     
 
 
-    
 
-}
 
-customElements.define('w-nav-bar', NavBar)
-export default NavBar
+
+
+
+    }
+
+    customElements.define('w-nav-bar', NavBar)
+    export default NavBar
