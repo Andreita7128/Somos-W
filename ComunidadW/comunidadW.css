@@ -603,32 +603,6 @@ h5 {
     color: #27262C;
   }
 }
-#bread_lv1::after {
-  content: "Inicio";
-}
-#bread_lv2::after {
-  content: "Comunidad W";
-}
-#bread_lv3::after {
-  content: "W Contigo";
-}
-
-.breadcrumb {
-  color: #6321A6 !important;
-}
-
-.breadcrumb-item span {
-  display: none;
-}
-
-#bread_title::after {
-  content: "W Contigo";
-  color: #F25C05 !important;
-}
-#bread_title span {
-  display: none;
-}
-
 #share {
   display: flex;
   flex-direction: row;
