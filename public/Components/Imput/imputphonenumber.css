@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*Colors*/
-/*Various*/
-/*Blue*/
-/*Dark Violet*/
-/*Violet*/
-/*Orange*/
-/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +12,13 @@ p {
   margin-bottom: 0px;
 }
 
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 /* Typography */
 h1 {
   font-weight: 700;
@@ -56,123 +56,6 @@ h5 {
 }
 .body_3 {
   font-size: 14px;
-}
-
-#labelHeader {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #27262C;
-}
-
-.dropdown-toggle {
-  text-align: left;
-  padding-left: 10px;
-}
-
-#greenInput {
-  width: 300px;
-  height: 42px;
-  border-color: #2DC071;
-  background-color: rgba(45, 192, 113, 0.2);
-  border-radius: 48px;
-}
-
-#redInput {
-  width: 300px;
-  height: 42px;
-  border-color: #EB3232;
-  background-color: rgba(235, 50, 50, 0.2);
-  border-radius: 48px;
-}
-
-#grayInput {
-  width: 300px;
-  height: 42px;
-  border-color: #CDCFD0;
-  background-color: #F2F2F2;
-  border-radius: 48px;
-}
-
-#inputSearch {
-  /* width: 519px;
-  height: 44px; */
-  background-color: #eeeeee;
-  border-radius: 22px;
-  border: none;
-}
-
-#inputSearch input[type=text] {
-  height: 44px;
-  border: none;
-  background-color: #eeeeee;
-}
-
-#inputSearch button {
-  background-color: #00B1BB;
-}
-
-#inputButtonSize {
-  width: 519px;
-  height: 44px;
-  background-color: #eeeeee;
-  border-radius: 22px;
-  border: none;
-  /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
-}
-#inputButtonSize #inputButtonColor {
-  height: 44px;
-  border: none;
-  background-color: #eeeeee;
-}
-
-#dropDownStyleGreen {
-  width: 300px;
-  height: 42px;
-  border-color: #00B1BB;
-  background-color: rgba(0, 177, 187, 0.2);
-  color: #27262c;
-  margin: 0px 20px;
-}
-
-#dropDownStyleRed {
-  width: 423px;
-  height: 42px;
-  border-width: 2px;
-  background-color: rgba(235, 50, 50, 0.2);
-  color: #27262C;
-}
-
-#dropDownStyleCyan {
-  width: 423px;
-  height: 42px;
-  border-width: 2px;
-  border-color: #00B1BB;
-  background-color: rgba(0, 177, 187, 0.2);
-  color: #27262C;
-}
-
-#dropDownStyleRed {
-  width: 423px;
-  height: 42px;
-  border-width: 2px;
-  border-color: #EB3232;
-  background-color: rgba(235, 50, 50, 0.2);
-  color: #27262C;
-}
-
-#dropDownStyleCyan {
-  width: 423px;
-  height: 42px;
-  border-width: 2px;
-  border-color: #00B1BB;
-  background-color: rgba(0, 177, 187, 0.2);
-  color: #27262C;
-}
-
-.dropdown-toggle {
-  text-align: left;
-  padding-left: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -240,35 +123,13 @@ h5 {
   font-size: 12px;
 }
 
-.right {
-  margin-left: 50px;
-  margin-right: -35px;
-}
-
-.left {
-  margin-right: 50px;
-  margin-left: -35px;
-}
-
 .btn {
   height: 42px;
   border-radius: 48px;
   box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn_icon {
-  justify-content: space-around !important;
 }
 .btn_large {
-  width: auto;
-  padding: 0px 82px;
-}
-.btn_large i {
-  position: relative;
-  margin-left: 45px;
-  margin-right: -62px;
+  width: 423px;
 }
 .btn_large_active {
   border: none;
@@ -309,9 +170,9 @@ h5 {
   color: #CDCFD0;
 }
 .btn_medium {
-  width: auto;
-  height: 42px;
-  padding: 9px 55px;
+  display: flex;
+  flex-direction: row;
+  padding: 9px 29px;
 }
 .btn_medium_active {
   border: none;
@@ -329,13 +190,12 @@ h5 {
   color: #979C9E;
 }
 .btn_medium_outline {
-  background-color: #FFFFFF;
   filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
+  background-color: transparent;
 }
 .btn_medium_outline_active {
   border: 1px solid #00B1BB;
   color: #00B1BB;
-  text-shadow: none;
 }
 .btn_medium_outline:disabled {
   border: 1px solid #CDCFD0;
@@ -396,30 +256,30 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: auto;
-    padding: 9px 65px;
+    width: 100%;
   }
   .btn_medium {
-    width: auto;
-    padding: 9px 25px;
+    width: 75%;
   }
   .btn_small {
     width: 50%;
   }
 }
-/* Input internacional */
+/* Empieza código del imput */
 /* Cajita */
 .form-group {
   width: 100%;
   max-width: 310px;
   height: 42px;
+  border: 2px solid #00B1BB;
+  border-radius: 48px;
   position: relative;
   display: flex;
   align-items: center;
 }
 .form-group:not(.form-group_error):not(.form-group_exito):focus-within {
   background: rgba(0, 177, 187, 0.2);
-  border: 2px solid #2FD9DE;
+  border: 2px solid rgb(0, 177, 187);
 }
 .form-group_error {
   border-color: #EB3232;
@@ -515,117 +375,4 @@ h5 {
     width: 100%;
     /* Cambiar el tamaño de fuente en pantallas más pequeñas */
   }
-  #greenInput {
-    width: 29.38%;
-    height: 42px;
-    border-color: #2DC071;
-    background-color: rgba(45, 192, 113, 0.2);
-    border-radius: 48px;
-  }
-  #redInput {
-    width: 29.38%;
-    height: 42px;
-    border-color: #EB3232;
-    background-color: rgba(235, 50, 50, 0.2);
-    border-radius: 48px;
-  }
-  #grayInput {
-    width: 29.38%;
-    height: 42px;
-    border-color: #CDCFD0;
-    background-color: #f4f4f4;
-    border-radius: 48px;
-  }
-  #inputSearch {
-    /* width: 519px;
-    height: 44px; */
-    background-color: #eeeeee;
-    border-radius: 22px;
-    border: none;
-  }
-  #inputSearch input[type=text] {
-    height: 44px;
-    border: none;
-    background-color: #eeeeee;
-  }
-  #inputSearch button {
-    background-color: #00B1BB;
-  }
-  #inputButtonSize {
-    width: 25.93%;
-    height: 44px;
-    background-color: #eeeeee;
-    border-radius: 22px;
-    border: none;
-    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
-  }
-  #inputButtonColor {
-    height: 44px;
-    border: none;
-    background-color: #eeeeee;
-  }
-  #dropDownStyleGreen {
-    width: 29.38%;
-    height: 42px;
-    border-color: #2DC071;
-    background-color: rgba(0, 177, 187, 0.2);
-    color: #27262c;
-  }
-  #dropDownStyleRed {
-    width: 29.38%;
-    height: 42px;
-    border-width: 2px;
-    background-color: rgba(235, 50, 50, 0.2);
-    color: #27262C;
-  }
-  #dropDownStyleCyan {
-    width: 29.38%;
-    height: 42px;
-    border-width: 2px;
-    border-color: #00B1BB;
-    background-color: rgba(0, 177, 187, 0.2);
-    color: #27262C;
-  }
-  #dropDownStyleRed {
-    width: 29.38%;
-    height: 42px;
-    border-width: 2px;
-    border-color: #EB3232;
-    background-color: rgba(235, 50, 50, 0.2);
-    color: #27262C;
-  }
-  #dropDownStyleCyan {
-    width: 29.38%;
-    height: 42px;
-    border-width: 2px;
-    border-color: #00B1BB;
-    background-color: rgba(0, 177, 187, 0.2);
-    color: #27262C;
-  }
-}
-.btn-sidebar {
-  width: 100% !important;
-  height: auto;
-  color: #2FD9DE !important;
-  border: 1px solid !important;
-  border-color: #2FD9DE;
-  margin-bottom: 16px;
-}
-.btn-sidebar:hover {
-  background-color: #00B1BB;
-  color: #F2F2F2 !important;
-}
-.btn-sidebar :active {
-  background-color: #00B1BB;
-  color: #F2F2F2 !important;
-}
-
-.list-group {
-  height: calc(100vh - 100px);
-  overflow-y: auto;
-}
-
-.tam-sidebar {
-  width: 100%;
-  margin-left: 24px;
-}/*# sourceMappingURL=sidebarproduct.css.map */
+}/*# sourceMappingURL=imputphonenumber.css.map */

@@ -1,0 +1,34 @@
+@import '../style.scss';
+
+//BreadCrumb
+#bread_lv{
+    &1::after{
+        content: "Inicio";
+        color: #6321A6;
+    }
+    &2::after{
+        content: "Creditos";
+        color: #6321A6;
+        font-weight: bold;
+    }
+}
+.breadcrumb-item span{
+    display: none;
+}
+
+#bread_title{
+    &::after{
+        content: "Creditos";
+        color: #F25C05;
+    }
+    span{
+        display: none;
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">" !important;
+}
