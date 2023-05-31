@@ -128,9 +128,14 @@
         display: none;
     }
 }
-.dot{
-    width: 150vh;
-    height: 150vh;
-    position: float;
-    //top: -50vh;
-}
+/*.dot{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $color_orange1;
+    position: relative;
+    top: -80vh;
+    left: -25vw;
+    z-index: -1;
+}*/
