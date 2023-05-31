@@ -139,6 +139,23 @@ h5 {
   width: 423px;
   height: 42px;
   border-width: 2px;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
   border-color: #EB3232;
   background-color: rgba(235, 50, 50, 0.2);
   color: #27262C;
@@ -280,7 +297,8 @@ h5 {
 }
 .btn_medium {
   width: auto;
-  padding: 9px 75px;
+  height: 42px;
+  padding: 9px 55px;
 }
 .btn_medium i {
   position: relative;
@@ -532,7 +550,7 @@ h5 {
     border: none;
     /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
   }
-  #inputButtonSize #inputButtonColor {
+  #inputButtonColor {
     height: 44px;
     border: none;
     background-color: #eeeeee;
@@ -543,6 +561,21 @@ h5 {
     border-color: #2DC071;
     background-color: rgba(0, 177, 187, 0.2);
     color: #27262c;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
   }
   #dropDownStyleRed {
     width: 29.38%;
@@ -561,6 +594,10 @@ h5 {
     color: #27262C;
   }
 }
+.titulo-vacio {
+  margin-top: -45px !important;
+}
+
 .imagefondo {
   max-width: 328px !important;
 }
