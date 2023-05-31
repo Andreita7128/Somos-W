@@ -591,6 +591,7 @@ h5 {
     height: 42px;
     border-width: 2px;
     border-color: #EB3232;
+
     background-color: rgba(235, 50, 50, 0.2);
     color: #27262C;
   }
@@ -603,15 +604,47 @@ h5 {
     color: #27262C;
   }
 }
-.search_button {
+#dropDownStyleRed {
+  width: 29.38%;
+  height: 42px;
+  border-width: 2px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 29.38%;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+.search_button_desk {
   width: 15% !important;
-  height: 44px !important;
+  height: 42px !important;
   background-color: #00B1BB !important;
   color: #F2F2F2;
   border-radius: 0% 48px 48px 0% !important;
   margin: 0 !important;
 }
-.search_button:hover {
+.search_button_desk:hover {
+  background-color: white !important;
+  color: #00B1BB !important;
+}
+
+.search_button_mobile {
+  width: 15% !important;
+  height: 42px !important;
+  background-color: #00B1BB !important;
+  color: #F2F2F2;
+  border-radius: 0% 48px 48px 0% !important;
+  margin: 0 !important;
+  padding: 0% !important;
+}
+.search_button_mobile:hover {
   background-color: white !important;
   color: #00B1BB !important;
 }
@@ -633,20 +666,25 @@ h5 {
   border-radius: 48px 0px 0px 48px;
 }
 
-.placeholder-input-desktop {
-  width: 459px;
-  height: 44px;
+.placeholder-input-desk {
+  width: 423px;
+  height: 42px;
   border: none;
   background-color: #F2F4F5;
   margin-left: 10%;
 }
 
 .second_nav {
-  background-color: #F2F2F2;
+  background-color: #F2F2F2 !important;
+  height: 58px;
   filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+}
+.second_nav_link {
+  gap: 29px;
 }
 .second_nav_link li a {
   color: #F25C05;
+  padding-left: 0% !important;
 }
 .second_nav_link li a:hover {
   color: #27262C !important;
@@ -671,8 +709,7 @@ h5 {
 }
 
 .nav_btn i {
-  margin-left: 0px !important;
-  margin-right: 20px !important;
+  margin: 0%;
 }
 
 .change-white {
@@ -688,4 +725,19 @@ h5 {
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+}
+
+.background_responsive_navbar {
+  background-color: #F2F2F2;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.icon_search {
+  margin: 0% !important;
+}
+
+@media (max-width: 800px) {
+  .second_nav_link {
+    gap: 5px;
+  }
 }/*# sourceMappingURL=navBar.css.map */

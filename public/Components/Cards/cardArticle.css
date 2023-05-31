@@ -756,6 +756,7 @@ h5 {
   margin-top: -35px;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: #707070;
 }
 .fondo-card .card-imagen .imagen-inCard {
   position: relative;
