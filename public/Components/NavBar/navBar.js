@@ -1,74 +1,79 @@
-
-
-    class NavBar extends HTMLElement {
-        constructor() {
-            super()
-            this.pages = [{
-                    url: '/landing.html',
-                    title: 'Inicio'
-                },
-                {
-                    url: '../../../CDT/CDT.html',
-                    title: 'CDT'
-                },
-                {
-                    url: '../../../Creditos/credito.html',
-                    title: 'microcredito'
-                },
-                {
-                    url: '/landing.html',
-                    title: 'Inicio'
-                },
-                {
-                    url: '/landing.html',
-                    title: 'Inicio'
-                },
-
-
-
-
-            ]
+class NavBar extends HTMLElement {
+    constructor() {
+      super();
+      this.pages = [
+        {
+          url: '/landing.html',
+          title: 'Inicio'
+        },
+        {
+          url: '../../../CDT/CDT.html',
+          title: 'CDT'
+        },
+        {
+          url: '../../../Creditos/credito.html',
+          title: 'Microcrédito'
+        },
+        {
+          url: '/landing.html',
+          title: 'Inicio'
+        },
+        {
+          url: '/landing.html',
+          title: 'Inicio'
         }
-
-        connectedCallback() {
-            this.render();
-            this.setupSearchForm();
-            this.setupCreditRedirect();
-            this.hideDropdownMenu();
-            
-            const dropdownToggle = this.querySelector('.redirect-unique');
-            const dropdownMenu = dropdownToggle.nextElementSibling;
-          
-            dropdownToggle.addEventListener('click', () => {
-              if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
-                this.hideDropdownMenu();
-              } else {
-                this.showDropdownMenu();
-              }
-            });
-          
-            dropdownMenu.addEventListener('mouseleave', () => {
-              this.hideDropdownMenu();
-            });
-          }
-          
-          showDropdownMenu() {
-            const dropdownToggle = this.querySelector('.redirect-unique');
-            const dropdownMenu = dropdownToggle.nextElementSibling;
-            dropdownToggle.setAttribute('aria-expanded', 'true');
-            dropdownMenu.classList.add('show');
-          }
-          
-          hideDropdownMenu() {
-            const dropdownToggle = this.querySelector('.redirect-unique');
-            const dropdownMenu = dropdownToggle.nextElementSibling;
-            dropdownToggle.setAttribute('aria-expanded', 'false');
-            dropdownMenu.classList.remove('show');
-          }
-          
-
-        render() {
-            this.innerHTML = `
+      ];
+    }
+  
+    connectedCallback() {
+      this.render();
+      this.setupSearchForm();
+      this.setupCreditRedirect();
+      this.hideDropdownMenu();
+      const dropdownToggle = this.querySelector('.redirect-unique');
+      const dropdownMenu = dropdownToggle.nextElementSibling;
+  
+      dropdownToggle.addEventListener('mouseenter', () => {
+        if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
+          this.hideDropdownMenu();
+        } else {
+          this.showDropdownMenu();
+        }
+      });
+  
+      dropdownMenu.addEventListener('mouseleave', () => {
+        this.hideDropdownMenu();
+      });
+    }
+  
+    showDropdownMenu() {
+      const dropdownToggle = this.querySelector('.redirect-unique');
+      const dropdownMenu = dropdownToggle.nextElementSibling;
+      dropdownToggle.setAttribute('aria-expanded', 'true');
+      dropdownMenu.classList.add('show');
+  
+      dropdownMenu.addEventListener('mouseenter', () => {
+        dropdownToggle.setAttribute('aria-expanded', 'true');
+        dropdownMenu.classList.add('show');
+      });
+  
+      dropdownMenu.addEventListener('mouseleave', () => {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.classList.remove('show');
+      });
+    }
+  
+    hideDropdownMenu() {
+      const dropdownToggle = this.querySelector('.redirect-unique');
+      const dropdownMenu = dropdownToggle.nextElementSibling;
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+      dropdownMenu.classList.remove('show');
+    }
+  
+    render() {
+      this.innerHTML = `
+        
+        <!-- Resto del código HTML -->
         <link rel="stylesheet" href="/public/Components/NavBar/navBar.css">
         
         <nav class="navbar navbar-expand-lg navbar-light d-none  d-md-block first-nav fixed-top">
@@ -131,7 +136,7 @@
          
 
                     <li class="nav-item dropdown border-bottom-gg">
-                        <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle nav-link-pressed  " href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Ahorro e inversión </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../CDT/CDT.html">CDT</a>
@@ -207,80 +212,64 @@
     </nav>
     
 
-        `
-            var dropdownToggle = document.querySelector('.redirect-unique');
 
-            // Agregar el evento hover para mostrar el menú desplegable al hacer hover
-            dropdownToggle.addEventListener('mouseover', function () {
-                this.setAttribute('aria-expanded', 'true');
-                this.nextElementSibling.classList.add('show');
-            });
-
-            // Agregar el evento click para redireccionar al hacer clic en la etiqueta
-            dropdownToggle.addEventListener('click', function () {
-                var href = this.getAttribute('href');
-                window.location.href = href;
-            });
-            document.body.style.paddingTop = "8rem";
-
-            const perfilLink = this.querySelector('#perfil-link');
-
-            // Obtener el valor de sesionActiva del localStorage
-            const sesionActiva = sessionStorage.getItem('sesionActiva');
-
-            if (sesionActiva === 'true') {
-                // Si la sesión está activa, cambiar el enlace a otro destino
-                perfilLink.href = '../../..//Perfil/perfil.html';
-            } else {
-                // Si la sesión no está activa, mantener el enlace original
-                perfilLink.href = '../../../Registro/iniciarSesión.html';
-            }
-        }
-
-        setupSearchForm() {
-            const searchForm1 = this.querySelector('#search-1');
-            const searchForm2 = this.querySelector('#search-2');
-            searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
-            searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
-
-        }
-
-
-        handleSearchSubmit(event) {
-            event.preventDefault();
-            const searchInput = this.querySelector('input[type = "search"]')
-            const searchTerm = searchInput.value;
-
-            if (searchTerm.trim() !== '') {
-                const searchResults = this.pages.filter((page) => page.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()))
-                if (searchResults.length > 0) {
-                    const firstResult = searchResults[0];
-                    window.location.href = firstResult.url
-
-                } else {
-                    console.log('no se encontro la busqueda')
-                }
-            }
-        }
-
-        setupCreditRedirect() {
-            const creditLink = this.querySelector('.nav-link-pressed');
-            const creditUrl = creditLink.getAttribute('href');
-            creditLink.removeAttribute('data-bs-toggle'); // Eliminar el atributo data-bs-toggle
-            creditLink.addEventListener('click', (event) => {
-                event.preventDefault();
-                window.location.href = creditUrl;
-            });
-        }
-    
-
-
-
-
-
-
-
+      `;
+      setTimeout(() => {
+        const dropdownToggle = this.querySelector('.redirect-unique');
+        const dropdownMenu = dropdownToggle.nextElementSibling;
+  
+        dropdownToggle.addEventListener('mouseenter', () => {
+          if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
+            this.hideDropdownMenu();
+          } else {
+            this.showDropdownMenu();
+          }
+        });
+  
+        dropdownMenu.addEventListener('mouseleave', () => {
+          this.hideDropdownMenu();
+        });
+      }, 0);
+      document.body.style.paddingTop = '8rem';
+  
+      const perfilLink = this.querySelector('#perfil-link');
+      const sesionActiva = sessionStorage.getItem('sesionActiva');
+  
+      if (sesionActiva === 'true') {
+        perfilLink.href = '/Perfil/perfil.html';
+      } else {
+        perfilLink.href = '/Registro/iniciarSesión.html';
+      }
     }
-
-    customElements.define('w-nav-bar', NavBar)
-    export default NavBar
+  
+    setupSearchForm() {
+      const searchForms = this.querySelectorAll('form.search-form');
+      searchForms.forEach((searchForm) => {
+        searchForm.addEventListener('submit', this.handleSearchSubmit.bind(this));
+      });
+    }
+  
+    handleSearchSubmit(event) {
+      event.preventDefault();
+      const searchInput = event.target.querySelector('input[type="search"]');
+      const searchTerm = searchInput.value.trim();
+  
+      if (searchTerm !== '') {
+        const searchResults = this.pages.filter(page =>
+          page.title.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+  
+        if (searchResults.length > 0) {
+          const firstResult = searchResults[0];
+          window.location.href = firstResult.url;
+        } else {
+          console.log('No se encontró la búsqueda');
+        }
+      }
+    }
+  
+ 
+  }
+  
+  customElements.define('w-nav-bar', NavBar);
+  

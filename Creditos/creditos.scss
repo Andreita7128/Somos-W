@@ -1,5 +1,11 @@
 @import '../style.scss';
 
+
+//portada
+.portada{
+    padding-left: 175px !important;
+}
+
 //BreadCrumb
 #bread_lv{
     &1::after{
