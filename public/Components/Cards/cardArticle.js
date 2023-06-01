@@ -304,10 +304,12 @@ class cardImagen extends HTMLElement {
               <p class="parrafo">
                 ${this.contenido}   
               </p>
-            </section id="section-btn">
+            </section>
+            <section id="section-btn">
             <a href="${this.link}">
               <button class = 'btn btn_icon btn_medium btn_medium_outline_active text_button_small'>${this.boton} <i class="bi bi-arrow-right right"></i></button>   
             </a>
+          </section>
           </section>
 
         </div>
