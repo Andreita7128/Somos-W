@@ -1,0 +1,135 @@
+@import '../landing.scss';
+
+.filter-section{
+    background-color: $color_accent_white;
+    //height: 100px;
+    //margin: auto 0;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        height: 124px;
+    }
+}
+
+.see_more_button{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 ;
+}
+.classified{
+    &-container{
+        //background-color: red;
+    }
+    &-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    &-item{
+        //este estilo se encuentra en cardArticle.scss
+        .fondo-card{
+            width: 328px;
+        }
+    }
+    &-filter{
+        //background-color: rebeccapurple;
+    }
+
+    &-banner{
+        &-img{
+            width: 100%;
+            //max-width: 500px;
+        }
+    }
+    &-banner{
+        &_leftCol{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+
+        }
+    }
+}
+
+.publish{
+    &_card{
+        display: flex;
+        flex-direction: row;
+        background-color: $color_accent_white;
+        border-radius: 20px;
+        overflow: hidden;
+        gap: 50px;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    &_img{
+        background-color: $color_orange2;
+        max-height: 300px;
+        height: 100%;
+        margin-left: -16px;
+    }
+    &_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.form{
+    &-title{
+        margin-top: 56px;
+        color: $color_blue1;
+        p{
+            color: gray;
+        }
+    }
+    
+    &-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 88px;
+
+        label{
+            font-weight: 600;
+            color: $color_text;
+            margin-bottom: 8px;
+        }
+        .form-control{
+            border-radius: 20px 20px !important;
+            padding: 10px 20px;
+            background-color: $color_accent_white;
+    
+            &-file{
+                //background-color: $color_dark_violet2;
+            }
+        }
+    }
+
+    
+
+
+    .filters{
+        //border-radius: 20px !important;
+        background-color: $color_blue1;
+        color: $color_accent_white;
+    }
+} 
+
+
+@media only screen and (max-width: 768px) {
+    .classified-banner-img{
+        display: none;
+    }
+}
+.dot{
+    width: 150vh;
+    height: 150vh;
+    position: float;
+    //top: -50vh;
+}

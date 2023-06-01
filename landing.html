@@ -31,38 +31,122 @@
         <w-nav-bar></w-nav-bar>
     </header>
 
+
     <section id="title_home">
         <h1>Inicio</h1>
+    </section>
 
+    <section id="carousel_cards">
+        <div id="carousel_cards_container">
+            <div id="carousel_cards_content">
+                <div class="card_mobile">
+                    <card-imagen recurso="/Images/mobile1.png" titulo="Invierte y gana más con tus ahorros"
+                    contenido="Con nuestro CDT, podrás hacer crecer tus ahorros de forma segura y rentable.
+                    ¡Empieza a ganar con nosotros ahora!" boton="Quiero saber más" link="./CDT/CDT.html"></card-imagen>
+                </div>
+                <!--
+                <div class="card_mobile">
+                    <card-imagen recurso="/Images/mobile2.png" titulo="Libranza para pensionados"
+                    contenido="Permite a pensionados y a maestros del sector público, adquirir créditos a
+                    través de nuestras alianzas." boton="Quiero saber más" link="./CDT/CDT.html"></card-imagen>
+                </div>
+                <div class="card_mobile">
+                    <card-imagen recurso="/Images/mobile3.png" titulo="Fortalecimiento para tu negocio"
+                    contenido="Tenemos un crédito enfocado a microempresarios y emprendedores como tú."
+                    boton="Quiero saber más" link="./Creditos/credito.html"></card-imagen>
+                </div>
+            </div>-->
+        </div>
     </section>
 
     <section id="carousel">
-        <div class="container_carousel_text container_carousel">
-            <h1>Invierte y gana más con tus ahorros </h1>
-            <p class="body_1">Con nuestro CDT, podrás hacer crecer tus ahorros de forma segura y rentable. ¡Empieza a
-                ganar con
-                nosotros ahora!</p>
-            <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
-                    class="bi bi-arrow-right"></i></button>
-        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
 
-        <div class="container_carousel_img_bg">
-            <img class="container_carousel_img" src="/Images/1.png" >
-        </div>
-    </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container_carousel_text">
+                        <h1>Invierte y gana más con tus ahorros</h1>
+                        <p class="body_1">Con nuestro CDT, podrás hacer crecer tus ahorros de forma segura y rentable.
+                            ¡Empieza a
+                            ganar con
+                            nosotros ahora!</p>
+                            <a href="./CDT/CDT.html">
+                                <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
+                                        class="bi bi-arrow-right"></i></button>
+                            </a>
+                    </div>
+                    <div class="container_carousel_img_bg container_carousel_img">
+                        <img src="/Images/1.png" class="container_carousel_img d-block" alt="...">
+                    </div>
+                </div>
 
+
+
+
+                <div class="carousel-item">
+                    <div class="container_carousel_text">
+                        <h1>Libranza para pensionados</h1>
+                        <p class="body_1">Permite a pensionados y a maestros del sector público, adquirir créditos a
+                            través de nuestras alianzas.</p>
+                        <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="container_carousel_img_bg container_carousel_img">
+                        <img src="/Images/1-2.png" class="container_carousel_img d-block" alt="...">
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                    <div class="container_carousel_text">
+                        <h1>Fortalecimiento para tu negocio</h1>
+                        <p class="body_1">Tenemos un crédito enfocado a microempresarios y emprendedores como tú.</p>
+                        <a href="./Creditos/credito.html">
+                            <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
+                                    class="bi bi-arrow-right"></i></button>
+                        </a>
+                    </div>
+                    <div class="container_carousel_img_bg container_carousel_img">
+                        <img src="/Images/1-3.png" class="container_carousel_img d-block" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev" style="height: 20%; margin-top: 20%">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next" style="height: 20%; margin-top: 20%; align-self: center">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                        class="bi bi-chevron-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> 
 
     <section id="w_contigo_landing">
         <h3> W Contigo </h3>
         <div class="card_desk">
             <w-card-desk photo="/Images/card.png" title="Historias de grandeza que marcan la diferencia"
             text="Aprende de educación financiera y explora mas sobre la Comunidad W, mediante historias que dejan huella"
-            btn="Conoce más"></w-card-desk>
+            btn="Conoce más" link="./ComunidadW/comunidadw.html"></w-card-desk>
         </div>
         <div class="card_mobile">
             <card-imagen recurso="/Images/card.png" titulo="Historias de grandeza que marcan la diferencia"
             contenido="Aprende de educación financiera y explora mas sobre la Comunidad W, mediante historias que dejan huella"
-            boton="Conoce más"></card-imagen>
+            boton="Conoce más" link="./ComunidadW/comunidadw.html"></card-imagen>
         </div>
     </section>
 
@@ -103,7 +187,7 @@
                         <li> Libranza y vehiculos </li>
                         <li> Inmueble productivo </li>
                     </ul>
-                    <button class="btn_medium btn_medium_active btn">Saber más <i
+                    <button class="btn btn_medium btn_medium_active">Saber más <i
                             class="bi bi-arrow-right"></i> </button>
                 </div>
             </div>
@@ -156,8 +240,10 @@
                             <p class="card_landing_text body1" style="width: 480px;">Ten una agenda organizada que te
                                 permita llevar el orden de tus cuentas y pagos</p>
                         </div>
-                        <button style="margin-top: 20px;" class="btn_large btn btn_large_active">Quiero crear mi cuenta
-                            <i class="bi bi-arrow-right"></i></button>
+                        <a href="./Registro/registro.html">
+                            <button style="margin: 50px 0px;" class="btn_large btn btn_large_active text_button_medium">Quiero crear mi cuenta
+                                <i class="bi bi-arrow-right"></i></button>
+                        </a>
                     </section>
                 </div>
             </div>
@@ -199,6 +285,15 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
 
+
+<link rel="stylesheet" href="/Salvavidas/salvavidas.css">
+
+    <script type="module" src="/Salvavidas/ComponenteSalvavidas.js"></script>
+
+    <salvavidas-comp></salvavidas-comp>
+
 </body>
+
+
 
 </html>

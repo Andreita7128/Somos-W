@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +15,10 @@
   line-height: 120% !important;
 }
 
-/*Colors*/
-/*Various*/
-/*Blue*/
-/*Dark Violet*/
-/*Violet*/
-/*Orange*/
-/*Yellow*/
+p {
+  margin-bottom: 0px;
+}
+
 /* Typography */
 h1 {
   font-weight: 700;
@@ -53,14 +58,131 @@ h5 {
   font-size: 14px;
 }
 
+#labelHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#greenInput {
+  width: 300px;
+  height: 42px;
+  border-color: #2DC071;
+  background-color: rgba(45, 192, 113, 0.2);
+  border-radius: 48px;
+}
+
+#redInput {
+  width: 300px;
+  height: 42px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  border-radius: 48px;
+}
+
+#grayInput {
+  width: 300px;
+  height: 42px;
+  border-color: #CDCFD0;
+  background-color: #F2F2F2;
+  border-radius: 48px;
+}
+
+#inputSearch {
+  /* width: 519px;
+  height: 44px; */
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+}
+
+#inputSearch input[type=text] {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#inputSearch button {
+  background-color: #00B1BB;
+}
+
+#inputButtonSize {
+  width: 519px;
+  height: 44px;
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+  /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+}
+#inputButtonSize #inputButtonColor {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#dropDownStyleGreen {
+  width: 300px;
+  height: 42px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262c;
+  margin: 0px 20px;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
   }
   h2 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
   }
   h3 {
     font-weight: 700;
@@ -118,15 +240,37 @@ h5 {
   font-size: 12px;
 }
 
+.right {
+  margin-left: 50px;
+  margin-right: -35px;
+}
+
+.left {
+  margin-right: 50px;
+  margin-left: -35px;
+}
+
 .btn {
   height: 42px;
   border-radius: 48px;
   box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_icon {
+  justify-content: space-around !important;
 }
 .btn_large {
-  width: 29.4%;
+  width: auto;
+  padding: 0px 82px;
 }
-.btn_large:active {
+.btn_large i {
+  position: relative;
+  margin-left: 45px;
+  margin-right: -62px;
+}
+.btn_large_active {
   border: none;
   background: #00B1BB;
   color: #F2F2F2;
@@ -145,7 +289,7 @@ h5 {
   filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
   background-color: transparent;
 }
-.btn_large_outline:active {
+.btn_large_outline_active {
   border: 1px solid #00B1BB;
   color: #00B1BB;
 }
@@ -158,16 +302,18 @@ h5 {
   background-color: transparent;
   box-shadow: none;
 }
-.btn_large_transparent:active {
+.btn_large_transparent_active {
   color: #00B1BB;
 }
 .btn_large_transparent:disabled {
   color: #CDCFD0;
 }
 .btn_medium {
-  width: 19.1%;
+  width: auto;
+  height: 42px;
+  padding: 9px 55px;
 }
-.btn_medium:active {
+.btn_medium_active {
   border: none;
   background: #00B1BB;
   color: #F2F2F2;
@@ -183,12 +329,13 @@ h5 {
   color: #979C9E;
 }
 .btn_medium_outline {
+  background-color: #FFFFFF;
   filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
-  background-color: transparent;
 }
-.btn_medium_outline:active {
+.btn_medium_outline_active {
   border: 1px solid #00B1BB;
   color: #00B1BB;
+  text-shadow: none;
 }
 .btn_medium_outline:disabled {
   border: 1px solid #CDCFD0;
@@ -199,7 +346,7 @@ h5 {
   background-color: transparent;
   box-shadow: none;
 }
-.btn_medium_transparent:active {
+.btn_medium_transparent_active {
   color: #00B1BB;
 }
 .btn_medium_transparent:disabled {
@@ -208,7 +355,7 @@ h5 {
 .btn_small {
   width: 10.7%;
 }
-.btn_small:active {
+.btn_small_active {
   border: none;
   background: #00B1BB;
   color: #F2F2F2;
@@ -227,7 +374,7 @@ h5 {
   filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
   background-color: transparent;
 }
-.btn_small_outline:active {
+.btn_small_outline_active {
   border: 1px solid #00B1BB;
   color: #00B1BB;
 }
@@ -240,7 +387,7 @@ h5 {
   background-color: transparent;
   box-shadow: none;
 }
-.btn_small_transparent:active {
+.btn_small_transparent_active {
   color: #00B1BB;
 }
 .btn_small_transparent:disabled {
@@ -249,51 +396,213 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 22.71%;
+    width: auto;
+    padding: 9px 65px;
+  }
+  .btn_medium {
+    width: auto;
+    padding: 9px 25px;
+  }
+  .btn_small {
+    width: 50%;
   }
 }
-/*Colors*/
-/*Various
-$color_text: #27262C;
-$color_text_disable: #979C9E;
-$color_base_white: #F2F2F2;
-$color_accent_white: #F8F8F8;
-$color_base_gray: #27262C;
-$color_accent_black: #000000;
-$color_gray_btn: #CDCFD0;
-$color_error: #EB3232;
-$color_warning: #FDA624;
-$color_success: #2DC071;
-$fill_success: rgba(45, 192, 113, 0.2);
-$fill_error: rgba(235, 50, 50, 0.2);
-$fill_generic: rgba(0, 177, 187, 0.2);
-$fill_input: #F2F4F5;
-$fill_disabled: #E3E5E5;
+/* Input internacional */
+/* Cajita */
+.form-group {
+  width: 100%;
+  max-width: 310px;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-group:not(.form-group_error):not(.form-group_exito):focus-within {
+  background: rgba(0, 177, 187, 0.2);
+  border: 2px solid #2FD9DE;
+}
+.form-group_error {
+  border-color: #EB3232;
+  background: rgba(235, 50, 50, 0.2);
+}
+.form-group_error:focus-within {
+  background: rgba(235, 50, 50, 0.2);
+  border: 2px solid #EB3232;
+}
+.form-group_exito {
+  border-color: #2DC071;
+  background: rgba(45, 192, 113, 0.2);
+}
+.form-group_exito:focus-within {
+  background: rgba(45, 192, 113, 0.2);
+  border: 2px solid #2DC071;
+}
 
-/*Blue
-$color_blue1: #00B1BB;
-$color_blue2: #2FD9DE;
-$color_blue3: #BDF0F2;
+/* No difiere */
+.select-container {
+  width: 80px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
 
-/*Dark Violet
-$color_dark_violet1: #2D3982;
-$color_dark_violet2: #535C97;
-$color_dark_violet3: #8A90B5;
-$color_dark_violet4: #C3C5D4;
+/* Form de el country a elegir */
+.country-select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding-left: 24px;
+  border-radius: 48px;
+}
 
-/*Violet
-$color_violet1: #6321A6;
-$color_violet2: #8E50B7;
-$color_violet3: #BA93D2;
-$color_violet4: #E4D4ED;
+/* Contenedor de la flag */
+.flag-icon-container {
+  width: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
 
-/*Orange
-$color_orange1: #F25C05;
-$color_orange2: #FF8826;
-$color_orange3: #FFB67D;
+/* Icono de la flag */
+.flag-icon {
+  width: 20px;
+  height: 8px;
+}
 
-/*Yellow
-$color_yellow1: #e3ff0b;*/
+/* Escribir dentro del imput */
+.input-number {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  border-radius: 48px;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    display: flex;
+    /* Utilizar flexbox para disposición */
+    flex-direction: row;
+    /* Especificar la dirección de fila o columna según las necesidades */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* Especificar columnas de ancho flexible */
+  }
+  .country-select {
+    font-size: 16px;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  .input-number {
+    margin-left: 16%;
+    font-size: 16px;
+    width: 100%;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  #greenInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(45, 192, 113, 0.2);
+    border-radius: 48px;
+  }
+  #redInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    border-radius: 48px;
+  }
+  #grayInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #CDCFD0;
+    background-color: #f4f4f4;
+    border-radius: 48px;
+  }
+  #inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+  }
+  #inputSearch input[type=text] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #inputSearch button {
+    background-color: #00B1BB;
+  }
+  #inputButtonSize {
+    width: 25.93%;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+  }
+  #inputButtonColor {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #dropDownStyleGreen {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262c;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
+  }
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
+  }
+}
 p {
   color: #27262C;
 }
@@ -313,9 +622,11 @@ p {
 .side-link {
   font-weight: 600;
   color: #00B1BB;
-  margin-bottom: 11px;
 }
 .side-link.active {
+  margin-bottom: 11px;
+}
+.side-link.active.active {
   background-color: #00B1BB !important;
 }
 
@@ -349,7 +660,7 @@ p {
   line-height: 20px;
 }
 .check-button {
-  background-color: #F8F8F8;
+  background-color: #FAFAFA;
   width: 25px;
   height: 25px;
   margin-right: 13px;
@@ -371,31 +682,38 @@ p {
   line-height: 24px;
 }
 
-.breadcrumb-title {
+#breadcrumb {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0%;
+  color: #6321A6;
+}
+#breadcrumb li {
+  margin-right: 5px;
+}
+#breadcrumb a {
+  text-decoration: none;
+  color: #6321A6;
+}
+#breadcrumb-item {
+  font-weight: bold;
+}
+#breadcrumb-title {
   color: #F25C05;
 }
-.breadcrumb-title-section {
-  background-color: #F8F8F8;
-  padding: 14px;
+#breadcrumb-title-section {
+  height: 100px;
+  background-color: #FAFAFA;
+  padding: 20px 12%;
   border-radius: 0 0 20px 20px;
-}
-.breadcrumb-item a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6321A6;
-  text-decoration: none;
-}
-.breadcrumb .active {
-  font-weight: 600;
-  font-size: 16px;
-  color: #6321A6;
 }
 
 .user-product-container {
-  background-color: #F8F8F8;
+  background-color: #FAFAFA;
+}
+.user-product-product-container {
+  background-color: #FAFAFA;
   max-width: 528px;
   min-width: 450px;
   max-height: 290px;
@@ -403,103 +721,119 @@ p {
   overflow: hidden;
   box-shadow: 0 4px 14px #E4D4ED;
 }
-.user-product-head {
+.user-product-product-head {
+  background-color: #6321A6;
   padding: 10px 30px 1px;
 }
-.user-product-head h5 {
+.user-product-product-head h5 {
   color: #F2F2F2;
 }
-.user-product-body {
+.user-product-product-body {
   padding: 27px 50px 0px;
 }
-.user-product-body h3 {
+.user-product-product-body h3 {
   color: #6321A6;
 }
-.user-product-data {
+.user-product-product-data {
   display: flex;
   flex-direction: row;
   padding: 10px 25px;
 }
-.user-product-data-item {
+.user-product-product-data-item-head {
+  padding: 10px 30px 1px;
+}
+.user-product-product-data-item-head h5 {
+  color: #F2F2F2;
+}
+.user-product-product-data-item-body {
+  padding: 27px 50px 0px;
+}
+.user-product-product-data-item-body h3 {
+  color: #6321A6;
+}
+.user-product-product-data-item-data {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 25px;
+}
+.user-product-product-data-item-data-item {
   margin-right: 50px;
 }
-
-.ahorro {
+.agenda-container {
+  width: 100%;
+  max-width: 528px;
+}
+.agenda-container .ahorro {
   background-color: #6321A6;
 }
-
-.credito {
+.agenda-container .credito {
   background-color: #F25C05;
 }
-
-.seguro {
+.agenda-container .seguro {
   background-color: #00B1BB;
 }
-
-.inversion {
+.agenda-container .inversion {
   background-color: #343c7f;
 }
-
-.agenda-container {
+.agenda-container .agenda-container {
   background-color: #BDF0F2;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 14px #BDF0F2;
   width: 100%;
 }
-.agenda-head {
+.agenda-container .agenda-head {
   background-color: #00B1BB;
   padding: 10px 25px 1px;
 }
-.agenda-head h5 {
+.agenda-container .agenda-head h5 {
   color: #F2F2F2;
 }
-.agenda-body {
+.agenda-container .agenda-body {
   padding: 10px 35px 1px;
 }
-
-.calendar {
+.agenda .calendar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #F8F8F8;
+  background-color: #FAFAFA;
   border-radius: 20px;
   box-shadow: 0 3px 11px rgba(0, 0, 0, 0.15);
   padding: 10px 43px 1px;
 }
-.calendar-container {
+.agenda .calendar-container {
   background-color: #F2F4F5;
   border-radius: 20px;
 }
-.calendar-item-selected {
+.agenda .calendar-item-selected {
   font-weight: 700;
 }
-.calendar-item-selected p {
+.agenda .calendar-item-selected p {
   color: #00B1BB;
 }
-.calendar-data {
+.agenda .calendar-data {
   padding: 30px 30px;
   margin-bottom: 30px;
 }
-.calendar-event-head h5 {
+.agenda .calendar-event-head h5 {
   font-family: 700;
   color: #535C97;
 }
-.calendar-event-head p {
+.agenda .calendar-event-head p {
   color: #27262C;
 }
-.calendar-event-body {
+.agenda .calendar-event-body {
   display: flex;
   flex-direction: row;
 }
-.calendar-event-detail {
+.agenda .calendar-event-detail {
   margin-right: 50px;
 }
-.calendar-event-detail :first-child {
+.agenda .calendar-event-detail :first-child {
   font-weight: 700;
   color: #535C97;
 }
-.calendar-event-detail p {
+.agenda .calendar-event-detail p {
   color: #27262C;
 }
 

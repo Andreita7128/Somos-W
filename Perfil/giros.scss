@@ -1,94 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import '../landing.scss';
+@import '../style.scss';
 
 body{
     background-color: #35cbd3;
 }
 
-$color_text: #27262C;
-$color_text_disable: #979C9E;
-$color_base_white: #F2F2F2;
-$color_accent_white: #F8F8F8;
-$color_base_gray: #27262C;
-$color_accent_black: #000000;
-$color_gray_btn: #CDCFD0;
-$color_error: #EB3232;
-$color_errorBorder: #FF5247;
-$color_greyBorder: #d3d3d3;
-$color_greyBorder: #D3D3D3;
-$color_warning: #FDA624;
-$color_success: #2DC071;
-$fill_success: rgba(45, 192, 113, 0.2);
-$fill_error: rgba(235, 50, 50, 0.2);
-$fill_generic: rgba(0, 177, 187, 0.2);
-$fill_input: #F4F4F4;
-$fill_disabled: #E3E5E5;
-
-
-/*Blue*/
-$color_blue1: #00B1BB;
-$color_blue2: #2FD9DE;
-$color_blue3: #BDF0F2;
-
-/*Dark Violet*/
-$color_dark_violet1: #2D3982;
-$color_dark_violet2: #535C97;
-$color_dark_violet3: #8A90B5;
-$color_dark_violet4: #C3C5D4;
-
-/*Violet*/
-$color_violet1: #6321A6;
-$color_violet2: #8E50B7;
-$color_violet3: #BA93D2;
-$color_violet4: #E4D4ED;
-
-/*Orange*/
-$color_orange1: #F25C05;
-$color_orange2: #FF8826;
-$color_orange3: #FFB67D;
-
-/*Yellow*/
-$color_yellow1: #e3ff0b;
-
-
-/* Typography */
-
-h1 {
-    font-weight: 700;
-    font-size: 56px;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 48px;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-h4 {
-    font-weight: 700;
-    font-size: 24px;
-}
-
-h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-
 /* ************************************************************************************** */
- 
 
+.navbar-dark .navbar-nav .nav-link {
+  color: $color_orange1 !important;
+}
 //BreadCrumb
 #bread_lv{
     &1::after{
@@ -120,8 +41,8 @@ p {
 }
 
 .headerLabel {
-    margin-top: 20px;
-    margin-bottom: 20px;
+   /*  margin-top: 20px;
+    margin-bottom: 20px; */
     
     width: 50%;
     height: 54px;
@@ -204,7 +125,7 @@ p {
     overflow: hidden;
     box-shadow: 0 4px 14px #E4D4ED;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 30px;
   }
   .user-giros-head {
@@ -256,3 +177,108 @@ p {
     margin-top: 20px;
     border-bottom: 1px solid #BA93D2;
   }
+
+
+/* CONFIGURACIÓN MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+
+
+  .label-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .textHeaderLabel {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #F2F4F5;
+  }
+
+  .headerLabel {
+      width: 100%;
+      height: 44px;
+      background-color: $color_orange1;
+      border-radius: 10px;
+      padding: 10px;
+      
+  }
+
+  .giros-sontainer-section{
+
+    background-color: #35cbd3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+  }
+
+  .user-giros-container {
+
+    margin-left: 20px;
+
+    background-color: #F8F8F8;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px #E4D4ED;
+    
+  }
+
+  .label-user-giros{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: $color_base_gray;
+  }
+
+  .sublabel-user-giros {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_base_gray;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-purple {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: $color_violet1;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-proceso {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_warning;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-finalizado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_success;
+
+    margin-left: 20px;
+  }
+
+  .sublabel-user-giros-cancelado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color_error;
+
+    margin-left: 20px;
+  }
+
+  
+}

@@ -4,12 +4,13 @@ class Sidebar extends HTMLElement {
     }
 
     connectedCallback() {
-        this.render()
+        const route = this.hasAttribute('route') ? this.getAttribute('route') : undefined;
+        this.render(route)
     }
 
-    render() {
+    render(route) {
         this.innerHTML = `
-            <link rel="stylesheet" href="tags.css">
+            <link rel="stylesheet" href="../../../public/Components/tags/tags.css">
             <div class="sidebar-container d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" >
                 <h3 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-4">Mi Perfil W</span>
@@ -19,7 +20,7 @@ class Sidebar extends HTMLElement {
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="side-item">
 
-                        <a href="/Perfil/perfil.html" class="nav-link side-link active " aria-current="page">
+                        <a href="/Perfil/perfil.html" class="nav-link side-link ${route === 'perfil' ? 'active' : ''} " >
                         <i class="bi bi-person"></i>
                         <span>Perfil</span>
 
@@ -27,14 +28,14 @@ class Sidebar extends HTMLElement {
                     </li>
                     
                     <li class="side-item">
-                        <a href="/Perfil/productos.html" class="side-link nav-link link-body-emphasis">
+                        <a href="/Perfil/productos.html" class="side-link nav-link link-body-emphasis ${route === 'productos' ? 'active' : ''}">
                         <i class="bi bi-wallet2"></i>
                         <span>Tus Productos</span>
                         </a>
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/giros.html" class="side-link nav-link link-body-emphasis">
+                        <a href="/Perfil/giros.html" class="side-link nav-link link-body-emphasis ${route === 'giros' ? 'active' : ''}">
                         <i class="bi bi-send"></i>
                         <span>Giros Internacionales</span>
                         </a>
@@ -42,7 +43,7 @@ class Sidebar extends HTMLElement {
 
                     <li class="side-item">
 
-                        <a href="/Perfil/alcancias.html" class="side-link nav-link link-body-emphasis">
+                        <a href="/Perfil/alcancias.html" class="side-link nav-link link-body-emphasis ${route === 'alcancias' ? 'active' : ''}">
                         <i class="bi bi-piggy-bank"></i>
                         <span>Alcancias</span>
 
@@ -50,14 +51,14 @@ class Sidebar extends HTMLElement {
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/agenda.html" class="side-link nav-link link-body-emphasis">
+                        <a href="/Perfil/agenda.html" class="side-link nav-link link-body-emphasis ${route === 'agenda' ? 'active' : ''}">
                         <i class="bi bi-calendar-week"></i>
                         <span>Agenda Financiera</span>
                         </a>
                     </li>
 
                     <li class="side-item">
-                        <a href="/Perfil/extractos.html" class="side-link nav-link link-body-emphasis">
+                        <a href="/Perfil/extractos.html" class="side-link nav-link link-body-emphasis ${route === 'extractos' ? 'active' : ''}">
                         <i class="bi bi-file-earmark-text"></i>
                         <span>Extractos y Certificados</span>
                         </a>

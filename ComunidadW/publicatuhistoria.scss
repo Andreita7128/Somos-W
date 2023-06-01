@@ -1,37 +1,4 @@
-@import '../landing.scss';
-
-
-#bread_lv {
-    &1::after {
-        content: "Inicio";
-    }
-
-    &2::after {
-        content: "Comunidad W";
-    }
-
-    &3::after {
-        content: "W Contigo";
-    }
-}
-
-.breadcrumb-item span {
-    display: none;
-}
-
-#bread_title {
-    &::after {
-        content: "W Contigo";
-    }
-
-    span {
-        display: none;
-    }
-}
-
-.breadcrumb_section {
-    margin: 15px 12%;
-}
+@import '../style.scss';
 
 #detail_view {
     display: flex;
