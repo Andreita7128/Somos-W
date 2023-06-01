@@ -603,6 +603,12 @@ h5 {
     color: #27262C;
   }
 }
+.img_banner {
+  width: 500px;
+  height: 542px;
+  margin-left: 8%;
+}
+
 .image-card {
   width: 10px !important;
 }
@@ -612,14 +618,20 @@ h5 {
 }
 
 section.portada {
-  margin-top: 10px;
+  margin-top: 3%;
+  padding-left: 175px;
+  margin-bottom: 5%;
 }
 section .style_better {
-  margin-top: 80px;
+  margin-top: 10%;
+  width: 486px;
 }
 section h3 {
   font-weight: 500;
   font-size: 20px;
+}
+section.container_text {
+  width: 486px;
 }
 
 @media (max-width: 1250px) {
@@ -639,6 +651,26 @@ section h3 {
   }
 }
 @media (max-width: 800px) {
+  .img_banner {
+    width: auto;
+    margin-left: 0%;
+  }
+  section.portada {
+    margin-top: 3%;
+    padding-left: 0px;
+    margin-bottom: 5%;
+  }
+  section .style_better {
+    margin-top: 10%;
+    width: 486px;
+  }
+  section h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  section.container_text {
+    width: 486px;
+  }
   #tasas {
     display: none;
   }

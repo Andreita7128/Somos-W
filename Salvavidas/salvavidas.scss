@@ -1,433 +1,916 @@
 @import '../style.scss';
 
-.salvavidas-logo {
-    height: 100px;
-    width: 100px;
-    filter: drop-shadow(0px 9px 14px rgba(146, 60, 60, 0));
-    transition: filter .2 ease;
+@media screen and (max-width: 3000px) {
 
 
-    & :hover {
-        filter: drop-shadow(0px 9px 14px rgba(197, 78, 78, 0.25));
+    #regresa_main {
+        transform: scale(0.8);
+        margin-top: 15px;
+        margin-left: -35px;
+    }
+
+    .salvavidas-logo {
+        height: 100px;
+        width: 100px;
+        filter: drop-shadow(0px 9px 14px rgba(146, 60, 60, 0));
+        transition: filter .2 ease;
+
+
+        & :hover {
+            filter: drop-shadow(0px 9px 14px rgba(197, 78, 78, 0.25));
+        }
+
+
+
+    }
+
+    .lista-botones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .encabezado {
+        display: flex;
+        color: #00B1BB;
+        gap: 5px;
+        margin-top: 20px;
+
+    }
+
+    .x {
+        transform: scale(1.3);
+    }
+
+    #salvalogo:hover {
+        transform: scaleX(1.05) scaleY(1.05);
+    }
+
+    #content-in-help {
+        text-decoration: none;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        width: 400px;
+        height: 0px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: #FFF;
+        overflow-x: hidden;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        transition: all 400ms ease;
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    #content-in-help::-webkit-scrollbar {
+        background: gainsboro;
+        border-radius: 7px;
+        visibility: hidden;
+    }
+
+    #content-in-help::-webkit-scrollbar-thumb {
+        background: rgb(192, 192, 192);
+        border-radius: 5px;
+    }
+
+    #btn-plus:checked~#content-in-help {
+        opacity: 1;
+        visibility: visible;
+        bottom: 140px;
+        right: 40px;
+        height: auto;
+        max-height: 618px;
+        width: 350px;
+        z-index: 1;
+
     }
 
 
 
+    #btn-plus {
+        display: none;
+    }
+
+
+    .contenedor {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+    }
+
+    .saludo-salva {
+        display: flex;
+        align-items: center;
+
+        & p {
+            width: 200px;
+        }
+
+    }
+
+    #just-fill {
+        background: rgba(39, 38, 44, 0.3);
+        backdrop-filter: blur(4px);
+        height: 1720px;
+        width: auto;
+        background-color: blueviolet;
+    }
+
+    #just-to-know {
+        height: 22px;
+        width: 80%;
+        background-color: #03A1AE;
+        border-radius: 24px;
+        border: none;
+        margin: auto 35px auto 30px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+    }
+
+    .search-in-salvavidas {
+        padding: auto;
+        position: relative;
+    }
+
+    #search-bar-salvavidas {
+        width: 90%;
+        height: 21px;
+        margin-top: 10px;
+        margin-left: 17px;
+        border-color: rgb(240, 240, 240);
+        border-radius: 20px;
+        border-style: solid;
+        padding-left: 20px;
+        padding-right: 7px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 24px;
+
+        color: #979C9E;
+
+        background-color: #eee;
+    }
+
+    .title-salvavidas-preguntas {
+        width: 200;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 10px;
+        line-height: 120%;
+
+        color: #000000;
+    }
+
+    #preguntas-frecuentes-titulo {
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #preguntas-frecuentes-sugerencias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .pregunta-frecuente-salvavidas {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9.37418px;
+        line-height: 12px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        /* Azul/main */
+        color: #00B1BB;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4.68709px 8.3326px;
+        gap: 51.56px;
+        width: 80%;
+        height: 22px;
+        /* Azul/main */
+        border: 0.520788px solid #00B1BB;
+        filter: drop-shadow(0px 2.08315px 5.20788px rgba(0, 177, 187, 0.3));
+        border-radius: 24.9978px;
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin-bottom: 11px;
+    }
+
+    #info-salvalogo {
+        width: 85%;
+        height: 280px;
+        background: #FFFFFF;
+        box-shadow: 0px 1.59881px 5.59582px rgba(0, 0, 0, 0.15);
+        border-radius: 5.17391px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    #tittle-info-salvalogo {
+        margin-top: 15px;
+        margin-left: 10px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12.4174px;
+        line-height: 120%;
+
+        color: #6321A6;
+    }
+
+    .texto-en-info {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9.31304px;
+        line-height: 155.5%;
+
+        color: #000000;
+    }
+
+    #info-salvalogo img {
+        margin: 10px 40px auto 40px;
+    }
+
+    .titulomicro {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 29px */
+
+        display: flex;
+        align-items: center;
+
+        /* Violeta/main */
+
+        color: #6321A6;
+
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .contenidomicro {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 155.5%;
+        /* or 28px */
+
+        display: flex;
+        align-items: center;
+
+        color: #000000;
+
+        max-width: 380px;
+
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .imagenesmicro {
+        align-items: center;
+        margin-top: 15px;
+        display: flex;
+        gap: 20px;
+    }
+
+    //Aqui empece CASTRO
+
+    //Botón principal
+    //Input de búsqueda
+    .search_button {
+        width: 15% !important;
+        height: 35px !important;
+        background-color: $color_blue1 !important;
+        color: $color_base_white;
+        border-radius: 0% 48px 48px 0% !important;
+        margin: 0 !important;
+
+        &:hover {
+            background-color: white !important;
+            color: $color_blue1 !important;
+        }
+    }
+
+    .form-control {
+        margin-right: 0 !important;
+        border-radius: 48px 0px 0px 48px;
+        padding-left: 10px;
+    }
+
+    .placeholder-input-desktop {
+        width: 189px;
+        height: 35px;
+        border: none;
+        background-color: $fill_input;
+    }
+
+    .hidden-title {
+        visibility: hidden;
+    }
+
+    .not-hidden{
+        visibility: visible !important;
+        padding: 20px 20px;
+        width: calc(100% + 40px);
+        border-radius: 10px 10px 0px 0px;
+        height: 50px;
+        
+        margin-left: -20px;
+        background-color: #2FD9DE;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    //EMPIEZA PANTALLA CHAT
+    //Pantalla chatbot
+    .header-chat {
+        background-color: #2FD9DE;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-chat p {
+        margin: 0;
+    }
+
+    .header-chat i {
+        margin-right: 10px;
+        font-size: 24px;
+    }
+
+    .header-contenido {
+        display: flex;
+        align-items: center;
+    }
+
+    // Pregunta
+    .pregunta-chat {
+        margin-right: 0px;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        margin: 10px;
+    }
+
+    //Foto de usuario
+    .profile-pic {
+        width: 51px;
+        height: 51px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    //Comentario pregunta
+    .comment-body {
+        background-color: #f2f2f2;
+        width: auto;
+        height: auto;
+        max-width: 282px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        padding: 10px;
+        border-radius: 9px;
+    }
+
+    //Comentario respuesta
+    .respuesta .comment-body {
+        max-width: 80%;
+        margin-right: 10px;
+        width: fit-content;
+
+    }
+
+    /* Nueva clase para respuesta */
+    .respuesta {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    //Foto del banco
+    .banco-pic {
+        width: 51px;
+        height: 51px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    //Botón chat
+    .botonayuda-div {
+        display: flex;
+        justify-content: center;
+        margin-right: -25px;
+    }
+
+    //Input
+    .inputchatsalvavidas {
+        border-top: 2px #00B1BB;
+        border-style: solid none none none;
+        width: 100%;
+        height: 45px;
+        background-color: #FAFAFA;
+        text-align: start;
+        color: #303233;
+    }
+
+    .inputchatsalvavidas::placeholder {
+        color: #979C9E;
+    }
+
 }
 
-.lista-botones {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
+//-----------------
 
-.encabezado {
-    display: flex;
-    color: #00B1BB;
-    gap: 5px;
 
-}
 
-.x {
-    transform: scale(1.3);
-}
+@media screen and (max-width: 550px) {
 
+    .hidden-title {
+        visibility: visible;
+
+        padding: 20px 20px;
+        width: calc(100% + 40px);
+        border-radius: 10px 10px 0px 0px;
+        height: 50px;
+        
+        margin-left: -20px;
+        background-color: #2FD9DE;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .salvavidas-logo {
+        height: 100px;
+        width: 100px;
+        filter: drop-shadow(0px 9px 14px rgba(146, 60, 60, 0));
+        transition: filter .2 ease;
+
+        & :hover {
+            filter: drop-shadow(0px 9px 14px rgba(197, 78, 78, 0.25));
+        }
+    }
+
+    .encabezadoseccion {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .lista-botones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    //.encabezado {
+    //    display: flex;
+    //    color: #00B1BB;
+    //    gap: 5px;
+    //}
+
+    //.x {    transform: scale(1.3);}
+    /*
 #salvalogo:hover {
     transform: scaleX(1.05) scaleY(1.05);
 }
+*/
+    #content-in-help {
+        text-decoration: none;
+        border-radius: 30px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: #FFF;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        transition: all 400ms ease;
+    }
 
-#content-in-help {
-    text-decoration: none;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    width: fit-content;
-    height: 0px;
-    opacity: 0;
-    visibility: hidden;
-    background-color: #FFF;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    padding: 10Px;
-    transition: all 400ms ease;
-}
+    #content-in-help::-webkit-scrollbar {
+        background: gainsboro;
+        border-radius: 7px;
+        visibility: hidden;
+    }
 
-#content-in-help::-webkit-scrollbar {
-    background: gainsboro;
-    border-radius: 7px;
-    visibility: hidden;
-}
+    #content-in-help::-webkit-scrollbar-thumb {
+        background: rgb(192, 192, 192);
+        border-radius: 5px;
+    }
 
-#content-in-help::-webkit-scrollbar-thumb {
-    background: rgb(192, 192, 192);
-    border-radius: 5px;
-}
+    #btn-plus:checked~#content-in-help {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0px;
+        right: 1px;
+        height: 600px;
+        max-height: 600px;
+        width: 100%;
+    }
 
-#btn-plus:checked~#content-in-help {
-    opacity: 1;
-    visibility: visible;
-    bottom: 110px;
-    height: auto;
-    max-height: 618px;
-    width: fit-content;
-}
+    #btn-plus {
+        display: none;
+    }
 
-#btn-plus {
-    display: none;
-}
+    .contenedor {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+
+    }
 
 
-.contenedor {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    .saludo-salva {
+        display: flex;
+        align-items: center;
+        padding: 10px 40px;
+        justify-content: space-between;
 
-}
+        & p {
+            width: 60%;
+        }
 
-.saludo-salva {
-    display: flex;
-    align-items: center;
+    }
 
-    & p {
+    #just-fill {
+        background: rgba(39, 38, 44, 0.3);
+        backdrop-filter: blur(4px);
+        height: 1720px;
+        width: auto;
+        background-color: blueviolet;
+    }
+
+    #just-to-know {
+        height: 22px;
+        width: 80%;
+        background-color: #03A1AE;
+        border-radius: 24px;
+        border: none;
+        margin: auto 35px auto 44px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+    }
+
+
+
+    .to-search-salvavidas {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+
+    .title-salvavidas-preguntas {
+        width: 200;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 10px;
+        line-height: 120%;
+
+        color: #000000;
+    }
+
+    #preguntas-frecuentes-titulo {
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #preguntas-frecuentes-sugerencias {
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pregunta-frecuente-salvavidas {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9.37418px;
+        line-height: 12px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        /* Azul/main */
+        color: #00B1BB;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4.68709px 8.3326px;
+        gap: 51.56px;
         width: 200px;
+        height: 22px;
+        /* Azul/main */
+        border: 0.520788px solid #00B1BB;
+        filter: drop-shadow(0px 2.08315px 5.20788px rgba(0, 177, 187, 0.3));
+        border-radius: 24.9978px;
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin-bottom: 11px;
+        transform: scale(1.4);
     }
 
-}
+    #info-salvalogo {
+        width: 85%;
+        height: 280px;
+        background: #FFFFFF;
+        box-shadow: 0px 1.59881px 5.59582px rgba(0, 0, 0, 0.15);
+        border-radius: 5.17391px;
+        margin: auto;
+        overflow: hidden;
+    }
 
-#just-fill {
-    background: rgba(39, 38, 44, 0.3);
-    backdrop-filter: blur(4px);
-    height: 1720px;
-    width: auto;
-    background-color: blueviolet;
-}
+    #tittle-info-salvalogo {
+        margin-top: 15px;
+        margin-left: 10px;
 
-#just-to-know {
-    height: 22px;
-    width: 80%;
-    background-color: #03A1AE;
-    border-radius: 24px;
-    border: none;
-    margin: auto 35px auto 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12.4174px;
+        line-height: 120%;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 24px;
+        color: #6321A6;
+    }
 
-    color: #FFFFFF;
-}
+    .texto-en-info {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
 
-.search-in-salvavidas {
-    padding: auto;
-    position: relative;
-}
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9.31304px;
+        line-height: 155.5%;
 
-#search-bar-salvavidas {
-    width: 90%;
-    height: 21px;
-    margin-top: 10px;
-    margin-left: 17px;
-    border-color: rgb(240, 240, 240);
-    border-radius: 20px;
-    border-style: solid;
-    padding-left: 20px;
-    padding-right: 7px;
+        color: #000000;
+    }
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 9px;
-    line-height: 24px;
+    #info-salvalogo img {
+        margin: 10px 40px auto 40px;
+    }
 
-    color: #979C9E;
+    .titulomicro {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 29px */
 
-    background-color: #eee;
-}
+        display: flex;
+        align-items: center;
 
-.title-salvavidas-preguntas {
-    width: 200;
+        /* Violeta/main */
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 10px;
-    line-height: 120%;
+        color: #6321A6;
 
-    color: #000000;
-}
+        margin-top: 15px;
+        margin-left: 10px;
+    }
 
-#preguntas-frecuentes-titulo {
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+    .contenidomicro {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 155.5%;
+        /* or 28px */
 
-}
+        display: flex;
+        align-items: center;
 
-#preguntas-frecuentes-sugerencias {
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
+        color: #000000;
 
-.pregunta-frecuente-salvavidas {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 9.37418px;
-    line-height: 12px;
+        max-width: 380px;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    /* Azul/main */
-    color: #00B1BB;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4.68709px 8.3326px;
-    gap: 51.56px;
-    width: 200px;
-    height: 22px;
-    /* Azul/main */
-    border: 0.520788px solid #00B1BB;
-    filter: drop-shadow(0px 2.08315px 5.20788px rgba(0, 177, 187, 0.3));
-    border-radius: 24.9978px;
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin-bottom: 11px;
-}
+        margin-top: 15px;
+        margin-left: 10px;
+    }
 
-#info-salvalogo {
-    width: 85%;
-    height: 280px;
-    background: #FFFFFF;
-    box-shadow: 0px 1.59881px 5.59582px rgba(0, 0, 0, 0.15);
-    border-radius: 5.17391px;
-    margin: auto;
-    overflow: hidden;
-    overflow-y: scroll;
-}
+    .imagenesmicro {
+        align-items: center;
+        margin-top: 15px;
+        display: flex;
+        gap: 20px;
+    }
 
-#tittle-info-salvalogo {
-    margin-top: 15px;
-    margin-left: 10px;
+    //Aqui empece CASTRO
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12.4174px;
-    line-height: 120%;
+    //Botón principal
+    //Input de búsqueda
+    .search_button {
+        width: 15% !important;
+        height: 35px !important;
+        background-color: $color_blue1 !important;
+        color: $color_base_white;
+        border-radius: 0% 48px 48px 0% !important;
+        margin: 0 !important;
 
-    color: #6321A6;
-}
+        &:hover {
+            background-color: white !important;
+            color: $color_blue1 !important;
+        }
+    }
 
-.texto-en-info {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
+    .form-control {
+        margin-right: 0 !important;
+        border-radius: 48px 0px 0px 48px;
+        padding-left: 10px;
+    }
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 9.31304px;
-    line-height: 155.5%;
+    .placeholder-input-desktop {
+        width: 80%;
+        height: 35px;
+        border: none;
+        background-color: $fill_input;
+    }
 
-    color: #000000;
-}
 
-#info-salvalogo img {
-    margin: 10px 40px auto 40px;
-}
 
-.titulomicro {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    /* or 29px */
+    //EMPIEZA PANTALLA CHAT
+    //Pantalla chatbot
+    .header-chat {
+        background-color: #2FD9DE;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
 
-    display: flex;
-    align-items: center;
+    .header-chat p {
+        margin: 0;
+    }
 
-    /* Violeta/main */
+    .header-chat i {
+        margin-right: 10px;
+        font-size: 24px;
+    }
 
-    color: #6321A6;
+    .header-contenido {
+        display: flex;
+        align-items: center;
+    }
 
-    margin-top: 15px;
-    margin-left: 10px;
-}
+    // Pregunta
+    .pregunta-chat {
+        margin-right: 0px;
+    }
 
-.contenidomicro {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 155.5%;
-    /* or 28px */
+    .comment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        margin: 10px;
+    }
 
-    display: flex;
-    align-items: center;
+    //Foto de usuario
+    .profile-pic {
+        width: 51px;
+        height: 51px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 
-    color: #000000;
+    //Comentario pregunta
+    .comment-body {
+        background-color: #f2f2f2;
+        width: auto;
+        height: auto;
+        max-width: 282px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        padding: 10px;
+        border-radius: 9px;
+    }
 
-    max-width: 380px;
+    //Comentario respuesta
+    .respuesta .comment-body {
+        max-width: 80%;
+        margin-right: 10px;
+        width: fit-content;
+    }
 
-    margin-top: 15px;
-    margin-left: 10px;
-}
+    /* Nueva clase para respuesta */
+    .respuesta {
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+    }
 
-.imagenesmicro {
-    align-items: center;
-    margin-top: 15px;
-    display: flex;
-    gap: 20px;
-}
+    //Foto del banco
+    .banco-pic {
+        width: 51px;
+        height: 51px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
 
-//Aqui empece CASTRO
+    //Botón chat
+    .botonayuda-div {
+        display: flex;
+        justify-content: center;
+        margin-right: -25px;
+    }
 
-//Botón principal
-//Input de búsqueda
-.search_button {
-    width: 15% !important;
-    height: 35px !important;
-    background-color: $color_blue1 !important;
-    color: $color_base_white;
-    border-radius: 0% 48px 48px 0% !important;
-    margin: 0 !important;
+    //Input
+    .inputchatsalvavidas {
+        border-top: 2px #00B1BB;
+        border-style: solid none none none;
+        width: 100%;
+        height: 45px;
+        background-color: #FAFAFA;
+        text-align: start;
+        color: #303233;
+    }
 
-    &:hover {
-        background-color: white !important;
-        color: $color_blue1 !important;
+    .inputchatsalvavidas::placeholder {
+        color: #979C9E;
+    }
+
+    #regresa_main {
+        transform: scale(0.789);
     }
 }
-
-.form-control {
-    margin-right: 0 !important;
-    border-radius: 48px 0px 0px 48px;
-}
-
-.placeholder-input-desktop {
-    width: 189px;
-    height: 35px;
-    border: none;
-    background-color: $fill_input;
-}
-
-.form-control {
-    padding-left: 10px;
-}
-
-//EMPIEZA PANTALLA CHAT
-//Pantalla chatbot
-.header-chat {
-    background-color: #2FD9DE;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.header-chat p {
-    margin: 0;
-}
-
-.header-chat i {
-    margin-right: 10px;
-    font-size: 24px;
-}
-
-.header-contenido {
-    display: flex;
-    align-items: center;
-}
-
-// Pregunta
-.pregunta-chat{
-    margin-right: 0px;
-}
-.comment {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    margin: 10px;
-  }
-  
-  //Foto de usuario
-  .profile-pic {
-    width: 51px;
-    height: 51px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  
-  //Comentario pregunta
-  .comment-body {
-    background-color: #f2f2f2;
-    width: auto;
-    height: auto;
-    max-width: 282px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding: 10px;
-    border-radius: 9px;
-  }
-  
-  //Comentario respuesta
-  .respuesta .comment-body {
-    max-width: 282px;
-    margin-right: 10px;
-    width: fit-content;
-  }
-  
-  /* Nueva clase para respuesta */
-  .respuesta {
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  
-  //Foto del banco
-  .banco-pic {
-    width: 51px;
-    height: 51px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-
-  //Botón chat
-  .botonayuda-div{
-    display: flex;
-    justify-content: center;
-    margin-right: -25px;
-  }
-
-  //Input
-  .inputchatsalvavidas{
-    border-top: 2px #00B1BB;
-    border-style: solid none none none;
-    width: 100%;
-    height: 45px;
-    background-color: #FAFAFA;
-    text-align: start;
-    color: #303233;
-  }
-
-  .inputchatsalvavidas::placeholder {
-    color: #979C9E;
-  }

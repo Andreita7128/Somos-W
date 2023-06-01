@@ -289,33 +289,29 @@ class cardImagen extends HTMLElement {
     }
 
     connectedCallback() {
-
-        this.innerHTML = `
+      
+    const titulo = this.titulo.trim();
+    
+      this.innerHTML = `
         <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
-
-        <div class = 'supreme'>
-        
-        <section class="fondo-card">
-        <section class="card-imagen">
-            <img src= "${this.recurso}" class="imagen-inCard" alt="">
-        </section>
-        <section class="texto-card">
-            <h4 class="titulo">${this.titulo}</h4>
-            <p class="parrafo">
-            ${this.contenido}   
-            </p>
-        </section>
-        <section id="section-btn">
-        <a href="${this.link}">
-          <button class = 'btn btn_icon btn_medium btn_medium_outline_active text_button_small'>${this.boton} <i class="bi bi-arrow-right right"></i></button>    
-        </a>
-    </section>
-    </section>
+        <div class="supreme">
+          <section class="fondo-card">
+            <section class="card-imagen">
+              <img src="${this.recurso}" class="imagen-inCard" alt="">
+            </section>
+            <section class="texto-card">
+              <h5 class="titulo${titulo === '' ? ' titulo-vacio' : ''}" id="miTitulo">${this.titulo}</h5>
+              <p class="parrafo">
+                ${this.contenido}   
+              </p>
+            </section id="section-btn">
+            <a href="${this.link}">
+              <button class = 'btn btn_icon btn_medium btn_medium_outline_active text_button_small'>${this.boton} <i class="bi bi-arrow-right right"></i></button>   
+            </a>
+          </section>
 
         </div>
-        
-        `
-
+      `;
     }
 
 
