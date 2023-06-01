@@ -289,9 +289,11 @@ class cardImagen extends HTMLElement {
     }
 
     connectedCallback() {
-      const titulo = this.titulo.trim();
+      
+    const titulo = this.titulo.trim();
     
       this.innerHTML = `
+        <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
         <div class="supreme">
           <section class="fondo-card">
             <section class="card-imagen">
@@ -302,11 +304,9 @@ class cardImagen extends HTMLElement {
               <p class="parrafo">
                 ${this.contenido}   
               </p>
-            </section>
+            </section id="section-btn">
             <a href="${this.link}">
-              <button class="btn btn_medium btn_medium_active">
-                <h4 class="text_button_small">${this.boton}</h4>
-              </button>    
+              <button class = 'btn btn_icon btn_medium btn_medium_outline_active text_button_small'>${this.boton} <i class="bi bi-arrow-right right"></i></button>   
             </a>
           </section>
 
