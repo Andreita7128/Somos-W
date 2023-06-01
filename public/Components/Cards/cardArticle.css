@@ -613,7 +613,6 @@ h5 {
   height: auto;
   border-radius: 20px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-  padding: 35px 40px;
   margin-top: 20px;
   overflow: hidden;
   display: flex;
@@ -753,15 +752,11 @@ h5 {
   height: auto;
 }
 .fondo-card .card-imagen {
-  margin-top: -35px;
   height: -moz-fit-content;
   height: fit-content;
 }
 .fondo-card .card-imagen .imagen-inCard {
-  position: relative;
-  top: 0px;
-  left: -40px;
-  width: calc(100% + 80px);
+  width: 100%;
   height: auto;
 }
 .fondo-card .texto-card {
@@ -769,6 +764,7 @@ h5 {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
+  padding: 35px 30px;
 }
 .fondo-card .texto-card .titulo {
   color: #252B42;
@@ -786,6 +782,15 @@ h5 {
   line-height: 18px;
   color: #737373;
   line-height: 180% !important;
+}
+
+#section-btn {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+#section-btn a {
+  text-decoration: none;
 }
 
 .card_horizontal_container {
@@ -814,12 +819,6 @@ h5 {
 }
 .card_horizontal_body button {
   margin-top: 40px;
-}
-
-#section-btn {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 .title_row {

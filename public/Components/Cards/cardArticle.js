@@ -291,6 +291,8 @@ class cardImagen extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
+        <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
+
         <div class = 'supreme'>
         
         <section class="fondo-card">
@@ -298,7 +300,7 @@ class cardImagen extends HTMLElement {
             <img src= "${this.recurso}" class="imagen-inCard" alt="">
         </section>
         <section class="texto-card">
-            <h5 class="titulo">${this.titulo}</h5>
+            <h4 class="titulo">${this.titulo}</h4>
             <p class="parrafo">
             ${this.contenido}   
             </p>
