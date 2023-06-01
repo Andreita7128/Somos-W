@@ -24,7 +24,7 @@
 #redInput {
   width: 423px;
   height: 42px;
-  border-color: $color_errorBorder;
+  border-color: $color_error;
   background-color: $fill_error;
   border-radius: 48px;
 }
@@ -32,7 +32,7 @@
 #grayInput {
   width: 423px;
   height: 42px;
-  border-color: $color_greyBorder;
+  border-color: $color_grey_btn;
   background-color: #f4f4f4;
   border-radius: 48px;
 }
@@ -84,7 +84,7 @@
     width: 423px;
     height: 42px;
     border-width: 2px;
-    border-color: $color_errorBorder;
+    border-color: $color_error;
     background-color: $fill_error;
     color: #27262C;
   }
@@ -117,7 +117,7 @@
   #redInput {
     width: 29.38%;
     height: 42px;
-    border-color: $color_errorBorder;
+    border-color: $color_error;
     background-color: $fill_error;
     border-radius: 48px;
   }
@@ -125,7 +125,7 @@
   #grayInput {
     width: 29.38%;
     height: 42px;
-    border-color: $color_greyBorder;
+    border-color: $color_grey_btn;
     background-color: #f4f4f4;
     border-radius: 48px;
   }
@@ -177,7 +177,7 @@
       width: 29.38%;
       height: 42px;
       border-width: 2px;
-      border-color: $color_errorBorder;
+      border-color: $color_error;
       background-color: $fill_error;
       color: #27262C;
     }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Colors*/
 /*Various*/
 /*Blue*/
@@ -55,6 +56,123 @@ h5 {
 }
 .body_3 {
   font-size: 14px;
+}
+
+#labelHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#greenInput {
+  width: 300px;
+  height: 42px;
+  border-color: #2DC071;
+  background-color: rgba(45, 192, 113, 0.2);
+  border-radius: 48px;
+}
+
+#redInput {
+  width: 300px;
+  height: 42px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  border-radius: 48px;
+}
+
+#grayInput {
+  width: 300px;
+  height: 42px;
+  border-color: #CDCFD0;
+  background-color: #F2F2F2;
+  border-radius: 48px;
+}
+
+#inputSearch {
+  /* width: 519px;
+  height: 44px; */
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+}
+
+#inputSearch input[type=text] {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#inputSearch button {
+  background-color: #00B1BB;
+}
+
+#inputButtonSize {
+  width: 519px;
+  height: 44px;
+  background-color: #eeeeee;
+  border-radius: 22px;
+  border: none;
+  /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
+}
+#inputButtonSize #inputButtonColor {
+  height: 44px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+#dropDownStyleGreen {
+  width: 300px;
+  height: 42px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262c;
+  margin: 0px 20px;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleRed {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #EB3232;
+  background-color: rgba(235, 50, 50, 0.2);
+  color: #27262C;
+}
+
+#dropDownStyleCyan {
+  width: 423px;
+  height: 42px;
+  border-width: 2px;
+  border-color: #00B1BB;
+  background-color: rgba(0, 177, 187, 0.2);
+  color: #27262C;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -122,6 +240,16 @@ h5 {
   font-size: 12px;
 }
 
+.right {
+  margin-left: 50px;
+  margin-right: -35px;
+}
+
+.left {
+  margin-right: 50px;
+  margin-left: -35px;
+}
+
 .btn {
   height: 42px;
   border-radius: 48px;
@@ -129,6 +257,9 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.btn_icon {
+  justify-content: space-around !important;
 }
 .btn_large {
   width: auto;
@@ -179,12 +310,8 @@ h5 {
 }
 .btn_medium {
   width: auto;
-  padding: 9px 75px;
-}
-.btn_medium i {
-  position: relative;
-  margin-left: 45px;
-  margin-right: -55px;
+  height: 42px;
+  padding: 9px 55px;
 }
 .btn_medium_active {
   border: none;
@@ -202,12 +329,13 @@ h5 {
   color: #979C9E;
 }
 .btn_medium_outline {
+  background-color: #FFFFFF;
   filter: drop-shadow(0px 4px 10px rgba(0, 177, 187, 0.3));
-  background-color: transparent;
 }
 .btn_medium_outline_active {
   border: 1px solid #00B1BB;
   color: #00B1BB;
+  text-shadow: none;
 }
 .btn_medium_outline:disabled {
   border: 1px solid #CDCFD0;
@@ -268,794 +396,213 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   .btn_large {
-    width: 100%;
+    width: auto;
+    padding: 9px 65px;
   }
   .btn_medium {
-    width: 75%;
+    width: auto;
+    padding: 9px 25px;
   }
   .btn_small {
     width: 50%;
   }
 }
-#title_home {
-  display: none;
-}
-
-#carousel {
-  padding: 50px 174px;
-  display: flex;
-  align-items: center;
-}
-
-.container_carousel_text {
-  width: 50%;
-  float: left;
-}
-.container_carousel_img {
+/* Input internacional */
+/* Cajita */
+.form-group {
   width: 100%;
-  float: right;
-}
-
-#w_contigo_landing {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px 174px;
-}
-
-.card_desk {
-  margin: 50px 0px;
-}
-.card_mobile {
-  display: none;
-}
-
-#product_similar {
-  padding: 30px 174px;
-  background-color: #F2F2F2;
-}
-
-.container_all {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-.container_product_similar {
-  width: 18%;
-  height: 72px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 25px;
-  font-size: 31px;
-  border-radius: 0% !important;
-  background-color: #FAFAFA;
-  box-shadow: none !important;
-}
-.container_product_similar_active {
-  background: #2FD9DE;
-  box-shadow: 0px 3.16274px 11.0696px rgba(0, 0, 0, 0.15) !important;
-  border-radius: 20px !important;
-}
-.container_product_similar_active_text {
+  max-width: 310px;
+  height: 42px;
+  position: relative;
   display: flex;
   align-items: center;
-  text-align: center;
-  color: #27262C;
 }
-.container_all_products {
-  background-color: #FAFAFA;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 20px 28px;
-  gap: 50px;
-  width: 70%;
-  height: 112px;
-  border-radius: 20px;
+.form-group:not(.form-group_error):not(.form-group_exito):focus-within {
+  background: rgba(0, 177, 187, 0.2);
+  border: 2px solid #2FD9DE;
+}
+.form-group_error {
+  border-color: #EB3232;
+  background: rgba(235, 50, 50, 0.2);
+}
+.form-group_error:focus-within {
+  background: rgba(235, 50, 50, 0.2);
+  border: 2px solid #EB3232;
+}
+.form-group_exito {
+  border-color: #2DC071;
+  background: rgba(45, 192, 113, 0.2);
+}
+.form-group_exito:focus-within {
+  background: rgba(45, 192, 113, 0.2);
+  border: 2px solid #2DC071;
 }
 
-#container_product_select {
+/* No difiere */
+.select-container {
+  width: 80px;
+  height: 100%;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 40px 40px;
+  justify-content: center;
+  /* Se agrega para centrar verticalmente el ícono de la bandera */
+}
+
+/* Form de el country a elegir */
+.country-select {
   width: 100%;
-  height: 470px;
-  background-color: #FAFAFA;
-  box-shadow: 0px 3.16604px 11.0812px rgba(0, 0, 0, 0.15);
-  border-radius: 24px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding-left: 24px;
+  border-radius: 48px;
 }
 
-.product_selected_img {
-  width: 100%;
-}
-.product_selected_img_container {
-  width: 43%;
-}
-.product_selected_text {
+/* Contenedor de la flag */
+.flag-icon-container {
+  width: 10px;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-items: flex-start;
-  padding: 10.2457px;
-  gap: 5.12px;
-  width: 43%;
-  background-color: #FAFAFA;
-}
-
-.list_product {
-  list-style: disc inside url("marcador.png");
-}
-
-#about_profile {
-  padding: 30px 174px;
-}
-#about_profile_cards {
-  display: flex;
-  flex-direction: row;
-}
-
-.container_cards_img {
-  width: 50%;
-  margin-left: -80px;
-  float: left;
-}
-.container_cards_img_img {
-  width: 100%;
-}
-.container_cards_container_1 {
-  display: flex;
-  justify-content: space-between;
-}
-.container_cards_container_2 {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-.container_cards_all {
-  display: flex;
-  width: 55%;
-  flex-direction: column;
-  float: right;
-}
-
-.card_landing_title {
-  height: 94px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 20px 20px 0px 0px;
-}
-.card_landing_title_orange {
-  background-color: #FF8826;
-}
-.card_landing_title_violet {
-  background-color: #8E50B7;
-}
-.card_landing_title_blue {
-  background-color: #2FD9DE;
-}
-.card_landing_body {
-  display: flex;
-  justify-content: center;
-  border-radius: 20px 20px 0px 0px;
-}
-.card_landing_text {
-  margin-top: 9px;
-}
-.card_landing_small {
-  width: 255px;
-  height: 205px;
-  background: white;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  margin: 20px;
-}
-.card_landing_large {
-  height: 157px;
-  background: white;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
+  border-radius: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
 }
 
-#channels_assistance {
-  padding: 50px 174px;
+/* Icono de la flag */
+.flag-icon {
+  width: 20px;
+  height: 8px;
 }
 
-.channels_container {
-  margin-top: 50px;
-  display: flex;
-  width: 100%;
-  height: 254px;
-  background: #FAFAFA;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  justify-content: center;
-}
-.channels_container_channel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 45px;
-  margin: 30px;
-}
-.channels_container_channel_text {
-  width: 129px;
+/* Escribir dentro del imput */
+.input-number {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  border-radius: 48px;
+  margin-left: 10%;
 }
 
-.bi-person-lines-fill {
-  color: #FF8826;
-  font-size: 59px;
-}
-.bi-telephone-fill {
-  color: #00B1BB;
-}
-.bi-phone-fill {
-  color: #8E50B7;
-}
-.bi-geo-alt-fill {
-  color: #2D3982;
-}
-
-@media only screen and (max-width: 768px) {
-  #title_home {
+@media (max-width: 768px) {
+  .form-group {
     display: flex;
-    height: 100px;
-    padding: 0px 20px;
-    align-items: center;
-    background-color: #F25C05;
-    color: #FAFAFA;
-  }
-  #carousel {
-    padding: 0px;
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-  .container_carousel {
-    background-color: white;
-    padding: 20px 20px;
-    height: 100%;
-  }
-  .container_carousel_text {
-    margin: 20px 0px;
-    width: 100%;
-    float: none;
-  }
-  .container_carousel_img {
-    float: none;
-  }
-  .container_carousel_img_bg {
-    background-color: #FFB67D;
-  }
-  #w_contigo_landing {
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 20px;
-  }
-  .card_desk {
-    display: none;
-  }
-  .card_mobile {
-    display: flex;
-  }
-  #product_similar {
-    padding: 30px 0px;
-    background-color: white;
-  }
-  #product_similar h3 {
-    margin: 0px 20px;
-  }
-  .container_all {
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    flex-direction: column;
-  }
-  .container_all_products {
-    margin-top: 20px;
-    background-color: #FAFAFA;
-    width: 100%;
-    height: 80px;
-    padding: 42px 20px;
-    display: flex;
+    /* Utilizar flexbox para disposición */
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    /* Especificar la dirección de fila o columna según las necesidades */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* Especificar columnas de ancho flexible */
   }
-  .container_product_similar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    width: 154px;
+  .country-select {
+    font-size: 16px;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  .input-number {
+    margin-left: 16%;
+    font-size: 16px;
+    width: 100%;
+    /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+  #greenInput {
+    width: 29.38%;
     height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(45, 192, 113, 0.2);
     border-radius: 48px;
-    box-shadow: none;
-    margin-right: 20px;
   }
-  .container_product_similar_active {
+  #redInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    border-radius: 48px;
+  }
+  #grayInput {
+    width: 29.38%;
+    height: 42px;
+    border-color: #CDCFD0;
+    background-color: #f4f4f4;
+    border-radius: 48px;
+  }
+  #inputSearch {
+    /* width: 519px;
+    height: 44px; */
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+  }
+  #inputSearch input[type=text] {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  #inputSearch button {
     background-color: #00B1BB;
-    box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
   }
-  .container_product_similar_active_text {
-    color: #FAFAFA;
+  #inputButtonSize {
+    width: 25.93%;
+    height: 44px;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    border: none;
+    /*   Lo que esta haciendo esto es ajustar el tamano y cerrando bordes del input con boton */
   }
-  .container_product_similar_text {
-    color: #00B1BB;
+  #inputButtonColor {
+    height: 44px;
+    border: none;
+    background-color: #eeeeee;
   }
-  #container_product_select {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    float: right;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    box-shadow: none;
-    border-radius: 0px;
+  #dropDownStyleGreen {
+    width: 29.38%;
+    height: 42px;
+    border-color: #2DC071;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262c;
   }
-  .credit_text {
-    color: #FF8826;
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
   }
-  .product_selected_img {
-    width: 100%;
-    float: none;
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
   }
-  .product_selected_text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    background: white;
-    flex: none;
+  #dropDownStyleRed {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #EB3232;
+    background-color: rgba(235, 50, 50, 0.2);
+    color: #27262C;
   }
-  #about_profile {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-  #about_profile_cards {
-    display: flex;
-    flex-direction: column;
-  }
-  .container_cards_img {
-    margin-left: 0px;
-    float: left;
-  }
-  .container_cards_img_img {
-    width: 100%;
-  }
-  .container_cards_container_1 {
-    display: flex;
-    justify-content: space-between;
-  }
-  .container_cards_container_2 {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-  .container_cards_all {
-    display: flex;
-    width: 55%;
-    flex-direction: column;
-    justify-content: space-between;
-    float: none;
-  }
-  .card_landing_title {
-    height: 182px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px 20px 0px 0px;
-  }
-  .card_landing_title_orange {
-    background-color: #FAFAFA;
-    color: #FF8826;
-  }
-  .card_landing_title_violet {
-    background-color: #FAFAFA;
-    color: #8E50B7;
-  }
-  .card_landing_title_blue {
-    background-color: #FAFAFA;
-    color: #2FD9DE;
-  }
-  .card_landing_body {
-    display: flex;
-    justify-content: center;
-    border-radius: 20px 20px 0px 0px;
-  }
-  .card_landing_text {
-    margin-top: 9px;
-  }
-  .card_landing_small {
-    width: 42%;
-    height: 182px;
-    background: white;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    margin: 20px;
-  }
-  .card_landing_large {
-    height: 157px;
-    background: white;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
+  #dropDownStyleCyan {
+    width: 29.38%;
+    height: 42px;
+    border-width: 2px;
+    border-color: #00B1BB;
+    background-color: rgba(0, 177, 187, 0.2);
+    color: #27262C;
   }
 }
-@media screen and (max-width: 3000px) {
-  #regresa_main {
-    transform: scale(0.8);
-    margin-left: -20px;
-  }
-  .salvavidas-logo {
-    height: 100px;
-    width: 100px;
-    filter: drop-shadow(0px 9px 14px rgba(146, 60, 60, 0));
-    transition: filter 0.2 ease;
-  }
-  .salvavidas-logo :hover {
-    filter: drop-shadow(0px 9px 14px rgba(197, 78, 78, 0.25));
-  }
-  .lista-botones {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .encabezado {
-    display: flex;
-    color: #00B1BB;
-    gap: 5px;
-  }
-  .x {
-    transform: scale(1.3);
-  }
-  #salvalogo:hover {
-    transform: scaleX(1.05) scaleY(1.05);
-  }
-  #content-in-help {
-    text-decoration: none;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    width: 400px;
-    height: 0px;
-    opacity: 0;
-    visibility: hidden;
-    background-color: #FFF;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    padding: 10Px;
-    transition: all 400ms ease;
-  }
-  #content-in-help::-webkit-scrollbar {
-    background: gainsboro;
-    border-radius: 7px;
-    visibility: hidden;
-  }
-  #content-in-help::-webkit-scrollbar-thumb {
-    background: rgb(192, 192, 192);
-    border-radius: 5px;
-  }
-  #btn-plus:checked ~ #content-in-help {
-    opacity: 1;
-    visibility: visible;
-    bottom: 140px;
-    right: 40px;
-    height: auto;
-    max-height: 618px;
-    width: 350px;
-    z-index: 1;
-  }
-  #btn-plus {
-    display: none;
-  }
-  .contenedor {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  .saludo-salva {
-    display: flex;
-    align-items: center;
-  }
-  .saludo-salva p {
-    width: 200px;
-  }
-  #just-fill {
-    background: rgba(39, 38, 44, 0.3);
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
-    height: 1720px;
-    width: auto;
-    background-color: blueviolet;
-  }
-  #just-to-know {
-    height: 22px;
-    width: 80%;
-    background-color: #03A1AE;
-    border-radius: 24px;
-    border: none;
-    margin: auto 35px auto 30px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 24px;
-    color: #FFFFFF;
-  }
-  .search-in-salvavidas {
-    padding: auto;
-    position: relative;
-  }
-  #search-bar-salvavidas {
-    width: 90%;
-    height: 21px;
-    margin-top: 10px;
-    margin-left: 17px;
-    border-color: rgb(240, 240, 240);
-    border-radius: 20px;
-    border-style: solid;
-    padding-left: 20px;
-    padding-right: 7px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 9px;
-    line-height: 24px;
-    color: #979C9E;
-    background-color: #eee;
-  }
-  .title-salvavidas-preguntas {
-    width: 200;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 10px;
-    line-height: 120%;
-    color: #000000;
-  }
-  #preguntas-frecuentes-titulo {
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  #preguntas-frecuentes-sugerencias {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .pregunta-frecuente-salvavidas {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 9.37418px;
-    line-height: 12px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    /* Azul/main */
-    color: #00B1BB;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4.68709px 8.3326px;
-    gap: 51.56px;
-    width: 80%;
-    height: 22px;
-    /* Azul/main */
-    border: 0.520788px solid #00B1BB;
-    filter: drop-shadow(0px 2.08315px 5.20788px rgba(0, 177, 187, 0.3));
-    border-radius: 24.9978px;
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin-bottom: 11px;
-  }
-  #info-salvalogo {
-    width: 85%;
-    height: 280px;
-    background: #FFFFFF;
-    box-shadow: 0px 1.59881px 5.59582px rgba(0, 0, 0, 0.15);
-    border-radius: 5.17391px;
-    margin: auto;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-  #tittle-info-salvalogo {
-    margin-top: 15px;
-    margin-left: 10px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12.4174px;
-    line-height: 120%;
-    color: #6321A6;
-  }
-  .texto-en-info {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 9.31304px;
-    line-height: 155.5%;
-    color: #000000;
-  }
-  #info-salvalogo img {
-    margin: 10px 40px auto 40px;
-  }
-  .titulomicro {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    /* or 29px */
-    display: flex;
-    align-items: center;
-    /* Violeta/main */
-    color: #6321A6;
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-  .contenidomicro {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 155.5%;
-    /* or 28px */
-    display: flex;
-    align-items: center;
-    color: #000000;
-    max-width: 380px;
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-  .imagenesmicro {
-    align-items: center;
-    margin-top: 15px;
-    display: flex;
-    gap: 20px;
-  }
-  .search_button {
-    width: 15% !important;
-    height: 35px !important;
-    background-color: #00B1BB !important;
-    color: #F2F2F2;
-    border-radius: 0% 48px 48px 0% !important;
-    margin: 0 !important;
-  }
-  .search_button:hover {
-    background-color: white !important;
-    color: #00B1BB !important;
-  }
-  .form-control {
-    margin-right: 0 !important;
-    border-radius: 48px 0px 0px 48px;
-    padding-left: 10px;
-  }
-  .placeholder-input-desktop {
-    width: 189px;
-    height: 35px;
-    border: none;
-    background-color: #F2F4F5;
-  }
-  .hidden-title {
-    visibility: hidden;
-  }
-  .header-chat {
-    background-color: #2FD9DE;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  .header-chat p {
-    margin: 0;
-  }
-  .header-chat i {
-    margin-right: 10px;
-    font-size: 24px;
-  }
-  .header-contenido {
-    display: flex;
-    align-items: center;
-  }
-  .pregunta-chat {
-    margin-right: 0px;
-  }
-  .comment {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    margin: 10px;
-  }
-  .profile-pic {
-    width: 51px;
-    height: 51px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  .comment-body {
-    background-color: #f2f2f2;
-    width: auto;
-    height: auto;
-    max-width: 282px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding: 10px;
-    border-radius: 9px;
-  }
-  .respuesta .comment-body {
-    max-width: 282px;
-    margin-right: 10px;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  /* Nueva clase para respuesta */
-  .respuesta {
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  .banco-pic {
-    width: 51px;
-    height: 51px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-  .botonayuda-div {
-    display: flex;
-    justify-content: center;
-    margin-right: -25px;
-  }
-  .inputchatsalvavidas {
-    border-top: 2px #00B1BB;
-    border-style: solid none none none;
-    width: 100%;
-    height: 45px;
-    background-color: #FAFAFA;
-    text-align: start;
-    color: #303233;
-  }
-  .inputchatsalvavidas::-moz-placeholder {
-    color: #979C9E;
-  }
-  .inputchatsalvavidas::placeholder {
-    color: #979C9E;
-  }
-=======
 .salvavidas-logo {
   height: 100px;
   width: 100px;
@@ -1434,23 +981,11 @@ h5 {
   margin-right: -25px;
 }
 
-.inputchatsalvavidas {
-  border-top: 2px #00B1BB;
-  border-style: solid none none none;
-  width: 100%;
-  height: 45px;
-  background-color: #FAFAFA;
-  text-align: start;
-  color: #303233;
-}
-
-.inputchatsalvavidas::-moz-placeholder {
-  color: #979C9E;
-}
-@media screen and (max-width: 550px) {
-  .hidden-title {
-    visibility: visible;
-    height: 0px;
+@media screen and (max-width: 3000px) {
+  #regresa_main {
+    transform: scale(0.8);
+    margin-top: 15px;
+    margin-left: -35px;
   }
   .salvavidas-logo {
     height: 100px;
@@ -1460,6 +995,393 @@ h5 {
   }
   .salvavidas-logo :hover {
     filter: drop-shadow(0px 9px 14px rgba(197, 78, 78, 0.25));
+  }
+  .lista-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .encabezado {
+    display: flex;
+    color: #00B1BB;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  .x {
+    transform: scale(1.3);
+  }
+  #salvalogo:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+  }
+  #content-in-help {
+    text-decoration: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 400px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #FFF;
+    overflow-x: hidden;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: all 400ms ease;
+    padding: 20px;
+    padding-top: 0px;
+  }
+  #content-in-help::-webkit-scrollbar {
+    background: gainsboro;
+    border-radius: 7px;
+    visibility: hidden;
+  }
+  #content-in-help::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192);
+    border-radius: 5px;
+  }
+  #btn-plus:checked ~ #content-in-help {
+    opacity: 1;
+    visibility: visible;
+    bottom: 140px;
+    right: 40px;
+    height: auto;
+    max-height: 618px;
+    width: 350px;
+    z-index: 1;
+  }
+  #btn-plus {
+    display: none;
+  }
+  .contenedor {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .saludo-salva {
+    display: flex;
+    align-items: center;
+  }
+  .saludo-salva p {
+    width: 200px;
+  }
+  #just-fill {
+    background: rgba(39, 38, 44, 0.3);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    height: 1720px;
+    width: auto;
+    background-color: blueviolet;
+  }
+  #just-to-know {
+    height: 22px;
+    width: 80%;
+    background-color: #03A1AE;
+    border-radius: 24px;
+    border: none;
+    margin: auto 35px auto 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .search-in-salvavidas {
+    padding: auto;
+    position: relative;
+  }
+  #search-bar-salvavidas {
+    width: 90%;
+    height: 21px;
+    margin-top: 10px;
+    margin-left: 17px;
+    border-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 7px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 24px;
+    color: #979C9E;
+    background-color: #eee;
+  }
+  .title-salvavidas-preguntas {
+    width: 200;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 10px;
+    line-height: 120%;
+    color: #000000;
+  }
+  #preguntas-frecuentes-titulo {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #preguntas-frecuentes-sugerencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .pregunta-frecuente-salvavidas {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9.37418px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Azul/main */
+    color: #00B1BB;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.68709px 8.3326px;
+    gap: 51.56px;
+    width: 80%;
+    height: 22px;
+    /* Azul/main */
+    border: 0.520788px solid #00B1BB;
+    filter: drop-shadow(0px 2.08315px 5.20788px rgba(0, 177, 187, 0.3));
+    border-radius: 24.9978px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-bottom: 11px;
+  }
+  #info-salvalogo {
+    width: 85%;
+    height: 280px;
+    background: #FFFFFF;
+    box-shadow: 0px 1.59881px 5.59582px rgba(0, 0, 0, 0.15);
+    border-radius: 5.17391px;
+    margin: auto;
+    overflow: hidden;
+  }
+  #tittle-info-salvalogo {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.4174px;
+    line-height: 120%;
+    color: #6321A6;
+  }
+  .texto-en-info {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.31304px;
+    line-height: 155.5%;
+    color: #000000;
+  }
+  #info-salvalogo img {
+    margin: 10px 40px auto 40px;
+  }
+  .titulomicro {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    display: flex;
+    align-items: center;
+    /* Violeta/main */
+    color: #6321A6;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .contenidomicro {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155.5%;
+    /* or 28px */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    max-width: 380px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .imagenesmicro {
+    align-items: center;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+  }
+  .search_button {
+    width: 15% !important;
+    height: 35px !important;
+    background-color: #00B1BB !important;
+    color: #F2F2F2;
+    border-radius: 0% 48px 48px 0% !important;
+    margin: 0 !important;
+  }
+  .search_button:hover {
+    background-color: white !important;
+    color: #00B1BB !important;
+  }
+  .form-control {
+    margin-right: 0 !important;
+    border-radius: 48px 0px 0px 48px;
+    padding-left: 10px;
+  }
+  .placeholder-input-desktop {
+    width: 189px;
+    height: 35px;
+    border: none;
+    background-color: #F2F4F5;
+  }
+  .hidden-title {
+    visibility: hidden;
+  }
+  .not-hidden {
+    visibility: visible !important;
+    padding: 20px 20px;
+    width: calc(100% + 40px);
+    border-radius: 10px 10px 0px 0px;
+    height: 50px;
+    margin-left: -20px;
+    background-color: #2FD9DE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-chat {
+    background-color: #2FD9DE;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .header-chat p {
+    margin: 0;
+  }
+  .header-chat i {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  .header-contenido {
+    display: flex;
+    align-items: center;
+  }
+  .pregunta-chat {
+    margin-right: 0px;
+  }
+  .comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin: 10px;
+  }
+  .profile-pic {
+    width: 51px;
+    height: 51px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .comment-body {
+    background-color: #f2f2f2;
+    width: auto;
+    height: auto;
+    max-width: 282px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 10px;
+    border-radius: 9px;
+  }
+  .respuesta .comment-body {
+    max-width: 80%;
+    margin-right: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  /* Nueva clase para respuesta */
+  .respuesta {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .banco-pic {
+    width: 51px;
+    height: 51px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .botonayuda-div {
+    display: flex;
+    justify-content: center;
+    margin-right: -25px;
+  }
+  .inputchatsalvavidas {
+    border-top: 2px #00B1BB;
+    border-style: solid none none none;
+    width: 100%;
+    height: 45px;
+    background-color: #FAFAFA;
+    text-align: start;
+    color: #303233;
+  }
+  .inputchatsalvavidas::-moz-placeholder {
+    color: #979C9E;
+  }
+  .inputchatsalvavidas::placeholder {
+    color: #979C9E;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hidden-title {
+    visibility: visible;
+    padding: 20px 20px;
+    width: calc(100% + 40px);
+    border-radius: 10px 10px 0px 0px;
+    height: 50px;
+    margin-left: -20px;
+    background-color: #2FD9DE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .salvavidas-logo {
+    height: 100px;
+    width: 100px;
+    filter: drop-shadow(0px 9px 14px rgba(146, 60, 60, 0));
+    transition: filter 0.2 ease;
+  }
+  .salvavidas-logo :hover {
+    filter: drop-shadow(0px 9px 14px rgba(197, 78, 78, 0.25));
+  }
+  .encabezadoseccion {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   .lista-botones {
     display: flex;
@@ -1483,10 +1405,7 @@ h5 {
     opacity: 0;
     visibility: hidden;
     background-color: #FFF;
-    overflow-y: scroll;
-    overflow-x: hidden;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    padding: 10px;
     transition: all 400ms ease;
   }
   #content-in-help::-webkit-scrollbar {
@@ -1609,7 +1528,6 @@ h5 {
     border-radius: 5.17391px;
     margin: auto;
     overflow: hidden;
-    overflow-y: scroll;
   }
   #tittle-info-salvalogo {
     margin-top: 15px;
@@ -1739,7 +1657,7 @@ h5 {
     border-radius: 9px;
   }
   .respuesta .comment-body {
-    max-width: 282px;
+    max-width: 80%;
     margin-right: 10px;
     width: -moz-fit-content;
     width: fit-content;
@@ -1747,6 +1665,7 @@ h5 {
   /* Nueva clase para respuesta */
   .respuesta {
     flex-direction: row-reverse;
+    justify-content: start;
     align-items: center;
   }
   .banco-pic {
@@ -1781,4 +1700,5 @@ h5 {
   #regresa_main {
     transform: scale(0.789);
   }
+
 }/*# sourceMappingURL=salvavidas.css.map */

@@ -12,17 +12,22 @@
 section {
 
     &.portada {
-        margin-top: 10px;
-        margin-bottom: 40px;
+        margin-top: 3%;
+        padding-left: 175px;
+        margin-bottom: 5%;
     }
 
     & .style_better {
-        margin-top: 80px;
+        margin-top: 10%;
+        width: 518px;
     }
 
     & h3 {
         font-weight: 500;
         font-size: 20px;
+    }
+    &.container_text{
+        width: 486px;
     }
 }
 
@@ -36,7 +41,7 @@ section {
     }
 
     .marginis {
-        margin-left: 0px !important;
+        margin-left: 50% !important;
     }
 
     .desaparecer {
@@ -45,38 +50,20 @@ section {
 
 }
 
-#bread_lv {
-    &1::after {
-        content: "Inicio";
-        color: #6321A6;
+@media (max-width: 800px) {
+    .img_banner{
+        width: auto;
+        margin-left: 0%;
+    
     }
+  
 
-    &2::after {
-        content: "Seguros";
-        color: #6321A6;
-    }
-
-    &3::after {
-        content: "Seguro soy vida";
-        color: #6321A6;
-        font-weight: bold;
-    }
+.marginis{
+    flex: 0 0 100% !important;
+    margin-left: 0% !important;
+}
 }
 
-.breadcrumb-item span {
-    display: none;
-}
-
-#bread_title {
-    &::after {
-        content: "Seguro soy vida";
-        color: #F25C05;
-    }
-
-    span {
-        display: none;
-    }
-}
 .sidebar-container{
     position: sticky;
     top: 30px;

@@ -7,7 +7,9 @@ body{
 
 /* ************************************************************************************** */
 
-
+.navbar-dark .navbar-nav .nav-link {
+  color: $color_orange1 !important;
+}
 //BreadCrumb
 #bread_lv{
     &1::after{
@@ -204,9 +206,14 @@ body{
   }
 
   .giros-sontainer-section{
+
+    background-color: #35cbd3;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
   }
 
   .user-giros-container {
