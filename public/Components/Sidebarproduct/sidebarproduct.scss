@@ -16,7 +16,7 @@
         color: $color_base_white !important;
     }
     & :active{
-        background-color: $color_blue1;
+        background-color: $color_blue1 !important;
         color: $color_base_white !important;
     }
 }
@@ -33,5 +33,9 @@
     margin-left: 24px;
     margin-top: 50%;
 }
-
-
+.list_active{
+    &:active{
+        background-color: $color_blue1 !important;
+        color: $color_base_white !important;
+    }
+}

@@ -616,7 +616,7 @@ h5 {
   color: #F2F2F2 !important;
 }
 .btn-sidebar :active {
-  background-color: #00B1BB;
+  background-color: #00B1BB !important;
   color: #F2F2F2 !important;
 }
 
@@ -629,4 +629,9 @@ h5 {
   width: 100%;
   margin-left: 24px;
   margin-top: 50%;
+}
+
+.list_active:active {
+  background-color: #00B1BB !important;
+  color: #F2F2F2 !important;
 }/*# sourceMappingURL=sidebarproduct.css.map */
