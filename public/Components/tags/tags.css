@@ -703,8 +703,9 @@ p {
   color: #F25C05;
 }
 #breadcrumb-title-section {
+  height: 100px;
   background-color: #FAFAFA;
-  padding: 14px 12%;
+  padding: 20px 12%;
   border-radius: 0 0 20px 20px;
 }
 

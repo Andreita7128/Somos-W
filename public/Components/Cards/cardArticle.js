@@ -289,31 +289,29 @@ class cardImagen extends HTMLElement {
     }
 
     connectedCallback() {
-
-        this.innerHTML = `
-        <div class = 'supreme'>
-        
-        <section class="fondo-card">
-        <section class="card-imagen">
-            <img src= "${this.recurso}" class="imagen-inCard" alt="">
-        </section>
-        <section class="texto-card">
-            <h5 class="titulo">${this.titulo}</h5>
-            <p class="parrafo">
-            ${this.contenido}   
-            </p>
-        </section>
-        <section id="section-btn">
-        <a href="${this.link}">
-          <button class = 'btn btn_icon btn_medium btn_medium_outline_active text_button_small'>${this.boton} <i class="bi bi-arrow-right right"></i></button>    
-        </a>
-    </section>
-    </section>
+      const titulo = this.titulo.trim();
+    
+      this.innerHTML = `
+        <div class="supreme">
+          <section class="fondo-card">
+            <section class="card-imagen">
+              <img src="${this.recurso}" class="imagen-inCard" alt="">
+            </section>
+            <section class="texto-card">
+              <h5 class="titulo${titulo === '' ? ' titulo-vacio' : ''}" id="miTitulo">${this.titulo}</h5>
+              <p class="parrafo">
+                ${this.contenido}   
+              </p>
+            </section>
+            <a href="${this.link}">
+              <button class="btn btn_medium btn_medium_active">
+                <h4 class="text_button_small">${this.boton}</h4>
+              </button>    
+            </a>
+          </section>
 
         </div>
-        
-        `
-
+      `;
     }
 
 

@@ -129,8 +129,9 @@ p {
             color: $color_orange1;
 
         &-section {
+            height: 100px;
             background-color: $color_accent_white;
-            padding: 14px 12%;
+            padding: 20px 12%;
             border-radius: 0 0 20px 20px;
         }
     }
