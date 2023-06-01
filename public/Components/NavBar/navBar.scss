@@ -49,6 +49,11 @@
     border-radius: 48px 0px 0px 48px;
 }
 
+.navbar-margin {
+    margin-bottom: 0px; /* Puedes ajustar este valor según tus necesidades */
+  }
+  
+
 .placeholder-input-desk {
     width: 423px;
     height: 42px;
@@ -58,6 +63,7 @@
 }
 .first-nav{
     background-color: $color_accent_white !important;
+    margin-bottom: 80px !important;
 }
 .second_nav {
     background-color: $color_base_white !important;

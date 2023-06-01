@@ -210,10 +210,12 @@ class NavBar extends HTMLElement {
             </div>
         </div>
     </nav>
+    <div class="navbar-margin"></div>
     
 
 
       `;
+      
       setTimeout(() => {
         const dropdownToggle = this.querySelector('.redirect-unique');
         const dropdownMenu = dropdownToggle.nextElementSibling;
