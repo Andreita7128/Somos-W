@@ -602,30 +602,4 @@ h5 {
     background-color: rgba(0, 177, 187, 0.2);
     color: #27262C;
   }
-}
-.btn-sidebar {
-  width: 100% !important;
-  height: auto;
-  color: #2FD9DE !important;
-  border: 1px solid !important;
-  border-color: #2FD9DE;
-  margin-bottom: 16px;
-}
-.btn-sidebar:hover {
-  background-color: #00B1BB;
-  color: #F2F2F2 !important;
-}
-.btn-sidebar :active {
-  background-color: #00B1BB;
-  color: #F2F2F2 !important;
-}
-
-.list-group {
-  height: calc(100vh - 100px);
-  overflow-y: auto;
-}
-
-.tam-sidebar {
-  width: 100%;
-  margin-left: 24px;
-}/*# sourceMappingURL=sidebarproduct.css.map */
+}/*# sourceMappingURL=credits.css.map */

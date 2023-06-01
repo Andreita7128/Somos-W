@@ -65,39 +65,6 @@ section {
     border-radius: 25px;
 }
 
-#bread_lv {
-    &1::after {
-        content: "Inicio";
-        color: #6321A6;
-    }
-
-    &2::after {
-        content: "Créditos";
-        color: #6321A6;
-    }
-
-    &3::after {
-        content: "Microcrédito";
-        color: #6321A6;
-        font-weight: bold;
-    }
-}
-
-.breadcrumb-item span {
-    display: none;
-}
-
-#bread_title {
-    &::after {
-        content: "Microcrédito";
-        color: #F25C05;
-    }
-
-    span {
-        display: none;
-    }
-}
-
 .dropdown_W {
     background-color: white;
     color: $color_blue1;

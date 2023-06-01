@@ -1,46 +1,5 @@
 @import '../style.scss';
 
-
-#bread_lv {
-    &1::after {
-        content: "Inicio";
-    }
-
-    &2::after {
-        content: "Comunidad W";
-    }
-
-    &3::after {
-        content: "W Contigo";
-    }
-}
-
-.breadcrumb {
-    color: $color_violet1 !important;
-}
-
-.breadcrumb-item span {
-    display: none;
-}
-
-#bread_title {
-    &::after {
-        content: "W Contigo";
-        color: $color_orange1 !important;
-    }
-
-    span {
-        display: none;
-    }
-}
-
-.breadcrumb_section {
-    margin: 15px 12%;
-}
-
-#breadcrumb_title {
-}
-
 #share {
     display: flex;
     flex-direction: row;

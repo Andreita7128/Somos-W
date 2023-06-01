@@ -30,9 +30,9 @@
                 </a>
             <div class="d-flex justify-content-center align-items-center">
                 <form id = 'search-1' class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-2 placeholder-input-desktop headline5" type="search"
+                    <input class="form-control me-2 placeholder-input-desk headline5" type="search"
                     placeholder="¿Que estas buscando?" aria-label="Search">
-                <button class="btn btn_large_active search_button " type="submit"><i class="bi bi-search"></i></button>
+                <button class="btn btn_large_active search_button_desk " type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -42,7 +42,7 @@
                         class="bi bi-telephone"></i>Canal de atención</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn_medium btn_medium_active text_button_medium nav_btn" style="margin-left: 10px;"
+                        <a id = "perfil-link" class="btn btn_medium btn_medium_active text_button_medium nav_btn" style="margin-left: 10px;"
                         href="../../../Registro/iniciarSesión.html"><i class="bi bi-person"></i>Mi perfil W</a>
                     </li>
                 </ul>
@@ -51,7 +51,7 @@
     </nav>
     
         <nav class="navbar navbar-expand-lg navbar-dark  second_nav">
-            <div class="container-fluid mx-auto ">
+            <div class="container-fluid mx-auto background_responsive_navbar">
                 <a class="navbar-brand d-md-none" href="#">
                 <img class="logo1" src="/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
                 </a>
@@ -65,17 +65,18 @@
                 <form id="search-2" class="d-md-none d-flex mx-auto my-2 my-lg-0">
                     <input class="form-control me-2 placeholder-input-mobile mx-auto" type="search"
                     placeholder="¿Que estas buscando?" aria-label="Search">
-                    <button class="btn btn_large search_button " type="submit"><i class="bi bi-search"></i></button>
+                    <button class="btn btn_large search_button_mobile " type="submit"><i class="bi bi-search icon_search"></i></button>
                 </form>
+                <li class="nav-item d-md-none d-block">
+                <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
+                href="../../../Registro/iniciarSesión.html">Mi perfil W</a>
+            </li>
+            <li class="nav-item d-md-none d-block">
+                <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
+                href="#">Canales de atención</a>
+            </li>
                 <ul class="navbar-nav mx-auto second_nav_link">
-                    <li class="nav-item d-md-none d-block">
-                        <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
-                        href="../../../Registro/iniciarSesión.html">Mi perfil W</a>
-                    </li>
-                    <li class="nav-item d-md-none d-block">
-                        <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
-                        href="#">Canales de atención</a>
-                    </li>
+                
                     <li class="nav-item border-bottom-gg">
                         <a class="nav-link" href="../../../landing.html">Inicio</a>
                     </li>
@@ -86,7 +87,7 @@
                         <a class="nav-link dropdown-toggle nav-link-pressed" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../../../Creditos/all-credits.html">Todos</a>
+                            <a class="dropdown-item" href="../../../Creditos/All/all-credits.html">Todos</a>
                             <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
                             <a class="dropdown-item" href="#">Yo construyo</a>
                             <a class="dropdown-item" href="#">Gotahorro</a>
@@ -100,7 +101,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"> Seguros </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../../../Seguros/seguros.html">Seguro soy vida</a>
+                            <a class="dropdown-item" href="../../../Seguros/soy-vida.html">Seguro soy vida</a>
                             <a class="dropdown-item" href="#">Seguro soy protección familiar</a>
                             <a class="dropdown-item" href="#">Seguro soy patrimonio seguro</a>
                             <a class="dropdown-item" href="#">Seguro soy previsión exequial</a>
@@ -141,6 +142,18 @@
     </nav>
 
         `
+        const perfilLink = this.querySelector('#perfil-link');
+
+        // Obtener el valor de sesionActiva del localStorage
+        const sesionActiva = sessionStorage.getItem('sesionActiva');
+      
+        if (sesionActiva === 'true') {
+          // Si la sesión está activa, cambiar el enlace a otro destino
+          perfilLink.href = '../../..//Perfil/perfil.html';
+        } else {
+          // Si la sesión no está activa, mantener el enlace original
+          perfilLink.href = '../../../Registro/iniciarSesión.html';
+        }
     }
 
     setupSearchForm(){
@@ -167,6 +180,11 @@
         }
         }
     }
+
+    
+
+
+    
 
 }
 

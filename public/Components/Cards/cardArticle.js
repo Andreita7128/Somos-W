@@ -309,6 +309,7 @@ class cardImagen extends HTMLElement {
               </button>    
             </a>
           </section>
+
         </div>
       `;
     }
