@@ -12,17 +12,22 @@
 section {
 
     &.portada {
-        margin-top: 10px;
-        margin-bottom: 40px;
+        margin-top: 3%;
+        padding-left: 175px;
+        margin-bottom: 5%;
     }
 
     & .style_better {
-        margin-top: 80px;
+        margin-top: 10%;
+        width: 518px;
     }
 
     & h3 {
         font-weight: 500;
         font-size: 20px;
+    }
+    &.container_text{
+        width: 486px;
     }
 }
 
@@ -46,6 +51,11 @@ section {
 }
 
 @media (max-width: 800px) {
+    .img_banner{
+        width: auto;
+        margin-left: 0%;
+    
+    }
   
 
 .marginis{

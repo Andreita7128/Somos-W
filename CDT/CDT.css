@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #bannerTop {
   display: flex;
   size: 20%;
@@ -7,9 +8,14 @@
   background-color: white;
 }
 
-.marginis{
-  flex: 0 0 50% ;
+.separar-cards {
+  scroll-margin-top: 150px !important;
 }
+
+.marginis {
+  flex: 0 0 50%;
+}
+
 #CTAText {
   padding: 10%;
   /* font-family: 'Montserrat', sans-serif;
@@ -27,19 +33,16 @@
     size: 100%;
     padding: 0;
   }
-
   #CTAText {
     font-size: 16px;
   }
-
   #CTAimg {
     width: 100%;
   }
-  .marginis{
-    flex: 0 0 100% !;
+  .marginis {
+    flex: 0 0 100%;
+  }
 }
-}
-
 #cardsInfoCDT {
   display: flex;
   flex-direction: row;
@@ -58,6 +61,5 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  
 }
 

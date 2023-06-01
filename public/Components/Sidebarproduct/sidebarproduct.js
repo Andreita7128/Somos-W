@@ -15,6 +15,8 @@ class Sidebarproduct extends HTMLElement {
     this.locations = this.getAttribute('locations')?.split(',') || this.defaultAttributeValue('locations').split(',');
     this.buttonNames = this.getAttribute('button-names')?.split(',') || this.defaultAttributeValue('button-names').split(',');
     this.render();
+
+    
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
