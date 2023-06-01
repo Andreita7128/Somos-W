@@ -312,6 +312,7 @@ h5 {
   width: auto;
   height: 42px;
   padding: 9px 55px;
+
 }
 .btn_medium_active {
   border: none;
@@ -603,6 +604,10 @@ h5 {
     color: #27262C;
   }
 }
+.titulo-vacio {
+  margin-top: -45px !important;
+}
+
 .imagefondo {
   max-width: 328px !important;
 }
