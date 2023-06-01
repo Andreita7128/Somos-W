@@ -15,7 +15,6 @@
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-    padding: 35px 40px;
     margin-top: 20px;
     overflow: hidden;
     display: flex;
@@ -211,15 +210,10 @@
     }
 
     & .card-imagen {
-
-        margin-top: -35px;
         height: fit-content;
 
         & .imagen-inCard {
-            position: relative;
-            top: 0px;
-            left: -40px;
-            width: calc(100% + 80px);
+            width: 100%;
             height: auto;
         }
     }
@@ -227,13 +221,11 @@
 
 
     & .texto-card {
-
-
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
         gap: 18px;
+        padding: 35px 30px;
 
 
         & .titulo {
@@ -258,6 +250,17 @@
         }
     }
 }
+
+#section-btn {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
 
 
 // ----------------------------------------------------
@@ -298,11 +301,6 @@
     }
 }
 
-#section-btn {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
 
 //-----------------------------------------------------------------------------------------------------
 

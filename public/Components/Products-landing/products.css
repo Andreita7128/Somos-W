@@ -603,66 +603,72 @@ h5 {
     color: #27262C;
   }
 }
-main {
-  padding: 25px 12% 0px 12%;
+.nav-pills {
+  width: 87.5%;
+  padding: 0px 4%;
+  justify-content: space-between;
 }
 
-#banner {
-  display: flex;
-  flex-direction: row;
-}
-#banner h1 {
-  color: #27262C;
-}
-#banner p {
-  color: #27262C;
-}
-#banner img {
-  width: 50%;
-}
-
-.banner_text {
-  width: 48%;
-  margin-top: 115px;
-}
-
-#credits_cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4.7%;
-  margin: 100px 0px;
-}
-
-.container_card {
-  width: 30%;
-  margin-top: 20px;
-}
-
-#tips {
+.container_product_similar {
+  height: 100px;
   display: flex;
   flex-direction: column;
-  margin: 0px -20%;
-  height: 750px;
-  padding: 40px 20%;
-  background: #BDF0F2;
-}
-#tips h3 {
-  color: #27262C;
-}
-#tips p {
-  color: #27262C;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 25px;
+  --bs-nav-pills-link-active-bg: $color_accent_white;
+  --bs-nav-pills-link-active-color: #27262C;
+  --bs-nav-pills-border-radius: 20px 20px 0px 0px;
+  --bs-nav-link-color: #27262C;
+  --bs-nav-pills-link-active-bg: #FAFAFA;
 }
 
-.container_buttons {
+i {
+  font-size: 25px;
+}
+
+.tab-content {
+  margin-top: -20px;
+}
+
+#container_product_select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 9.2%;
+  width: 87.5%;
+  height: auto;
+  background-color: #FAFAFA;
+  box-shadow: 0px 3.16604px 11.0812px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  gap: 4.6%;
+}
+
+.product_selected_img {
+  width: 46.07%;
+}
+.product_selected_text {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 24px;
-  margin-left: 20%;
-  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 5.12px;
+  width: 48, 34%;
+  background-color: #FAFAFA;
+}
+.product_selected_text h5 {
+  color: #2D3982;
+}
+.product_selected_text h4 {
+  color: #2FD9DE;
+}
+.product_selected_text li {
+  color: #27262C;
+  margin: 7px 0px;
 }
 
-footer {
-  margin: 0px;
-}/*# sourceMappingURL=credits.css.map */
+.list_product {
+  list-style: disc inside url("marcador.png");
+}/*# sourceMappingURL=products.css.map */

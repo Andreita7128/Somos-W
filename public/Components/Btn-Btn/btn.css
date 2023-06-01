@@ -603,66 +603,27 @@ h5 {
     color: #27262C;
   }
 }
-main {
-  padding: 25px 12% 0px 12%;
-}
-
-#banner {
+.container_btn {
+  width: 60%;
+  height: 80px;
   display: flex;
   flex-direction: row;
+  padding: 0px 25px 0px 85px;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 80px;
 }
-#banner h1 {
-  color: #27262C;
+.container_btn_text {
+  padding: 0px 85px;
 }
-#banner p {
-  color: #27262C;
+.container_btn_text_text {
+  color: #27262C !important;
 }
-#banner img {
-  width: 50%;
+.container_btn h5 {
+  color: #6321A6;
 }
-
-.banner_text {
-  width: 48%;
-  margin-top: 115px;
-}
-
-#credits_cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4.7%;
-  margin: 100px 0px;
-}
-
-.container_card {
-  width: 30%;
-  margin-top: 20px;
-}
-
-#tips {
-  display: flex;
-  flex-direction: column;
-  margin: 0px -20%;
-  height: 750px;
-  padding: 40px 20%;
-  background: #BDF0F2;
-}
-#tips h3 {
-  color: #27262C;
-}
-#tips p {
-  color: #27262C;
-}
-
-.container_buttons {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 24px;
-  margin-left: 20%;
-  padding-top: 100px;
-}
-
-footer {
-  margin: 0px;
-}/*# sourceMappingURL=credits.css.map */
+.container_btn a {
+  text-decoration: none;
+}/*# sourceMappingURL=btn.css.map */
