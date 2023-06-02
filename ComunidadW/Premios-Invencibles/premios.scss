@@ -1,0 +1,256 @@
+@import "../../style.scss";
+
+._fit_content {
+
+    width: fit-content !important;
+
+}
+
+._no_padding {
+
+    padding: 0px !important;
+    border-radius: 30px !important;
+
+}
+
+.imagenes-inv {
+    width: 100%;
+}
+
+.mujeres-emprendedoras {
+    background-color: $color_blue3;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: max(30px, 9%);
+    padding: 30px 40px;
+}
+
+.cards-inv {
+    flex-basis: calc(100% / 3);
+    min-width: 290px;
+    max-width: 370px;
+    height: auto;
+}
+
+.padding-inv {
+    padding: 25px;
+    padding-top: 5px;
+}
+
+.encabezado-inv {
+    h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: #27262C;
+    }
+
+    p {
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 155.5%;
+        color: #979C9E;
+        margin-top: -5px;
+    }
+}
+
+.contenido-inv {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    h6 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #27262C;
+    }
+
+    p {
+        margin-top: -5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #27262C;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .revive-momentos{
+
+        p{
+            margin: 30px;
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+
+display: flex;
+align-items: center;
+
+/* Gris base */
+
+color: #27262C;
+
+width: 371px;
+
+        }
+
+    }
+
+
+    #btn_invensible {
+        margin-top: 30px;
+       
+    }
+
+    .carrusel-inv{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .portadas-invensibles {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        padding-left: 12%;
+
+    }
+
+    .mujeres-emprendedoras .t {
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+
+        p {
+            color: #FF8826 !important;
+            margin-top: 6W0PX;
+        }
+    }
+
+
+    .derechas-invensibles {
+        margin-right: 50px;
+    }
+
+    .izquierdas-invensibles {
+
+
+
+
+        & p {
+            margin-top: 45px;
+        }
+    }
+
+
+
+    .dsk img {
+        display: block;
+        visibility: visible;
+        height: auto;
+    }
+
+    .movil img {
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .portadas-invensibles {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+
+    }
+
+
+    #btn_invensible {
+        margin-top: 30px;
+    }
+
+
+    .mujeres-emprendedoras .t {
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+
+
+    }
+    .t-1 {
+        order: 1;
+    }
+    .t-2 {
+        order: 2;
+    }
+    .t-3 {
+        order: 3;
+    }
+    .t-4 {
+        order: 5;
+    }
+
+    .t-5 {
+        order: 6;
+    }
+    .t-6 {
+        order: 4;
+    }
+
+    .izquierdas-invensibles {
+
+        padding: 35px;
+
+        & p {
+            margin-top: 10px;
+        }
+    }
+
+    .dsk img {
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+
+    .movil {
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .movil img {
+        display: block;
+        visibility: visible;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+}
