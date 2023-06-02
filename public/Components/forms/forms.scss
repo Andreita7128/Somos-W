@@ -6,13 +6,22 @@
 //     display: none !important;
 // }
 
-// .dropdown-menu{
-//     background-color:whitesmoke;
-//     width: 100% !important;
+ .dropdown-menu-forms{
+     background-color:whitesmoke;
+     width: 100% !important;
  
-//     // overflow-y: auto;
+      overflow-y: auto;
     
-// }
+}
+
+
+.form-group-forms{
+    margin-top: 20px;
+    width: 100%;
+}
+.form-input{
+    border-radius: 20px !important;
+}
 // .formdrop{
 //     width: 100% !important;
 //     background-color:rgba(0, 177, 187, 0.2);
@@ -44,12 +53,21 @@
 //     // }
 
 //     /* Estilo para la sección del formulario */
-// .fondo-card {
-//     background-color: white;
-//     padding: 40px !important;
-//     margin-top: 50px !important;
-//   }
+//  .fondo-card {
+//      background-color: white;
+//      padding: 40px !important;
+//      height: fit-content !important;
+//      margin-top: 50px !important;
+//    }
   
+
+
+//     .formulario{
+//         display: flex !important;
+//         flex-direction: column !important;
+//         gap: 20px !important;
+//         justify-content: space-between !important;
+//     }
 //   /* Estilo para la imagen en el formulario */
 //   .card-imagen {
 //     margin-bottom: 40px !important;
@@ -93,9 +111,9 @@
 //   .form-input{
 //     border-radius: 20px !important;
 //   }
-//   .progress-bar {
-//     background-color: #5cb85c; /* Cambiar a tu color deseado */
-//   }
+   .progress-bar {
+     background-color: #5cb85c; /* Cambiar a tu color deseado */
+   }
 //   .progress-bar[aria-valuenow="100"] {
 //     background-color: #f0ad4e; /* Cambiar a tu color deseado */
 //   }
@@ -116,7 +134,7 @@
 //     margin-top: 30px !important;
 //   }
   
-//   .dropdown_form{
-//     max-height: 500px !important;
-//     overflow-y: auto !important;
-//   }
+  .dropdown_form{
+     max-height: 500px !important;
+     overflow-y: auto !important;
+   }

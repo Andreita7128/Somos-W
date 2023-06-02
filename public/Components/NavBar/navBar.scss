@@ -141,7 +141,14 @@
 
 
 @media (max-width: 800px) {
+    body{
+        padding-top: 4rem !important;
+    }
+    .img_banner{
+        height: 5% !important;
+    }
     .second_nav {
+        margin-top: 0px;
         &_link {
             gap: 5px;
         }

@@ -1899,7 +1899,7 @@ class Simulador extends HTMLElement {
               <h3> Tipo de crédito </h3>
             
                 <div id="etapa-1">
-                  <div class="form-group">
+                  <div class="">
                     <div class="dropdown">
                       <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Nuevo <i class="bi bi-chevron-down float-end"></i>
@@ -1918,7 +1918,7 @@ class Simulador extends HTMLElement {
                   <h3> Plazo en meses</h3>
             
                   <div id="etapa-1">
-                    <div class="form-group">
+                    <div class="">
                       <div class="dropdown">
                         <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           2 meses <i class="bi bi-chevron-down float-end"></i>

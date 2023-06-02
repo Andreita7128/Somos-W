@@ -1,1 +1,23 @@
-/*# sourceMappingURL=forms.css.map */
+.dropdown-menu-forms {
+  background-color: whitesmoke;
+  width: 100% !important;
+  overflow-y: auto;
+}
+
+.form-group-forms {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-input {
+  border-radius: 20px !important;
+}
+
+.progress-bar {
+  background-color: #5cb85c; /* Cambiar a tu color deseado */
+}
+
+.dropdown_form {
+  max-height: 500px !important;
+  overflow-y: auto !important;
+}/*# sourceMappingURL=forms.css.map */
