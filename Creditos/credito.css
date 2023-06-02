@@ -699,8 +699,13 @@ section.container_text {
   color: #00B1BB;
 }
 .dropdown_W button {
+  color: #00B1BB;
   width: 100%;
   margin-bottom: 0px !important;
+}
+
+.style_card {
+  padding: 0%;
 }
 
 .dropdown {
@@ -714,13 +719,14 @@ section.container_text {
 
 .dropdown_reactive {
   margin-left: 0% !important;
+  border-radius: 0px;
 }
 .dropdown_reactive:focus {
-  background-color: #00B1BB !important;
+  background-color: #2FD9DE !important;
   color: white;
 }
 .dropdown_reactive:active {
-  background-color: #00B1BB !important;
+  background-color: #2FD9DE !important;
 }
 
 .dropdown_form {
