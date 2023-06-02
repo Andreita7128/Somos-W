@@ -111,4 +111,4 @@ class BtnInsideText extends HTMLElement {
 }
 
 customElements.define('btn-inside-text', BtnInsideText)
-export default BtnInside
+export default BtnInsideBtn

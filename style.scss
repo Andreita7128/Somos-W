@@ -109,7 +109,7 @@ h5 {
     padding-left: 10px;
 }
 
-#greenInput {
+.greenInput {
     width: 300px;
     height: 42px;
     border-color: $color_success;
@@ -117,7 +117,7 @@ h5 {
     border-radius: 48px;
 }
 
-#redInput {
+.redInput {
     width: 300px;
     height: 42px;
     border-color: $color_error;
@@ -125,12 +125,50 @@ h5 {
     border-radius: 48px;
 }
 
-#grayInput {
-    width: 300px;
+.grayInput {
+    width: 30%;
     height: 42px;
-    border-color: $color_gray_btn;
-    background-color: $color_base_white;
+    border: solid;
+    border-width: 1px;
+    border-color:  $color_gray_btn;
+    background-color: $fill_input;
     border-radius: 48px;
+    padding: 2%;
+}
+
+.messageInput {
+    width: 30%;
+    height: 140px;
+    border: solid;
+    border-width: 1px;
+    border-color:  $color_gray_btn;
+    background-color: $fill_input;
+    border-radius: 20px;
+    padding: 2%;
+
+    &::placeholder {
+        position: relative;
+        top: -40px;
+    }
+}
+
+.label_file {
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 30%;
+    height: 80px;
+    border: solid;
+    border-style: dashed;
+    border-width: 1px;
+    border-color:  $color_gray_btn;
+    background-color: $fill_input;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.inputFile {
+    visibility: hidden;
+    width: 0;
 }
 
 #inputSearch {
@@ -483,6 +521,20 @@ h5 {
 }
 
 @media only screen and (max-width: 768px) {
+
+    i {
+        font-size: 24px;
+    }
+
+    .right {
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    
+    .left {
+        margin-right: 50px;
+        margin-left: -35px;
+    }
 
     .btn {
         &_large {
