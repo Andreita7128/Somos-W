@@ -7,7 +7,7 @@ p {
 
 .badge {
     --bs-badge-font-weight: 400;
-
+    //--bs-badge-font-size: 400;
 }
 
 // *************** AQUI ABAJO LOS ESTILOS DE sidebar, breadcrumbs, user product, agenda *******************//
@@ -42,11 +42,12 @@ p {
     &_w {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
+        //font-weight: 400;
+        //font-size: 16px;
         line-height: 20px;
         border-radius: 32px;
-        padding: 8px 16px;
+        margin-top: 20px;
+        padding: 6px 12px;
     }
 
     &_family {
@@ -137,6 +138,25 @@ p {
     }
 }
 
+a {
+    &-item {
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color_violet1;
+            text-decoration: none;
+        }
+    }
+
+    .active {
+        font-weight: 600;
+        font-size: 16px;
+        color: $color_violet1;
+    }
+}
 
 .user {
 

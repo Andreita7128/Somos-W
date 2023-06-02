@@ -655,6 +655,12 @@ h5 {
     color: #27262C;
   }
 }
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
+}
+
 .titulo-vacio {
   margin-top: -45px !important;
 }
@@ -668,6 +674,7 @@ h5 {
 }
 
 .fondo-card {
+  scroll-margin-top: 150px !important;
   background-color: white;
   width: 100%;
   height: auto;

@@ -402,27 +402,21 @@ class cardForBlog extends HTMLElement {
     constructor() {
         super();
 
-        this.recurso;
-        this.titulo;
-        this.contenido;
-        this.boton;
-        this.tags = "";
-        this.likes = 0;
-        this.comments = 0;
+    this.recurso;
+    this.titulo;
+    this.contenido;
+    this.boton;
+    this.tags = ""; //texto tag 1;
+    this.color = ""; //color tag 1: family , business, grow
+    this.tags_2 = "" //texto tag 2;
+    this.color_2 = ""; //color tag 2: family , business, grow
+    this.likes = 0;
+    this.comments = 0;
+  }
 
-
-    }
-
-    static get observedAttributes() {
-        return [
-            "recurso",
-            "titulo",
-            "contenido",
-            "likes",
-            "comments",
-            "tags"
-        ]
-    }
+  static get observedAttributes() {
+    return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2"];
+  }
 
     attributeChangedCallback(nameAtr, oldValue, newValue) {
 
@@ -461,10 +455,24 @@ class cardForBlog extends HTMLElement {
 
                 this.tags = newValue
 
-                break;
-        }
+        break;
 
+        case "color":
+        this.color = newValue;
+
+        break;
+
+        case "tags_2":
+        this.tags_2 = newValue;
+
+        break;
+
+        case "color_2":
+        this.color_2 = newValue;
+
+        break;
     }
+  }
 
     connectedCallback() {
 
@@ -474,7 +482,18 @@ class cardForBlog extends HTMLElement {
             <img src="${this.recurso}" class="imagen-inCard" alt="">
         </section>
         <section class="labels-site">
-        ${this.tags}
+        
+        <h6>
+          <span class="badge rounded-pill tag_w tag_${this.color}">
+            ${this.tags}
+          </span>
+        </h6>
+        <h6>
+          <span class="badge rounded-pill tag_w tag_${this.color_2}">
+            ${this.tags_2}
+          </span>
+        </h6>
+        
            
         </section>
         <section class="texto-card">
@@ -1901,7 +1920,7 @@ class Simulador extends HTMLElement {
               <h3> Tipo de crédito </h3>
             
                 <div id="etapa-1">
-                  <div class="form-group">
+                  <div class="">
                     <div class="dropdown">
                       <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Nuevo <i class="bi bi-chevron-down float-end"></i>
@@ -1920,7 +1939,7 @@ class Simulador extends HTMLElement {
                   <h3> Plazo en meses</h3>
             
                   <div id="etapa-1">
-                    <div class="form-group">
+                    <div class="">
                       <div class="dropdown">
                         <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           2 meses <i class="bi bi-chevron-down float-end"></i>
