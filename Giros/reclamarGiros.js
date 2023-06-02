@@ -178,7 +178,7 @@ class cardWithinputs extends HTMLElement {
 
 }
 
-window.customElements.define("card-inputs", cardWithinputs)
+window.customElements.define("card-inputsg", cardWithinputs)
 
 
 

@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*Colors*/
-/*Various*/
-/*Blue*/
-/*Dark Violet*/
-/*Violet*/
-/*Orange*/
-/*Yellow*/
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +12,13 @@ p {
   margin-bottom: 0px;
 }
 
+/*Colors*/
+/*Various*/
+/*Blue*/
+/*Dark Violet*/
+/*Violet*/
+/*Orange*/
+/*Yellow*/
 /* Typography */
 h1 {
   font-weight: 700;
@@ -127,18 +127,9 @@ h5 {
   height: 42px;
   border-radius: 48px;
   box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .btn_large {
-  width: auto;
-  padding: 0px 82px;
-}
-.btn_large i {
-  position: relative;
-  margin-left: 45px;
-  margin-right: -62px;
+  width: 423px;
 }
 .btn_large_active {
   border: none;
@@ -179,13 +170,9 @@ h5 {
   color: #CDCFD0;
 }
 .btn_medium {
-  width: auto;
-  padding: 9px 75px;
-}
-.btn_medium i {
-  position: relative;
-  margin-left: 45px;
-  margin-right: -55px;
+  display: flex;
+  flex-direction: row;
+  padding: 9px 29px;
 }
 .btn_medium_active {
   border: none;

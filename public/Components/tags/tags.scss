@@ -105,14 +105,34 @@ p {
     }
 }
 
-.breadcrumb {
+#breadcrumb {
+
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0%;
+    color: $color_violet1;
+    
+    & li {
+        margin-right: 5px;
+    }
+    
+    & a {
+        text-decoration: none;
+        color: $color_violet1;
+    }
+
+    &-item {
+        font-weight: bold;
+    }
 
     &-title {
-        color: $color_orange1;
+            color: $color_orange1;
 
         &-section {
+            height: 100px;
             background-color: $color_accent_white;
-            padding: 14px;
+            padding: 20px 12%;
             border-radius: 0 0 20px 20px;
         }
     }
@@ -372,3 +392,4 @@ a {
         }
     }
 }
+

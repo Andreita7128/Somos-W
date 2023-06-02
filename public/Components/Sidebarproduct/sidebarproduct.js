@@ -15,6 +15,8 @@ class Sidebarproduct extends HTMLElement {
     this.locations = this.getAttribute('locations')?.split(',') || this.defaultAttributeValue('locations').split(',');
     this.buttonNames = this.getAttribute('button-names')?.split(',') || this.defaultAttributeValue('button-names').split(',');
     this.render();
+
+    
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -64,69 +66,4 @@ class Sidebarproduct extends HTMLElement {
 customElements.define('product-sidebar', Sidebarproduct);
 
 
-  class SidebarB extends HTMLElement {
-    constructor() {
-      super();
-      this.reference = '';
-      this.locations = '';
-      
-    }
-
-    static get observedAttributes() {
-      return ['reference','locations'];
-    }
-
-    connectedCallback() {
-      this.reference = this.getAttribute('reference') || this.defaultAttributeValue('reference');
-      this.locations = this.getAttribute('locations') || this.defaultAttributeValue('locations')
-      this.render();
-    }
-
-    attributeChangedCallback(name, oldValue, newValue) {
-      if (name === 'reference') {
-        this.reference = newValue;
-        this.render();
-      }else if(name === 'locations'){
-        this.locations = newValue;
-        this.render();
-      }
-    }
-
-    defaultAttributeValue(name) {
-      const attribute = this.getAttributeNode(name);
-      return attribute?.defaultValue ?? '';
-    }
-
-    render() {
-      this.innerHTML = `
-        <link rel="stylesheet" href="/public/Components/Sidebarproduct/sidebarproduct.css">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Sidebar -->
-            <div class="col-lg-3 col-md-4 d-none d-md-block tam-sidebar">
-              <div class="border-right" id="sidebar-wrapper">
-                <div class="list-group list-group-flush">
-                  <a href="${this.reference}#${this.locations}" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">${this.boton}</a>
-                  <a href="${this.reference}#${this.locations}" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">${this.boton}</a>
-                  <a href="${this.reference}#${this.locations}" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">${this.boton}</a>
-                  <a href="${this.reference}#${this.locations}" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">${this.boton}</a>
-                  <a href="${this.reference}#${this.locations}" class="list-group-item list-group-item-action rounded-pill border btn-sidebar">Cancelar mi crédito${this.boton}</a>
-                </div>
-              </div>
-            </div>
-            <!-- /Sidebar -->
-
-            <!-- Contenido principal -->
-            <div class="col-lg-9 col-md-8">
-              
-            </div>
-            <!-- /Contenido principal -->
-          </div>
-        </div>
-      `;
-    }
-  }
-
-  customElements.define('product-sidebarb', SidebarB);
-
-
+  

@@ -1,5 +1,8 @@
 @import '../../../style.scss';
 
+.titulo-vacio {
+    margin-top: -45px !important;
+}
 
 .imagefondo{
     max-width: 328px !important;
@@ -295,6 +298,14 @@
     }
 }
 
+#section-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+//-----------------------------------------------------------------------------------------------------
+
 
 .title_row {
     background-color: $color_dark_violet3 !important;
@@ -328,6 +339,7 @@
 
     .title_col {
         justify-content: space-between;
+
         width: 100%;
 
         & h4 {
@@ -395,4 +407,9 @@
     .botoncard{
         width: 100%;
     }
+    
 
+@media(max-width: 768px){
+
+    
+}

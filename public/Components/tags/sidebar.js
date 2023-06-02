@@ -10,7 +10,7 @@ class Sidebar extends HTMLElement {
 
     render(route) {
         this.innerHTML = `
-            <link rel="stylesheet" href="tags.css">
+            <link rel="stylesheet" href="../../../public/Components/tags/tags.css">
             <div class="sidebar-container d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" >
                 <h3 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-4">Mi Perfil W</span>
