@@ -219,7 +219,7 @@ a {
 
 .agenda{
     &-container {
-        width: 100%;
+        width: 80%;
         background-color: $color_blue3;
         border-radius: 20px;
         overflow: hidden;
@@ -319,6 +319,7 @@ a {
         }
     }
 }
+
 
 
 @media only screen and (max-width: 768px) {

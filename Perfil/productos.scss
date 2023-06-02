@@ -1,5 +1,5 @@
 @import '../style.scss';
-
+@import '../public/Components/tags/tags.scss';
 
 /*.planB {
     display: none;
@@ -34,6 +34,8 @@
         width: 100%;
 
         &-select {
+            margin-right: 1em;
+
             h5 {
                 color: $color_dark_violet1;
             }
@@ -83,6 +85,13 @@
         max-width: 500px;
     }
 }
+
+.user_document{
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 // AQUI CAMBIO EL CONTENIDO DE LOS PRODUCTOS DEL USUARIO
 .product-1 {
@@ -203,22 +212,6 @@
 
 
 @media only screen and (max-width: 768px) {
-
-
-    /*.planB {
-        display: flex;
-        width: 100%;
-
-        &_prod {
-            display: flex;
-            width: 100%;
-        }
-    }*/
-
-    main {
-        //display: none;
-    }
-
 
     .sidebar-container {
         display: none;
