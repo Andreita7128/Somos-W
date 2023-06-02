@@ -391,5 +391,14 @@ a {
             }
         }
     }
+
+    #breadcrumb {
+        &-title {
+            &-section {
+                height: 90px;
+            }
+        }
+    }
+    
 }
 

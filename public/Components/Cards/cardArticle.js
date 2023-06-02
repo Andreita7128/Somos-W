@@ -206,15 +206,17 @@ class cardBoton extends HTMLElement {
         this.innerHTML = `
         
         <section class="fondo-card">
+          <div class="section_icon">
         <i class="${this.icon} icon">
         </i>
+    </div>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
-            <p class="parrafo">
+            <p class="body_3">
             ${this.contenido}   
             </p>
         </section>
-        <button class="btn btn_medium btn_medium_active"><!--  aca poner estilo de boton ♥ --><h5>${this.boton}</h5></button>
+        <button style="margin: -20px 30px 30px 30px; width: 85%" class="btn btn_medium btn_medium_active text_button_normal">${this.boton}</button>
     </section>
         
         `
