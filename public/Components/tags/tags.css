@@ -633,11 +633,10 @@ p {
 .tag_w {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 20px;
   border-radius: 32px;
-  padding: 8px 16px;
+  margin-top: 20px;
+  padding: 6px 12px;
 }
 .tag_family {
   background-color: #BA93D2;
@@ -707,6 +706,21 @@ p {
   background-color: #FAFAFA;
   padding: 20px 12%;
   border-radius: 0 0 20px 20px;
+}
+
+a-item a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6321A6;
+  text-decoration: none;
+}
+a .active {
+  font-weight: 600;
+  font-size: 16px;
+  color: #6321A6;
 }
 
 .user-product-container {
