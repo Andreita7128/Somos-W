@@ -1,0 +1,307 @@
+@import '../../style.scss';
+
+/*CONFIG GAMIFICACION*/
+
+.headerLabel {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+
+    color: $color_accent_white;
+    width: 100%;
+    padding-right: 5%;
+    height: 54px;
+    background-color: #FF8826;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info_profile{
+    background-color: $color_blue3;
+    margin-top: 5%;
+    align-items: center;
+    width: 800px;
+    height: 141px;
+    border-radius: 10.057px;
+    justify-content: center;
+    display: flex;
+}
+
+.user-profile-image{
+    margin-right: 400px;
+}
+.coin-w{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************************/
+.planB {
+    display: none;
+
+    &_prod {
+        display: none;
+    }
+}
+
+.user-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-container {
+    height: 100vh;
+    //position: ;
+}
+
+.main-content {
+    //width: 100%;
+    padding-bottom: 30px;
+}
+
+.products {
+    &-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+
+        &-select {
+            h5 {
+                color: $color_dark_violet1;
+            }
+
+            li {
+                color: $color_dark_violet1;
+            }
+        }
+
+        &-form {
+            h3 {
+                color: $color_dark_violet1;
+            }
+
+            .dropdown {
+                margin: 15px 0;
+            }
+        }
+
+        .user_agenda {
+            width: 100%;
+        }
+
+        &-select {
+            ul {
+                list-style: none;
+
+                :first-child {
+                    margin-top: 40px;
+                }
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-title {
+        background-color: $color_orange2;
+        margin-top: 51px;
+        margin-bottom: 41px;
+        padding: 15px 30px 10px;
+        border-radius: 20px;
+        color: white;
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+// AQUI CAMBIO EL CONTENIDO DE LOS PRODUCTOS DEL USUARIO
+.product-1 {
+    #product-name::before {
+        content: "Yo Construyo - Crédito";
+    }
+
+    #product-id::before {
+        content: "4685 2546 2546 985";
+    }
+
+    #product-saldo::before {
+        content: "21.326.088";
+    }
+
+    #product-nextPay::before {
+        content: "560.300";
+    }
+
+    #product-limit::before {
+        content: "05 Mayo";
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.product-2 {
+    #product-name::before {
+        content: "Cuenta de Ahorro Básica - Ahorro";
+    }
+
+    #product-id::before {
+        content: "307 235468 12";
+    }
+
+    #product-saldo::before {
+        content: "5.600.000";
+    }
+
+    #product-nextPay::before {
+        content: "0";
+        display: none;
+    }
+
+    #product-limit::before {
+        content: "05 Mayo";
+        display: none;
+    }
+
+    .user-product-data-item {
+        display: none;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.product-3 {
+    #product-name::before {
+        content: "CDT - Inversión";
+    }
+
+    #product-id::before {
+        content: "12 365 498 125";
+    }
+
+    #product-saldo::before {
+        content: "18.000.000";
+    }
+
+    #product-nextPay::before {
+        content: "560.300";
+        display: none;
+    }
+
+    #product-limit::before {
+        content: "05 Mayo";
+        display: none;
+    }
+
+    .user-product-data-item {
+        display: none;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.product-4 {
+    #product-name::before {
+        content: "Gotahorro - Crédito";
+    }
+
+    #product-id::before {
+        content: "4685 2546 2546 985";
+    }
+
+    #product-saldo::before {
+        content: "3.320.000";
+    }
+
+    #product-nextPay::before {
+        content: "100.000";
+    }
+
+    #product-limit::before {
+        content: "21 Mayo";
+    }
+
+    span {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .planB {
+        display: flex;
+        width: 100%;
+
+        &_prod {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    main {
+        display: none;
+    }
+
+
+    .sidebar-container {
+        display: none;
+        height: 50vh;
+    }
+
+    .main-content {
+        display: none;
+        //  display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-container {
+
+        display: none;
+        //        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $color_orange1 !important;
+}

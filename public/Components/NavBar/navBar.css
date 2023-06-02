@@ -603,6 +603,12 @@ h5 {
     color: #27262C;
   }
 }
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
+}
+
 .search_button_desk {
   width: 15% !important;
   height: 42px !important;
@@ -728,6 +734,15 @@ h5 {
 }
 
 @media (max-width: 800px) {
+  body {
+    padding-top: 4rem !important;
+  }
+  .img_banner {
+    height: 5% !important;
+  }
+  .second_nav {
+    margin-top: 0px;
+  }
   .second_nav_link {
     gap: 5px;
   }

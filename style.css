@@ -602,4 +602,9 @@ h5 {
     background-color: rgba(0, 177, 187, 0.2);
     color: #27262C;
   }
+}
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
 }/*# sourceMappingURL=style.css.map */
