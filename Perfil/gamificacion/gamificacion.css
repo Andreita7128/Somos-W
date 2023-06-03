@@ -374,6 +374,14 @@ h5 {
 .btn_large_transparent:disabled {
   color: #CDCFD0;
 }
+.btn_large_form {
+  border: none;
+  background-color: #BDF0F2;
+}
+.btn_large_form:active {
+  background-color: #FAFAFA;
+  color: #00B1BB;
+}
 .btn_medium {
   width: auto;
   height: 42px;
@@ -418,6 +426,14 @@ h5 {
 .btn_medium_transparent:disabled {
   color: #CDCFD0;
 }
+.btn_medium_form {
+  border: none;
+  background-color: #BDF0F2;
+}
+.btn_medium_form:active {
+  background-color: #FAFAFA;
+  color: #00B1BB;
+}
 .btn_small {
   width: 10.7%;
 }
@@ -458,6 +474,14 @@ h5 {
 }
 .btn_small_transparent:disabled {
   color: #CDCFD0;
+}
+.btn_small_form {
+  border: none;
+  background-color: #BDF0F2;
+}
+.btn_small_form:active {
+  background-color: #FAFAFA;
+  color: #00B1BB;
 }
 
 @media only screen and (max-width: 768px) {
@@ -680,12 +704,6 @@ h5 {
     color: #27262C;
   }
 }
-/*----------------------------------------------------*/
-.list-group-item.active {
-  z-index: 2;
-  background-color: #c6fdff;
-}
-
 /*CONFIG GAMIFICACION*/
 .headerLabel {
   /* margin-top: 20px;
@@ -738,6 +756,7 @@ h5 {
 .progress-images {
   display: flex;
   justify-content: space-between;
+  height: auto !important;
   margin-top: 10px;
 }
 
@@ -763,182 +782,11 @@ h5 {
   z-index: 1;
 }
 
-/*****************************************************************************/
-.planB {
-  display: none;
-}
-.planB_prod {
-  display: none;
-}
-
-.user-content {
-  display: flex;
-  flex-direction: row;
-}
-
-.sidebar-container {
-  height: 100vh;
-}
-
-.main-content {
-  padding-bottom: 30px;
-}
-
-.products-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  width: 100%;
-}
-.products-container-select h5 {
-  color: #2D3982;
-}
-.products-container-select li {
-  color: #2D3982;
-}
-.products-container-form h3 {
-  color: #2D3982;
-}
-.products-container-form .dropdown {
-  margin: 15px 0;
-}
-.products-container .user_agenda {
-  width: 100%;
-}
-.products-container-select ul {
-  list-style: none;
-}
-.products-container-select ul :first-child {
-  margin-top: 40px;
-}
-.products-container-select li {
-  margin-bottom: 10px;
-}
-.products-title {
-  background-color: #FF8826;
-  margin-top: 51px;
-  margin-bottom: 41px;
-  padding: 15px 30px 10px;
+.card-promedio {
+  margin-top: 5%;
   border-radius: 20px;
-  color: white;
-  width: 100%;
-  max-width: 500px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  background-color: #FAFAFA;
 }
 
-.product-1 #product-name::before {
-  content: "Yo Construyo - Crédito";
-}
-.product-1 #product-id::before {
-  content: "4685 2546 2546 985";
-}
-.product-1 #product-saldo::before {
-  content: "21.326.088";
-}
-.product-1 #product-nextPay::before {
-  content: "560.300";
-}
-.product-1 #product-limit::before {
-  content: "05 Mayo";
-}
-.product-1 span {
-  display: none;
-}
-
-.product-2 #product-name::before {
-  content: "Cuenta de Ahorro Básica - Ahorro";
-}
-.product-2 #product-id::before {
-  content: "307 235468 12";
-}
-.product-2 #product-saldo::before {
-  content: "5.600.000";
-}
-.product-2 #product-nextPay::before {
-  content: "0";
-  display: none;
-}
-.product-2 #product-limit::before {
-  content: "05 Mayo";
-  display: none;
-}
-.product-2 .user-product-data-item {
-  display: none;
-}
-.product-2 span {
-  display: none;
-}
-
-.product-3 #product-name::before {
-  content: "CDT - Inversión";
-}
-.product-3 #product-id::before {
-  content: "12 365 498 125";
-}
-.product-3 #product-saldo::before {
-  content: "18.000.000";
-}
-.product-3 #product-nextPay::before {
-  content: "560.300";
-  display: none;
-}
-.product-3 #product-limit::before {
-  content: "05 Mayo";
-  display: none;
-}
-.product-3 .user-product-data-item {
-  display: none;
-}
-.product-3 span {
-  display: none;
-}
-
-.product-4 #product-name::before {
-  content: "Gotahorro - Crédito";
-}
-.product-4 #product-id::before {
-  content: "4685 2546 2546 985";
-}
-.product-4 #product-saldo::before {
-  content: "3.320.000";
-}
-.product-4 #product-nextPay::before {
-  content: "100.000";
-}
-.product-4 #product-limit::before {
-  content: "21 Mayo";
-}
-.product-4 span {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .planB {
-    display: flex;
-    width: 100%;
-  }
-  .planB_prod {
-    display: flex;
-    width: 100%;
-  }
-  main {
-    display: none;
-  }
-  .sidebar-container {
-    display: none;
-    height: 50vh;
-  }
-  .main-content {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-  .products-container {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #F25C05 !important;
-}/*# sourceMappingURL=gamificacion.css.map */
+/*****************************************************************************//*# sourceMappingURL=gamificacion.css.map */

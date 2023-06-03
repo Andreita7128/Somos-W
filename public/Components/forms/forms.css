@@ -14,10 +14,10 @@
 }
 
 .progress-bar {
-  background-color: #5cb85c; /* Cambiar a tu color deseado */
+  background-color: #5cb85c !important; /* Cambiar a tu color deseado */
 }
 
 .dropdown_form {
-  max-height: 500px !important;
+  max-height: 250px !important;
   overflow-y: auto !important;
 }/*# sourceMappingURL=forms.css.map */

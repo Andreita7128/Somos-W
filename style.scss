@@ -439,6 +439,16 @@ h5 {
                 color: $color_gray_btn;
             }
         }
+
+        &_form{
+            border: none;
+            background-color: $color_blue3;
+            color: $color_blue1;
+            &:active{
+                background-color: $color_accent_white;
+                color: $color_blue1;
+            }
+        }
     }
 
     &_medium {
@@ -493,6 +503,15 @@ h5 {
                 color: $color_gray_btn;
             }
         }
+        &_form{
+            border: none;
+            background-color: $color_blue3;
+            color: $color_blue1;
+            &:active{
+                background-color: $color_accent_white;
+                color: $color_blue1;
+            }
+        }
     }
 
     &_small {
@@ -542,6 +561,14 @@ h5 {
 
             &:disabled {
                 color: $color_gray_btn;
+            }
+        }
+        &_form{
+            border: none;
+            background-color: $color_blue3;
+            &:active{
+                background-color: $color_accent_white;
+                color: $color_blue1;
             }
         }
     }
@@ -802,4 +829,11 @@ h5 {
         background-color: $fill_generic;
         color: #27262C;
     }
+}
+
+.list-group-item.active {
+    z-index: 2;
+    
+    background-color: $color_blue3;
+ 
 }
