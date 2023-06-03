@@ -1919,12 +1919,12 @@ class Simulador extends HTMLElement {
           <div class="row">
             <div class="col-md-12">
               <form id="formulario" method="post" action="">
-              <h3> Tipo de crédito </h3>
+              <h5 class = "body_2">Tipo de crédito</h5>
             
                 <div id="etapa-1">
-                  <div class="">
+                  <div class="" >
                     <div class="dropdown">
-                      <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="btn btn_formulario btn_large_form formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style ="width: 80%;">
                         Nuevo <i class="bi bi-chevron-down float-end"></i>
                       </button>
                       <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
@@ -1932,18 +1932,21 @@ class Simulador extends HTMLElement {
                         <li><a class="dropdown-item" href="#">Preferencial</a></li>
                       </ul>
                     </div>
-                    <h3 for="nombre">Digita el monto:</h3>
+                    <div style = "margin-top: 3%;">
+                    <h5 class = "body_2">Digita el monto</h5>
                     <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Monto">
-                    <p style = "margin-bottom:20px">Máx. $50.000.000</p>
+                    <p class = "body_2" style = "margin-top:20px; color: gray;">Máx. $50.000.000</p>
+                    </div>
                   </div>
 
+                <div style = "margin-top: 3%;">
+                <h5 class = "body_2">Plazo en meses</h5>
+                  </div
 
-                  <h3> Plazo en meses</h3>
-            
                   <div id="etapa-1">
                     <div class="">
                       <div class="dropdown">
-                        <button class="btn btn_formulario btn_large_outline_active formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style = "width: 80%;">
                           2 meses <i class="bi bi-chevron-down float-end"></i>
                         </button>
                         <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
@@ -1952,10 +1955,10 @@ class Simulador extends HTMLElement {
                         </ul>
                       </div>
 
-                      <h3 class = "simulacion" style = "margin-bottom:20px;">Tasa de simulación 2.02% M.V</h3>
+                      <h5 class = "simulacion body_2" style = "margin-top: 3%;">Tasa de simulación 2.02% M.V</h5>
          
                   <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active siguiente">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+                    <button type="button" class="btn btn_large_active siguiente" style = "margin-top: 5%; margin-bottom: 5%; margin-left:40%;">Continuar <i class="bi bi-arrow-right float-end"></i></button>
                   </div>
                 </div>
             
