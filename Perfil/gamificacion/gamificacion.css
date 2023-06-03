@@ -603,6 +603,12 @@ h5 {
     color: #27262C;
   }
 }
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
+}
+
 /*CONFIG GAMIFICACION*/
 .headerLabel {
   /* margin-top: 20px;
@@ -633,6 +639,51 @@ h5 {
 
 .coin-w {
   width: 100%;
+}
+
+.proximos-retos {
+  background-color: #FFE2CC;
+  border-radius: 10px;
+  width: 100%;
+  height: 816px;
+  margin-right: 200px !important;
+}
+
+.btn-reto {
+  background-color: #FAFAFA !important;
+  margin: 5%;
+  width: 90% !important;
+  height: 70px;
+  box-shadow: 0px 2.71245px 9.49356px rgba(0, 0, 0, 0.15);
+  border-radius: 8.77778px !important;
+}
+
+.progress-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.progress-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.progress-image img {
+  width: 50%;
+}
+
+.progress-image span {
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  background-color: #2FD9DE !important;
+  z-index: 1;
 }
 
 /*****************************************************************************/

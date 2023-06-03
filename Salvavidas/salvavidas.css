@@ -603,6 +603,12 @@ h5 {
     color: #27262C;
   }
 }
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
+}
+
 @media screen and (max-width: 3000px) {
   #regresa_main {
     transform: scale(0.8);
