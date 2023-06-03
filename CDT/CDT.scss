@@ -1,3 +1,6 @@
+@import '../style.scss';
+
+
 #bannerTop {
     display: flex;
     size: 20%;
@@ -39,6 +42,12 @@
     }
     .marginis{
       flex: 0 0 100% ;
+  }
+  #Tasas{
+    display: none;
+  }
+  #CancelarCDT{
+    display: none;
   }
 
   }
@@ -89,4 +98,4 @@
   #bread_title span {
     display: none;
   } /*# sourceMappingURL=reclamar.css.map */
-  
+

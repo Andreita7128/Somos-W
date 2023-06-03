@@ -680,6 +680,12 @@ h5 {
     color: #27262C;
   }
 }
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
+}
+
 #detail_view {
   display: flex;
   flex-direction: column;

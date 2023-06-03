@@ -680,6 +680,12 @@ h5 {
     color: #27262C;
   }
 }
+/*----------------------------------------------------*/
+.list-group-item.active {
+  z-index: 2;
+  background-color: #c6fdff;
+}
+
 .container_btn {
   width: 60%;
   height: 80px;
