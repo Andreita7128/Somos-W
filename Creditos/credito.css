@@ -70,7 +70,7 @@ h5 {
   padding-left: 10px;
 }
 
-#greenInput {
+.greenInput {
   width: 300px;
   height: 42px;
   border-color: #2DC071;
@@ -78,7 +78,7 @@ h5 {
   border-radius: 48px;
 }
 
-#redInput {
+.redInput {
   width: 300px;
   height: 42px;
   border-color: #EB3232;
@@ -86,12 +86,53 @@ h5 {
   border-radius: 48px;
 }
 
-#grayInput {
-  width: 300px;
+.grayInput {
+  width: 30%;
   height: 42px;
+  border: solid;
+  border-width: 1px;
   border-color: #CDCFD0;
-  background-color: #F2F2F2;
+  background-color: #F2F4F5;
   border-radius: 48px;
+  padding: 2%;
+}
+
+.messageInput {
+  width: 30%;
+  height: 140px;
+  border: solid;
+  border-width: 1px;
+  border-color: #CDCFD0;
+  background-color: #F2F4F5;
+  border-radius: 20px;
+  padding: 2%;
+}
+.messageInput::-moz-placeholder {
+  position: relative;
+  top: -40px;
+}
+.messageInput::placeholder {
+  position: relative;
+  top: -40px;
+}
+
+.label_file {
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 30%;
+  height: 80px;
+  border: solid;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CDCFD0;
+  background-color: #F2F4F5;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.inputFile {
+  visibility: hidden;
+  width: 0;
 }
 
 #inputSearch {
@@ -208,6 +249,31 @@ h5 {
   .body_3 {
     font-size: 12px;
   }
+  .grayInput {
+    width: 100%;
+  }
+  .messageInput {
+    width: 100%;
+  }
+  .messageInput::-moz-placeholder {
+    position: relative;
+    top: -40px;
+  }
+  .messageInput::placeholder {
+    position: relative;
+    top: -40px;
+  }
+  .label_file {
+    padding: 0px 0px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .checkInput {
+    border-radius: 1px;
+    border: solid;
+    border-width: 1px;
+    border-color: #CDCFD0;
+  }
 }
 .text_button_bold {
   font-weight: 600;
@@ -308,6 +374,14 @@ h5 {
 .btn_large_transparent:disabled {
   color: #CDCFD0;
 }
+.btn_large_form {
+  border: none;
+  background-color: #BDF0F2;
+}
+.btn_large_form:active {
+  background-color: #FAFAFA;
+  color: #00B1BB;
+}
 .btn_medium {
   width: auto;
   height: 42px;
@@ -352,6 +426,14 @@ h5 {
 .btn_medium_transparent:disabled {
   color: #CDCFD0;
 }
+.btn_medium_form {
+  border: none;
+  background-color: #BDF0F2;
+}
+.btn_medium_form:active {
+  background-color: #FAFAFA;
+  color: #00B1BB;
+}
 .btn_small {
   width: 10.7%;
 }
@@ -393,11 +475,30 @@ h5 {
 .btn_small_transparent:disabled {
   color: #CDCFD0;
 }
+.btn_small_form {
+  border: none;
+  background-color: #BDF0F2;
+}
+.btn_small_form:active {
+  background-color: #FAFAFA;
+  color: #00B1BB;
+}
 
 @media only screen and (max-width: 768px) {
+  i {
+    font-size: 24px;
+  }
+  .right {
+    margin-left: 20px;
+    margin-right: -10px;
+  }
+  .left {
+    margin-right: 50px;
+    margin-left: -35px;
+  }
   .btn_large {
     width: auto;
-    padding: 9px 65px;
+    padding: 9px 45px;
   }
   .btn_medium {
     width: auto;
@@ -603,6 +704,12 @@ h5 {
     color: #27262C;
   }
 }
+.img_banner {
+  width: 500px;
+  height: 542px;
+  margin-left: 8%;
+}
+
 .image-card {
   width: 10px !important;
 }
@@ -612,14 +719,20 @@ h5 {
 }
 
 section.portada {
-  margin-top: 10px;
+  margin-top: 3%;
+  padding-left: 175px;
+  margin-bottom: 5%;
 }
 section .style_better {
-  margin-top: 80px;
+  margin-top: 10%;
+  width: 486px;
 }
 section h3 {
   font-weight: 500;
   font-size: 20px;
+}
+section.container_text {
+  width: 486px;
 }
 
 @media (max-width: 1250px) {
@@ -639,6 +752,26 @@ section h3 {
   }
 }
 @media (max-width: 800px) {
+  .img_banner {
+    width: auto;
+    margin-left: 0%;
+  }
+  section.portada {
+    margin-top: 3%;
+    padding-left: 0px;
+    margin-bottom: 5%;
+  }
+  section .style_better {
+    margin-top: 10%;
+    width: 486px;
+  }
+  section h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  section.container_text {
+    width: 486px;
+  }
   #tasas {
     display: none;
   }
@@ -661,8 +794,13 @@ section h3 {
   color: #00B1BB;
 }
 .dropdown_W button {
+  color: #00B1BB;
   width: 100%;
   margin-bottom: 0px !important;
+}
+
+.style_card {
+  padding: 0%;
 }
 
 .dropdown {
@@ -676,13 +814,14 @@ section h3 {
 
 .dropdown_reactive {
   margin-left: 0% !important;
+  border-radius: 0px;
 }
 .dropdown_reactive:focus {
-  background-color: #00B1BB !important;
+  background-color: #2FD9DE !important;
   color: white;
 }
 .dropdown_reactive:active {
-  background-color: #00B1BB !important;
+  background-color: #2FD9DE !important;
 }
 
 .dropdown_form {
