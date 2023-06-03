@@ -12,6 +12,6 @@ import "./Cards/cardArticle.js"
 import "./Cards/card-desk.js"
 import "./forms/forms.js"
 import "./Btn-Btn/btn.js"
-
+import "./input-File/inputFile.js"
 
 

@@ -70,7 +70,7 @@ h5 {
   padding-left: 10px;
 }
 
-#greenInput {
+.greenInput {
   width: 300px;
   height: 42px;
   border-color: #2DC071;
@@ -78,7 +78,7 @@ h5 {
   border-radius: 48px;
 }
 
-#redInput {
+.redInput {
   width: 300px;
   height: 42px;
   border-color: #EB3232;
@@ -86,12 +86,53 @@ h5 {
   border-radius: 48px;
 }
 
-#grayInput {
-  width: 300px;
+.grayInput {
+  width: 30%;
   height: 42px;
+  border: solid;
+  border-width: 1px;
   border-color: #CDCFD0;
-  background-color: #F2F2F2;
+  background-color: #F2F4F5;
   border-radius: 48px;
+  padding: 2%;
+}
+
+.messageInput {
+  width: 30%;
+  height: 140px;
+  border: solid;
+  border-width: 1px;
+  border-color: #CDCFD0;
+  background-color: #F2F4F5;
+  border-radius: 20px;
+  padding: 2%;
+}
+.messageInput::-moz-placeholder {
+  position: relative;
+  top: -40px;
+}
+.messageInput::placeholder {
+  position: relative;
+  top: -40px;
+}
+
+.label_file {
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 30%;
+  height: 80px;
+  border: solid;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CDCFD0;
+  background-color: #F2F4F5;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.inputFile {
+  visibility: hidden;
+  width: 0;
 }
 
 #inputSearch {
@@ -207,6 +248,31 @@ h5 {
   }
   .body_3 {
     font-size: 12px;
+  }
+  .grayInput {
+    width: 100%;
+  }
+  .messageInput {
+    width: 100%;
+  }
+  .messageInput::-moz-placeholder {
+    position: relative;
+    top: -40px;
+  }
+  .messageInput::placeholder {
+    position: relative;
+    top: -40px;
+  }
+  .label_file {
+    padding: 0px 0px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .checkInput {
+    border-radius: 1px;
+    border: solid;
+    border-width: 1px;
+    border-color: #CDCFD0;
   }
 }
 .text_button_bold {
@@ -395,9 +461,20 @@ h5 {
 }
 
 @media only screen and (max-width: 768px) {
+  i {
+    font-size: 24px;
+  }
+  .right {
+    margin-left: 20px;
+    margin-right: -10px;
+  }
+  .left {
+    margin-right: 50px;
+    margin-left: -35px;
+  }
   .btn_large {
     width: auto;
-    padding: 9px 65px;
+    padding: 9px 45px;
   }
   .btn_medium {
     width: auto;
@@ -639,11 +716,10 @@ p {
 .tag_w {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 20px;
   border-radius: 32px;
-  padding: 8px 16px;
+  margin-top: 20px;
+  padding: 6px 12px;
 }
 .tag_family {
   background-color: #BA93D2;
@@ -713,6 +789,21 @@ p {
   background-color: #FAFAFA;
   padding: 20px 12%;
   border-radius: 0 0 20px 20px;
+}
+
+a-item a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6321A6;
+  text-decoration: none;
+}
+a .active {
+  font-weight: 600;
+  font-size: 16px;
+  color: #6321A6;
 }
 
 .user-product-container {
@@ -868,5 +959,9 @@ p {
   }
   .calendar-event-detail {
     margin-right: 25px;
+  }
+  #breadcrumb-title-section {
+    padding: 20px 5.2%;
+    height: 90px;
   }
 }/*# sourceMappingURL=tags.css.map */
