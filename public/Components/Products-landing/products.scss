@@ -82,3 +82,47 @@ i {
 .list_product {
     list-style: disc inside url("marcador.png");
 }
+
+@media only screen and (max-width: 768px) {
+    #container_product_select {
+        flex-direction: column;
+        padding: 30px 12.85%;
+        width: 93.71%;
+        gap: 4.6%;
+    }
+    
+    .product_selected {
+    
+        &_img {
+            width: 79.23%;
+        }
+    }
+
+    button {
+        align-self: center;
+    }
+
+    .container {
+
+        &_product_similar {
+            height: 61.76px;
+            padding: 8px 25px;
+    
+            --bs-nav-pills-link-active-bg: $color_accent_white;
+            --bs-nav-pills-link-active-color: #27262C;
+            --bs-nav-pills-border-radius: 20px 20px 0px 0px;
+            --bs-nav-link-color: #27262C;
+            --bs-nav-pills-link-active-bg: #FAFAFA;
+        }
+    }
+
+    .nav-pills {
+        width: 93.71%;
+        padding: 0px 4%;
+        justify-content: space-between;
+    }
+
+    .name_label {
+        display: none;
+    }
+}
