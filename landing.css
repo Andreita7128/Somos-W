@@ -916,11 +916,15 @@ i {
   flex-direction: column;
   margin: 20px;
 }
+.container_cards_container_2 button {
+  margin-top: 50px;
+}
 .container_cards_all {
   display: flex;
   width: 55%;
   flex-direction: column;
   float: right;
+  align-self: center;
 }
 
 .card_landing_title {
@@ -976,6 +980,7 @@ i {
   display: flex;
   flex-direction: column;
   height: 750px;
+  margin-top: 100px;
   padding: 40px 12%;
   background: #BDF0F2;
 }

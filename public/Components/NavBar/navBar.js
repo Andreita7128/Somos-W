@@ -1,90 +1,90 @@
 class NavBar extends HTMLElement {
-    constructor() {
-      super();
-      this.pages = [
-        {
-          url: '/landing.html',
-          title: 'Inicio'
-        },
-        {
-          url: '../../../CDT/CDT.html',
-          title: 'CDT'
-        },
-        {
-          url: '../../../Creditos/credito.html',
-          title: 'Microcrédito'
-        },
-        {
-          url: '/landing.html',
-          title: 'Inicio'
-        },
-        {
-          url: '/landing.html',
-          title: 'Inicio'
-        }
-      ];
-    }
-  
-    connectedCallback() {
-      this.render();
-      this.setupSearchForm();
-      this.setupCreditRedirect();
-      this.hideDropdownMenu();
-      const dropdownToggle = this.querySelector('.redirect-unique');
-      const dropdownMenu = dropdownToggle.nextElementSibling;
-  
-      dropdownToggle.addEventListener('mouseenter', () => {
-        if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
-          this.hideDropdownMenu();
-        } else {
-          this.showDropdownMenu();
-        }
-      });
-  
-      dropdownMenu.addEventListener('mouseleave', () => {
+  constructor() {
+    super();
+    this.pages = [{
+        url: 'https://andreita7128.github.io/Pag-Banco-W/landing.html',
+        title: 'Inicio'
+      },
+      {
+        url: 'https://andreita7128.github.io/Pag-Banco-W/CDT/CDT.html',
+        title: 'CDT'
+      },
+      {
+        url: 'https://andreita7128.github.io/Pag-Banco-W/Creditos/credito.html',
+        title: 'Microcrédito'
+      },
+      {
+        url: 'https://andreita7128.github.io/Pag-Banco-W/landing.html',
+        title: 'Inicio'
+      },
+      {
+        url: 'https://andreita7128.github.io/Pag-Banco-W/landing.html',
+        title: 'Inicio'
+      }
+    ];
+
+  }
+
+  connectedCallback() {
+    this.render();
+    this.setupSearchForm();
+
+    this.hideDropdownMenu();
+    const dropdownToggle = this.querySelector('.redirect-unique');
+    const dropdownMenu = dropdownToggle.nextElementSibling;
+
+    dropdownToggle.addEventListener('mouseenter', () => {
+      if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
         this.hideDropdownMenu();
-      });
-    }
-  
-    showDropdownMenu() {
-      const dropdownToggle = this.querySelector('.redirect-unique');
-      const dropdownMenu = dropdownToggle.nextElementSibling;
+      } else {
+        this.showDropdownMenu();
+      }
+    });
+
+    dropdownMenu.addEventListener('mouseleave', () => {
+      this.hideDropdownMenu();
+    });
+  }
+
+  showDropdownMenu() {
+    const dropdownToggle = this.querySelector('.redirect-unique');
+    const dropdownMenu = dropdownToggle.nextElementSibling;
+    dropdownToggle.setAttribute('aria-expanded', 'true');
+    dropdownMenu.classList.add('show');
+
+    dropdownMenu.addEventListener('mouseenter', () => {
       dropdownToggle.setAttribute('aria-expanded', 'true');
       dropdownMenu.classList.add('show');
-  
-      dropdownMenu.addEventListener('mouseenter', () => {
-        dropdownToggle.setAttribute('aria-expanded', 'true');
-        dropdownMenu.classList.add('show');
-      });
-  
-      dropdownMenu.addEventListener('mouseleave', () => {
-        dropdownToggle.setAttribute('aria-expanded', 'false');
-        dropdownMenu.classList.remove('show');
-      });
-    }
-  
-    hideDropdownMenu() {
-      const dropdownToggle = this.querySelector('.redirect-unique');
-      const dropdownMenu = dropdownToggle.nextElementSibling;
+    });
+
+    dropdownMenu.addEventListener('mouseleave', () => {
       dropdownToggle.setAttribute('aria-expanded', 'false');
       dropdownMenu.classList.remove('show');
-    }
-  
-    render() {
-      this.innerHTML = `
+    });
+  }
+
+  hideDropdownMenu() {
+    const dropdownToggle = this.querySelector('.redirect-unique');
+    const dropdownMenu = dropdownToggle.nextElementSibling;
+    dropdownToggle.setAttribute('aria-expanded', 'false');
+    dropdownMenu.classList.remove('show');
+  }
+
+  render() {
+    this.innerHTML = `
         
         <!-- Resto del código HTML -->
-        <link rel="stylesheet" href="./public/Components/NavBar/navBar.css">
+        <link rel="stylesheet" href="../../../public/Components/NavBar/navBar.css">
         
         <nav class="navbar navbar-expand-lg navbar-light d-none  d-md-block first-nav fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/landing.html">
-                    <img class="logo1" src="./public/Components/NavBar/images/logo.png" alt="Logo de mi sitio web">
+                <a class="navbar-brand" href="https://andreita7128.github.io/Pag-Banco-W/landing.html">
+                    <img class="logo1" src="https://andreita7128.github.io/Pag-Banco-W/public/Components/NavBar/images/logo-banco.png" alt="Logo de mi sitio web">
                 </a>
             <div class="d-flex justify-content-center align-items-center">
-                <form id = 'search-1' class="d-flex my-2 my-lg-0">
+                <form id = 'search-1' class="d-flex my-2 my-lg-0 search-form">
                     <input class="form-control me-2 placeholder-input-desk headline5" type="search"
-                    placeholder="¿Que estas buscando?" aria-label="Search">
+                    placeholder="¿Que estás buscando?" aria-label="Search">
                 <button class="btn btn_large_active search_button_desk " type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
@@ -92,11 +92,11 @@ class NavBar extends HTMLElement {
                 <ul class="navbar-nav">
                     <li class="nav-item ">
                         <a class="btn btn_medium btn_medium_active text_button_medium nav_btn" href="#"><i
-                        class="bi bi-telephone"></i>Canal de atención</a>
+                        class="bi bi-telephone" style="margin-right: 15px"></i>Canal de atención</a>
                     </li>
                     <li class="nav-item">
                         <a id = "perfil-link" class="btn btn_medium btn_medium_active text_button_medium nav_btn" style="margin-left: 10px;"
-                        href="../../../Registro/iniciarSesión.html"><i class="bi bi-person"></i>Mi perfil W</a>
+                        href="../../../Registro/iniciarSesión.html"><i class="bi bi-person" style="margin-right: 15px"></i>Mi perfil W</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +106,7 @@ class NavBar extends HTMLElement {
         <nav class="navbar navbar-expand-lg navbar-dark  second_nav fixed-top">
             <div class="container-fluid mx-auto background_responsive_navbar">
                 <a class="navbar-brand d-md-none" href="#">
-                <img class="logo1" src="/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
+                <img class="logo1" src="/Pag-Banco-W/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
                 </a>
     
             <button class="navbar-toggler ms-auto button_toggler" type="button" data-bs-toggle="collapse"
@@ -122,7 +122,7 @@ class NavBar extends HTMLElement {
                 </form>
                 <li class="nav-item d-md-none d-block">
                 <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
-                href="../../../Registro/iniciarSesión.html">Mi perfil W</a>
+                href="/Pag-Banco-W/Registro/iniciarSesión.html">Mi perfil W</a>
             </li>
             <li class="nav-item d-md-none d-block">
                 <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
@@ -131,7 +131,7 @@ class NavBar extends HTMLElement {
                 <ul class="navbar-nav mx-auto second_nav_link">
                 
                     <li class="nav-item border-bottom-gg">
-                        <a class="nav-link" href="../../../landing.html">Inicio</a>
+                        <a class="nav-link" href="https://andreita7128.github.io/Pag-Banco-W/landing.html">Inicio</a>
                     </li>
          
 
@@ -139,7 +139,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle nav-link-pressed  " href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Ahorro e inversión </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../../../CDT/CDT.html">CDT</a>
+                            <a class="dropdown-item" href="../../../Ahorro-Inversión/CDT/CDT.html">CDT</a>
                             <a class="dropdown-item" href="#">Cuenta de ahorro</a>
                             <a class="dropdown-item" href="#">Deposito de bajo monto</a>
                             <a class="dropdown-item" href="#">Ahorranza</a>
@@ -152,11 +152,10 @@ class NavBar extends HTMLElement {
 
 
                     <li class="nav-item dropdown border-bottom-gg">
-                        <a class="nav-link dropdown-toggle nav-link-pressed redirect-unique" href="../../../Creditos/all-credits.html" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle nav-link-pressed redirect-unique" href="../../../Creditos/All/all-credits.html" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"> Crédito </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../../../Creditos/All/all-credits.html">Todos</a>
-                            <a class="dropdown-item" href="../../../Creditos/credito.html">Microcredito</a>
+                            <a class="dropdown-item" href="../../../Creditos/credito.html">Microcrédito</a>
                             <a class="dropdown-item" href="#">Yo construyo</a>
                             <a class="dropdown-item" href="#">Gotahorro</a>
                             <a class="dropdown-item" href="#">Inmueble productivo</a>
@@ -183,7 +182,7 @@ class NavBar extends HTMLElement {
                         aria-expanded="false"> Giros internacionales </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Giros/reclamarGiro.html">Reclamar giros</a>
-                            <a class="dropdown-item" href="#">Enviar Giros</a>
+                            <a class="dropdown-item" href="../../../Giros/enviarGiro.html">Enviar Giros</a>
                             
                         </div>
                     </li>
@@ -191,10 +190,10 @@ class NavBar extends HTMLElement {
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
                         aria-expanded="false"> Comunidad W </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../../../ComunidadW/comunidadW.html">W contigo</a>
+                            <a class="dropdown-item" href="../../../ComunidadW/W-Contigo/comunidadw.html">W contigo</a>
                             <a class="dropdown-item" href="../../../ComunidadW/Premios-Invencibles/premios.html">Premios invencibles W</a>
                             <a class="dropdown-item" href="../../../ComunidadW/Refiere/refiere.html">Refiere y gana</a>
-                            <a class="dropdown-item" href="../../../clasificados/clasificados.html">Clasificados</a>
+                            <a class="dropdown-item" href="../../../ComunidadW/Clasificados/clasificados.html">Clasificados</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown ">
@@ -215,62 +214,66 @@ class NavBar extends HTMLElement {
 
 
       `;
-      
-      setTimeout(() => {
-        const dropdownToggle = this.querySelector('.redirect-unique');
-        const dropdownMenu = dropdownToggle.nextElementSibling;
-  
-        dropdownToggle.addEventListener('mouseenter', () => {
-          if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
-            this.hideDropdownMenu();
-          } else {
-            this.showDropdownMenu();
-          }
-        });
-  
-        dropdownMenu.addEventListener('mouseleave', () => {
+
+    setTimeout(() => {
+      const dropdownToggle = this.querySelector('.redirect-unique');
+      const dropdownMenu = dropdownToggle.nextElementSibling;
+
+      dropdownToggle.addEventListener('mouseenter', () => {
+        if (dropdownToggle.getAttribute('aria-expanded') === 'true') {
           this.hideDropdownMenu();
-        });
-      }, 0);
-      document.body.style.paddingTop = '8rem';
-  
-      const perfilLink = this.querySelector('#perfil-link');
-      const sesionActiva = sessionStorage.getItem('sesionActiva');
-  
-      if (sesionActiva === 'true') {
-        perfilLink.href = '/Perfil/perfil.html';
+        } else {
+          this.showDropdownMenu();
+        }
+      });
+
+      dropdownMenu.addEventListener('mouseleave', () => {
+        this.hideDropdownMenu();
+      });
+    }, 0);
+    document.body.style.paddingTop = '8rem';
+
+    const perfilLink = this.querySelector('#perfil-link');
+    const sesionActiva = sessionStorage.getItem('sesionActiva');
+
+    if (sesionActiva === 'true') {
+      perfilLink.href = '/Pag-Banco-W/Perfil/perfil.html';
+    } else {
+      perfilLink.href = '/Pag-Banco-W/Registro/iniciarSesión.html';
+    }
+  }
+
+  setupSearchForm() {
+    const searchForm1 = this.querySelector('#search-1');
+    const searchForm2 = this.querySelector('#search-2');
+    searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
+    searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
+
+  }
+  handleSearchSubmit(event) {
+    event.preventDefault();
+    const searchInput = this.querySelector('input[type="search"]');
+    const searchTerm = searchInput.value;
+
+    if (searchTerm.trim() !== '') {
+      const searchResults = this.pages.filter((page) =>
+        page.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      if (searchResults.length > 0) {
+        const firstResult = searchResults[0];
+        window.location.href = firstResult.url;
       } else {
-        perfilLink.href = '/Registro/iniciarSesión.html';
+        console.log('No se encontró la búsqueda');
       }
     }
-  
-    setupSearchForm() {
-      const searchForm1 = this.querySelector('#search-1');
-      const searchForm2 = this.querySelector('#search-2');
-      searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
-      searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
-
   }
-  
-    handleSearchSubmit(event) {
-      event.preventDefault();
-      const searchInput = this.querySelector('input[type = "search"]')
-      const searchTerm = searchInput.value;
 
-      if (searchTerm.trim() !== '') {
-          const searchResults = this.pages.filter((page) => page.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()))
-          if (searchResults.length > 0) {
-              const firstResult = searchResults[0];
-              window.location.href = firstResult.url
 
-          } else {
-              console.log('no se encontro la busqueda')
-          }
-      }
-  }
-  
- 
-  }
-  
-  customElements.define('w-nav-bar', NavBar);
-  
+
+
+
+
+
+}
+
+customElements.define('w-nav-bar', NavBar);

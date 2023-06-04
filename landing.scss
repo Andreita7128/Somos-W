@@ -236,6 +236,10 @@ i {
             display: flex;
             flex-direction: column;
             margin: 20px;
+
+            & button {
+                margin-top: 50px;
+            }
         }
     }
 
@@ -244,6 +248,7 @@ i {
         width: 55%;
         flex-direction: column;
         float: right;
+        align-self: center;
     }
 }
 
@@ -313,6 +318,7 @@ i {
     display: flex;
     flex-direction: column;
     height: 750px;
+    margin-top: 100px;
     padding: 40px 12%;
     background: $color_blue3;
 

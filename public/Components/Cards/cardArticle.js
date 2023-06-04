@@ -418,6 +418,23 @@ class cardForBlog extends HTMLElement {
     return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2"];
   }
 
+
+incrementarContador() {
+
+  const icon = document.getElementById("like");
+
+  if(icon === "bi-heart"){
+    icono.classList.remove("bi-heart");
+    icono.classList.add("bi-heart-fill");
+
+    parseInt(this.likes)
+    document.getElementById("count").textContent = this.likes++;
+    
+  }
+  
+  
+}
+
   attributeChangedCallback(nameAtr, oldValue, newValue) {
 
     switch (nameAtr) {
@@ -507,7 +524,7 @@ class cardForBlog extends HTMLElement {
         <section class="card-interactions">
             <div class="left">
                 <div class="likes">
-                    <i class="bi bi-heart"></i><p>${this.likes}</p></div>
+                    <i id="like" class="bi bi-heart" onclick="incrementarContador()"></i><p id="count">${this.likes}</p></div>
                 <div class="comments">
                     <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
             </div>
@@ -516,7 +533,6 @@ class cardForBlog extends HTMLElement {
     </section>
 
         `
-
 
   }
 }
