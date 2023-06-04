@@ -245,30 +245,29 @@ class NavBar extends HTMLElement {
     }
   
     setupSearchForm() {
-      const searchForms = this.querySelectorAll('form.search-form');
-      searchForms.forEach((searchForm) => {
-        searchForm.addEventListener('submit', this.handleSearchSubmit.bind(this));
-      });
-    }
+      const searchForm1 = this.querySelector('#search-1');
+      const searchForm2 = this.querySelector('#search-2');
+      searchForm1.addEventListener('submit', this.handleSearchSubmit.bind(this));
+      searchForm2.addEventListener('submit', this.handleSearchSubmit.bind(this));
+
+  }
   
     handleSearchSubmit(event) {
       event.preventDefault();
-      const searchInput = event.target.querySelector('input[type="search"]');
-      const searchTerm = searchInput.value.trim();
-  
-      if (searchTerm !== '') {
-        const searchResults = this.pages.filter(page =>
-          page.title.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-  
-        if (searchResults.length > 0) {
-          const firstResult = searchResults[0];
-          window.location.href = firstResult.url;
-        } else {
-          console.log('No se encontró la búsqueda');
-        }
+      const searchInput = this.querySelector('input[type = "search"]')
+      const searchTerm = searchInput.value;
+
+      if (searchTerm.trim() !== '') {
+          const searchResults = this.pages.filter((page) => page.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()))
+          if (searchResults.length > 0) {
+              const firstResult = searchResults[0];
+              window.location.href = firstResult.url
+
+          } else {
+              console.log('no se encontro la busqueda')
+          }
       }
-    }
+  }
   
  
   }
