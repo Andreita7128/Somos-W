@@ -82,17 +82,19 @@ h5 {
 }
 
 .body {
-    font-weight: 500;
-
+    
     &_1 {
         font-size: 18px;
+        font-weight: 500;
     }
-
+    
     &_2 {
+        font-weight: 500;
         font-size: 16px;
     }
-
+    
     &_3 {
+        font-weight: 500;
         font-size: 14px;
     }
 }

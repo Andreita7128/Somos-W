@@ -1,4 +1,4 @@
-@import '../style.scss';
+@import '../../style.scss';
 
 #share {
     display: flex;
@@ -25,11 +25,11 @@
 }
 
 .img_share {
-        width: 45%;
+    width: 45%;
 
-        &_mobile {
-            display: none;
-        }
+    &_mobile {
+        display: none;
+    }
 }
 
 #ours_labels {
@@ -89,6 +89,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .container {
 
     &_all {
@@ -96,7 +97,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center; 
+        align-items: center;
     }
 
     &_eachCard {
@@ -153,12 +154,12 @@
         padding: 0%;
         width: 100%;
         margin-right: 0px;
-        
+
         & h1 {
             width: 90% !important;
             margin: 0px;
         }
-    
+
         & p {
             margin: 10px 0px;
             width: 100%;
@@ -217,7 +218,7 @@
         padding: 0px 5.2%;
         margin: 0px;
 
-        &_title{
+        &_title {
             display: none;
         }
 
@@ -226,7 +227,7 @@
             margin-bottom: 50px;
         }
     }
-    
+
     .container_labels {
         display: none;
     }
@@ -241,3 +242,283 @@
 
 }
 
+
+//----------------------------------Vista historia--------------------------
+
+main {
+    padding: 65px 12%;
+
+    & i {
+        color: $color_accent_black;
+        font-size: 24px;
+    }
+
+    & #circle_orange {
+        display: none;
+    }
+}
+
+#card_storie {
+    margin: 60px 0%;
+    display: flex;
+}
+
+.card {
+
+    &_complete {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        color: $color_accent_white;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+
+        & .desk {
+            width: 45%;
+            border-radius: 20px 0px 0px 20px;
+
+        }
+
+        & .mobile {
+            display: none;
+        }
+    }
+
+    &_head {
+        display: none;
+    }
+
+    &_body {
+        padding: 40px 4% 20px 4%;
+
+        &_mb {
+            display: none;
+        }
+
+        & h2 {
+            color: $color_text;
+        }
+
+        & p {
+            color: $color_text;
+        }
+
+        & hr {
+            color: $color_base_gray;
+        }
+
+        & .body_3 {
+            margin-top: 20px;
+        }
+    }
+
+    &_comment {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 15px 0%;
+        flex-direction: row;
+        align-items: center;
+        gap: 3%;
+
+        & img {
+            width: 50px;
+            height: 50px;
+        }
+
+        &_example {
+            width: 85%;
+            height: auto;
+            padding: 10px 4%;
+            background: $fill_input;
+            border-radius: 48px;
+
+            & p {
+                color: $color_text_disable;
+            }
+        }
+    }
+
+    &_react {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        gap: 15% !important;
+
+        & .red {
+            color: $color_error;
+            cursor: pointer;
+        }
+
+        & .black {
+            color: $color_accent_black;
+        }
+    }
+
+    &_actions {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.inputComments {
+    width: 65% !important;
+}
+
+#stories {
+    padding: 100px 0%;
+}
+
+#labels {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 65px 5.2%;
+
+        & i {
+            color: $color_accent_black;
+            font-size: 24px;
+        }
+
+        & #circle_orange {
+            display: flex;
+            width: 110.4%;
+            margin-top: -94px;
+            margin-left: -5.2%;
+        }
+
+    }
+
+    .arrow_change {
+        position: absolute;
+        left: 5.2%;
+        top: 170px;
+
+        & i {
+            color: $color_accent_white;
+        }
+    }
+
+    #card_storie {
+        margin-top: -245px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    .card {
+
+        &_complete {
+            flex-direction: column;
+
+            & .desk {
+                display: none;
+            }
+
+            & .mobile {
+                display: block;
+            }
+        }
+
+        &_head {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: $color_blue1;
+            padding: 25px 6%;
+            gap: 6%;
+            border-radius: 20px 20px 0px 0px;
+
+            & img {
+                width: 46px;
+                height: 46px;
+            }
+
+            & h4 {
+                margin: 0%;
+                color: $color_accent_white;
+            }
+        }
+
+        &_body {
+            display: none;
+
+
+            &_mb {
+                display: flex;
+                flex-direction: column;
+                padding: 25px 6%;
+                gap: 20px;
+
+                & h2 {
+                    color: $color_text;
+                    margin: 0%;
+                }
+
+                & p {
+                    color: $color_text;
+                }
+            }
+
+        }
+
+        &_comment {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 15px 0%;
+            flex-direction: row;
+            align-items: center;
+            gap: 3%;
+
+            & img {
+                width: 50px;
+                height: 50px;
+            }
+
+            &_example {
+                width: 85%;
+                height: auto;
+                padding: 10px 4%;
+                background: $fill_input;
+                border-radius: 48px;
+
+                & p {
+                    color: $color_text_disable;
+                }
+            }
+        }
+
+        &_actions {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 12%;
+        }
+    }
+
+    .grayInput {
+        width: 65% !important;
+    }
+
+    #stories {
+        display: none;
+    }
+
+    #labels {
+        display: block;
+        padding: 20px 5.2% 60px 5.2%;
+    }
+
+    #w_card_s {
+        padding: 20px 5.2%;
+    }
+}

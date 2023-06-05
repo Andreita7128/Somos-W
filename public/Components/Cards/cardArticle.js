@@ -412,28 +412,14 @@ class cardForBlog extends HTMLElement {
     this.color_2 = ""; //color tag 2: family , business, grow
     this.likes = 0;
     this.comments = 0;
+    this.isChange = false;
+    this.counter = null;
+    this.icon = null;
   }
 
   static get observedAttributes() {
     return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2"];
   }
-
-
-incrementarContador() {
-
-  const icon = document.getElementById("like");
-
-  if(icon === "bi-heart"){
-    icono.classList.remove("bi-heart");
-    icono.classList.add("bi-heart-fill");
-
-    parseInt(this.likes)
-    document.getElementById("count").textContent = this.likes++;
-    
-  }
-  
-  
-}
 
   attributeChangedCallback(nameAtr, oldValue, newValue) {
 
@@ -496,7 +482,7 @@ incrementarContador() {
     this.innerHTML = `
         <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
 
-       <section class="fondo-card">
+        <section class="fondo-card">
         <section class="card-imagen">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
         </section>
@@ -512,8 +498,7 @@ incrementarContador() {
             ${this.tags_2}
           </span>
         </h6>
-        
-           
+      
         </section>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
@@ -524,7 +509,7 @@ incrementarContador() {
         <section class="card-interactions">
             <div class="left">
                 <div class="likes">
-                    <i id="like" class="bi bi-heart" onclick="incrementarContador()"></i><p id="count">${this.likes}</p></div>
+                    <i id="like" class="bi bi-heart"></i><p id="count">${this.likes}</p></div>
                 <div class="comments">
                     <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
             </div>
@@ -534,8 +519,36 @@ incrementarContador() {
 
         `
 
+    this.counter = this.querySelector('#count');
+    this.icon = this.querySelector('#like');
+
+    if (localStorage.getItem('count')) {
+      this.counter.textContent = localStorage.getItem('count');
+    }
+
+    this.icon.addEventListener('click', () => {
+      if (this.isChange) {
+        this.icon.className = 'bi bi-heart';
+        let number = parseInt(this.counter.textContent);
+        number -= 1;
+        this.counter.textContent = number;
+        localStorage.setItem('count', number);
+        this.isChange = false;
+      } else {
+        this.icon.className = 'bi bi-heart-fill';
+        let number = parseInt(this.counter.textContent);
+        number += 1;
+        this.counter.textContent = number;
+        localStorage.setItem('count', number);
+        this.isChange = true;
+      }
+    });
   }
+
+
+
 }
+
 
 
 
