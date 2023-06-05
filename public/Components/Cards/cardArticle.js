@@ -486,9 +486,11 @@ class cardForBlog extends HTMLElement {
           <section class="card-interactions">
             <div class="left">
               <div class="likes">
-                <i class="bi bi-heart"></i><p>${this.likes}</p></div>
+                <i class="bi bi-heart"></i><p>${this.likes}</p>
+              </div>
               <div class="comments">
-                <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
+                <i class="bi bi-chat-left"></i><p>${this.comments}</p>
+              </div>
             </div>
             <div class="punticos">...</div>
           </section>

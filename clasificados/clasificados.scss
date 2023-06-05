@@ -88,6 +88,8 @@
         gap: 20px;
         margin-bottom: 88px;
 
+        
+
         label{
             font-weight: 600;
             color: $color_text;
@@ -115,7 +117,20 @@
 
 
 @media only screen and (max-width: 768px) {
+    .classified-section{
+        justify-content: center;
+    }
+
     .classified-banner-img{
         display: none;
+    }
+    
+    .publish{
+        &_img{
+            display: none; 
+        }
+        &_body{
+            padding: 10%;
+        }
     }
 }
