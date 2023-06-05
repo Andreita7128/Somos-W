@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Grandeza</title>
+
+    <!--Css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!--Css link-->
+    <link rel="stylesheet" href="./comunidadW.css">
+
+    <!--Typography-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <w-nav-bar></w-nav-bar>
+        <bread-n-title actual="W Contigo" link="../../landing.html-./comunidadw.html" level="Inicio >-Comunidad W >">
+        </bread-n-title>
+    </header>
+
+    <main>
+        <img id="circle_orange" src="./img/pm1.png" alt="">
+        <a href="./comunidadw.html" class="arrow_change">
+            <i class="bi bi-chevron-left"></i>
+        </a>
+
+        <section id="card_storie">
+            <article class="card_complete">
+                <div class="card_head">
+                    <img src="./img/avatar.png" alt="">
+                    <h4>Aurora Chávez</h4>
+                </div>
+
+                <img class="desk" src="./img/hg.png" alt="">
+                <img class="mobile" src="./img/hgm.png" alt="">
+
+                <div class="card_body">
+                    <h2>Microcrédito una buena opción</h2>
+                    <p class="body_1">Al principio no sabíamos qué era un microcrédito pero luego nos enteramos que era
+                        la mejor opción gracias a que... descubrimos que un microcrédito era la mejor opción para
+                        financiar nuestro proyecto de emprendimiento debido a su flexibilidad en los requisitos de
+                        crédito, montos adecuados, tasas de interés razonables, plazos de pago flexibles, capacitación
+                        empresarial y enfoque en la inclusión financiera. Obtener un microcrédito nos permitió superar
+                        barreras financieras y materializar nuestro proyecto con éxito.</p>
+                    <hr>
+                    <p class="body_2">Comentarios</p>
+                    <p class="body_3">Aurora Chávez</p>
+                    <div class="card_comment">
+                        <img src="./img/avatar.png" alt="">
+                        <div class="card_comment_example">
+                            <p class="body_2">¡Vaya reflexión! He aprendido demasiado, creo que considerare tomar el
+                                microcrédito.</p>
+                        </div>
+                    </div>
+                    <div class="card_actions">
+                        <div class="card_react">
+                            <i class="bi bi-heart red" id="card_icon"></i>
+                            <p class="text_button_medium red" id="count-likes">159</p>
+                        </div>
+                        <div class="card_react">
+                            <i class="bi bi-chat-left-dots .black"></i>
+                            <p class="text_button_medium .black">100</p>
+                        </div>
+                        <input type="text" name="story-comment" placeholder="Agrega un comentario" id="coment_story"
+                            class="grayInput inputComments">
+                    </div>
+                </div>
+
+                <div class="card_body_mb">
+                    <h2>Microcrédito una buena opción</h2>
+                    <p class="body_1">Al principio no sabíamos qué era un microcrédito pero luego nos enteramos que era
+                        la mejor opción gracias a que... descubrimos que un microcrédito era la mejor opción para
+                        financiar nuestro proyecto de emprendimiento debido a su flexibilidad en los requisitos de
+                        crédito, montos adecuados, tasas de interés razonables, plazos de pago flexibles, capacitación
+                        empresarial y enfoque en la inclusión financiera. Obtener un microcrédito nos permitió superar
+                        barreras financieras y materializar nuestro proyecto con éxito.</p>
+                    <div class="card_actions">
+                        <div class="card_react">
+                            <i class="bi bi-heart red" id="card_icon_mb"></i>
+                            <p class="text_button_medium red" id="count-likes_mb">159</p>
+                        </div>
+                        <div class="card_react">
+                            <i class="bi bi-chat-left-dots .black"></i>
+                            <p class="text_button_medium .black">100</p>
+                        </div>
+                        <i style="margin-left: 30%" class="bi bi-three-dots .black"></i>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="stories">
+            <h3>Conoce más historias</h3>
+            <div class="container_all">
+                <div class="container_eachCard">
+                    <card-forblog recurso="./img/card1.png" titulo='Me encanta banco W'
+                        contenido="Las mejores opciones en cuanto a apoyo financiero, este banco me salvó con su crédito  gotahorro ya que me ayudó a... "
+                        likes='149' comments="87" tags="Crecemos juntos" color="grow" tags_2="Aprende en familia"
+                        color_2="family"></card-forblog>
+                </div>
+                <div class="container_eachCard">
+                    <card-forblog recurso="./img/card2.png" titulo='La constancia nos llevan a cumplir nuestros sueños'
+                        contenido="Conoce la historia de Tomás quien, con su empresa de distribución y plásticos ha logrado salir adelante..."
+                        likes='101' comments="15" tags="Crece con tu negocio" color="business"></card-forblog>
+                </div>
+                <div class="container_eachCard">
+                    <card-forblog recurso="./img/card3.png" titulo='Microcrédito una buena opción'
+                        contenido="Al principio no sabíamos que era un microcrédito pero luego nos enteramos que era la mejor opción"
+                        likes='159' comments="100" tags="Crecemos juntos" color="grow"></card-forblog>
+                </div>
+            </div>
+            <div class="btn_mas">
+                <a href="./comunidadw.html" style="text-decoration: none; margin: 0%; width: 100%;">
+                    <button style="margin-left: 43%; margin-bottom: 100px;" class="btn btn_medium btn_medium_active">Ver
+                        más</button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="w_card_s">
+        <div id="w_card_mobile">
+            <image-card recurso="./img/m2.png" titulo="Atrévete a ser parte de la comunidad W"
+                contenido="Cuéntanos acerca de tu historia de grandeza, agrega las categorías y forma parte de nuestra comunidad W"
+                boton="Publica tu historia" link="./publicacionvista.html"></image-card>
+        </div>
+    </section>
+
+
+    <section id="labels">
+        <article id="labels_card">
+            <card-boton icon="bi bi-people" titulo="Conoce más sobre 
+            nuestras categorías"
+                contenido="Aprende sobre nuestras categorías, estas te ayudaran a encontrar las historias que más se ajusten a tus intereses"
+                boton="Continuar"></card-boton>
+        </article>
+    </section>
+
+
+    <footer>
+        <w-footer></w-footer>
+    </footer>
+
+    <script src="./story.js"></script>
+
+    <script type="module" src="../../public/Components/components.js"></script>
+
+    <!--Js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
