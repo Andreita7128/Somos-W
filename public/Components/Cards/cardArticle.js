@@ -416,102 +416,83 @@ class cardForBlog extends HTMLElement {
 
     attributeChangedCallback(nameAtr, oldValue, newValue) {
 
-        switch (nameAtr) {
-            case "recurso":
+      switch (nameAtr) {
+        case "recurso":
+          this.recurso = newValue
+          break;
 
-                this.recurso = newValue
+        case "titulo":
+          this.titulo = newValue
+          break;
 
-                break;
+        case "contenido":
+          this.contenido = newValue
+          break;
 
-            case "titulo":
+        case "likes":
+          this.likes = newValue
+          break;
 
-                this.titulo = newValue
-
-                break;
-
-            case "contenido":
-
-                this.contenido = newValue
-
-                break;
-
-            case "likes":
-
-                this.likes = newValue
-
-                break;
-
-            case "comments":
-
-                this.comments = newValue
-
-                break;
-                
-                case "tags":
-
-                this.tags = newValue
-
-        break;
+        case "comments":
+          this.comments = newValue
+          break;
+            
+        case "tags":
+          this.tags = newValue
+          break;
 
         case "color":
-        this.color = newValue;
-
-        break;
+          this.color = newValue;
+          break;
 
         case "tags_2":
-        this.tags_2 = newValue;
-
-        break;
+          this.tags_2 = newValue;
+          break;
 
         case "color_2":
-        this.color_2 = newValue;
-
-        break;
+          this.color_2 = newValue;
+          break;
+      }
     }
-  }
 
     connectedCallback() {
 
-        this.innerHTML = `
-       <section class="fondo-card">
-        <section class="card-imagen">
+      this.innerHTML = `
+        <section class="fondo-card">
+          <section class="card-imagen">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
-        </section>
-        <section class="labels-site">
-        
-        <h6>
-          <span class="badge rounded-pill tag_w tag_${this.color}">
-            ${this.tags}
-          </span>
-        </h6>
-        <h6>
-          <span class="badge rounded-pill tag_w tag_${this.color_2}">
-            ${this.tags_2}
-          </span>
-        </h6>
-        
-           
-        </section>
-        <section class="texto-card">
+          </section>
+
+          <section class="labels-site">
+            <h6>
+              <span class="badge rounded-pill tag_w tag_${this.color}">
+                ${this.tags}
+              </span>
+            </h6>
+            <h6>
+              <span class="badge rounded-pill tag_w tag_${this.color_2}">
+                ${this.tags_2}
+              </span>
+            </h6>
+          </section>
+
+          <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
             <p class="parrafo">
                 ${this.contenido}
             </p>
-        </section>
-        <section class="card-interactions">
+          </section>
+
+          <section class="card-interactions">
             <div class="left">
-                <div class="likes">
-                    <i class="bi bi-heart"></i><p>${this.likes}</p></div>
-                <div class="comments">
-                    <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
+              <div class="likes">
+                <i class="bi bi-heart"></i><p>${this.likes}</p></div>
+              <div class="comments">
+                <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
             </div>
             <div class="punticos">...</div>
-        </section>
-    </section>
-
-        `
-
- 
+          </section>
+        </section>`
       }
     }
 

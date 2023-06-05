@@ -66,6 +66,9 @@ p {
     }
 }
 
+#pse_agenda_btn{
+    width: 35%;
+}
 .check {
 
     &-label {
@@ -373,6 +376,11 @@ a {
                 margin-right: 25px;
             }
         }
+    }
+
+    #pse_agenda_btn{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
