@@ -80,13 +80,13 @@
                 font-size: 16px;
                 line-height: 120%;">
                             Verifica sus datos como: </span><br> Cédula, nombre, celular, ciudad y
-                            departamento.</p>
+                        departamento.</p>
 
                 </section>
             </section>
 
         </section>
-        <section class="form">
+        <form class="form">
             <section class="fondoform">
                 <section class="headerform">
                     <h2 class="_titulo_">¡Comienza a referir!</h2>
@@ -110,12 +110,39 @@
                             de datos</p>
                     </section>
                     <section style="display: flex; justify-content: center;">
-                        <button id="btn-formreferir" class="btn_medium_active btn_medium btn">Ingresar</button>
+                        <button type="button" class="btn btn_large_active button_continuar" style="width: 80%;"
+                            data-bs-toggle="modal" data-bs-target="#successModal" >Ingresar</button>
                     </section>
                 </section>
             </section>
-        </section>
     </section>
+    </section>
+
+    <!-- Pop-up -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del pop-up -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i> Información enviada con éxito
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <!-- Cuerpo del pop-up -->
+                <div class="modal-body">
+                    <p>Tu información ha sido enviada correctamente.</p>
+                </div>
+                <!-- Pie del pop-up -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
     <footer>
