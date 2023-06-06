@@ -1,1 +1,33 @@
-/*# sourceMappingURL=forms.css.map */
+.dropdown-menu-forms {
+  background-color: whitesmoke;
+  width: 100% !important;
+  overflow-y: auto;
+}
+
+.form-group-forms {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-input {
+  border-radius: 20px !important;
+}
+
+.progress-bar {
+  background-color: #5cb85c !important; /* Cambiar a tu color deseado */
+}
+
+.dropdown_form {
+  max-height: 250px !important;
+  overflow-y: auto !important;
+}
+
+.btn_continuar {
+  margin-left: 80%;
+}
+
+@media (max-width: 800px) {
+  .btn_continuar {
+    margin-left: 0% !important;
+  }
+}/*# sourceMappingURL=forms.css.map */

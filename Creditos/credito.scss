@@ -6,6 +6,9 @@
     margin-left: 8%;
 
 }
+.separar-cards{
+    scroll-margin-top: 150px !important;
+  }
 .image-card {
     width: 10px !important;
 }
@@ -115,12 +118,15 @@ section {
     color: $color_blue1;
 
     & button {
+        color: $color_blue1;
         width: 100%;
         margin-bottom: 0px !important;
     }
 
 }
-
+.style_card{
+    padding: 0%;
+}
 .dropdown {
     margin-bottom: 0px !important;
     color: $color_blue1;
@@ -133,13 +139,14 @@ section {
 
 .dropdown_reactive {
     margin-left: 0% !important;
+    border-radius: 0px;
     &:focus {
-        background-color: $color_blue1 !important;
+        background-color: $color_blue2 !important;
         color: white;
     }
 
     &:active {
-        background-color: $color_blue1 !important;
+        background-color: $color_blue2 !important;
     }
 
 }

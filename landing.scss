@@ -53,7 +53,6 @@ a {
 
 
 .container_carousel {
-
     &_text {
         display: flex;
         flex-direction: column;
@@ -65,6 +64,7 @@ a {
 
         & h1 {
             margin-bottom: 30px;
+            color: $color_orange2;
         }
 
         & p {
@@ -86,6 +86,11 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 20px 12%;
+
+}
+
+h2 {
+    color: $color_violet2;
 }
 
 .card {
@@ -99,75 +104,75 @@ a {
 }
 
 #product_similar {
-    padding: 30px 12%;
-    background-color: $color_base_white;
-    color: $color_text;
+    padding: 30px 12% 95px 12%;
+    background-color: $color_violet4;
 
-    & h3 {
-        margin: 55px 0px;
-        width: 50%;
+    & h2 {
+        color: $color_violet2;
+        width: 70%;
+        margin-bottom: 50px;
     }
+}
+
+.nav-pills {
+    width: 87.5%;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+#container_products {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 6.12%;
 }
 
 .container {
 
-    &_all {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-    }
-
     &_product_similar {
-        height: 72px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 8px 25px;
+        background: rgba(242, 242, 242, 0.7);
 
-        --bs-nav-pills-link-active-bg: #00B1BB;
+        --bs-nav-pills-link-active-bg: $color_accent_white;
         --bs-nav-pills-link-active-color: #27262C;
-        --bs-nav-pills-border-radius: 20px;
+        --bs-nav-pills-border-radius: 20px 20px 0px 0px;
         --bs-nav-link-color: #27262C;
-        //--bs-link-hover-color: 
-    }
-
-    &_all_products {
-        background-color: $color_accent_white;
-        display: flex;
-        flex-direction: row;
-        padding: 20px 28px;
-        gap: 50px;
-        width: 70%;
-        height: 112px;
-        border-radius: 20px;
+        --bs-nav-pills-link-active-bg: #FAFAFA;
     }
 }
 
+i {
+    font-size: 25px;
+}
+
+
+.tab-content {
+    margin-top: -20px;
+}
 
 #container_product_select {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 40px 40px;
-    width: 100%;
-    height: 470px;
+    padding: 50px 9.2%;
+    width: 87.5%;
+    height: auto;
     background-color: $color_accent_white;
     box-shadow: 0px 3.16604px 11.0812px rgba(0, 0, 0, 0.15);
-    border-radius: 24px;
+    border-radius: 0px 20px 20px;
+    gap: 4.6%;
 }
 
 .product_selected {
-    &_img {
-        width: 100%;
 
-        &_container {
-            width: 43%;
-        }
+    &_img {
+        width: 46.07%;
     }
 
     &_text {
@@ -176,10 +181,23 @@ a {
         justify-content: center;
         align-items: center;
         align-items: flex-start;
-        padding: 10.2457px;
         gap: 5.12px;
-        width: 43%;
+        width: 48, 34%;
         background-color: $color_accent_white;
+
+        & h5 {
+            color: $color_dark_violet1;
+        }
+
+        & h4 {
+            color: $color_blue2;
+        }
+
+        & li {
+            color: $color_text;
+            margin: 7px 0px;
+        }
+
     }
 }
 
@@ -187,30 +205,26 @@ a {
     list-style: disc inside url("marcador.png");
 }
 
+
 #about_profile {
     padding: 30px 12%;
     color: $color_text;
 
-    & h3 {
+    & h2 {
         margin: 55px 0px;
     }
 
     &_cards {
         display: flex;
         flex-direction: row;
+
+        & img {
+            width: 50%;
+        }
     }
 }
 
 .container_cards {
-    &_img {
-        width: 50%;
-        margin-left: -80px;
-        float: left;
-
-        &_img {
-            width: 100%;
-        }
-    }
 
     &_container {
         &_1 {
@@ -222,6 +236,10 @@ a {
             display: flex;
             flex-direction: column;
             margin: 20px;
+
+            & button {
+                margin-top: 50px;
+            }
         }
     }
 
@@ -230,14 +248,17 @@ a {
         width: 55%;
         flex-direction: column;
         float: right;
+        align-self: center;
     }
 }
 
 .card_landing {
 
     &_title {
-        height: 94px;
+        width: 100%;
+        height: auto;
         display: flex;
+        padding: 10px 3%;
         justify-content: center;
         align-items: center;
         border-radius: 20px 20px 0px 0px;
@@ -253,12 +274,23 @@ a {
         &_blue {
             background-color: $color_blue2;
         }
+
+        & h4 {
+            width: 90%;
+            color: white;
+            margin: 0%;
+        }
     }
 
     &_body {
         display: flex;
+        padding: 20px 3%;
         justify-content: center;
         border-radius: 20px 20px 0px 0px;
+
+        & p {
+            margin: 0%;
+        }
     }
 
     &_text {
@@ -266,8 +298,7 @@ a {
     }
 
     &_small {
-        width: 255px;
-        height: 205px;
+        width: 50%;
         background: white;
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
@@ -283,58 +314,31 @@ a {
 
 }
 
-#channels_assistance {
-    padding: 50px 12%;
+#tips {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    margin-top: 100px;
+    padding: 40px 12%;
+    background: $color_blue3;
 
     & h3 {
-        margin: 35px 0px;
+        color: $color_text;
+    }
+
+    & p {
+        color: $color_text;
     }
 }
 
-.channels_container {
-    margin-top: 50px;
+.container_buttons {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 254px;
-    background: $color_accent_white;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    justify-content: center;
-
-    &_channel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        font-size: 45px;
-        margin: 30px;
-
-        &_text {
-            width: 129px;
-        }
-    }
-
+    gap: 24px;
+    margin-left: 20%;
+    padding-top: 100px;
 }
-
-.bi {
-    &-person-lines-fill {
-        color: $color_orange2;
-        font-size: 59px;
-    }
-
-    &-telephone-fill {
-        color: $color_blue1;
-    }
-
-    &-phone-fill {
-        color: $color_violet2;
-    }
-
-    &-geo-alt-fill {
-        color: $color_dark_violet1;
-    }
-}
-
 
 @media only screen and (max-width: 768px) {
 
@@ -357,10 +361,11 @@ a {
 
     #carousel {
         display: none;
+
         &_cards {
             display: flex;
             margin: -300px 20px 20px 20px;
-            
+
         }
     }
 
@@ -383,97 +388,58 @@ a {
     }
 
     #product_similar {
-        display: none;
         padding: 30px 0px;
-        background-color: white;
+        background-color: $color_blue3;
+        margin: 20px 0px;
 
-        & h3 {
+        & h2 {
+            width: 100%;
             margin: 0px 20px;
+            color: $color_blue1;
+            margin-bottom: 40px;
         }
+    }
+
+    #container_product_select {
+        flex-direction: column;
+        padding: 30px 12.85%;
+        width: 93.71%;
+        gap: 4.6%;
+    }
+
+    .product_selected {
+
+        &_img {
+            width: 79.23%;
+        }
+    }
+
+    button {
+        align-self: center;
     }
 
     .container {
 
-        &_all {
-            display: flex;
-            align-items: center;
-            margin: 0px;
-            flex-direction: column;
-
-            &_products {
-                margin-top: 20px;
-                background-color: $color_accent_white;
-                width: 100%;
-                height: 80px;
-                padding: 42px 8px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-        }
-
         &_product_similar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 8px 16px;
-            width: 100%;
-            height: 42px;
-            border-radius: 48px;
-            box-shadow: none;
-            margin-right: 20px;
+            height: 61.76px;
+            padding: 8px 25px;
 
-            &_active {
-                background-color: $color_blue1;
-                box-shadow: 0px 4px 10px rgba(0, 177, 187, 0.3);
-
-                &_text {
-                    color: $color_accent_white;
-                }
-            }
-
-            &_text {
-                color: $color_blue1;
-            }
+            --bs-nav-pills-link-active-bg: $color_accent_white;
+            --bs-nav-pills-link-active-color: #27262C;
+            --bs-nav-pills-border-radius: 20px 20px 0px 0px;
+            --bs-nav-link-color: #27262C;
+            --bs-nav-pills-link-active-bg: #FAFAFA;
         }
-
     }
 
-    #container_product_select {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        float: right;
-        width: 100%;
-        height: auto;
-        background-color: white;
-        box-shadow: none;
-        border-radius: 0px;
+    .nav-pills {
+        width: 93.71%;
+        padding: 0px 4%;
+        justify-content: space-between;
     }
 
-    .credit_text {
-        color: $color_orange2;
-    }
-
-    .product_selected {
-        &_img {
-            width: 100%;
-            float: none;
-        }
-
-        &_text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 5px;
-            width: 100%;
-            height: auto;
-            background: white;
-            flex: none;
-        }
+    .name_label {
+        display: none;
     }
 
     #about_profile {
@@ -484,35 +450,36 @@ a {
         &_cards {
             display: flex;
             flex-direction: column;
+
+            & img {
+                width: 100%;
+            }
         }
     }
 
     .container_cards {
-        &_img {
-            margin-left: 0px;
-            float: left;
-
-            &_img {
-                width: 100%;
-            }
-        }
 
         &_container {
             &_1 {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
             }
 
             &_2 {
                 display: flex;
                 flex-direction: column;
-                margin: 20px;
+                margin: 20px 0px 0px 20px;
+
+                & button {
+                    margin-top: 50px;
+                }
             }
         }
 
         &_all {
             display: flex;
-            width: 55%;
+            width: 100%;
             flex-direction: column;
             justify-content: space-between;
             float: none;
@@ -522,31 +489,35 @@ a {
     .card_landing {
 
         &_title {
-            height: 182px;
+            width: 100%;
             display: flex;
-            justify-content: center;
+            padding: 20px 6%;
+            justify-content: start;
             align-items: center;
             border-radius: 20px 20px 0px 0px;
 
             &_orange {
-                background-color: $color_accent_white;
-                color: $color_orange2;
+                background-color: $color_orange2;
             }
 
             &_violet {
-                background-color: $color_accent_white;
-                color: $color_violet2;
+                background-color: $color_violet2;
             }
 
             &_blue {
-                background-color: $color_accent_white;
-                color: $color_blue2;
+                background-color: $color_blue2;
+            }
+
+            & h4 {
+                width: 100%;
             }
         }
 
         &_body {
             display: flex;
-            justify-content: center;
+            padding: 20px 6%;
+            height: auto;
+            justify-content: start;
             border-radius: 20px 20px 0px 0px;
         }
 
@@ -555,16 +526,13 @@ a {
         }
 
         &_small {
-            width: 42%;
-            height: 182px;
-            background: white;
-            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-            border-radius: 20px;
-            margin: 20px;
+            width: 100%;
+            height: auto;
         }
 
         &_large {
-            height: 157px;
+            width: 100%;
+            height: auto;
             background: white;
             box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
@@ -572,18 +540,7 @@ a {
 
     }
 
-    #channels_assistance {
-        display: flex;
-        padding: 50px 20px;
-        flex-wrap: wrap;
-
-        & h3 {
-            margin: 35px 0px;
-        }
+    #tips {
+        display: none;
     }
-
-    .channels_container {
-        flex-wrap: wrap;
-    }
-
 }

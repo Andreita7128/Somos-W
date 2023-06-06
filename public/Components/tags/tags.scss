@@ -377,6 +377,14 @@ a {
             }
         }
     }
+    #breadcrumb {
+        &-title {
+            &-section {
+                padding: 20px 5.2%;
+                height: 90px;
+            }
+        }
+    }
 
     #pse_agenda_btn{
         width: 80%;
