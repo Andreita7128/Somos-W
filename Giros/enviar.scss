@@ -1,0 +1,150 @@
+@import "../landing.scss";
+
+@media screen and (min-width: 768px) {
+
+    .movil-vers {
+        display: none;
+        visibility: hidden;
+    }
+
+    .botones{
+        width: 280px;
+    }
+
+    .botones button{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .deskt-vers {
+        display: flex;
+        visibility: visible;
+        padding: 60px 12%;
+        gap: 10%;
+
+
+
+
+    }
+
+    .portada-enviar {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding-left: 12%;
+        padding-right: 10%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+
+        .izquierda-enviar {
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 56px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+
+            }
+
+            color: #FF8826;
+        }
+
+        .derecha-enviar {
+            img {
+                width: max(100% , 250px);
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .movil-vers {
+        display: block;
+        visibility: visible;
+    }
+
+    .deskt-vers {
+        display: none;
+        visibility: hidden;
+    }
+
+    .portada-enviar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+        padding-left: 12%;
+        padding-right: 10%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+
+        .izquierda-enviar {
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 33px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+
+            color: #FF8826;
+        }
+
+        .derecha-enviar {
+            img {
+                margin-left: 8%;
+                width: 75%;
+            }
+        }
+    }
+}
+
+.cards {
+    width: 70%;
+}
+
+.cardBG {
+    width: 100%;
+    box-shadow: 0px 3.09013px 10.8155px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+
+    .headerimg img {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 40px 70px 40px 50px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 155.5%;
+        color: #27262C;
+
+        p{
+
+            margin-bottom: 10px;
+
+        }
+        a{
+        color: #27262C;
+        text-decoration: underline;
+    }
+
+    }
+}
+
+.desfase1{
+    margin-left: 10px;
+}
+
+.desfase2{
+    margin-left: 60px;
+}
