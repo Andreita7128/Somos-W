@@ -1,33 +1,101 @@
 @import "../../style.css";
-.i1 {
-  position: absolute;
-  width: 341px;
-  height: 42px;
-  left: 63%;
-  right: 19px;
-  top: 907px;
-  /* Blanco base */
-  background: #F2F2F2;
-  /* Base */
-  border: 1px solid #CDCFD0;
-  border-radius: 48px;
-  color: gray;
-  padding: 20px;
+@media screen and (min-width: 768px) {
+  .pasos-referir {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 10px 20px;
+  }
+  .referir-sencillo {
+    width: 40%;
+  }
+  .portada-refiere {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-left: 12%;
+    padding-right: 10%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  .portada-refiere .izquierda-refiere {
+    width: max(50%, 400px);
+  }
+  .portada-refiere .izquierda-refiere p {
+    margin-top: 45px;
+  }
+  .dsk img {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+  .movil img {
+    display: none;
+    visibility: hidden;
+    height: 0;
+  }
+  .pasos {
+    display: flex;
+    gap: 30px;
+  }
+  .pasos img {
+    height: 65px;
+    width: 65px;
+  }
+  .pasos p {
+    width: 100%;
+  }
 }
-
-.i2 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 62.5%;
-  top: 992px;
-  /* fill-inputs */
-  background: #F2F4F5;
-  border: 1px solid #DCDCDC;
-  border-radius: 5px;
+@media screen and (max-width: 768px) {
+  .portada-refiere {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0px;
+  }
+  .portada-refiere .izquierda-refiere {
+    padding: 12%;
+  }
+  .portada-refiere .izquierda-refiere p {
+    margin-top: 45px;
+  }
+  .dsk img {
+    display: none;
+    visibility: hidden;
+    height: 0;
+  }
+  .movil img {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+  .pasos-referir {
+    background-color: #BDF0F2;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pasos-referir ._pasos_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .pasos-referir .pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pasos-referir img {
+    height: 65px;
+    width: auto;
+  }
 }
-
 .bntB {
   position: absolute;
   width: 20% !important;
@@ -35,4 +103,99 @@
   left: 65%;
   right: 64px;
   top: 1101px;
+}
+
+._pasos_ {
+  padding: 10px 20px;
+}
+._pasos_ .pasos {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 155.5%;
+  align-items: center;
+  color: #27262C;
+  margin-bottom: 55px;
+  margin-top: 15px;
+}
+
+.form {
+  width: min(400px, 80%);
+  border-radius: 5%;
+  overflow: hidden;
+}
+.form .fondoform {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+.form .fondoform .headerform {
+  background-color: #00B1BB;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .fondoform .headerform > h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.form .fondoform .contentform {
+  margin-top: 15px;
+  padding: 25px;
+}
+.form .fondoform .contentform p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.form .fondoform .contentform h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #27262C;
+  margin-top: 25px;
+  margin-bottom: 2px !important;
+}
+.form .fondoform .contentform .infolegal {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+.form .fondoform .contentform .infolegal p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #27262C;
+}
+.form .fondoform .contentform .infolegal a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  /* AZUL/Azul 1 */
+  color: #00B1BB;
+}
+.form .fondoform .contentform #btn-formreferir {
+  width: 65%;
+}
+.form .fondoform .contentform #ingresar-cedula {
+  padding: 10px 25px;
+  width: 100%;
+  height: 45px;
+  background: #F2F2F2;
+  border: 1px solid #CDCFD0;
+  border-radius: 48px;
 }/*# sourceMappingURL=refiere.css.map */

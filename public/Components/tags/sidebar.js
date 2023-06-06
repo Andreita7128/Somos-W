@@ -37,6 +37,7 @@ class Sidebar extends HTMLElement {
                     <li class="side-item">
                         <a href="/Perfil/gamificacion/gamificacion.html" class="side-link nav-link link-body-emphasis ${route === 'mis logros' ? 'active' : ''}">
                         <i class="bi bi-trophy"></i>
+                        <i class="bi bi-bookmark-star"></i>
                         <span>Mis logros</span>
                         </a>
                     </li>

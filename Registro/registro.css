@@ -491,12 +491,14 @@ h5 {
     font-size: 24px;
   }
   .right {
-    margin-left: 20px;
-    margin-right: -10px;
+    padding: 0%;
+    margin-left: 20px !important;
+    margin-right: -20px !important;
   }
   .left {
-    margin-right: 50px;
-    margin-left: -35px;
+    padding: 0%;
+    margin-right: 50px !important;
+    margin-left: -35px !important;
   }
   .btn_large {
     width: auto;
@@ -504,7 +506,7 @@ h5 {
   }
   .btn_medium {
     width: auto;
-    padding: 9px 25px;
+    padding: 9px 35px;
   }
   .btn_small {
     width: 50%;
@@ -711,10 +713,6 @@ h5 {
   background-color: #BDF0F2;
 }
 
-.planB_mobile {
-  display: none;
-}
-
 .log_in {
   padding: 50px 12%;
   width: 100%;
@@ -729,7 +727,7 @@ h5 {
   width: 50%;
   justify-content: center;
 }
-.log_in_text h3 {
+.log_in_text h2 {
   color: #00B1BB;
   text-align: center;
 }
@@ -737,6 +735,12 @@ h5 {
   text-align: center;
   color: #979C9E;
   margin-bottom: 50px;
+}
+.log_in_text .bar {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  width: 80%;
+  align-self: center;
 }
 .log_in_img {
   width: 69%;
@@ -746,12 +750,20 @@ h5 {
   width: 100%;
 }
 
+.grayInput {
+  width: 100% !important;
+}
+
 .pass {
   text-align: left !important;
 }
 
 span {
   font-weight: bold;
+}
+
+.mobile_img {
+  display: none;
 }
 
 .text_input {
@@ -782,7 +794,18 @@ span {
   margin: 0px;
 }
 
+.text_check {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-top: 20px;
+}
+.text_check p {
+  margin: 0% !important;
+}
+
 .btn_class {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -809,26 +832,50 @@ span {
   text-decoration: none;
 }
 
+.btn_dp {
+  width: 100% !important;
+  background: rgba(0, 177, 187, 0.2);
+  border: 1px solid #00B1BB;
+  border: 1px solid rgba(0, 177, 187, 0.2) !important;
+  border-radius: 48px !important;
+  color: #00B1BB;
+}
+
 @media only screen and (max-width: 768px) {
-  .planB_btn {
-    width: 80% !important;
-    position: absolute;
-    left: 31px;
-    right: 32px;
-    top: 455px;
-  }
-  .planB_mobile {
-    display: flex;
-    width: 100%;
-  }
-  .planB_mobile_btn {
-    width: 80% !important;
-    position: absolute;
-    left: 31px;
-    right: 32px;
-    top: 850px;
-  }
   .log_in {
+    margin-top: -170px;
+    padding: 50px 5.2%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .log_in_img {
+    display: none;
+  }
+  .log_in_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .log_in_text h2 {
+    width: 100%;
+    color: #F2F2F2;
+  }
+  .log_in_text .pmb {
+    color: #F2F2F2;
+  }
+  .bg_orange {
+    background-image: url("./images/rect.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #grayInput {
+    width: 100% !important;
+  }
+  .mobile_img {
+    display: block;
+  }
+  .bar {
     display: none;
   }
 }/*# sourceMappingURL=registro.css.map */

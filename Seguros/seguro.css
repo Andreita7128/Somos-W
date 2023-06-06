@@ -491,12 +491,14 @@ h5 {
     font-size: 24px;
   }
   .right {
-    margin-left: 20px;
-    margin-right: -10px;
+    padding: 0%;
+    margin-left: 20px !important;
+    margin-right: -20px !important;
   }
   .left {
-    margin-right: 50px;
-    margin-left: -35px;
+    padding: 0%;
+    margin-right: 50px !important;
+    margin-left: -35px !important;
   }
   .btn_large {
     width: auto;
@@ -504,7 +506,7 @@ h5 {
   }
   .btn_medium {
     width: auto;
-    padding: 9px 25px;
+    padding: 9px 35px;
   }
   .btn_small {
     width: 50%;
@@ -837,6 +839,7 @@ section.container_text {
 
 .dropdown_form {
   overflow-y: auto !important;
+  max-height: 250px !important;
 }
 
 .simulacion {
@@ -858,7 +861,6 @@ section.container_text {
 
 section.portada {
   margin-top: 3%;
-  padding-left: 175px;
   margin-bottom: 5%;
 }
 section .style_better {
@@ -900,4 +902,27 @@ section.container_text {
   position: sticky;
   top: 30px;
   height: calc(100vh - 20px);
+}
+
+.dropdown_reactive {
+  margin-left: 0% !important;
+  border-radius: 0px !important;
+}
+
+@media (max-width: 800px) {
+  #cobertura {
+    display: none;
+  }
+  #beneficios {
+    display: none;
+  }
+  #requisitos {
+    display: none;
+  }
+  #documentos {
+    display: none;
+  }
+  #interesa {
+    display: none;
+  }
 }/*# sourceMappingURL=seguro.css.map */

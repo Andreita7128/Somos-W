@@ -151,6 +151,7 @@ class cardBoton extends HTMLElement {
     this.titulo;
     this.contenido;
     this.boton;
+    this.link;
 
 
   }
@@ -162,6 +163,7 @@ class cardBoton extends HTMLElement {
       "titulo",
       "contenido",
       "boton",
+      "link",
     ]
   }
 
@@ -197,6 +199,12 @@ class cardBoton extends HTMLElement {
         this.boton = newValue
 
         break;
+
+      case "link":
+
+        this.link = newValue
+
+        break;
     }
 
   }
@@ -205,18 +213,22 @@ class cardBoton extends HTMLElement {
 
     this.innerHTML = `
         <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
-        <section class="fondo-card">
+        <section class="bg_card">
           <div class="section_icon">
         <i class="${this.icon} icon">
         </i>
     </div>
-        <section class="texto-card">
-            <h5 class="titulo">${this.titulo}</h5>
-            <p class="body_3">
+        <section class="body_card">
+            <h2 class="titulo">${this.titulo}</h2>
+            <p>
             ${this.contenido}   
             </p>
         </section>
-        <button style="margin: -20px 30px 30px 30px; width: 85%" class="btn btn_medium btn_medium_active text_button_normal">${this.boton}</button>
+      <section class="btn_sec">
+        
+        <button class="btn btn_medium btn_medium_active text_button_normal"><a style="text-decoration: none; color: white" href="${this.link}">${this.boton}</a></button>
+      
+      </section>
     </section>
         
         `
@@ -415,10 +427,11 @@ class cardForBlog extends HTMLElement {
     this.isChange = false;
     this.counter = null;
     this.icon = null;
+    this.link;
   }
 
   static get observedAttributes() {
-    return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2"];
+    return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2", "link"];
   }
 
   attributeChangedCallback(nameAtr, oldValue, newValue) {
@@ -445,6 +458,12 @@ class cardForBlog extends HTMLElement {
       case "likes":
 
         this.likes = newValue
+
+        break;
+
+      case "link":
+
+        this.link = newValue
 
         break;
 
@@ -484,7 +503,9 @@ class cardForBlog extends HTMLElement {
 
         <section class="fondo-card">
         <section class="card-imagen">
+          <a href="${this.link}">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
+          </a>
         </section>
         <section class="labels-site">
         
@@ -1909,6 +1930,7 @@ class Simulador extends HTMLElement {
     super();
 
     this.recurso;
+    this.dropdownButton1 = null;
 
   }
 
@@ -1936,6 +1958,18 @@ class Simulador extends HTMLElement {
 
   }
   connectedCallback() {
+    this.dropdownButton1 = document.querySelector("#dropdownMenuButton1")
+    // Agregar listeners después de que los elementos estén en el DOM
+  setTimeout(() => {
+    // Cambiar el título del menú desplegable 1 al seleccionar un elemento
+    const dropdownItems1 = document.querySelectorAll("#dropdownMenuButton1 + .dropdown-menu .dropdown-item");
+    dropdownItems1.forEach((item) => {
+      item.addEventListener("click", (event) => {
+        const newTitle = event.target.textContent.trim();
+        this.changeDropdownTitle(newTitle, this.dropdownButton1, "dropdownMenuButton1");
+      });
+    });
+  }, 0);
 
     this.innerHTML = `
         
@@ -1958,13 +1992,13 @@ class Simulador extends HTMLElement {
                         Nuevo <i class="bi bi-chevron-down float-end"></i>
                       </button>
                       <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Renovación</a></li>
-                        <li><a class="dropdown-item" href="#">Preferencial</a></li>
+                        <li><a class="dropdown-item">Renovación</a></li>
+                        <li><a class="dropdown-item">Preferencial</a></li>
                       </ul>
                     </div>
                     <div style = "margin-top: 3%;">
                     <h5 class = "body_2">Digita el monto</h5>
-                    <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Monto">
+                    <input type="text" class="form-control form-input" id="nombre" placeholder="Monto" style = "border-radius: 20px;">
                     <p class = "body_2" style = "margin-top:20px; color: gray;">Máx. $50.000.000</p>
                     </div>
                   </div>
@@ -1976,10 +2010,10 @@ class Simulador extends HTMLElement {
                   <div id="etapa-1">
                     <div class="">
                       <div class="dropdown">
-                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style = "width: 80%;">
+                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style = "width: 80%;">
                           2 meses <i class="bi bi-chevron-down float-end"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton2">
                           <li><a class="dropdown-item" >4 meses</a></li>
                           <li><a class="dropdown-item" >6 meses</a></li>
                         </ul>
@@ -1987,8 +2021,8 @@ class Simulador extends HTMLElement {
 
                       <h5 class = "simulacion body_2" style = "margin-top: 3%;">Tasa de simulación 2.02% M.V</h5>
          
-                  <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active button_continuar" style = "margin-top: 5%; margin-bottom: 5%;">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+                  <div class="col-md-12 d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn_large_active button_continuar"style="width: 50%;" data-bs-toggle="modal" data-bs-target="#successModal">Calcular </button>
                   </div>
                 </div>
             
@@ -1999,13 +2033,65 @@ class Simulador extends HTMLElement {
           </div>
         </div>
       </section>
+
+      <!-- Pop-up -->
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Encabezado del pop-up -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Calculo terminado
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del pop-up -->
+            <div class="modal-body">
+              <p>Calculo terminado</p>
+            </div>
+            <!-- Pie del pop-up -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
 
         
         `
-
+        this.addListeners()
   }
+  changeDropdownTitle(newTitle, element, dropdownId) {
+    const dropdownButton = document.querySelector(`#${dropdownId}`);
+    dropdownButton.innerHTML = `${newTitle} <i class="bi bi-chevron-down float-end"></i>`;
+  }
+  addListeners() {
+    // Cambiar el título del menú desplegable 1 al mostrarse
+    const dropdown1 = document.querySelector("#dropdownMenuButton1");
+    dropdown1.addEventListener("show.bs.dropdown", () => {
+      const selectedOption = document.querySelector("#dropdownMenuButton1 + .dropdown-menu .dropdown-item.active");
+      if (selectedOption) {
+        const newTitle = selectedOption.textContent.trim();
+        this.changeDropdownTitle(newTitle, this.dropdownButton1, "dropdownMenuButton1");
+      }
+    });
+  
+    // Cambiar el título del menú desplegable 2 al mostrarse
+    const dropdown2 = document.querySelector("#dropdownMenuButton2");
+    dropdown2.addEventListener("show.bs.dropdown", () => {
+      const selectedOption = document.querySelector("#dropdownMenuButton2 + .dropdown-menu .dropdown-item.active");
+      if (selectedOption) {
+        const newTitle = selectedOption.textContent.trim();
+        this.changeDropdownTitle(newTitle, this.dropdownButton2, "dropdownMenuButton2");
+      }
+    });
+  }
+  
+
+
+  
 }
 
 window.customElements.define("w-simulador", Simulador)
@@ -2800,10 +2886,10 @@ class SimuladorCDT extends HTMLElement {
                   <div id="etapa-1">
                     <div class="">
                       <div class="dropdown">
-                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style ="width: 80%;">
+                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style ="width: 80%;">
                           2 meses <i class="bi bi-chevron-down float-end"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton3">
                           <li><a class="dropdown-item" >4 meses</a></li>
                           <li><a class="dropdown-item" >6 meses</a></li>
                         </ul>
@@ -2814,8 +2900,8 @@ class SimuladorCDT extends HTMLElement {
 
                       </div>
 
-                  <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active siguiente" style = "width: 30%; margin-bottom: 5%;">Calcular </button>
+                  <div class="col-md-12 d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn_large_active button_continuar"style="width: 50%;" data-bs-toggle="modal" data-bs-target="#successModal">Calcular </button>
                   </div>
                 </div>
             
@@ -2826,6 +2912,29 @@ class SimuladorCDT extends HTMLElement {
           </div>
         </div>
       </section>
+      
+      <!-- Pop-up -->
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Encabezado del pop-up -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Calculo terminado
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del pop-up -->
+            <div class="modal-body">
+              <p>Calculo terminado</p>
+            </div>
+            <!-- Pie del pop-up -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
 
