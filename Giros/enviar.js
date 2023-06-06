@@ -9,5 +9,11 @@ function scrollToSection(sectionId) {
     }
   }
 
+  function togglehide(sectionId) {
 
-  
+    var section = document.querySelector(sectionId);
+    
+    if (section) {
+        section.classList.toggle('hide');       
+      }
+    }

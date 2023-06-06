@@ -1195,9 +1195,17 @@ i {
   }
 }
 @media screen and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
   .movil-vers {
     display: block;
     visibility: visible;
+    display: flex;
+    justify-content: center;
   }
   .deskt-vers {
     display: none;
@@ -1266,4 +1274,10 @@ i {
 
 .desfase2 {
   margin-left: 60px;
+}
+
+.hide {
+  display: none;
+  height: 0px !important;
+  transform: 1s all ease;
 }/*# sourceMappingURL=enviar.css.map */
