@@ -1957,8 +1957,8 @@ class Simulador extends HTMLElement {
 
                       <h5 class = "simulacion body_2" style = "margin-top: 3%;">Tasa de simulación 2.02% M.V</h5>
          
-                  <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active button_continuar" style = "margin-top: 5%; margin-bottom: 5%;">Continuar <i class="bi bi-arrow-right float-end"></i></button>
+                  <div class="col-md-12 d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn_large_active button_continuar"style="width: 50%;" >Continuar <i class="bi bi-arrow-right "></i></button>
                   </div>
                 </div>
             

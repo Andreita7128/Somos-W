@@ -815,6 +815,30 @@ h5 {
   width: 300px;
 }
 
+.badge-w {
+  background-color: #BA93D2;
+}
+
+.level-w {
+  color: #00B1BB;
+}
+
+.text_w {
+  color: #979C9E !important;
+}
+
+.violet-text {
+  color: #BA93D2;
+}
+
+.active_win {
+  color: #FF8826;
+}
+
+.titulitos {
+  font-size: 20px;
+}
+
 @media (max-width: 800px) {
   .img-reduce {
     max-width: 50%; /* Ajusta este valor según tus necesidades */
@@ -827,6 +851,9 @@ h5 {
   }
   .retos-progress {
     width: 100px;
+  }
+  .titulitos {
+    font-size: 15px !important;
   }
 }
 /*****************************************************************************//*# sourceMappingURL=gamificacion.css.map */

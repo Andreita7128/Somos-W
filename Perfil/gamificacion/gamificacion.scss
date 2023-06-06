@@ -111,7 +111,25 @@
 .retos-progress{
     width: 300px;
 }
-  
+.badge-w{
+    background-color: $color_violet3;
+}
+.level-w{
+    color: $color_blue1;
+}
+.text_w{
+    color: $color_text_disable !important;
+}
+.violet-text{
+    color: $color_violet3;
+}
+.active_win{
+    color: #FF8826;
+}
+.titulitos{
+    font-size: 20px;
+}
+
   @media (max-width: 800px) {
     .img-reduce {
       max-width: 50%; /* Ajusta este valor según tus necesidades */
@@ -125,7 +143,9 @@
     .retos-progress{
         width: 100px;
     }
-    
+    .titulitos{
+        font-size: 15px !important;
+    }
   }
   
 
