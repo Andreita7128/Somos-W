@@ -6,23 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premios Invencibles</title>
-
-    <!--Css Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-
-    <!--Css link-->
-    <link rel="stylesheet" href="./refiere.css">
-
-    <!--Typography-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -31,36 +14,162 @@
         <w-nav-bar></w-nav-bar>
     </header>
 
-    <img style="width: 100%;" src="../../planB/refiere.png" alt="">
-    <input type="text" placeholder="Ingrese su cédula" class="i1">
-    <input type="checkbox" class="i2">
-    <label for="miCheckbox"></label>
 
-    <a href="./refiere.html">
-        <button class="btn btn_medium btn_medium_active bntB">Ingresar</button>
-    </a>
+    <section class="portada-refiere">
+        <section class="izquierda-refiere">
+            <h1>Refiere a tus conocidos con
+                negocio</h1>
+            <p>Recibe la plata por cada crédito que tomen tus amigos, familiares y conocidos. Ayudales a crecer.
+            </p>
+        </section>
+
+        <section class="derecha-refiere">
+            <section class="dsk">
+                <img src="./recursos/refiere-img-dsk.png" alt="">
+            </section>
+
+            <section class="movil">
+                <img src="./recursos/refiere-img-movil.png" alt="">
+            </section>
+        </section>
+    </section>
+
+
+    <section class="pasos-referir">
+        <section class="referir-sencillo">
+
+            <h3 style="color: #F25C05;">Referir es sencillo</h3>
+            <h4>Sigue los siguientes pasos:</h4>
+
+            <section class="_pasos_">
+                <section class="pasos">
+
+                    <section class="dsk"><img src="./recursos/PASO1dsk.png" alt="" class="dsk"></section>
+                    <section class="movil"><img src="./recursos/PASO1movil.png" alt="" class="movil"></section>
+
+                    <p><span style=" color: #F25C05;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 120%;">Perfila muy bien a tu referido.</span>
+                        (Recuerda que podrás ganar si tus referidos toman un crédito con el banco W)</p>
+                </section>
+
+                <section class="pasos">
+                    <section class="dsk"><img src="./recursos/PASO2dsk.png" alt="" class="dsk"></section>
+
+                    <section class="movil"><img src="./recursos/PASO2movil.png" alt="" class="movil"></section>
+
+                    <p><span style=" 
+                        color: #F25C05;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 120%;">
+                            Tu referido debe tener un negocio con antigüedad mayor a un año.</span>
+                    </p>
+                </section>
+                <section class="pasos">
+                    <section class="dsk"><img src="./recursos/PASO3dsk.png" alt="" class="dsk"></section>
+
+                    <section class="movil"><img src="./recursos/PASO3movil.png" alt="" class="movil"></section>
+                    <p><span style=" 
+                color: #F25C05;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 120%;">
+                            Verifica sus datos como: </span><br> Cédula, nombre, celular, ciudad y
+                        departamento.</p>
+
+                </section>
+            </section>
+
+        </section>
+        <form class="form">
+            <section class="fondoform">
+                <section class="headerform">
+                    <h2 class="_titulo_">¡Comienza a referir!</h2>
+                </section>
+                <section class="contentform">
+                    <p>Para empezar a referir deberás ingresar y aceptar algunos datos para realizar esta acción.</p>
+                    <h6>Identificación</h6>
+                    <input id="ingresar-cedula" type="text" placeholder="Ingrese su cedula">
+                    <section class="infolegal">
+                        <input style="
+                        width: 25px !important;
+                        height: 25px !important;
+                        background: #F2F4F5 !important;
+                        border: 1px solid #DCDCDC !important;
+                        border-radius: 5px !important;
+                        transform: scale(1.35);
+                    " type="checkbox" name="acepta" id="confirmo">
+                        <p>Declaras que aceptas de manera previa, expresa
+                            e informada la autorización tratamiento de Datos.
+                            <a href="">Click aquí</a> para conocer la autorizacion de tratamiento
+                            de datos</p>
+                    </section>
+                    <section style="display: flex; justify-content: center;">
+                        <button type="button" class="btn btn_large_active button_continuar" style="width: 80%;"
+                            data-bs-toggle="modal" data-bs-target="#successModal" >Ingresar</button>
+                    </section>
+                </section>
+            </section>
+    </section>
+    </section>
+
+    <!-- Pop-up -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Encabezado del pop-up -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i> Información enviada con éxito
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <!-- Cuerpo del pop-up -->
+                <div class="modal-body">
+                    <p>Tu información ha sido enviada correctamente.</p>
+                </div>
+                <!-- Pie del pop-up -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <footer>
         <w-footer></w-footer>
+        <!--Css Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+        <!--Css link-->
+        <link rel="stylesheet" href="./refiere.css">
+
+        <!--Typography-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <script type="module" src="../../public/Components/components.js"></script>
+        <!--Js Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="/Salvavidas/salvavidas.css">
+        <script type="module" src="/Salvavidas/ComponenteSalvavidas.js"></script>
+        <salvavidas-comp></salvavidas-comp>
     </footer>
-
-
-    <script type="module" src="../../public/Components/components.js"></script>
-
-    <!--Js Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
-
-
-    <link rel="stylesheet" href="/Salvavidas/salvavidas.css">
-
-    <script type="module" src="/Salvavidas/ComponenteSalvavidas.js"></script>
-
-    <salvavidas-comp></salvavidas-comp>
-
-</body>
-
 </body>
 
 </html>
