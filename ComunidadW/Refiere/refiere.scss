@@ -1,39 +1,142 @@
 @import "../../style.css";
 
+@media screen and (min-width: 768px) {
 
-.i1 {
-    position: absolute;
-    width: 341px;
-    height: 42px;
-    left: 63%;
-    right: 19px;
-    top: 907px;
-    /* Blanco base */
 
-    background: #F2F2F2;
-    /* Base */
+    .pasos-referir{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        padding: 10px 20px;
+    }
 
-    border: 1px solid #CDCFD0;
-    border-radius: 48px;
+    .referir-sencillo{
+        width: 40%;
+    }
 
-    color: gray;
-    padding: 20px;
+    .portada-refiere {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding-left: 12%;
+        padding-right: 10%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+
+        .izquierda-refiere {
+
+            width: max(50%, 400px);
+
+            & p {
+                margin-top: 45px;
+            }
+
+        }
+
+
+
+    }
+
+
+    .dsk img {
+        display: block;
+        visibility: visible;
+        width: 100%;
+    }
+
+    .movil img {
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+
+
+    .pasos{
+        display: flex;
+
+        gap: 30px;
+        img{
+            height: 65px;
+            width: 65px;
+        }
+
+        p{width: 100%;}
+    }
+
+
+
 }
 
-.i2 {
-    box-sizing: border-box;
 
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 62.5%;
-    top: 992px;
+@media screen and (max-width: 768px) {
+    .portada-refiere {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+        padding: 0px;
 
-    /* fill-inputs */
+        .izquierda-refiere {
 
-    background: #F2F4F5;
-    border: 1px solid #DCDCDC;
-    border-radius: 5px;
+            padding: 12%;
+
+            & p {
+                margin-top: 45px;
+            }
+
+        }
+
+
+    }
+
+    .dsk img {
+        display: none;
+        visibility: hidden;
+        height: 0;
+
+    }
+
+    .movil img {
+        display: block;
+        visibility: visible;
+        width: 100%;
+    }
+
+    .pasos-referir{
+        background-color: #BDF0F2;
+
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        ._pasos_{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        } .pasos{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        img{
+            height: 65px;
+            width: auto;
+        }
+
+
+    }
+
 }
 
 .bntB {
@@ -43,4 +146,125 @@
     left: 65%;
     right: 64px;
     top: 1101px;
+}
+
+
+._pasos_ {
+    padding: 10px 20px;
+    .pasos {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 155.5%;
+        align-items: center;
+        color: #27262C;
+        margin-bottom: 55px;
+        margin-top: 15px;
+    }
+}
+
+
+.form {
+    width: min(400px, 80%);
+    border-radius: 5%;
+    overflow: hidden;
+
+    .fondoform {
+
+        width: 100%;
+        background-color: #FAFAFA;
+
+        .headerform {
+            background-color: #00B1BB;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &>h2 {
+                text-align: center;
+                margin-top: 20px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 120%;
+                color: #FFFFFF;
+            }
+        }
+
+        .contentform {
+
+            margin-top: 15px;
+            padding: 25px;
+
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+
+            }
+
+            h6 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 120%;
+                color: #27262C;
+
+                margin-top: 25px;
+                margin-bottom: 2px !important;
+            }
+
+            .infolegal {
+                margin-top: 36px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 15px;
+
+
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #27262C;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    /* or 167% */
+
+
+                    /* AZUL/Azul 1 */
+
+                    color: #00B1BB;
+                }
+
+            }
+
+
+            #btn-formreferir {
+                width: 65%;
+            }
+
+            #ingresar-cedula {
+                padding: 10px 25px;
+                width: 100%;
+                height: 45px;
+                background: #F2F2F2;
+                border: 1px solid #CDCFD0;
+                border-radius: 48px;
+            }
+
+        }
+    }
+
 }
