@@ -1,6 +1,9 @@
 @import '../../style.scss';
 
 /*CONFIG GAMIFICACION*/
+.navbar-dark .navbar-nav .nav-link {
+    color: $color_orange1 !important;
+}
 
 .headerLabel {
     /* margin-top: 20px;
@@ -15,20 +18,17 @@
     padding: 10px;
 }
 
-.info_profile{
+.info_profile {
     background-color: $color_blue3;
     margin-top: 5%;
-    align-items: center;
-    width: 800px;
-    height: 141px;
+   
     border-radius: 10.057px;
     justify-content: center;
-    display: flex;
-}
+    
+  }
+  
 
-.user-profile-image{
-    margin-right: 400px;
-}
+
 .coin-w{
     width: 100%;
 }
@@ -89,10 +89,65 @@
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
     background-color: $color_accent_white;
 }
+.card-profile{
+    background-color: $color_blue3;
+    margin-top: 5%;
+   
+    border-radius: 10.057px;
+}
+
+.profile-distances{
+    width: 800px;
+}
 
 
+.img-reduce {
+    max-width: 100%;
+    height: auto;
+  }
+.medal-responsive{
+    margin-top: 0%;
+}
+.retos-progress{
+    width: 300px;
+}
+.badge-w{
+    background-color: $color_violet3;
+}
+.level-w{
+    color: $color_blue1;
+}
+.text_w{
+    color: $color_text_disable !important;
+}
+.violet-text{
+    color: $color_violet3;
+}
+.active_win{
+    color: #FF8826;
+}
+.titulitos{
+    font-size: 20px;
+}
 
-
+  @media (max-width: 800px) {
+    .img-reduce {
+      max-width: 50%; /* Ajusta este valor según tus necesidades */
+    }
+    .profile-distances{
+        width: auto;
+    }
+    .medal-responsive{
+        margin-top: 5%;
+    }
+    .retos-progress{
+        width: 100px;
+    }
+    .titulitos{
+        font-size: 15px !important;
+    }
+  }
+  
 
 
 

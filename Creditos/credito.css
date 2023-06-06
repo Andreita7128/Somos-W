@@ -839,6 +839,7 @@ section.container_text {
 
 .dropdown_form {
   overflow-y: auto !important;
+  max-height: 250px !important;
 }
 
 .simulacion {

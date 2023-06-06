@@ -714,6 +714,10 @@ h5 {
 }
 
 /*CONFIG GAMIFICACION*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #F25C05 !important;
+}
+
 .headerLabel {
   /* margin-top: 20px;
   margin-bottom: 20px; */
@@ -729,16 +733,8 @@ h5 {
 .info_profile {
   background-color: #BDF0F2;
   margin-top: 5%;
-  align-items: center;
-  width: 800px;
-  height: 141px;
   border-radius: 10.057px;
   justify-content: center;
-  display: flex;
-}
-
-.user-profile-image {
-  margin-right: 400px;
 }
 
 .coin-w {
@@ -798,4 +794,68 @@ h5 {
   background-color: #FAFAFA;
 }
 
+.card-profile {
+  background-color: #BDF0F2;
+  margin-top: 5%;
+  border-radius: 10.057px;
+}
+
+.profile-distances {
+  width: 800px;
+}
+
+.img-reduce {
+  max-width: 100%;
+  height: auto;
+}
+
+.medal-responsive {
+  margin-top: 0%;
+}
+
+.retos-progress {
+  width: 300px;
+}
+
+.badge-w {
+  background-color: #BA93D2;
+}
+
+.level-w {
+  color: #00B1BB;
+}
+
+.text_w {
+  color: #979C9E !important;
+}
+
+.violet-text {
+  color: #BA93D2;
+}
+
+.active_win {
+  color: #FF8826;
+}
+
+.titulitos {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .img-reduce {
+    max-width: 50%; /* Ajusta este valor según tus necesidades */
+  }
+  .profile-distances {
+    width: auto;
+  }
+  .medal-responsive {
+    margin-top: 5%;
+  }
+  .retos-progress {
+    width: 100px;
+  }
+  .titulitos {
+    font-size: 15px !important;
+  }
+}
 /*****************************************************************************//*# sourceMappingURL=gamificacion.css.map */
