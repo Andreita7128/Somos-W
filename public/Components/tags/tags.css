@@ -759,6 +759,10 @@ p {
   color: #F25C05;
 }
 
+#pse_agenda_btn {
+  width: 35%;
+}
+
 .check-label {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -992,5 +996,9 @@ a .active {
   #breadcrumb-title-section {
     padding: 20px 5.2%;
     height: 90px;
+  }
+  #pse_agenda_btn {
+    width: 80%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=tags.css.map */
