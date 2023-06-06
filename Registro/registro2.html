@@ -32,32 +32,43 @@
     </header>
 
 
-    
-    <section class="log_in">
-            <img src="./images/bar2.png" alt="" style="width: 18px; margin:30px">
-        <div class="log_in_text">
-            <h3>Crea una cuenta</h3>
-            <p class="body_2">Ingresa tus datos por favor</p>
+    <img class="mobile_img" src="./images/rect.png" alt="">
 
-            <div class="text_input_signup">
+    <section class="log_in">
+        <div class="log_in_text">
+            <h2>Crea una cuenta</h2>
+            <p class="body_2 pmb">Ingresa tus datos por favor</p>
+            <img class="bar" src="./images/bar2.png" alt="">
+
+            <div class="text_input_signup" style="margin-top: 50px;">
                 <p class="text_btn_link_normal">Tipo de Documento</p>
-                <input class="form-control rounded-pill" id="grayInput" placeholder="Escribe aquí">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn_dp" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Escoge uno <i class="bi bi-chevron-down" style="margin-left: 50%;"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cédula de ciudadanía</a></li>
+                        <li><a class="dropdown-item" href="#">Cédula extranjera</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="text_input_signup">
                 <p class="text_btn_link_normal">Número de Documento</p>
-                <input class="form-control rounded-pill" id="grayInput" placeholder="Escribe aquí">
+                <input class="grayInput" id="grayInput" placeholder="Escribe aquí">
             </div>
             <div class="text_input_signup">
                 <p class="text_btn_link_normal">Número de Celular</p>
-                <input class="form-control rounded-pill" id="grayInput" placeholder="Escribe aquí" type="email">
+                <input class="grayInput" id="grayInput" placeholder="Escribe aquí" type="email">
             </div>
 
-            <div class="btn_class" style="margin-top: 30px;">
-                <a href="../Perfil/perfil.html" class="btn_a">
-                    <button class="btn btn_medium btn_medium_active"> Registrarme </button>
+            <div class="btn_class">
+                <a href="./registro3.html" class="btn_a">
+                    <button class="btn btn_medium btn_medium_active">Continuar <i class="bi bi-arror-right"></i></button>
                 </a>
             </div>
-            <p class="body_2" style="margin-top: 20px;">¿Ya tienes cuenta? <a href="./iniciarSesión.html" class="log">Inicia Sesión</a> </p>
+            <p class="body_2" style="margin-top: 20px;">¿Ya tienes cuenta? <a href="./iniciarSesión.html"
+                    class="log">Inicia Sesión</a> </p>
         </div>
 
 
