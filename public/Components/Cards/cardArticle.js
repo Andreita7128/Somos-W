@@ -1930,6 +1930,7 @@ class Simulador extends HTMLElement {
     super();
 
     this.recurso;
+    this.dropdownButton1 = null;
 
   }
 
@@ -1957,6 +1958,18 @@ class Simulador extends HTMLElement {
 
   }
   connectedCallback() {
+    this.dropdownButton1 = document.querySelector("#dropdownMenuButton1")
+    // Agregar listeners después de que los elementos estén en el DOM
+  setTimeout(() => {
+    // Cambiar el título del menú desplegable 1 al seleccionar un elemento
+    const dropdownItems1 = document.querySelectorAll("#dropdownMenuButton1 + .dropdown-menu .dropdown-item");
+    dropdownItems1.forEach((item) => {
+      item.addEventListener("click", (event) => {
+        const newTitle = event.target.textContent.trim();
+        this.changeDropdownTitle(newTitle, this.dropdownButton1, "dropdownMenuButton1");
+      });
+    });
+  }, 0);
 
     this.innerHTML = `
         
@@ -1979,13 +1992,13 @@ class Simulador extends HTMLElement {
                         Nuevo <i class="bi bi-chevron-down float-end"></i>
                       </button>
                       <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Renovación</a></li>
-                        <li><a class="dropdown-item" href="#">Preferencial</a></li>
+                        <li><a class="dropdown-item">Renovación</a></li>
+                        <li><a class="dropdown-item">Preferencial</a></li>
                       </ul>
                     </div>
                     <div style = "margin-top: 3%;">
                     <h5 class = "body_2">Digita el monto</h5>
-                    <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Monto">
+                    <input type="text" class="form-control form-input" id="nombre" placeholder="Monto" style = "border-radius: 20px;">
                     <p class = "body_2" style = "margin-top:20px; color: gray;">Máx. $50.000.000</p>
                     </div>
                   </div>
@@ -1997,10 +2010,10 @@ class Simulador extends HTMLElement {
                   <div id="etapa-1">
                     <div class="">
                       <div class="dropdown">
-                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style = "width: 80%;">
+                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style = "width: 80%;">
                           2 meses <i class="bi bi-chevron-down float-end"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton2">
                           <li><a class="dropdown-item" >4 meses</a></li>
                           <li><a class="dropdown-item" >6 meses</a></li>
                         </ul>
@@ -2048,8 +2061,37 @@ class Simulador extends HTMLElement {
 
         
         `
-
+        this.addListeners()
   }
+  changeDropdownTitle(newTitle, element, dropdownId) {
+    const dropdownButton = document.querySelector(`#${dropdownId}`);
+    dropdownButton.innerHTML = `${newTitle} <i class="bi bi-chevron-down float-end"></i>`;
+  }
+  addListeners() {
+    // Cambiar el título del menú desplegable 1 al mostrarse
+    const dropdown1 = document.querySelector("#dropdownMenuButton1");
+    dropdown1.addEventListener("show.bs.dropdown", () => {
+      const selectedOption = document.querySelector("#dropdownMenuButton1 + .dropdown-menu .dropdown-item.active");
+      if (selectedOption) {
+        const newTitle = selectedOption.textContent.trim();
+        this.changeDropdownTitle(newTitle, this.dropdownButton1, "dropdownMenuButton1");
+      }
+    });
+  
+    // Cambiar el título del menú desplegable 2 al mostrarse
+    const dropdown2 = document.querySelector("#dropdownMenuButton2");
+    dropdown2.addEventListener("show.bs.dropdown", () => {
+      const selectedOption = document.querySelector("#dropdownMenuButton2 + .dropdown-menu .dropdown-item.active");
+      if (selectedOption) {
+        const newTitle = selectedOption.textContent.trim();
+        this.changeDropdownTitle(newTitle, this.dropdownButton2, "dropdownMenuButton2");
+      }
+    });
+  }
+  
+
+
+  
 }
 
 window.customElements.define("w-simulador", Simulador)
@@ -2844,10 +2886,10 @@ class SimuladorCDT extends HTMLElement {
                   <div id="etapa-1">
                     <div class="">
                       <div class="dropdown">
-                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style ="width: 80%;">
+                        <button class="btn btn_large_form  formdrop dropdown-toggle text-start" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style ="width: 80%;">
                           2 meses <i class="bi bi-chevron-down float-end"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu dropdown_form" aria-labelledby="dropdownMenuButton3">
                           <li><a class="dropdown-item" >4 meses</a></li>
                           <li><a class="dropdown-item" >6 meses</a></li>
                         </ul>

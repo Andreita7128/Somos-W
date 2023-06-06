@@ -69,3 +69,26 @@ section {
     top: 30px;
     height: calc(100vh - 20px);
 }
+.dropdown_reactive {
+    margin-left: 0% !important;
+    border-radius: 0px !important;
+}
+@media (max-width: 800px) {
+    #cobertura{
+      display: none;
+    }
+    #beneficios{
+      display: none;
+    }
+    #requisitos{
+      display: none;
+    }
+    #documentos{
+      display: none;
+    }
+
+    #interesa{
+      display: none;
+    }
+}
+  
