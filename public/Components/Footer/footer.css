@@ -377,6 +377,7 @@ h5 {
 .btn_large_form {
   border: none;
   background-color: #BDF0F2;
+  color: #00B1BB;
 }
 .btn_large_form:active {
   background-color: #FAFAFA;
@@ -429,6 +430,7 @@ h5 {
 .btn_medium_form {
   border: none;
   background-color: #BDF0F2;
+  color: #00B1BB;
 }
 .btn_medium_form:active {
   background-color: #FAFAFA;
@@ -704,6 +706,11 @@ h5 {
     color: #27262C;
   }
 }
+.list-group-item.active {
+  z-index: 2;
+  background-color: #BDF0F2;
+}
+
 .footerW {
   padding-top: 20px;
   background-color: #2D3982 !important;

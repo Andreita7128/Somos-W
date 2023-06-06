@@ -105,7 +105,7 @@ class NavBar extends HTMLElement {
     
         <nav class="navbar navbar-expand-lg navbar-dark  second_nav fixed-top">
             <div class="container-fluid mx-auto background_responsive_navbar">
-                <a class="navbar-brand d-md-none" href="#">
+                <a class="navbar-brand d-md-none" href="../../../landing.html">
                 <img class="logo1" src="/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
                 </a>
     

@@ -1,6 +1,9 @@
 @import '../../style.scss';
 
 /*CONFIG GAMIFICACION*/
+.navbar-dark .navbar-nav .nav-link {
+    color: $color_orange1 !important;
+}
 
 .headerLabel {
     /* margin-top: 20px;
