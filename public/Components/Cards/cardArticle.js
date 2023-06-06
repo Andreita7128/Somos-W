@@ -526,8 +526,9 @@ class cardForBlog extends HTMLElement {
             <p class="parrafo">
                 ${this.contenido}
             </p>
-        </section>
-        <section class="card-interactions">
+          </section>
+
+          <section class="card-interactions">
             <div class="left">
                 <div class="likes">
                     <i id="like" class="bi bi-heart"></i><p id="count">${this.likes}</p></div>
