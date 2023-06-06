@@ -78,8 +78,8 @@ class NavBar extends HTMLElement {
         
         <nav class="navbar navbar-expand-lg navbar-light d-none  d-md-block first-nav fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://andreita7128.github.io/Pag-Banco-W/landing.html">
-                    <img class="logo1" src="https://andreita7128.github.io/Pag-Banco-W/public/Components/NavBar/images/logo-banco.png" alt="Logo de mi sitio web">
+                <a class="navbar-brand" href="../../../landing.html">
+                    <img class="logo1" src="../../../public/Components/NavBar/images/logo-banco.png" alt="Logo de mi sitio web">
                 </a>
             <div class="d-flex justify-content-center align-items-center">
                 <form id = 'search-1' class="d-flex my-2 my-lg-0 search-form">
@@ -106,7 +106,7 @@ class NavBar extends HTMLElement {
         <nav class="navbar navbar-expand-lg navbar-dark  second_nav fixed-top">
             <div class="container-fluid mx-auto background_responsive_navbar">
                 <a class="navbar-brand d-md-none" href="#">
-                <img class="logo1" src="/Pag-Banco-W/public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
+                <img class="logo1" src="../../../public/Components/NavBar/images/logo2.png" alt="Logo de mi sitio web">
                 </a>
     
             <button class="navbar-toggler ms-auto button_toggler" type="button" data-bs-toggle="collapse"
@@ -122,7 +122,7 @@ class NavBar extends HTMLElement {
                 </form>
                 <li class="nav-item d-md-none d-block">
                 <a class="nav-link btn btn_large_active text-center text-white  mx-auto" style="margin-top: 5px;"
-                href="/Pag-Banco-W/Registro/iniciarSesión.html">Mi perfil W</a>
+                href="../../../Registro/iniciarSesión.html">Mi perfil W</a>
             </li>
             <li class="nav-item d-md-none d-block">
                 <a class="nav-link btn btn_large_active text-center text-white mx-auto " style="margin-top: 18px;"
@@ -131,7 +131,7 @@ class NavBar extends HTMLElement {
                 <ul class="navbar-nav mx-auto second_nav_link">
                 
                     <li class="nav-item border-bottom-gg">
-                        <a class="nav-link" href="https://andreita7128.github.io/Pag-Banco-W/landing.html">Inicio</a>
+                        <a class="nav-link" href="../../../landing.html">Inicio</a>
                     </li>
          
 
@@ -237,9 +237,9 @@ class NavBar extends HTMLElement {
     const sesionActiva = sessionStorage.getItem('sesionActiva');
 
     if (sesionActiva === 'true') {
-      perfilLink.href = '/Pag-Banco-W/Perfil/perfil.html';
+      perfilLink.href = '../../../Perfil/perfil.html';
     } else {
-      perfilLink.href = '/Pag-Banco-W/Registro/iniciarSesión.html';
+      perfilLink.href = '../../../Registro/iniciarSesión.html';
     }
   }
 
