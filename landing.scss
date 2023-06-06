@@ -340,6 +340,29 @@ i {
     padding-top: 100px;
 }
 
+#not-found {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 12%;
+    align-items: center;
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+
+        & h1 {
+            color: $color_orange1;
+        }
+
+        & p {
+            color: $color_text;
+        }
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
 
     #title_home {
@@ -542,5 +565,24 @@ i {
 
     #tips {
         display: none;
+    }
+
+    #not-found {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 5.2%;
+        gap: 40px;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        & img {
+            width: 100%;
+        }
+
     }
 }

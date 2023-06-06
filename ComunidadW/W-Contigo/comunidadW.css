@@ -491,12 +491,14 @@ h5 {
     font-size: 24px;
   }
   .right {
-    margin-left: 20px;
-    margin-right: -10px;
+    padding: 0%;
+    margin-left: 20px !important;
+    margin-right: -20px !important;
   }
   .left {
-    margin-right: 50px;
-    margin-left: -35px;
+    padding: 0%;
+    margin-right: 50px !important;
+    margin-left: -35px !important;
   }
   .btn_large {
     width: auto;
@@ -504,7 +506,7 @@ h5 {
   }
   .btn_medium {
     width: auto;
-    padding: 9px 25px;
+    padding: 9px 35px;
   }
   .btn_small {
     width: 50%;
@@ -1131,4 +1133,60 @@ main #circle_orange {
   #w_card_s {
     padding: 20px 5.2%;
   }
+}
+#banner_bg img {
+  width: 100%;
+  margin-top: -25px;
+}
+#banner_bg a {
+  text-decoration: none;
+}
+#banner_bg a i {
+  position: absolute;
+  font-size: 16px;
+  left: 6%;
+  top: 199px;
+}
+#banner_bg h1 {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  left: 6%;
+  top: 230px;
+  color: #FAFAFA;
+}
+
+#label_card {
+  display: flex;
+  flex-direction: column;
+  margin-top: -150px;
+  width: 100%;
+  height: auto;
+  background: #FAFAFA;
+  border-radius: 20px;
+  padding: 30px 6%;
+  gap: 50px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.label_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.label_group h3 {
+  margin: 0%;
+}
+.label_group i {
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+
+#image_circle {
+  background-image: url("./img/circle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  order: 3;
 }/*# sourceMappingURL=comunidadW.css.map */

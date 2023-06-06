@@ -491,12 +491,14 @@ h5 {
     font-size: 24px;
   }
   .right {
-    margin-left: 20px;
-    margin-right: -10px;
+    padding: 0%;
+    margin-left: 20px !important;
+    margin-right: -20px !important;
   }
   .left {
-    margin-right: 50px;
-    margin-left: -35px;
+    padding: 0%;
+    margin-right: 50px !important;
+    margin-left: -35px !important;
   }
   .btn_large {
     width: auto;
@@ -504,7 +506,7 @@ h5 {
   }
   .btn_medium {
     width: auto;
-    padding: 9px 25px;
+    padding: 9px 35px;
   }
   .btn_small {
     width: 50%;
@@ -1000,6 +1002,25 @@ i {
   padding-top: 100px;
 }
 
+#not-found {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 12%;
+  align-items: center;
+}
+#not-found_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+#not-found_text h1 {
+  color: #F25C05;
+}
+#not-found_text p {
+  color: #27262C;
+}
+
 @media only screen and (max-width: 768px) {
   #title_home {
     display: none;
@@ -1150,5 +1171,20 @@ i {
   }
   #tips {
     display: none;
+  }
+  #not-found {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px 5.2%;
+    gap: 40px;
+  }
+  #not-found_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  #not-found img {
+    width: 100%;
   }
 }/*# sourceMappingURL=landing.css.map */

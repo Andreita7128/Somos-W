@@ -491,12 +491,14 @@ h5 {
     font-size: 24px;
   }
   .right {
-    margin-left: 20px;
-    margin-right: -10px;
+    padding: 0%;
+    margin-left: 20px !important;
+    margin-right: -20px !important;
   }
   .left {
-    margin-right: 50px;
-    margin-left: -35px;
+    padding: 0%;
+    margin-right: 50px !important;
+    margin-left: -35px !important;
   }
   .btn_large {
     width: auto;
@@ -504,7 +506,7 @@ h5 {
   }
   .btn_medium {
     width: auto;
-    padding: 9px 25px;
+    padding: 9px 35px;
   }
   .btn_small {
     width: 50%;
@@ -823,6 +825,11 @@ main {
     position: absolute;
     left: 5.2%;
     top: 170px;
+    color: #FAFAFA;
+  }
+  #banner_mobile a {
+    text-decoration: none;
+    color: #FAFAFA;
   }
   #banner_mobile h1 {
     margin: 80px 5.2%;
