@@ -36,4 +36,34 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+}
+
+.dropdown_reactive {
+  margin-left: 0% !important;
+  border-radius: 0px !important;
+}
+
+#dropdown-vanished {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #Devoluciones {
+    display: none;
+  }
+  #Beneficios {
+    display: none;
+  }
+  #Caracteristicas {
+    display: none;
+  }
+  #Oficinas {
+    display: none;
+  }
+  #Deposito {
+    display: none;
+  }
+  #dropdown-vanished {
+    display: block;
+  }
 }/*# sourceMappingURL=reclamar.css.map */

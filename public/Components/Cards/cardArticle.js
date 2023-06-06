@@ -1934,7 +1934,7 @@ class Simulador extends HTMLElement {
                     </div>
                     <div style = "margin-top: 3%;">
                     <h5 class = "body_2">Digita el monto</h5>
-                    <input type="text" class="form-control form-control_formulario form-input" id="nombre" placeholder="Monto">
+                    <input type="text" class="form-control form-input" id="nombre" placeholder="Monto" style = "border-radius: 20px;">
                     <p class = "body_2" style = "margin-top:20px; color: gray;">Máx. $50.000.000</p>
                     </div>
                   </div>
