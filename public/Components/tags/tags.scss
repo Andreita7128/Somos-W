@@ -20,6 +20,20 @@ p {
     }
 }
 
+@media only screen and (max-width: 768px){
+    .sidebar-container{
+        .nav{
+            flex-direction: row !important;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
 .side-item span {
     margin-left: 10px;
 }

@@ -35,6 +35,7 @@
 
         &-select {
             margin-right: 1em;
+            
 
             h5 {
                 color: $color_dark_violet1;
@@ -46,6 +47,8 @@
         }
 
         &-form {
+            flex-direction: column;
+            gap: 30px;
             h3 {
                 color: $color_dark_violet1;
             }
@@ -86,11 +89,20 @@
     }
 }
 
-.user_document{
-    display: flex;
-    flex-direction: column;
+.get_user_document{
+    //flex-direction: column;
+    //background-color: aqua;
+    
+}
+
+.btn_section{
+        display: flex;
+        margin-left: 3em;
+        gap: 20px;
+        
 
 }
+
 
 
 // AQUI CAMBIO EL CONTENIDO DE LOS PRODUCTOS DEL USUARIO
@@ -214,10 +226,22 @@
 @media only screen and (max-width: 768px) {
 
     .sidebar-container {
-        display: none;
-        height: 50vh;
+        //display: none;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
+    .btn{
+        width: 100% !important;
+
+        &_section{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px !important;
+        }
+        
+    }
     .main-content {
         //display: none;
         display: flex;
