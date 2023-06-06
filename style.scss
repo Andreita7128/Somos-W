@@ -82,17 +82,19 @@ h5 {
 }
 
 .body {
-    font-weight: 500;
-
+    
     &_1 {
         font-size: 18px;
+        font-weight: 500;
     }
-
+    
     &_2 {
+        font-weight: 500;
         font-size: 16px;
     }
-
+    
     &_3 {
+        font-weight: 500;
         font-size: 14px;
     }
 }
@@ -581,13 +583,15 @@ h5 {
     }
 
     .right {
-        margin-left: 20px;
-        margin-right: -10px;
+        padding: 0%;
+        margin-left: 20px !important;
+        margin-right: -20px !important;
     }
     
     .left {
-        margin-right: 50px;
-        margin-left: -35px;
+        padding: 0%;
+        margin-right: 50px !important;
+        margin-left: -35px !important;
     }
 
     .btn {
@@ -598,7 +602,7 @@ h5 {
 
         &_medium {
             width: auto;
-            padding: 9px 25px;
+            padding: 9px 35px;
         }
 
         &_small {

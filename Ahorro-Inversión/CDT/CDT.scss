@@ -71,31 +71,5 @@
     justify-content: flex-end;
     flex-direction: column;
     
-  }
-  
-  #bread_lv1::after {
-    content: "Inicio";
-    color: #6321a6;
-  }
-  #bread_lv2::after {
-    content: "Ahorro e inversión" !important;
-    color: #6321a6;
-  }
-    #bread_lv3::after {
-      content: "CDT" !important;
-      color: #6321A6;
-      font-weight: bold;
-    } 
-  
-  .breadcrumb-item span {
-    display: none;
-  }
-  
-  #bread_title::after {
-    content: "CDT"!important;
-    color: #f25c05;
-  }
-  #bread_title span {
-    display: none;
   } /*# sourceMappingURL=reclamar.css.map */
 

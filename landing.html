@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
     <!--Css link-->
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="./landing.css">
 
     <!--Typography-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,7 @@
 
     <header>
         <w-nav-bar></w-nav-bar>
+        <bread-n-title actual="Banco W" link="./landing.html-" level="Inicio >"></bread-n-title>
     </header>
 
 
@@ -70,13 +71,13 @@
                             ¡Empieza a
                             ganar con
                             nosotros ahora!</p>
-                            <a href="./CDT/CDT.html">
+                            <a href="./Ahorro-Inversión/CDT/CDT.html">
                                 <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
                                         class="bi bi-arrow-right"></i></button>
                             </a>
                     </div>
                     <div class="container_carousel_img_bg container_carousel_img">
-                        <img src="/Images/1.png" class="container_carousel_img d-block" alt="...">
+                        <img src="./Images/1.png" class="container_carousel_img d-block" alt="...">
                     </div>
                 </div>
 
@@ -88,11 +89,13 @@
                         <h1>Libranza para pensionados</h1>
                         <p class="body_1">Permite a pensionados y a maestros del sector público, adquirir créditos a
                             través de nuestras alianzas.</p>
-                        <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
-                                class="bi bi-arrow-right"></i></button>
+                            <a href="./not-found.html">
+                                <button class="btn_large btn_large_active btn text_button_medium">Quiero saber más <i
+                                        class="bi bi-arrow-right"></i></button>
+                            </a>
                     </div>
                     <div class="container_carousel_img_bg container_carousel_img">
-                        <img src="/Images/1-2.png" class="container_carousel_img d-block" alt="...">
+                        <img src="./Images/1-2.png" class="container_carousel_img d-block" alt="...">
                     </div>
                 </div>
 
@@ -108,7 +111,7 @@
                         </a>
                     </div>
                     <div class="container_carousel_img_bg container_carousel_img">
-                        <img src="/Images/1-3.png" class="container_carousel_img d-block" alt="...">
+                        <img src="./Images/1-3.png" class="container_carousel_img d-block" alt="...">
                     </div>
                 </div>
             </div>
@@ -141,12 +144,12 @@
         <div class="card_desk">
             <w-card-desk photo="/Images/card.png" title="Historias de grandeza que marcan la diferencia"
             text="Aprende de educación financiera y explora mas sobre la Comunidad W, mediante historias que dejan huella"
-            btn="Conoce más" link="./ComunidadW/comunidadw.html"></w-card-desk>
+            btn="Conoce más" link="./ComunidadW/W-Contigo/comunidadw.html"></w-card-desk>
         </div>
         <div class="card_mobile">
             <card-imagen recurso="/Images/card.png" titulo="Historias de grandeza que marcan la diferencia"
             contenido="Aprende de educación financiera y explora mas sobre la Comunidad W, mediante historias que dejan huella"
-            boton="Conoce más" link="./ComunidadW/comunidadw.html"></card-imagen>
+            boton="Conoce más" link="./ComunidadW/W-Contigo/comunidadw.html"></card-imagen>
         </div>
     </section>
 
@@ -173,8 +176,8 @@
                         <span class="body_1 name_label">Ahorro</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="container_product_similar nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    <button class="container_product_similar nav-link" id="pills-service-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-service" type="button" role="tab" aria-controls="pills-service"
                         aria-selected="false"> <i class="bi bi-book"></i>
                         <span class="body_1 name_label">Servicios</span></button>
                 </li>
@@ -184,7 +187,7 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
                     <div id="container_product_select">
-                        <img class="product_selected_img" src="/Images/2.png">
+                        <img class="product_selected_img" src="./Images/credito.png">
                         <div class="product_selected_text">
                             <h5>Créditos</h5>
                             <h4>Consigue lo que deseas y necesitas</h4>
@@ -203,7 +206,7 @@
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                     <div id="container_product_select">
-                        <img class="product_selected_img" src="/Images/2.png">
+                        <img class="product_selected_img" src="./Images/seguros.png">
                         <div class="product_selected_text">
                             <h5>Seguros</h5>
                             <h4>Nos adaptamos a tus necesidades </h4>
@@ -221,29 +224,59 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                    ...</div>
-                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-                    tabindex="0">...</div>
+                    <div id="container_product_select">
+                        <img class="product_selected_img" src="./Images/ahorros.png">
+                        <div class="product_selected_text">
+                            <h5>Ahorros</h5>
+                            <h4>Consigue lo que deseas y necesitas</h4>
+                            <ul class="list_product">
+                                <li class="body_1">Cuenta de Ahorro</li>
+                                <li class="body_1">CDT</li>
+                                <li class="body_1">Depósito de bajo monto</li>
+                            </ul>
+                            <button class="btn btn_icon btn_medium btn_medium_active text_button_small">Saber más <i
+                                    class="bi bi-arrow-right right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab"
+                    tabindex="0">
+                    <div id="container_product_select">
+                        <img class="product_selected_img" src="./Images/servicios.png">
+                        <div class="product_selected_text">
+                            <h5>Servicios</h5>
+                            <h4>Consigue lo que deseas y necesitas</h4>
+                            <ul class="list_product">
+                                <li class="body_1">Convenio de recaudo</li>
+                                <li class="body_1">Remesas</li>
+                                <li class="body_1">Giros</li>
+                            </ul>
+                            <button class="btn btn_icon btn_medium btn_medium_active text_button_small">Saber más <i
+                                    class="bi bi-arrow-right right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        
         </article>
     </section>
 
     <section id="about_profile">
-        <h2>Mi perfil W</h2>
+        <h2>Conoce los beneficios de tener Mi perfil W</h2>
 
         <section id="about_profile_cards">
-            <div class="container_cards_img">
-                <img class="container_cards_img_img" src="/Images/3.png">
-            </div>
+                <img class="" src="./Images/3.png">
 
             <div class="container_cards_all">
                 <div class="container_cards_container_1">
                     <section class="card_landing_small">
                         <section class="card_landing_title card_landing_title_orange">
-                            <h4 style="color: white; width: 215px;"> Tus productos en un espacio </h4>
+                            <h4> Tus productos en un espacio </h4>
                         </section>
                         <div class="card_landing_body">
-                            <p class="card_landing_text body1" style="width: 215px;">Tu saldo, tus giros internacionales
+                            <p class="card_landing_text body1">Tu saldo, tus giros internacionales
                                 y
                                 muchos
                                 más</p>
@@ -252,11 +285,11 @@
 
                     <section class="card_landing_small">
                         <section class="card_landing_title card_landing_title_violet">
-                            <h4 style="color: white; width: 215px;"> Revisa tus saldos facilmente
+                            <h4> Revisa tus saldos facilmente
                             </h4>
                         </section>
                         <div class="card_landing_body">
-                            <p class="card_landing_text body1" style="width: 215px;">Revisar tus cuentas al alcance de
+                            <p class="card_landing_text body1">Revisar tus cuentas al alcance de
                                 tu
                                 mano,
                                 en
@@ -268,42 +301,30 @@
                 <div class="container_cards_container_2">
                     <section class="card_landing_large">
                         <section class="card_landing_title card_landing_title_blue">
-                            <h4 style="color: white; width: 500px;"> Tu agenda personalizada </h4>
+                            <h4> Tu agenda personalizada </h4>
                         </section>
                         <div class="card_landing_body">
-                            <p class="card_landing_text body1" style="width: 480px;">Ten una agenda organizada que te
+                            <p class="card_landing_text body1">Ten una agenda organizada que te
                                 permita llevar el orden de tus cuentas y pagos</p>
                         </div>
-                        <a href="./Registro/registro.html">
-                            <button style="margin: 50px 0px;" class="btn_large btn btn_large_active text_button_medium">Quiero crear mi cuenta
-                                <i class="bi bi-arrow-right"></i></button>
-                        </a>
                     </section>
+                    <a href="./Registro/registro.html">
+                        <button class="btn_large btn btn_large_active text_button_medium">Quiero crear mi cuenta</button>
+                    </a>
                 </div>
             </div>
         </section>
     </section>
 
-    <section id="channels_assistance">
-        <h2>Canales de Atención</h2>
-        <section class="channels_container">
-            <div class="channels_container_channel">
-                <i class="bi bi-person-lines-fill"></i>
-                <p class="body_1 channels_container_channel_text">Analista de crédito</p>
-            </div>
-            <div class="channels_container_channel">
-                <i class="bi bi-telephone-fill"></i>
-                <p class="body_1 channels_container_channel_text">Línea gratuita</p>
-            </div>
-            <div class="channels_container_channel">
-                <i class="bi bi-phone-fill"></i>
-                <p class="body_1 channels_container_channel_text">Celular</p>
-            </div>
-            <div class="channels_container_channel">
-                <i class="bi bi-geo-alt-fill"></i>
-                <p class="body_1 channels_container_channel_text">Oficinas físicas</p>
-            </div>
-        </section>
+    <section id="tips">
+        <h3>¿Tienes dudas o sugerencias?</h3>
+        <p class="body_1">Consulta nuestros canales de atención</p>
+        <div class="container_buttons">
+            <btn-inside-btn title="Analista de crédito" btn="Solicítalo aquí"></btn-inside-btn>
+            <btn-inside-text title="Línea gratuita" text="01 8000 515656"></btn-inside-text>
+            <btn-inside-text title="Celular" text="323 5996557"></btn-inside-text>
+            <btn-inside-btn title="Oficinas físicas" btn="Consulta nuestras oficinas"></btn-inside-btn>
+        </div>
     </section>
 
 
@@ -320,9 +341,9 @@
     </script>
 
 
-<link rel="stylesheet" href="/Salvavidas/salvavidas.css">
+<link rel="stylesheet" href="./Salvavidas/salvavidas.css">
 
-    <script type="module" src="/Salvavidas/ComponenteSalvavidas.js"></script>
+    <script type="module" src="./Salvavidas/ComponenteSalvavidas.js"></script>
 
     <salvavidas-comp></salvavidas-comp>
 

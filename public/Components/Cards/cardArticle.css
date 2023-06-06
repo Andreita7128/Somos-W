@@ -45,16 +45,16 @@ h5 {
   font-size: 18px;
 }
 
-.body {
-  font-weight: 500;
-}
 .body_1 {
   font-size: 18px;
+  font-weight: 500;
 }
 .body_2 {
+  font-weight: 500;
   font-size: 16px;
 }
 .body_3 {
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -492,12 +492,14 @@ h5 {
     font-size: 24px;
   }
   .right {
-    margin-left: 20px;
-    margin-right: -10px;
+    padding: 0%;
+    margin-left: 20px !important;
+    margin-right: -20px !important;
   }
   .left {
-    margin-right: 50px;
-    margin-left: -35px;
+    padding: 0%;
+    margin-right: 50px !important;
+    margin-left: -35px !important;
   }
   .btn_large {
     width: auto;
@@ -505,7 +507,7 @@ h5 {
   }
   .btn_medium {
     width: auto;
-    padding: 9px 25px;
+    padding: 9px 35px;
   }
   .btn_small {
     width: 50%;
@@ -724,6 +726,42 @@ h5 {
   margin: 25px 30px -40px 30px;
 }
 
+.bg_card {
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.body_card {
+  padding: 40px 6%;
+}
+.body_card h2 {
+  color: #27262C !important;
+}
+.body_card button {
+  margin-top: 30px;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn_sec {
+  display: flex;
+  margin: -15px 6% 20px 6%;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btn_sec button {
+  width: 85% !important;
+}
+
 .fondo-card {
   scroll-margin-top: 150px !important;
   background-color: white;
@@ -809,13 +847,15 @@ h5 {
   border-radius: 100%;
 }
 .fondo-card .labels-site {
+  padding: 0px 6%;
   display: flex;
   gap: 15px;
 }
 .fondo-card .card-interactions {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -35px;
+  padding: 0px 6%;
+  margin-left: 10%;
 }
 .fondo-card .card-interactions .punticos {
   font-size: xx-large;
@@ -836,6 +876,7 @@ h5 {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .fondo-card .card-interactions .left .likes * {
   color: #EB3232;
@@ -882,7 +923,7 @@ h5 {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
-  padding: 35px 30px;
+  padding: 10px 6%;
 }
 .fondo-card .texto-card .titulo {
   color: #252B42;
@@ -982,6 +1023,7 @@ h5 {
 }
 
 .icon {
+  margin-bottom: 40px;
   font-size: 50px;
   color: #F25C05;
 }

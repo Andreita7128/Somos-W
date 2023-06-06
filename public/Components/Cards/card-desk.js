@@ -68,9 +68,9 @@ class CardDesk extends HTMLElement {
                 <h3>${this.title}</h3>
                 <p class="body_1"> ${this.text} </p>
                 <a href="${this.link}">
-                    <button class="btn btn_medium btn_medium_active text_button_medium">
+                    <button class="btn btn_icon btn_medium btn_medium_active text_button_medium">
                         ${this.btn}
-                        <i class="bi bi-arrow-right"></i>
+                        <i class="bi bi-arrow-right right"></i>
                     </button>
                 </a>
             </section>
