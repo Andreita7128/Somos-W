@@ -1958,7 +1958,7 @@ class Simulador extends HTMLElement {
                       <h5 class = "simulacion body_2" style = "margin-top: 3%;">Tasa de simulación 2.02% M.V</h5>
          
                   <div class="col-md-12 d-flex justify-content-center my-3">
-                    <button type="button" class="btn btn_large_active button_continuar"style="width: 50%;" >Continuar <i class="bi bi-arrow-right "></i></button>
+                    <button type="button" class="btn btn_large_active button_continuar"style="width: 50%;" data-bs-toggle="modal" data-bs-target="#successModal">Calcular </button>
                   </div>
                 </div>
             
@@ -1969,6 +1969,29 @@ class Simulador extends HTMLElement {
           </div>
         </div>
       </section>
+
+      <!-- Pop-up -->
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Encabezado del pop-up -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Calculo terminado
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del pop-up -->
+            <div class="modal-body">
+              <p>Calculo terminado</p>
+            </div>
+            <!-- Pie del pop-up -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
 
@@ -2784,8 +2807,8 @@ class SimuladorCDT extends HTMLElement {
 
                       </div>
 
-                  <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn_large_active siguiente" style = "width: 30%; margin-bottom: 5%;">Calcular </button>
+                  <div class="col-md-12 d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn_large_active button_continuar"style="width: 50%;" data-bs-toggle="modal" data-bs-target="#successModal">Calcular </button>
                   </div>
                 </div>
             
@@ -2796,6 +2819,29 @@ class SimuladorCDT extends HTMLElement {
           </div>
         </div>
       </section>
+      
+      <!-- Pop-up -->
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Encabezado del pop-up -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Calculo terminado
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del pop-up -->
+            <div class="modal-body">
+              <p>Calculo terminado</p>
+            </div>
+            <!-- Pie del pop-up -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
 

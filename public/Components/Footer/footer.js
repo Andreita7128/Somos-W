@@ -11,7 +11,7 @@ class Footer extends HTMLElement {
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="/public/Components/Footer/footer.css">
-        <footer class="footerW border-0">
+        <footer class="footerW border-0" style = "margin-top: 5%;">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
