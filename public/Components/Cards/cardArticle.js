@@ -151,6 +151,7 @@ class cardBoton extends HTMLElement {
     this.titulo;
     this.contenido;
     this.boton;
+    this.link;
 
 
   }
@@ -162,6 +163,7 @@ class cardBoton extends HTMLElement {
       "titulo",
       "contenido",
       "boton",
+      "link",
     ]
   }
 
@@ -197,6 +199,12 @@ class cardBoton extends HTMLElement {
         this.boton = newValue
 
         break;
+
+      case "link":
+
+        this.link = newValue
+
+        break;
     }
 
   }
@@ -205,18 +213,22 @@ class cardBoton extends HTMLElement {
 
     this.innerHTML = `
         <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
-        <section class="fondo-card">
+        <section class="bg_card">
           <div class="section_icon">
         <i class="${this.icon} icon">
         </i>
     </div>
-        <section class="texto-card">
-            <h5 class="titulo">${this.titulo}</h5>
-            <p class="body_3">
+        <section class="body_card">
+            <h2 class="titulo">${this.titulo}</h2>
+            <p>
             ${this.contenido}   
             </p>
         </section>
-        <button style="margin: -20px 30px 30px 30px; width: 85%" class="btn btn_medium btn_medium_active text_button_normal">${this.boton}</button>
+      <section class="btn_sec">
+        
+        <button class="btn btn_medium btn_medium_active text_button_normal"><a style="text-decoration: none; color: white" href="${this.link}">${this.boton}</a></button>
+      
+      </section>
     </section>
         
         `
@@ -412,10 +424,14 @@ class cardForBlog extends HTMLElement {
     this.color_2 = ""; //color tag 2: family , business, grow
     this.likes = 0;
     this.comments = 0;
+    this.isChange = false;
+    this.counter = null;
+    this.icon = null;
+    this.link;
   }
 
   static get observedAttributes() {
-    return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2"];
+    return ["recurso", "titulo", "contenido", "likes", "comments", "tags", "color", "tags_2", "color_2", "link"];
   }
 
   attributeChangedCallback(nameAtr, oldValue, newValue) {
@@ -442,6 +458,12 @@ class cardForBlog extends HTMLElement {
       case "likes":
 
         this.likes = newValue
+
+        break;
+
+      case "link":
+
+        this.link = newValue
 
         break;
 
@@ -479,9 +501,11 @@ class cardForBlog extends HTMLElement {
     this.innerHTML = `
         <link rel="stylesheet" href="../../../public/Components/Cards/cardArticle.css">
 
-       <section class="fondo-card">
+        <section class="fondo-card">
         <section class="card-imagen">
+          <a href="${this.link}">
             <img src="${this.recurso}" class="imagen-inCard" alt="">
+          </a>
         </section>
         <section class="labels-site">
         
@@ -495,19 +519,19 @@ class cardForBlog extends HTMLElement {
             ${this.tags_2}
           </span>
         </h6>
-        
-           
+      
         </section>
         <section class="texto-card">
             <h5 class="titulo">${this.titulo}</h5>
             <p class="parrafo">
                 ${this.contenido}
             </p>
-        </section>
-        <section class="card-interactions">
+          </section>
+
+          <section class="card-interactions">
             <div class="left">
                 <div class="likes">
-                    <i class="bi bi-heart"></i><p>${this.likes}</p></div>
+                    <i id="like" class="bi bi-heart"></i><p id="count">${this.likes}</p></div>
                 <div class="comments">
                     <i class="bi bi-chat-left"></i><p>${this.comments}</p></div>
             </div>
@@ -517,9 +541,36 @@ class cardForBlog extends HTMLElement {
 
         `
 
+    this.counter = this.querySelector('#count');
+    this.icon = this.querySelector('#like');
 
+    if (localStorage.getItem('count')) {
+      this.counter.textContent = localStorage.getItem('count');
+    }
+
+    this.icon.addEventListener('click', () => {
+      if (this.isChange) {
+        this.icon.className = 'bi bi-heart';
+        let number = parseInt(this.counter.textContent);
+        number -= 1;
+        this.counter.textContent = number;
+        localStorage.setItem('count', number);
+        this.isChange = false;
+      } else {
+        this.icon.className = 'bi bi-heart-fill';
+        let number = parseInt(this.counter.textContent);
+        number += 1;
+        this.counter.textContent = number;
+        localStorage.setItem('count', number);
+        this.isChange = true;
+      }
+    });
   }
+
+
+
 }
+
 
 
 

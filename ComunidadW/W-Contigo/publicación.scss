@@ -138,6 +138,12 @@ main {
                 position: absolute;
                 left: 5.2%;
                 top: 170px;
+                color: $color_accent_white;
+            }
+
+            & a {
+                text-decoration: none;
+                color: $color_accent_white;
             }
 
             & h1 {

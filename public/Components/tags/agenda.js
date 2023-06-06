@@ -85,6 +85,9 @@ class Agenda extends HTMLElement {
                                     </div>
         
                                 </div>
+                                <br>
+                                <a href="#" class="btn_medium btn_medium_active btn text_button_medium" id="pse_agenda_btn">Pago PSE<i class="bi bi-arrow-right"></i></button>
+                                </a>
         
                             </div>    
                         </div>

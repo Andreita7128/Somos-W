@@ -711,200 +711,72 @@ h5 {
   background-color: #BDF0F2;
 }
 
-#share {
+#bannerTop {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  size: 20%;
+  justify-content: center;
   align-items: center;
-  padding: 50px 6.39% 50px 12%;
+  flex-direction: row;
+  background-color: white;
 }
 
-.container_text_btn {
+.separar-cards {
+  scroll-margin-top: 150px !important;
+}
+
+.marginis {
+  flex: 0 0 50%;
+}
+
+#CTAText {
+  padding: 10%;
+  /* font-family: 'Montserrat', sans-serif;
+    font-weight: bold; */
+}
+
+#CTAimg {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  #bannerTop {
+    display: block;
+    size: 100%;
+    padding: 0;
+  }
+  #CTAText {
+    font-size: 16px;
+  }
+  #CTAimg {
+    width: 100%;
+  }
+  .marginis {
+    flex: 0 0 100%;
+  }
+  #Tasas {
+    display: none;
+  }
+  #CancelarCDT {
+    display: none;
+  }
+}
+#cardsInfoCDT {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+#menuLateral {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 50%;
 }
-.container_text_btn h1 {
-  width: 100%;
-  margin: 0px;
-}
-.container_text_btn p {
-  margin: 35px 0px;
-  width: 90%;
-}
 
-.img_share {
-  width: 45%;
-}
-.img_share_mobile {
-  display: none;
-}
-
-#ours_labels {
-  padding: 0px 12%;
-  margin: 120px 0px;
-}
-#ours_labels_card {
-  display: none;
-}
-#ours_labels i {
-  font-size: 55px;
-}
-
-.container_labels {
+#cardsInfo {
   display: flex;
-  justify-content: space-between;
-  margin: 50px 0px;
-}
-.container_labels_info {
-  width: 25.25%;
-  font-size: 50px;
-  text-align: center;
-}
-.container_labels_info h5 {
-  margin: 25px 0px;
-}
-
-.bi-people {
-  color: #F25C05;
-}
-.bi-graph-up {
-  color: #00B1BB;
-}
-.bi-emoji-smile {
-  color: #6321A6;
-}
-
-#filter_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #F2F2F2;
-  padding: 45px 12%;
-}
-
-#w_articles {
-  padding: 85px 12%;
-  display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  align-items: center;
-}
-
-.container_all {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.container_eachCard {
-  width: 30%;
-}
-
-.btn_mas {
-  display: flex;
-  justify-self: center;
-  margin-top: 50px;
-}
-
-#w_card {
-  padding: 45px 12% 200px 12%;
-}
-#w_card_mobile {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  #share {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 35px 5%;
-    order: 1;
-  }
-  #share h1 {
-    width: 100%;
-  }
-  .img_share {
-    display: none;
-  }
-  .img_share_mobile {
-    display: flex;
-    width: 100%;
-    margin-top: -20px;
-  }
-  .container_text_btn {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0%;
-    width: 100%;
-    margin-right: 0px;
-  }
-  .container_text_btn h1 {
-    width: 90% !important;
-    margin: 0px;
-  }
-  .container_text_btn p {
-    margin: 10px 0px;
-    width: 100%;
-  }
-  #filter_container {
-    order: 2;
-    background-color: #FAFAFA;
-    padding: 20px 5.2%;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-  }
-  .btn_tag {
-    display: none !important;
-  }
-  #w_articles {
-    flex-direction: column;
-    padding: 20px 5.2%;
-    order: 3;
-  }
-  #w_articles_all {
-    order: 3;
-    background-color: #BDF0F2;
-  }
-  .container_eachCard {
-    width: 100%;
-  }
-  #btn_mas {
-    margin: 40px 0px;
-  }
-  #w_card {
-    order: 4;
-    padding: 0px 5.2%;
-    margin: 50px 0px;
-  }
-  #w_card_desk {
-    display: none;
-  }
-  #w_card_mobile {
-    display: inline;
-  }
-  #ours_labels {
-    order: 5;
-    padding: 0px 5.2%;
-    margin: 0px;
-  }
-  #ours_labels_title {
-    display: none;
-  }
-  #ours_labels_card {
-    display: block;
-    margin-bottom: 50px;
-  }
-  .container_labels {
-    display: none;
-  }
-  footer {
-    order: 6;
-  }
-  .breadcrumb_section {
-    margin: 15px 5.2%;
-  }
-}/*# sourceMappingURL=comunidadW.css.map */
+} /*# sourceMappingURL=CDT.css.map */
